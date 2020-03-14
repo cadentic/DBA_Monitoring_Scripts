@@ -1,0 +1,39 @@
+<html><body><p>
+Selection script executed on instance EBS1 host_name sreikolebz1.srei.com on 20-MAY-2016 05:34:19<p>
+Parameters Entered by User:<p>
+P_Start_Date: 01-MAY-2016<p>
+P_End_Date: 31-MAY-2016<p>
+P_Display_Journals: N<p>
+Email_id: <p>
+<b><u>Following are the Invoice events which need  to be Un-Accounted because they contain at least one distribution link record (in XLA_DISTRIBUTION_LINKS) corresponding to which we do not have an AP distribution</b></u><p>
+<table border="5"><tr><th>INVOICE_ID</th><th>INVOICE_NUM</th><th>INVOICE_TYPE_LOOKUP_CODE</th><th>INVOICE_AMOUNT</th><th>INVOICE_CURRENCY_CODE</th><th>INVOICE_DATE</th><th>VENDOR_NAME</th><th>VENDOR_SITE_CODE</th><th>EVENT_ID</th><th>EVENT_TYPE_CODE</th><th>EVENT_STATUS_CODE</th><th>PROCESS_STATUS_CODE</th><th>AE_HEADER_ID</th><th>GL_TRANSFER_STATUS_CODE</th><th>BALANCE_TYPE</th><th>EVENT_DATE</th><th>ORG_ID</th><th>SET_OF_BOOKS_ID</th></tr><p>
+<tr><td>983191</td><td>Jan'2016 Bill of Rakesh Mishra</td><td>STANDARD</td><td>0</td><td>INR</td><td>12-MAY-16</td><td>Rakesh Mishra</td><td>OFFICE</td><td>2253513</td><td>INVOICE VALIDATED</td><td>P</td><td>P</td><td>3067729</td><td>Y</td><td>Actual</td><td>12-MAY-16</td><td>1129</td><td>2026</td></tr><p>
+<tr><td>983201</td><td>Feb'2016 Bill of Rakesh Mishra</td><td>STANDARD</td><td>0</td><td>INR</td><td>12-MAY-16</td><td>Rakesh Mishra</td><td>OFFICE</td><td>2253514</td><td>INVOICE VALIDATED</td><td>P</td><td>P</td><td>3067730</td><td>Y</td><td>Actual</td><td>12-MAY-16</td><td>1129</td><td>2026</td></tr><p>
+<tr><td>986851</td><td>298929</td><td>EXPENSE REPORT</td><td>867</td><td>INR</td><td>16-MAY-16</td><td>Naresh Mathur</td><td>OFFICE</td><td>2258330</td><td>INVOICE VALIDATED</td><td>P</td><td>P</td><td>3076684</td><td>Y</td><td>Actual</td><td>17-MAY-16</td><td>1129</td><td>2026</td></tr><p>
+</table><p>
+<b><u>Following are the checks paying the Invoice Distributions  that need to be  Unaccounted</b></u><p>
+<table border="5"><tr><th>CHECK_ID</th><th>CHECK_NUMBER</th><th>VENDOR_NAME</th><th>VENDOR_SITE_CODE</th><th>CHECK_DATE</th><th>AMOUNT</th><th>ORG_ID</th></tr><p>
+<tr><td>435359</td><td>2001926</td><td>Naresh Mathur</td><td>OFFICE</td><td>18-MAY-16</td><td>1382</td><td>1129</td></tr><p>
+</table><p>
+<b><u>Following are the events corresponding to the checks  that need to be Unaccounted</b></u><p>
+<table border="5"><tr><th>EVENT_ID</th><th>EVENT_TYPE_CODE</th><th>EVENT_STATUS_CODE</th><th>PROCESS_STATUS_CODE</th><th>AE_HEADER_ID</th><th>GL_TRANSFER_STATUS_CODE</th><th>BALANCE_TYPE</th><th>EVENT_DATE</th><th>CHECK_ID</th><th>ORG_ID</th><th>LEDGER_ID</th><th>TRANSACTION_NUMBER</th><th>TRANSACTION_TYPE</th></tr><p>
+</table><p>
+<b><u>Following is the Information about the Invoice events which will have issues while Unaccounting</u></b><p>
+<b><u>The Following events cannot be Unaccounted	On the same Date as the	Original Event Date because the	Original Period	is Closed</u></b> <p>
+<table border="5"><th>EVENT_ID</th><th>EVENT_TYPE_CODE</th><th>AE_HEADER_ID</th><th>ACCOUNTING_DATE</th><th>SOURCE_TYPE</th><th>SOURCE_ID_INT_1</th><th>TRANSACTION_NUMBER</th><th>SECURITY_ID_INT_1</th><th>PERIOD_NAME</th><th>CLOSING_STATUS</th><th>LEDGER_NAME</th></tr><p>
+</table><p>
+<b><u>The following events cannot be Unaccounted because the Code Combination Id is not	Enabled</u></b><p>
+<table border="5"><th>EVENT_ID</th><th>EVENT_TYPE_CODE</th><th>AE_HEADER_ID</th><th>ACCOUNTING_DATE</th><th>AE_LINE_NUM</th><th>ACCOUNTING_CLASS_CODE</th><th>SOURCE_TYPE</th><th>SOURCE_ID_INT_1</th><th>TRANSACTION_NUMBER</th><th>SECURITY_ID_INT_1</th><th>CODE_COMBINATION_ID</th><th>ACCOUNT</th><th>ENABLED_FLAG</th><th>END_DATE_ACTIVE</th><th>LEDGER_NAME</tr><p>
+</table><p>
+<b><u>Following is the Information about the Check events which will have issues while Unaccounting</u></b><p>
+<b><u>The Following events cannot be Unaccounted	On the same Date as the	Original Event Date because the	Original Period	is Closed</u></b> <p>
+<table border="5"><th>EVENT_ID</th><th>EVENT_TYPE_CODE</th><th>AE_HEADER_ID</th><th>ACCOUNTING_DATE</th><th>SOURCE_TYPE</th><th>SOURCE_ID_INT_1</th><th>TRANSACTION_NUMBER</th><th>SECURITY_ID_INT_1</th><th>PERIOD_NAME</th><th>CLOSING_STATUS</th><th>LEDGER_NAME</th></tr><p>
+</table><p>
+<b><u>The following events cannot be Unaccounted because the Code Combination Id is not	Enabled</u></b><p>
+<table border="5"><th>EVENT_ID</th><th>EVENT_TYPE_CODE</th><th>AE_HEADER_ID</th><th>ACCOUNTING_DATE</th><th>AE_LINE_NUM</th><th>ACCOUNTING_CLASS_CODE</th><th>SOURCE_TYPE</th><th>SOURCE_ID_INT_1</th><th>TRANSACTION_NUMBER</th><th>SECURITY_ID_INT_1</th><th>CODE_COMBINATION_ID</th><th>ACCOUNT</th><th>ENABLED_FLAG</th><th>END_DATE_ACTIVE</th><th>LEDGER_NAME</tr><p>
+</table><p>
+<b><u>Following are the next steps to be followed to fix the issue</b></u><p>
+1. If you don't want any transaction/transactions to be fixed then update process_flag in table AP_TEMP_DATA_DRIVER_8970455 to N for that  transaction/transactions.<p>
+2. To fix the identified transactions run ap_orphan_xdl_x.sql which is present in $AP_TOP/patch/115/sql.<p>
+3. If data is not corrected contact Oracle Support and supply the log files 8970455-diag-HH24:MI:SS.html and 8970455-fix-HH24:MI:SS.html<p>
+</body></html><p>

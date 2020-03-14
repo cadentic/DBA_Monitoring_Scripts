@@ -1,0 +1,4 @@
+nohup expdp system/oratcora dumpfile=z_ng_debtors_report_hst__Z_RPT_DISBURSEMENT_REPORT_23062016.DMP LOGFILE=z_ng_debtors_report_hst__Z_RPT_DISBURSEMENT_REPORT_23062016.log tables=SREI_CDS_NEWGEN.Z_NG_DEBTORS_REPORT_HST directory=DATA_PUMP_DIR &
+nohup expdp system/oratcora dumpfile=Z_RPT_DISBURSEMENT_REPORT_23062016.DMP LOGFILE=Z_RPT_DISBURSEMENT_REPORT_23062016.log tables=SREI_CDS_AMBIT.Z_RPT_DISBURSEMENT_REPORT directory=DATA_PUMP_DIR &
+
+,

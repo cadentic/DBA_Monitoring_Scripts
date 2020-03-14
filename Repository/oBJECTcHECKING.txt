@@ -1,0 +1,16 @@
+Kindly upload the latest dump of Siflkastle@sp02 to siflkastlenew@cdsuat.
+
+Below are the details of the DB Status till 09:05 AM
+
+
+select count(*), owner, object_type 
+   from dba_objects 
+  where owner= 'SEFLKASTLELIVEPHASED'
+group by owner, object_type;
+
+
+Please upload the latest dump of seflkastlelivephased@SP02 to
+seflkastlenew@cdsuat.
+
+seflkastlenew
+SEFLKASTLELIVEPHASED

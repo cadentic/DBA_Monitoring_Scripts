@@ -1,0 +1,8 @@
+ SELECT DISTINCT c.USER_CONCURRENT_PROGRAM_NAME,round(((sysdate-a.actual_start_date)*24*60*60/60),2) AS Process_time
+*
+ERROR at line 1:
+ORA-01034: ORACLE not available 
+Process ID: 0 
+Session ID: 0 Serial number: 0 
+
+

@@ -1,0 +1,111 @@
+In most sites I've worked at it's almost impossible to trace sessions, because you don't have read permissions on the tracefile directory (or access to the server at all). My first check would therefore be to look in my session browser to see what the session is actually doing. What is the current SQL statement? What is the current wait event? What cursors has the session spent time on? If the procedure just slogs through one cursor or one INSERT statement etc then you have a straightforward SQL tuning problem. If it's more complex then it will help to know which part is taking the time.
+
+If you have a licence for the diagnostic pack you can query v$active_session_history, e.g. (developed for 10.2.0.3, could maybe do more in 11.2):
+SELECT CAST(ash.started AS DATE) started
+     , ash.elapsed
+     , s.sql_text
+     , CASE WHEN ash.sql_id = :sql_id AND :status = 'ACTIVE' THEN 'Y' END AS executing
+     , s.executions
+     , CAST(NUMTODSINTERVAL(elapsed_time/NULLIF(executions,0)/1e6,'SECOND') AS INTERVAL DAY(0) TO SECOND(1)) AS avg_time
+     , CAST(NUMTODSINTERVAL(elapsed_time/1e6,'SECOND') AS INTERVAL DAY(0) TO SECOND(1)) AS total_time
+     , ROUND(s.parse_calls/NULLIF(s.executions,0),1) avg_parses
+     , ROUND(s.fetches/NULLIF(s.executions,0),1) avg_fetches
+     , ROUND(s.rows_processed/NULLIF(s.executions,0),1) avg_rows_processed
+     , s.module, s.action
+     , ash.sql_id
+     , ash.sql_child_number
+     , ash.sql_plan_hash_value
+     , ash.started
+FROM   ( SELECT MIN(sample_time) AS started
+              , CAST(MAX(sample_time) - MIN(sample_time) AS INTERVAL DAY(0) TO SECOND(0)) AS elapsed
+              , sql_id
+              , sql_child_number
+              , sql_plan_hash_value
+         FROM   v$active_session_history
+         WHERE  session_id = :sid
+         AND    session_serial# = :serial#
+         GROUP BY sql_id, sql_child_number, sql_plan_hash_value ) ash
+       LEFT JOIN
+       ( SELECT sql_id, plan_hash_value
+              , sql_text, SUM(executions) OVER (PARTITION BY sql_id) AS executions, module, action, rows_processed, fetches, parse_calls, elapsed_time
+              , ROW_NUMBER() OVER (PARTITION BY sql_id ORDER BY last_load_time DESC) AS seq
+         FROM   v$sql ) s
+       ON s.sql_id = ash.sql_id AND s.plan_hash_value = ash.sql_plan_hash_value
+WHERE  s.seq = 1
+ORDER BY 1 DESC;
+:sid and :serial# come from v$session. In PL/SQL Developer I defined this as a tab named 'Session queries' in the session browser.
+
+I have another tab named 'Object wait totals this query' containing:
+SELECT LTRIM(ep.owner || '.' || ep.object_name || '.' || ep.procedure_name,'.') AS plsql_entry_procedure
+     , LTRIM(cp.owner || '.' || cp.object_name || '.' || cp.procedure_name,'.') AS plsql_procedure
+     , session_state
+     , CASE WHEN blocking_session_status IN ('NOT IN WAIT','NO HOLDER','UNKNOWN') THEN NULL ELSE blocking_session_status END AS blocking_session_status
+     , event
+     , wait_class
+     , ROUND(SUM(wait_time)/100,1) as wait_time_secs
+     , ROUND(SUM(time_waited)/100,1) as time_waited_secs
+     , LTRIM(o.owner || '.' || o.object_name,'.') AS wait_object
+FROM   v$active_session_history h
+       LEFT JOIN dba_procedures ep
+       ON   ep.object_id = h.plsql_entry_object_id AND ep.subprogram_id = h.plsql_entry_subprogram_id
+       LEFT JOIN dba_procedures cp
+       ON   cp.object_id = h.plsql_object_id AND cp.subprogram_id = h.plsql_subprogram_id
+       LEFT JOIN dba_objects o ON o.object_id = h.current_obj#
+WHERE  h.session_id = :sid
+AND    h.session_serial# = :serial#
+AND    h.user_id = :user#
+AND    h.sql_id = :sql_id
+AND    h.sql_child_number = :sql_child_number
+GROUP BY 
+       ep.owner, ep.object_name, ep.procedure_name
+     , cp.owner, cp.object_name, cp.procedure_name
+     , session_state
+     , CASE WHEN blocking_session_status IN ('NOT IN WAIT','NO HOLDER','UNKNOWN') THEN NULL ELSE blocking_session_status END
+     , event
+     , wait_class
+     , o.owner
+     , o.object_name
+It's not perfect and the numbers aren't reliable, but it gives me an idea where the time might be going. While I'm at it, v$session_longops is worth a look, so I also have 'Longops' as:
+SELECT sid
+     , CASE WHEN l.time_remaining> 0 OR l.sofar < l.totalwork THEN 'Yes' END AS "Active?"
+     , l.opname AS operation
+     , l.totalwork || ' ' || l.units AS totalwork
+     , NVL(l.target,l.target_desc) AS target
+     , ROUND(100 * l.sofar/GREATEST(l.totalwork,1),1) AS "Complete %"
+     , NULLIF(RTRIM(RTRIM(LTRIM(LTRIM(numtodsinterval(l.elapsed_seconds,'SECOND'),'+0'),' '),'0'),'.'),'00:00:00') AS elapsed
+     , l.start_time
+     , CASE
+           WHEN  l.time_remaining = 0 THEN l.last_update_time
+           ELSE SYSDATE + l.time_remaining/86400
+       END AS est_completion
+     , l.sql_id
+     , l.sql_address
+     , l.sql_hash_value
+FROM v$session_longops l
+WHERE :sid IN (sid,qcsid)
+AND  l.start_time >= TO_DATE(:logon_time,'DD/MM/YYYY HH24:MI:SS')
+ORDER BY l.start_time desc
+and 'Longops this query' as:
+SELECT sid
+     , CASE WHEN l.time_remaining> 0 OR l.sofar < l.totalwork THEN 'Yes' END AS "Active?"
+     , l.opname AS operation
+     , l.totalwork || ' ' || l.units AS totalwork
+     , NVL(l.target,l.target_desc) AS target
+     , ROUND(100 * l.sofar/GREATEST(l.totalwork,1),1) AS "Complete %"
+     , NULLIF(RTRIM(RTRIM(LTRIM(LTRIM(numtodsinterval(l.elapsed_seconds,'SECOND'),'+0'),' '),'0'),'.'),'00:00:00') AS elapsed
+     , l.start_time
+     , CASE
+           WHEN  l.time_remaining = 0 THEN l.last_update_time
+           ELSE SYSDATE + l.time_remaining/86400
+       END AS est_completion
+     , l.sql_id
+     , l.sql_address
+     , l.sql_hash_value
+FROM v$session_longops l
+WHERE :sid IN (sid,qcsid)
+AND  l.start_time >= TO_DATE(:logon_time,'DD/MM/YYYY HH24:MI:SS')
+AND  l.sql_id = :sql_id
+ORDER BY l.start_time desc
+You can also get this sort of information out of OEM if you're lucky enough to have access to it - if not, ask for it!
+
+Apart from this type of monitoring, you might try using DBMS_PROFILER (point and click in most IDEs, but you can use it from the SQL*Plus prompt), and also instrument your code with calls to DBMS_APPLICATION_INFO.SET_CLIENT_INFO so you can easily tell from v$session which section of code is being executed.

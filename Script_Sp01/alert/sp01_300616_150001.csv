@@ -1,0 +1,44 @@
+
+NAME                          ,  TOTAL_MB,   FREE_MB                                                                                                                                                                                                                                                        
+------------------------------,----------,----------                                                                                                                                                                                                                                                        
+DATA                          ,       952,       554                                                                                                                                                                                                                                                        
+LOGARCH                       ,    202259,     47019                                                                                                                                                                                                                                                        
+SEFLDATA                      ,    209586,     12819                                                                                                                                                                                                                                                        
+
+
+TABLESPACE_NAME               ,TOTAL ALLOC (GB),TOTAL PHYS ALLOC (GB), USED (GB),    % USED                                                                                                                                                                                                                 
+------------------------------,----------------,---------------------,----------,----------                                                                                                                                                                                                                 
+SEFPLLIVE                     ,             260,               249.75,236.094971, 90.805758                                                                                                                                                                                                                 
+SEFPLLIVEREPORTS              ,              15,                  8.5,8.34008789,55.6005859                                                                                                                                                                                                                 
+SEFPLLIVE_RPT_READONLY        ,               7,                    2,         0,         0                                                                                                                                                                                                                 
+SYSAUX                        ,      31.9999847,           1.65039063,1.56536865,4.89177937                                                                                                                                                                                                                 
+SYSTEM                        ,      31.9999847,           2.16796875,2.15893555, 6.7466768                                                                                                                                                                                                                 
+UNDOTBS3                      ,               7,                    7, 5.4229126,  77.47018                                                                                                                                                                                                                 
+UNDOTBS4                      ,               7,                    7,5.00695801,71.5279715                                                                                                                                                                                                                 
+USERS                         ,      31.9999847,           .004882813,         0,         0                                                                                                                                                                                                                 
+
+8 rows selected.
+
+
+METRIC_NAME                                                                                              ,VALUE                                                                                                                                                                                             
+---------------------------------------------------------------------------------------------------------,---------------------------------------------------------------------------                                                                                                                       
+1_Database CPU Time Ratio                                                                                ,17.1263620371575                                                                                                                                                                                  
+1_Database Wait Time Ratio                                                                               ,82.8736379628425                                                                                                                                                                                  
+2_Database CPU Time Ratio                                                                                ,76.6963081089373                                                                                                                                                                                  
+2_Database Wait Time Ratio                                                                               ,23.3036918910627                                                                                                                                                                                  
+Time now is                                                                                              ,30/06/2016 15:00:14                                                                                                                                                                               
+
+Listner process
+2
+Listner process at node 2 is:
+1
+the mount point status for SEFL database node1 is:
+Size,Avail,Mounted
+39G,34G,/
+12G,12G,/dev/shm
+79G,55G,/u01
+the mount point status for SEFL database node2 is:
+Size,Avail,Mounted
+39G,34G,/
+12G,12G,/dev/shm
+79G,62G,/u01

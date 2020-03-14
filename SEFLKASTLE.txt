@@ -1,0 +1,3 @@
+ nohup expdp system/lenovo123  dumpfile=SEFLKASTLE_03082016.DMP LOGFILE=SEFLKASTLE_03082016.log  SCHEMAS=SEFLKASTLE version=10 directory=DATAPUMP_DIR
+
+Seflkastle

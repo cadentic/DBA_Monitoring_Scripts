@@ -1,0 +1,55 @@
+
+
+nohup expdp system/lenovo123 dumpfile=SeflKastleLivePhaseD_220616.DMP LOGFILE=SeflKastleLivePhaseD_220616_10G.log schemas=SEFLKASTLELIVEPHASED consistent=y directory=SANP05 &
+
+SEFLKASTLENEW
+DATAPUMP_DIR
+SEFLKASTLELIVEPHASED_220616.DMP
+
+select count(1),object_type from dba_objects where owner='SEFLKASTLENEW' group by object_type;
+
+grep oinstall /etc/group
+
+[orasp01@sreikolsefl1 ~]$ id orasp01
+uid=2000(orasp01) gid=1001(oinstall) groups=1001(oinstall),10(wheel),1000(dba),1002(asmdba)
+
+[gridsp01@sreikolsefl2 ~]$ id
+uid=2001(gridsp01) gid=1001(oinstall) groups=10(wheel),1000(dba),1001(oinstall),1002(asmdba),1003(asmoper),1004(asmadmin)
+[gridsp01@sreikolsefl2 ~]$ 
+
+[orangp01@sreikolvplngdb4 ~]$ id orangp01
+uid=2000(orangp01) gid=1001(oinstall) groups=1001(oinstall),10(wheel),1000(dba),1002(asmdba),1004(asmadmin)
+
+[gridngp01@sreikolvplngdb4 ~]$ id gridngp01
+uid=2001(gridngp01) gid=1001(oinstall) groups=1001(oinstall),10(wheel),1000(dba),1002(asmdba),1003(asmoper),1004(asmadmin)
+
+[orasp02@sreikolsifl3 ~]$ id orasp02
+uid=2001(orasp02) gid=1001(oinstall) groups=1000(dba),1002(asmdba),1001(oinstall)
+
+[orasp02@sreikolsifl3 ~]$ id gridsp02
+uid=2000(gridsp02) gid=1001(oinstall) groups=1000(dba),1002(asmdba),1003(asmoper),1004(asmadmin),1001(oinstall)
+
+/usr/sbin/useradd -u 2000 -g oinstall -G dba,asmdba orascds
+/usr/sbin/useradd -u 2001 -g oinstall -G dba,asmdba,asmadmin,asmoper gridcds
+
+/usr/sbin/useradd -u 2000 -g oinstall -G dba,asmdba orangp01
+/usr/sbin/useradd -u 2001 -g oinstall -G dba,asmdba,asmadmin,asmoper gridngp01
+
+
+/usr/sbin/useradd -u 2000 -g oinstall -G dba,asmdba oraep01
+/usr/sbin/useradd -u 2001 -g oinstall -G dba,asmdba,asmadmin,asmoper gridep01
+
+[oraep01@sreikolebz1 ~]$ id
+uid=2000(oraep01) gid=1001(oinstall) groups=1000(dba),1001(oinstall),1002(asmdba)
+
+
+
+/usr/sbin/groupadd -g 1001 oinstall
+/usr/sbin/groupadd -g 1000 dba
+/usr/sbin/groupadd -g 1003 asmoper
+/usr/sbin/groupadd -g 1002 asmdba
+/usr/sbin/groupadd -g 1004 asmadmin
+
+#/usr/sbin/groupadd -g 54323 oper
+#/usr/sbin/groupadd -g 54324 backupdba
+#/usr/sbin/groupadd -g 54325 dgdba

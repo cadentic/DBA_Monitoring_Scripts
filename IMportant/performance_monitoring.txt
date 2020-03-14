@@ -1,0 +1,151 @@
+SELECT	'Time now is '  METRIC_NAME,	
+	To_char(sysdate, 'dd/mm/yyyy hh24:mi:ss') VALUE
+FROM	DUAL
+UNION
+SELECT	to_char(inst_id) || '_' || METRIC_NAME  METRIC_NAME,
+	to_char(VALUE) value
+FROM	gV$SYSMETRIC
+WHERE	METRIC_NAME IN ('Database CPU Time Ratio','Database Wait Time Ratio')
+AND INTSIZE_CSEC = (SELECT MAX(INTSIZE_CSEC) FROM gV$SYSMETRIC where inst_id=1)
+and inst_id=1
+UNION
+SELECT	to_char(inst_id) || '_' || METRIC_NAME  METRIC_NAME,
+	to_char(VALUE) value
+FROM	gV$SYSMETRIC
+WHERE	METRIC_NAME IN ('Database CPU Time Ratio','Database Wait Time Ratio')
+AND INTSIZE_CSEC = (SELECT MAX(INTSIZE_CSEC) FROM gV$SYSMETRIC where inst_id=2)
+and inst_id=2;
+
+
+
+
+
+SELECT s.inst_id,
+       s.sid,
+       s.serial#,
+       s.sql_address,
+       s.username,
+       s.sql_id,
+       s.module,
+       ROUND(sl.elapsed_seconds/60) || ':' || MOD(sl.elapsed_seconds,60) elapsed,
+       ROUND(sl.time_remaining/60) || ':' || MOD(sl.time_remaining,60) remaining,
+       ROUND(sl.sofar/(sl.totalwork+1)*100, 2) progress_pct
+FROM   gv$session s,
+       gv$session_longops sl
+WHERE  s.sid     = sl.sid
+AND    s.inst_id = sl.inst_id
+AND    s.serial# = sl.serial#
+ORDER BY progress_pct
+/
+
+select * from gv$
+
+
+SELECT s.inst_id,
+       NVL(s.username, '(oracle)') AS username,
+       s.sid,
+       s.serial#,
+       sw.event,
+       sw.wait_class,
+       sw.wait_time,
+       sw.seconds_in_wait,
+       sw.state
+FROM   gv$session_wait sw,
+       gv$session s
+WHERE  s.sid     = sw.sid
+AND    s.inst_id = sw.inst_id
+ORDER BY sw.seconds_in_wait DESC
+/
+
+desc gv$session
+SELECT SID, SERIAL#, STATUS, SERVER,inst_id 
+   FROM gV$SESSION
+   WHERE USERNAME = 'SEFPLLIVE';
+   
+alter system kill session '6,25,01' immediate;
+
+select s.inst_id, s.sid, s.serial#, p.spid, s.username
+     , s.schemaname, s.program, s.terminal, s.osuser
+  from Gv$session s
+  join Gv$process p
+    on s.paddr = p.addr
+   and s.inst_id = p.inst_id
+ where s.type != 'BACKGROUND';
+ 
+ SELECT SID, SQL_ID, USERNAME, BLOCKING_SESSION, COMMAND, MODULE, STATUS FROM v$session WHERE BLOCKING_SESSION IS NOT NULL;
+ 
+ select * from dba_blockers;
+ 
+ select
+  object_name, 
+  object_type, 
+  session_id, 
+  type,         -- Type or system/user lock
+  lmode,        -- lock mode in which session holds lock
+  request, 
+  block, 
+  ctime         -- Time since current mode was granted
+from
+  v$locked_object, all_objects, v$lock
+where
+  v$locked_object.object_id = all_objects.object_id AND
+  v$lock.id1 = all_objects.object_id AND
+  v$lock.sid = v$locked_object.session_id
+order by
+  session_id, ctime desc, object_name
+/
+
+SELECT sid, to_char(start_time,'hh24:mi:ss') stime, 
+message,( sofar/totalwork)* 100 percent 
+FROM v$session_longops
+WHERE sofar/totalwork < 1
+/
+
+select s.username,s.sid,s.serial#,s.last_call_et/60 mins_running,q.sql_text from v$session s 
+join v$sqltext_with_newlines q
+on s.sql_address = q.address
+ where status='ACTIVE'
+and type <>'BACKGROUND'
+and last_call_et> 60
+order by sid,serial#,q.piece
+/
+
+
+Step 1:Execute the query
+
+column username format 'a10'
+column osuser format 'a10'
+column module format 'a16'
+column program_name format 'a20'
+column program format 'a20'
+column machine format 'a20'
+column action format 'a20'
+column sid format '9999'
+column serial# format '99999'
+column spid format '99999'
+set linesize 200
+set pagesize 30
+select
+a.sid,a.serial#,a.username,a.osuser,c.start_time,
+b.spid,a.status,a.machine,
+a.action,a.module,a.program
+from
+v$session a, v$process b, v$transaction c,
+v$sqlarea s
+Where
+a.paddr = b.addr
+and a.saddr = c.ses_addr
+and a.sql_address = s.address (+)
+and to_date(c.start_time,'mm/dd/yy hh24:mi:ss') <= sysdate - (15/1440) -- running for 15 minutes
+order by c.start_time
+/   
+
+Step 2: desc v$session
+
+Step 3:select sid, serial#,SQL_ADDRESS, status,PREV_SQL_ADDR from v$session where sid='xxxx' //(enter the sid value)
+
+Step 4: select sql_text from v$sqltext where address='XXXXXXXX';
+
+Step 5: select piece, sql_text from v$sqltext where address='XXXXXX' order by piece;
+
+

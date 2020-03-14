@@ -1,0 +1,3058 @@
+=======CPU_METRICS EP011======
+<br>
+<p>
+<table border='1' width='90%' align='center' summary='Script output'>
+<tr>
+<th scope="col">
+DAY
+</th>
+<th scope="col">
+HOST_CPU_UTIL_PCT
+</th>
+<th scope="col">
+ORA_CPU_UTIL_PCT
+</th>
+<th scope="col">
+ORA_CPU_WAIT_PCT
+</th>
+</tr>
+<tr>
+<td>
+01-MAY-2016
+</td>
+<td align="right">
+      .482
+</td>
+<td align="right">
+.536416667
+</td>
+<td align="right">
+.149166667
+</td>
+</tr>
+<tr>
+<td>
+02-MAY-2016
+</td>
+<td align="right">
+.997791667
+</td>
+<td align="right">
+2.28195833
+</td>
+<td align="right">
+     .7475
+</td>
+</tr>
+<tr>
+<td>
+03-MAY-2016
+</td>
+<td align="right">
+.677291667
+</td>
+<td align="right">
+1.16179167
+</td>
+<td align="right">
+.438333333
+</td>
+</tr>
+<tr>
+<td>
+04-MAY-2016
+</td>
+<td align="right">
+.795166667
+</td>
+<td align="right">
+1.23920833
+</td>
+<td align="right">
+.506666667
+</td>
+</tr>
+<tr>
+<td>
+05-MAY-2016
+</td>
+<td align="right">
+.942333333
+</td>
+<td align="right">
+    1.9065
+</td>
+<td align="right">
+     .6375
+</td>
+</tr>
+<tr>
+<td>
+06-MAY-2016
+</td>
+<td align="right">
+.805041667
+</td>
+<td align="right">
+1.56691667
+</td>
+<td align="right">
+.540416667
+</td>
+</tr>
+<tr>
+<td>
+07-MAY-2016
+</td>
+<td align="right">
+   1.04125
+</td>
+<td align="right">
+     1.887
+</td>
+<td align="right">
+      .915
+</td>
+</tr>
+<tr>
+<td>
+08-MAY-2016
+</td>
+<td align="right">
+.354708333
+</td>
+<td align="right">
+.322958333
+</td>
+<td align="right">
+.080833333
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+   1.05775
+</td>
+<td align="right">
+   2.60575
+</td>
+<td align="right">
+    .88125
+</td>
+</tr>
+<tr>
+<td>
+10-MAY-2016
+</td>
+<td align="right">
+    .85075
+</td>
+<td align="right">
+1.50991667
+</td>
+<td align="right">
+.491666667
+</td>
+</tr>
+<tr>
+<td>
+11-MAY-2016
+</td>
+<td align="right">
+1.16545833
+</td>
+<td align="right">
+  1.851375
+</td>
+<td align="right">
+      .875
+</td>
+</tr>
+<tr>
+<td>
+12-MAY-2016
+</td>
+<td align="right">
+.809666667
+</td>
+<td align="right">
+1.51941667
+</td>
+<td align="right">
+     .5825
+</td>
+</tr>
+<tr>
+<td>
+13-MAY-2016
+</td>
+<td align="right">
+.777333333
+</td>
+<td align="right">
+  1.328375
+</td>
+<td align="right">
+      .485
+</td>
+</tr>
+<tr>
+<td>
+14-MAY-2016
+</td>
+<td align="right">
+.413458333
+</td>
+<td align="right">
+     .2855
+</td>
+<td align="right">
+.131666667
+</td>
+</tr>
+<tr>
+<td>
+15-MAY-2016
+</td>
+<td align="right">
+     .2365
+</td>
+<td align="right">
+.162083333
+</td>
+<td align="right">
+.026666667
+</td>
+</tr>
+<tr>
+<td>
+16-MAY-2016
+</td>
+<td align="right">
+1.25159091
+</td>
+<td align="right">
+2.57327273
+</td>
+<td align="right">
+.949090909
+</td>
+</tr>
+<tr>
+<td>
+17-MAY-2016
+</td>
+<td align="right">
+.920083333
+</td>
+<td align="right">
+1.81208333
+</td>
+<td align="right">
+.668333333
+</td>
+</tr>
+<tr>
+<td>
+18-MAY-2016
+</td>
+<td align="right">
+.988333333
+</td>
+<td align="right">
+1.49695833
+</td>
+<td align="right">
+.739583333
+</td>
+</tr>
+<tr>
+<td>
+19-MAY-2016
+</td>
+<td align="right">
+.955458333
+</td>
+<td align="right">
+   1.54575
+</td>
+<td align="right">
+     .6875
+</td>
+</tr>
+<tr>
+<td>
+20-MAY-2016
+</td>
+<td align="right">
+.732333333
+</td>
+<td align="right">
+    .99625
+</td>
+<td align="right">
+.454166667
+</td>
+</tr>
+<tr>
+<td>
+21-MAY-2016
+</td>
+<td align="right">
+.808041667
+</td>
+<td align="right">
+    1.3075
+</td>
+<td align="right">
+    .54875
+</td>
+</tr>
+<tr>
+<td>
+22-MAY-2016
+</td>
+<td align="right">
+.480333333
+</td>
+<td align="right">
+.312208333
+</td>
+<td align="right">
+.152083333
+</td>
+</tr>
+<tr>
+<td>
+23-MAY-2016
+</td>
+<td align="right">
+1.16504167
+</td>
+<td align="right">
+2.29979167
+</td>
+<td align="right">
+.839583333
+</td>
+</tr>
+<tr>
+<td>
+24-MAY-2016
+</td>
+<td align="right">
+     .7695
+</td>
+<td align="right">
+  1.211875
+</td>
+<td align="right">
+.502083333
+</td>
+</tr>
+<tr>
+<td>
+25-MAY-2016
+</td>
+<td align="right">
+.823666667
+</td>
+<td align="right">
+1.08816667
+</td>
+<td align="right">
+.458333333
+</td>
+</tr>
+<tr>
+<td>
+26-MAY-2016
+</td>
+<td align="right">
+1.11195833
+</td>
+<td align="right">
+1.51420833
+</td>
+<td align="right">
+     .7125
+</td>
+</tr>
+<tr>
+<td>
+27-MAY-2016
+</td>
+<td align="right">
+1.06583333
+</td>
+<td align="right">
+1.34341667
+</td>
+<td align="right">
+.740416667
+</td>
+</tr>
+<tr>
+<td>
+28-MAY-2016
+</td>
+<td align="right">
+   .442375
+</td>
+<td align="right">
+   .302875
+</td>
+<td align="right">
+    .06625
+</td>
+</tr>
+<tr>
+<td>
+29-MAY-2016
+</td>
+<td align="right">
+.464833333
+</td>
+<td align="right">
+.276333333
+</td>
+<td align="right">
+.092083333
+</td>
+</tr>
+<tr>
+<td>
+30-MAY-2016
+</td>
+<td align="right">
+1.14116667
+</td>
+<td align="right">
+2.06745833
+</td>
+<td align="right">
+.759583333
+</td>
+</tr>
+<tr>
+<td>
+31-MAY-2016
+</td>
+<td align="right">
+   .528375
+</td>
+<td align="right">
+  .9313125
+</td>
+<td align="right">
+   .196875
+</td>
+</tr>
+</table>
+<p>
+=======CPU_METRICS EP012======
+<br>
+<p>
+<table border='1' width='90%' align='center' summary='Script output'>
+<tr>
+<th scope="col">
+DAY
+</th>
+<th scope="col">
+HOST_CPU_UTIL_PCT
+</th>
+<th scope="col">
+ORA_CPU_UTIL_PCT
+</th>
+<th scope="col">
+ORA_CPU_WAIT_PCT
+</th>
+</tr>
+<tr>
+<td>
+01-MAY-2016
+</td>
+<td align="right">
+.727166667
+</td>
+<td align="right">
+1.44916667
+</td>
+<td align="right">
+.610416667
+</td>
+</tr>
+<tr>
+<td>
+02-MAY-2016
+</td>
+<td align="right">
+1.22954167
+</td>
+<td align="right">
+2.64895833
+</td>
+<td align="right">
+1.07958333
+</td>
+</tr>
+<tr>
+<td>
+03-MAY-2016
+</td>
+<td align="right">
+.939666667
+</td>
+<td align="right">
+2.04970833
+</td>
+<td align="right">
+.732083333
+</td>
+</tr>
+<tr>
+<td>
+04-MAY-2016
+</td>
+<td align="right">
+1.06679167
+</td>
+<td align="right">
+2.17316667
+</td>
+<td align="right">
+.877083333
+</td>
+</tr>
+<tr>
+<td>
+05-MAY-2016
+</td>
+<td align="right">
+1.05495833
+</td>
+<td align="right">
+   1.63275
+</td>
+<td align="right">
+.832083333
+</td>
+</tr>
+<tr>
+<td>
+06-MAY-2016
+</td>
+<td align="right">
+.754666667
+</td>
+<td align="right">
+  1.706125
+</td>
+<td align="right">
+.709166667
+</td>
+</tr>
+<tr>
+<td>
+07-MAY-2016
+</td>
+<td align="right">
+.750583333
+</td>
+<td align="right">
+1.43829167
+</td>
+<td align="right">
+       .57
+</td>
+</tr>
+<tr>
+<td>
+08-MAY-2016
+</td>
+<td align="right">
+     .7175
+</td>
+<td align="right">
+   1.22625
+</td>
+<td align="right">
+.519583333
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+      .311
+</td>
+<td align="right">
+      .593
+</td>
+<td align="right">
+	.2
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     1.293
+</td>
+<td align="right">
+     2.379
+</td>
+<td align="right">
+      1.17
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+      .845
+</td>
+<td align="right">
+     2.303
+</td>
+<td align="right">
+	.5
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     1.232
+</td>
+<td align="right">
+      2.76
+</td>
+<td align="right">
+      1.22
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+      1.29
+</td>
+<td align="right">
+     2.805
+</td>
+<td align="right">
+      1.17
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+      1.69
+</td>
+<td align="right">
+     2.625
+</td>
+<td align="right">
+      1.95
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     3.252
+</td>
+<td align="right">
+     3.848
+</td>
+<td align="right">
+       2.4
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     1.275
+</td>
+<td align="right">
+     4.873
+</td>
+<td align="right">
+      1.03
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     2.867
+</td>
+<td align="right">
+     4.789
+</td>
+<td align="right">
+      3.12
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     3.146
+</td>
+<td align="right">
+     4.336
+</td>
+<td align="right">
+      2.72
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+      .915
+</td>
+<td align="right">
+     5.599
+</td>
+<td align="right">
+	.6
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+      .321
+</td>
+<td align="right">
+      .999
+</td>
+<td align="right">
+       .02
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+      .278
+</td>
+<td align="right">
+      .302
+</td>
+<td align="right">
+       .05
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+      .255
+</td>
+<td align="right">
+      .163
+</td>
+<td align="right">
+       .27
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+      .722
+</td>
+<td align="right">
+     4.676
+</td>
+<td align="right">
+       .65
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     2.261
+</td>
+<td align="right">
+     3.492
+</td>
+<td align="right">
+      2.77
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     2.332
+</td>
+<td align="right">
+     3.207
+</td>
+<td align="right">
+       .95
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     1.002
+</td>
+<td align="right">
+     1.022
+</td>
+<td align="right">
+       .73
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+       .92
+</td>
+<td align="right">
+     1.016
+</td>
+<td align="right">
+       .58
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+      .884
+</td>
+<td align="right">
+     4.629
+</td>
+<td align="right">
+       .58
+</td>
+</tr>
+<tr>
+<td>
+11-MAY-2016
+</td>
+<td align="right">
+    1.7518
+</td>
+<td align="right">
+    1.3876
+</td>
+<td align="right">
+     1.892
+</td>
+</tr>
+<tr>
+<td>
+12-MAY-2016
+</td>
+<td align="right">
+  1.031125
+</td>
+<td align="right">
+1.95683333
+</td>
+<td align="right">
+.872083333
+</td>
+</tr>
+<tr>
+<td>
+13-MAY-2016
+</td>
+<td align="right">
+  1.023375
+</td>
+<td align="right">
+   1.78425
+</td>
+<td align="right">
+.814583333
+</td>
+</tr>
+<tr>
+<td>
+14-MAY-2016
+</td>
+<td align="right">
+   .417625
+</td>
+<td align="right">
+   .945625
+</td>
+<td align="right">
+.214166667
+</td>
+</tr>
+<tr>
+<td>
+15-MAY-2016
+</td>
+<td align="right">
+.246833333
+</td>
+<td align="right">
+     .6825
+</td>
+<td align="right">
+.046666667
+</td>
+</tr>
+<tr>
+<td>
+16-MAY-2016
+</td>
+<td align="right">
+1.53727273
+</td>
+<td align="right">
+2.95431818
+</td>
+<td align="right">
+1.69954545
+</td>
+</tr>
+<tr>
+<td>
+17-MAY-2016
+</td>
+<td align="right">
+  1.151125
+</td>
+<td align="right">
+1.91470833
+</td>
+<td align="right">
+       .85
+</td>
+</tr>
+<tr>
+<td>
+18-MAY-2016
+</td>
+<td align="right">
+1.03645833
+</td>
+<td align="right">
+1.67004167
+</td>
+<td align="right">
+.786666667
+</td>
+</tr>
+<tr>
+<td>
+19-MAY-2016
+</td>
+<td align="right">
+1.05554167
+</td>
+<td align="right">
+     1.671
+</td>
+<td align="right">
+    .85125
+</td>
+</tr>
+<tr>
+<td>
+20-MAY-2016
+</td>
+<td align="right">
+.717583333
+</td>
+<td align="right">
+1.83083333
+</td>
+<td align="right">
+1.04583333
+</td>
+</tr>
+<tr>
+<td>
+21-MAY-2016
+</td>
+<td align="right">
+   .796375
+</td>
+<td align="right">
+  1.511125
+</td>
+<td align="right">
+    .56875
+</td>
+</tr>
+<tr>
+<td>
+22-MAY-2016
+</td>
+<td align="right">
+    .89675
+</td>
+<td align="right">
+1.23916667
+</td>
+<td align="right">
+.571666667
+</td>
+</tr>
+<tr>
+<td>
+23-MAY-2016
+</td>
+<td align="right">
+  1.373125
+</td>
+<td align="right">
+2.85295833
+</td>
+<td align="right">
+1.17291667
+</td>
+</tr>
+<tr>
+<td>
+24-MAY-2016
+</td>
+<td align="right">
+1.53358333
+</td>
+<td align="right">
+2.31733333
+</td>
+<td align="right">
+    1.3375
+</td>
+</tr>
+<tr>
+<td>
+25-MAY-2016
+</td>
+<td align="right">
+1.07920833
+</td>
+<td align="right">
+   2.08025
+</td>
+<td align="right">
+.989583333
+</td>
+</tr>
+<tr>
+<td>
+26-MAY-2016
+</td>
+<td align="right">
+1.14066667
+</td>
+<td align="right">
+1.92429167
+</td>
+<td align="right">
+.939583333
+</td>
+</tr>
+<tr>
+<td>
+27-MAY-2016
+</td>
+<td align="right">
+1.50383333
+</td>
+<td align="right">
+2.34479167
+</td>
+<td align="right">
+1.33958333
+</td>
+</tr>
+<tr>
+<td>
+28-MAY-2016
+</td>
+<td align="right">
+.815041667
+</td>
+<td align="right">
+  1.428375
+</td>
+<td align="right">
+.609583333
+</td>
+</tr>
+<tr>
+<td>
+29-MAY-2016
+</td>
+<td align="right">
+       .57
+</td>
+<td align="right">
+1.27104167
+</td>
+<td align="right">
+      .495
+</td>
+</tr>
+<tr>
+<td>
+30-MAY-2016
+</td>
+<td align="right">
+1.57829167
+</td>
+<td align="right">
+2.98970833
+</td>
+<td align="right">
+1.48708333
+</td>
+</tr>
+<tr>
+<td>
+31-MAY-2016
+</td>
+<td align="right">
+ 2.4949375
+</td>
+<td align="right">
+    2.9685
+</td>
+<td align="right">
+  2.146875
+</td>
+</tr>
+</table>
+<p>
+======MEM_METRICS EP011=======
+<br>
+<p>
+<table border='1' width='90%' align='center' summary='Script output'>
+<tr>
+<th scope="col">
+DAY
+</th>
+<th scope="col">
+SGA_MAX_SIZE
+</th>
+<th scope="col">
+SGA_VARIABLE_SIZE
+</th>
+<th scope="col">
+SGA_TARGET
+</th>
+<th scope="col">
+PGA_AGGREGATE_TARGET
+</th>
+<th scope="col">
+PGA_ALLOCATED
+</th>
+<th scope="col">
+PGA_USED
+</th>
+</tr>
+<tr>
+<td>
+01-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+2.34750668
+</td>
+<td align="right">
+2.32861833
+</td>
+</tr>
+<tr>
+<td>
+02-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.44745048
+</td>
+<td align="right">
+3.35951853
+</td>
+</tr>
+<tr>
+<td>
+03-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.37539419
+</td>
+<td align="right">
+3.33391845
+</td>
+</tr>
+<tr>
+<td>
+04-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.67835573
+</td>
+<td align="right">
+ 3.6328038
+</td>
+</tr>
+<tr>
+<td>
+05-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.38590995
+</td>
+<td align="right">
+3.30202587
+</td>
+</tr>
+<tr>
+<td>
+06-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.56836236
+</td>
+<td align="right">
+3.50269266
+</td>
+</tr>
+<tr>
+<td>
+07-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.68160299
+</td>
+<td align="right">
+3.65176582
+</td>
+</tr>
+<tr>
+<td>
+08-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+2.97006778
+</td>
+<td align="right">
+2.95545117
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.89157641
+</td>
+<td align="right">
+3.80443144
+</td>
+</tr>
+<tr>
+<td>
+10-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.96140174
+</td>
+<td align="right">
+3.92377444
+</td>
+</tr>
+<tr>
+<td>
+11-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.88192622
+</td>
+<td align="right">
+3.79507844
+</td>
+</tr>
+<tr>
+<td>
+12-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+ 3.8975186
+</td>
+<td align="right">
+3.85401889
+</td>
+</tr>
+<tr>
+<td>
+13-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+ 3.8198059
+</td>
+<td align="right">
+3.76149952
+</td>
+</tr>
+<tr>
+<td>
+14-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+2.82589161
+</td>
+<td align="right">
+2.80386603
+</td>
+</tr>
+<tr>
+<td>
+15-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+.732685169
+</td>
+<td align="right">
+.717488289
+</td>
+</tr>
+<tr>
+<td>
+16-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+2.11446472
+</td>
+<td align="right">
+2.07694851
+</td>
+</tr>
+<tr>
+<td>
+17-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+2.29851596
+</td>
+<td align="right">
+2.25294276
+</td>
+</tr>
+<tr>
+<td>
+18-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+ 2.4768848
+</td>
+<td align="right">
+2.43152424
+</td>
+</tr>
+<tr>
+<td>
+19-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+2.51385848
+</td>
+<td align="right">
+ 2.4610606
+</td>
+</tr>
+<tr>
+<td>
+20-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+2.73041634
+</td>
+<td align="right">
+2.67644342
+</td>
+</tr>
+<tr>
+<td>
+21-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+2.57662515
+</td>
+<td align="right">
+ 2.5320849
+</td>
+</tr>
+<tr>
+<td>
+22-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+2.05152337
+</td>
+<td align="right">
+2.01807467
+</td>
+</tr>
+<tr>
+<td>
+23-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.02502894
+</td>
+<td align="right">
+2.95098245
+</td>
+</tr>
+<tr>
+<td>
+24-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.11493472
+</td>
+<td align="right">
+3.05988546
+</td>
+</tr>
+<tr>
+<td>
+25-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.15722724
+</td>
+<td align="right">
+3.10589413
+</td>
+</tr>
+<tr>
+<td>
+26-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.31458183
+</td>
+<td align="right">
+3.19216756
+</td>
+</tr>
+<tr>
+<td>
+27-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.47113915
+</td>
+<td align="right">
+3.39134232
+</td>
+</tr>
+<tr>
+<td>
+28-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+2.77950903
+</td>
+<td align="right">
+2.74217884
+</td>
+</tr>
+<tr>
+<td>
+29-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+2.74558834
+</td>
+<td align="right">
+2.70829678
+</td>
+</tr>
+<tr>
+<td>
+30-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+3.49145218
+</td>
+<td align="right">
+3.43319209
+</td>
+</tr>
+<tr>
+<td>
+31-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 8
+</td>
+<td align="right">
+1.04620212
+</td>
+<td align="right">
+ 1.0237028
+</td>
+</tr>
+</table>
+<p>
+======MEM_METRICS EP012=======
+<br>
+<p>
+<table border='1' width='90%' align='center' summary='Script output'>
+<tr>
+<th scope="col">
+DAY
+</th>
+<th scope="col">
+SGA_MAX_SIZE
+</th>
+<th scope="col">
+SGA_VARIABLE_SIZE
+</th>
+<th scope="col">
+SGA_TARGET
+</th>
+<th scope="col">
+PGA_AGGREGATE_TARGET
+</th>
+<th scope="col">
+PGA_ALLOCATED
+</th>
+<th scope="col">
+PGA_USED
+</th>
+</tr>
+<tr>
+<td>
+01-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.758511225
+</td>
+<td align="right">
+ .75707674
+</td>
+</tr>
+<tr>
+<td>
+02-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.830474615
+</td>
+<td align="right">
+.796978831
+</td>
+</tr>
+<tr>
+<td>
+03-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.781502724
+</td>
+<td align="right">
+.774840554
+</td>
+</tr>
+<tr>
+<td>
+04-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.852757692
+</td>
+<td align="right">
+.800952236
+</td>
+</tr>
+<tr>
+<td>
+05-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.770052512
+</td>
+<td align="right">
+.760456999
+</td>
+</tr>
+<tr>
+<td>
+06-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+ .74522535
+</td>
+<td align="right">
+ .73413384
+</td>
+</tr>
+<tr>
+<td>
+07-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.737999598
+</td>
+<td align="right">
+ .73465089
+</td>
+</tr>
+<tr>
+<td>
+08-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.724346121
+</td>
+<td align="right">
+.722253601
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.694809914
+</td>
+<td align="right">
+.694626808
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.700119972
+</td>
+<td align="right">
+.699936867
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.738440514
+</td>
+<td align="right">
+.738031387
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.780467987
+</td>
+<td align="right">
+.779734612
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.781910896
+</td>
+<td align="right">
+.781727791
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.780516624
+</td>
+<td align="right">
+.779036522
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.750418663
+</td>
+<td align="right">
+.749145508
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+1.08774567
+</td>
+<td align="right">
+1.08667755
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.773398399
+</td>
+<td align="right">
+.772330284
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+ .76744175
+</td>
+<td align="right">
+.764523506
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+1.47204304
+</td>
+<td align="right">
+1.44547939
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.698871613
+</td>
+<td align="right">
+.698284149
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.699033737
+</td>
+<td align="right">
+.698850632
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+1.09921837
+</td>
+<td align="right">
+.799173355
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+ .78192997
+</td>
+<td align="right">
+.781196594
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.766089439
+</td>
+<td align="right">
+ .76530838
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.771531105
+</td>
+<td align="right">
+.770768166
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.778827667
+</td>
+<td align="right">
+.778064728
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+1.16762066
+</td>
+<td align="right">
+1.14201736
+</td>
+</tr>
+<tr>
+<td>
+09-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.796593666
+</td>
+<td align="right">
+.796410561
+</td>
+</tr>
+<tr>
+<td>
+11-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.806049728
+</td>
+<td align="right">
+.802741623
+</td>
+</tr>
+<tr>
+<td>
+12-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.784714818
+</td>
+<td align="right">
+.780837536
+</td>
+</tr>
+<tr>
+<td>
+13-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.759120107
+</td>
+<td align="right">
+.753949086
+</td>
+</tr>
+<tr>
+<td>
+14-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.680655678
+</td>
+<td align="right">
+.679748535
+</td>
+</tr>
+<tr>
+<td>
+15-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.531667789
+</td>
+<td align="right">
+.531478008
+</td>
+</tr>
+<tr>
+<td>
+16-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.887628729
+</td>
+<td align="right">
+.861126813
+</td>
+</tr>
+<tr>
+<td>
+17-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.790814519
+</td>
+<td align="right">
+.788196166
+</td>
+</tr>
+<tr>
+<td>
+18-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.817587256
+</td>
+<td align="right">
+.799203595
+</td>
+</tr>
+<tr>
+<td>
+19-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.835005442
+</td>
+<td align="right">
+.820049326
+</td>
+</tr>
+<tr>
+<td>
+20-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.845886668
+</td>
+<td align="right">
+.839978774
+</td>
+</tr>
+<tr>
+<td>
+21-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.781999032
+</td>
+<td align="right">
+.780762712
+</td>
+</tr>
+<tr>
+<td>
+22-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.778642774
+</td>
+<td align="right">
+.776006937
+</td>
+</tr>
+<tr>
+<td>
+23-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.889166713
+</td>
+<td align="right">
+ .86770161
+</td>
+</tr>
+<tr>
+<td>
+24-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.921661536
+</td>
+<td align="right">
+.903309306
+</td>
+</tr>
+<tr>
+<td>
+25-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.815207918
+</td>
+<td align="right">
+.811691682
+</td>
+</tr>
+<tr>
+<td>
+26-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.797726989
+</td>
+<td align="right">
+.796472549
+</td>
+</tr>
+<tr>
+<td>
+27-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.824304978
+</td>
+<td align="right">
+.818458358
+</td>
+</tr>
+<tr>
+<td>
+28-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.791611671
+</td>
+<td align="right">
+ .78927354
+</td>
+</tr>
+<tr>
+<td>
+29-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.784395774
+</td>
+<td align="right">
+.783403834
+</td>
+</tr>
+<tr>
+<td>
+30-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.856450915
+</td>
+<td align="right">
+.835290313
+</td>
+</tr>
+<tr>
+<td>
+31-MAY-2016
+</td>
+<td align="right">
+     15.93
+</td>
+<td align="right">
+     15.91
+</td>
+<td align="right">
+	16
+</td>
+<td align="right">
+	 6
+</td>
+<td align="right">
+.744555712
+</td>
+<td align="right">
+  .7267133
+</td>
+</tr>
+</table>
+<p>

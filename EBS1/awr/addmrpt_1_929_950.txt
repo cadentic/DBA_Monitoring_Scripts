@@ -1,0 +1,640 @@
+          ADDM Report for Task 'TASK_110442'
+          ----------------------------------
+
+Analysis Period
+---------------
+AWR snapshot range from 929 to 950.
+Time period starts at 25-JUN-15 12.30.05 AM
+Time period ends at 25-JUN-15 09.30.36 PM
+
+Analysis Target
+---------------
+Database 'EBS' with DB ID 2012991160.
+Database version 11.2.0.2.0.
+ADDM performed an analysis of instance EBS1, numbered 1 and hosted at
+sreikolebz1.srei.com.
+
+Activity During the Analysis Period
+-----------------------------------
+Total database time was 324961 seconds.
+The average number of active sessions was 4.3.
+
+Summary of Findings
+-------------------
+   Description                               Active Sessions      Recommendation
+s
+                                             Percent of Activity
+   ----------------------------------------  -------------------  --------------
+-
+1  Top SQL Statements                        1.64 | 38.16         5
+2  Top Segments by "User I/O" and "Cluster"  .71 | 16.43          1
+3  Undersized SGA                            .27 | 6.39           1
+4  Unusual "Application" Wait Event          .22 | 5.02           4
+5  Shared Pool Latches                       .14 | 3.31           1
+6  PL/SQL Execution                          .1 | 2.34            5
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+          Findings and Recommendations
+          ----------------------------
+
+Finding 1: Top SQL Statements
+Impact is 1.64 active sessions, 38.16% of total activity.
+---------------------------------------------------------
+SQL statements consuming significant database time were found. These
+statements offer a good opportunity for performance improvement.
+
+   Recommendation 1: SQL Tuning
+   Estimated benefit is .77 active sessions, 17.85% of total activity.
+   -------------------------------------------------------------------
+   Action
+      Run SQL Tuning Advisor on the SELECT statement with SQL_ID
+      "12777w8cuf5j2".
+      Related Object
+         SQL statement with SQL_ID 12777w8cuf5j2.
+         SELECT '"' || TRIM (COL_A) || '",' || '"' || TRIM (COL_B) || '",' ||
+         '"' || TRIM (COL_C) || '",' || '"' || TRIM (COL_D) || '",' || '"' ||
+         TRIM (COL_E) || '",' || '"' || TRIM (COL_F) || '",' || '"' || TRIM
+         (COL_G) || '",' || '"' || TRIM (COL_H) || '",' || '"' || TRIM (COL_I)
+         || '",' || '"' || TRIM (COL_J) || '",' || '"' || TRIM (COL_K) || '",'
+         || '"' || TRIM (COL_L) || '",' || '"' || TRIM (COL_M) || '",' || '"'
+         || TRIM (COL_N) || '",' || '"' || TRIM (COL_O) || '",' || '"' || TRIM
+         (COL_P) || '",' || '"' || TRIM (COL_Q) || '",' || '"' || TRIM (COL_R)
+         || '",' || '"' || TRIM (COL_S) || '",' || '"' || TRIM (COL_T) || '",'
+         || '"' || TRIM (COL_U) || '",' || '"' || TRIM (COL_V) || '",' || '"'
+         || TRIM (COL_W) || '",' || '"' || TRIM (COL_X) || '",' || '"' || TRIM
+         (COL_Y) || '",' || '"' || TRIM (COL_Z) || '",' || '"' || TRIM
+         (COL_AA) || '",' || '"' || TRIM (COL_AB) || '",' || '"' || TRIM
+         (COL_AC) || '",' || '"' || TRIM (COL_AD) || '",' || '"' || TRIM
+         (COL_AE) || '",' || '"' || TRIM (COL_AF) || '",' || '"' || TRIM
+         (COL_AG) || '",' || '"' || TRIM (COL_AH) || '",' || '"' || TRIM
+         (COL_AI) || '",' || '"' || TRIM (COL_AJ) || '",' || '"' || TRIM
+         (COL_AK) || '",' || '"' || TRIM (COL_AL) || '",' || '"' || TRIM
+         (COL_AM) || '",' || '"' || TRIM (COL_AN) || '",' || '"' || TRIM
+         (COL_AO) || '",' || '"' || TRIM (COL_AP) || '",' || '"' || TRIM
+         (COL_AQ) || '",' || '"' || TRIM (COL_AR) || '",' || '"' || TRIM
+         (COL_AS) || '",' || '"' || TRIM (COL_AT) || '",' || '"' || TRIM
+         (COL_AU) || '",' || '"' || TRIM (COL_AV) || '",' || '"' || TRIM
+         (COL_AW) || '",' || '"' || TRIM (COL_AX) || '",' || '"' || TRIM
+         (COL_AY) || '",' || '"' || TRIM (COL_AZ) || '",' || '"' || TRIM
+         (COL_BA) || '",' || '"' || TRIM (COL_BB) || '",' || '"' || TRIM
+         (COL_BC) || '",' || '"' || TRIM (COL_BD) || '",' || '"' || TRIM
+         (COL_BE) || '",' || '"' || TRIM (COL_BF) || '",' || '"' || TRIM
+         (COL_BG) || '",' || '"' || TRIM (COL_BH) || '",' || '"' || TRIM
+         (COL_BI) || '",' || '"' || TRIM (COL_BJ) || '",' || '"' || TRIM
+         (COL_BK) || '",' || '"' || TRIM (COL_BL) || '",' || '"' || TRIM
+         (COL_BM) || '",' || '"' || TRIM (COL_BN) || '",' || '"' || TRIM
+         (COL_BO) || '",' || '"' || TRIM (COL_BP) || '",' || '"' || TRIM
+         (COL_BQ) || '",' || '"' || TRIM (COL_BR) || '",' || '"' || TRIM
+         (COL_BS) || '",' || '"' || TRIM (COL_BT) || '",' || '"' || TRIM
+         (COL_BU) || '",' || '"' || TRIM (COL_BV) || '",' || '"' || TRIM
+         (COL_BW) || '",' || '"' || TRIM (COL_BX) || '",' || '"' || TRIM
+         (COL_BY) || '",' || '"' || TRIM (COL_BZ) || '",' || '"' || TRIM
+         (COL_CA) || '",' || '"' || TRIM (COL_CB) || '",' || '"' || TRIM
+         (COL_CC) || '",' || '"' || TRIM (COL_CD) || '",' || '"' || TRIM
+         (COL_CE) || '",' || '"' || TRIM (COL_CF) || '",' || '"' || TRIM
+         (COL_CG) || '",' || '"' || TRIM (COL_CH) || '",' || '"' || TRIM
+         (COL_CI) || '",' FROM PWC_CSV_TBL WHERE KEY_ID = :B2 AND ROW_NO = :B1
+   Rationale
+      The SQL spent 99% of its database time on CPU, I/O and Cluster waits.
+      This part of database time may be improved by the SQL Tuning Advisor.
+   Rationale
+      Database time for this SQL was divided as follows: 100% for SQL
+      execution, 0% for parsing, 0% for PL/SQL execution and 0% for Java
+      execution.
+   Rationale
+      SQL statement with SQL_ID "12777w8cuf5j2" was executed 1786 times and
+      had an average elapsed time of 32 seconds.
+   Rationale
+      Full scan of TABLE "APPS.PWC_CSV_TBL" with object ID 4436596 consumed
+      99% of the database time spent on this SQL statement.
+   Rationale
+      Top level calls to execute the PL/SQL statement with SQL_ID
+      "76h4hqmkn96q6" are responsible for 100% of the database time spent on
+      the SELECT statement with SQL_ID "12777w8cuf5j2".
+      Related Object
+         SQL statement with SQL_ID 76h4hqmkn96q6.
+         BEGIN apps.yy_account_analysis_gen_csv.gen_csv_prc(:errbuf,:rc,:A0,:A
+         1,:A2,:A3,:A4,:A5,:A6,:A7); END;
+
+   Recommendation 2: SQL Tuning
+   Estimated benefit is .32 active sessions, 7.43% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Run SQL Tuning Advisor on the SELECT statement with SQL_ID
+      "durnvd86fsnt5".
+      Related Object
+         SQL statement with SQL_ID durnvd86fsnt5.
+         SELECT SUM (NVL (GJL.ACCOUNTED_DR, 0) - NVL (GJL.ACCOUNTED_CR, 0))
+         FROM GL_JE_BATCHES GJB, GL_JE_HEADERS GJH, GL_JE_LINES GJL,
+         GL_LEDGERS GLG, GL_JE_SOURCES GJS, GL_JE_CATEGORIES GJC,
+         GL_CODE_COMBINATIONS_KFV GCCK, HR_OPERATING_UNITS HRU WHERE
+         GJB.JE_BATCH_ID = GJH.JE_BATCH_ID AND GJH.JE_HEADER_ID =
+         GJL.JE_HEADER_ID AND GJH.LEDGER_ID = GLG.LEDGER_ID AND GJH.JE_SOURCE
+         = GJS.JE_SOURCE_NAME AND GJH.JE_CATEGORY = GJC.JE_CATEGORY_NAME AND
+         GJL.CODE_COMBINATION_ID = GCCK.CODE_COMBINATION_ID AND
+         GLG.CHART_OF_ACCOUNTS_ID = GCCK.CHART_OF_ACCOUNTS_ID AND
+         GJH.JE_SOURCE = :B5 AND GLG.LEDGER_ID = HRU.SET_OF_BOOKS_ID AND
+         GJH.DEFAULT_EFFECTIVE_DATE >= TRUNC (:B4 ) AND
+         GJH.DEFAULT_EFFECTIVE_DATE <= TRUNC (:B3 ) AND HRU.ORGANIZATION_ID =
+         :B2 AND GCCK.SEGMENT5 = :B1 AND GJH.STATUS = 'P'
+   Rationale
+      The SQL spent 100% of its database time on CPU, I/O and Cluster waits.
+      This part of database time may be improved by the SQL Tuning Advisor.
+   Rationale
+      Database time for this SQL was divided as follows: 0% for SQL execution,
+      0% for parsing, 100% for PL/SQL execution and 0% for Java execution.
+   Rationale
+      SQL statement with SQL_ID "durnvd86fsnt5" was executed 3220 times and
+      had an average elapsed time of 7.4 seconds.
+
+   Recommendation 3: SQL Tuning
+   Estimated benefit is .24 active sessions, 5.56% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Run SQL Tuning Advisor on the SELECT statement with SQL_ID
+      "d8gwadyy5h64q".
+      Related Object
+         SQL statement with SQL_ID d8gwadyy5h64q.
+         SELECT CASH_POSTED_FLAG FROM AP_INVOICE_DISTRIBUTIONS_ALL WHERE
+         INVOICE_ID = :B2 AND :B1 = 'Y' UNION SELECT ACCRUAL_POSTED_FLAG FROM
+         AP_INVOICE_DISTRIBUTIONS_ALL WHERE INVOICE_ID = :B2 AND :B1 <>'Y'
+         UNION SELECT 'P' FROM AP_INVOICE_DISTRIBUTIONS_ALL WHERE INVOICE_ID =
+         :B2 AND ((CASH_POSTED_FLAG = 'Y' AND :B1 = 'Y') OR
+         (ACCRUAL_POSTED_FLAG = 'Y' AND :B1 <> 'Y')) AND EXISTS (SELECT 'An N
+         is also in the valid flags' FROM AP_INVOICE_DISTRIBUTIONS_ALL WHERE
+         INVOICE_ID = :B2 AND ((CASH_POSTED_FLAG = 'N' AND :B1 = 'Y') OR
+         (ACCRUAL_POSTED_FLAG = 'N' AND :B1 <> 'Y')) UNION SELECT 'An N is
+         also in the valid flags' FROM AP_PREPAY_HISTORY_ALL WHERE INVOICE_ID
+         = :B2 AND POSTED_FLAG = 'N' AND TRANSACTION_TYPE = 'PREPAYMENT
+         APPLICATION ADJ' UNION SELECT 'An N is also in the valid flags' FROM
+         AP_SELF_ASSESSED_TAX_DIST_ALL WHERE INVOICE_ID = :B2 AND
+         ((CASH_POSTED_FLAG = 'N' AND :B1 = 'Y') OR (ACCRUAL_POSTED_FLAG = 'N'
+         AND :B1 <> 'Y')) ) UNION SELECT CASH_POSTED_FLAG FROM
+         AP_SELF_ASSESSED_TAX_DIST_ALL WHERE INVOICE_ID = :B2 AND :B1 = 'Y'
+         UNION SELECT ACCRUAL_POSTED_FLAG FROM AP_SELF_ASSESSED_TAX_DIST_ALL
+         WHERE INVOICE_ID = :B2 AND :B1 <>'Y' UNION SELECT 'P' FROM
+         AP_SELF_ASSESSED_TAX_DIST_ALL WHERE INVOICE_ID = :B2 AND
+         ((CASH_POSTED_FLAG = 'Y' AND :B1 = 'Y') OR (ACCRUAL_POSTED_FLAG = 'Y'
+         AND :B1 <> 'Y')) AND EXISTS (SELECT 'An N is also in the valid flags'
+         FROM AP_SELF_ASSESSED_TAX_DIST_ALL WHERE INVOICE_ID = :B2 AND
+         ((CASH_POSTED_FLAG = 'N' AND :B1 = 'Y') OR (ACCRUAL_POSTED_FLAG = 'N'
+         AND :B1 <> 'Y')) UNION SELECT 'An N is also in the valid flags' FROM
+         AP_INVOICE_DISTRIBUTIONS_ALL WHERE INVOICE_ID = :B2 AND
+         ((CASH_POSTED_FLAG = 'N' AND :B1 = 'Y') OR (ACCRUAL_POSTED_FLAG = 'N'
+         AND :B1 <> 'Y')) UNION SELECT 'An N is also in the valid flags' FROM
+         AP_PREPAY_HISTORY_ALL WHERE INVOICE_ID = :B2 AND POSTED_FLAG = 'N'
+         AND TRANSACTION_TYPE = 'PREPAYMENT APPLICATION ADJ') UNION SELECT
+         POSTED_FLAG FROM AP_PREPAY_HISTORY_ALL WHERE INVOICE_ID = :B2 AND
+         TRANSACTION_TYPE = 'PREPAYMENT APPLICATION ADJ' UNION SELECT 'P' FROM
+         AP_PREPAY_HISTORY_ALL WHERE INVOICE_ID = :B2 AND TRANSACTION_TYPE =
+         'PREPAYMENT APPLICATION ADJ' AND POSTED_FLAG = 'Y' AND EXISTS (SELECT
+         'An N is also in the valid flags' FROM AP_INVOICE_DISTRIBUTIONS_ALL
+         WHERE INVOICE_ID = :B2 AND ((CASH_POSTED_FLAG = 'N' AND :B1 = 'Y') OR
+         (ACCRUAL_POSTED_FLAG = 'N' AND :B1 <> 'Y')) UNION SELECT 'An N is
+         also in the valid flags' FROM AP_PREPAY_HISTORY_ALL WHERE INVOICE_ID
+         = :B2 AND POSTED_FLAG = 'N' AND TRANSACTION_TYPE = 'PREPAYMENT
+         APPLICATION ADJ' UNION SELECT 'An N is also in the valid flags' FROM
+         AP_SELF_ASSESSED_TAX_DIST_ALL WHERE INVOICE_ID = :B2 AND
+         ((CASH_POSTED_FLAG = 'N' AND :B1 = 'Y') OR (ACCRUAL_POSTED_FLAG = 'N'
+         AND :B1 <> 'Y')) )
+   Rationale
+      The SQL spent 100% of its database time on CPU, I/O and Cluster waits.
+      This part of database time may be improved by the SQL Tuning Advisor.
+   Rationale
+      Database time for this SQL was divided as follows: 96% for SQL
+      execution, 0% for parsing, 4% for PL/SQL execution and 0% for Java
+      execution.
+   Rationale
+      SQL statement with SQL_ID "d8gwadyy5h64q" was executed 403552 times and
+      had an average elapsed time of 0.044 seconds.
+   Rationale
+      At least 2 distinct execution plans were utilized for this SQL statement
+      during the analysis period.
+   Rationale
+      Top level calls to execute the SELECT statement with SQL_ID
+      "anr243gcnxzdx" are responsible for 91% of the database time spent on
+      the SELECT statement with SQL_ID "d8gwadyy5h64q".
+      Related Object
+         SQL statement with SQL_ID anr243gcnxzdx.
+         select distinct aps.VENDOR_NAME Supplier_Name,
+         aps.segment1 Supplier_No,
+         aia.invoice_id,
+         aia.invoice_num,
+         aia.invoice_date,
+         aia.gl_date,
+         aia.invoice_type,
+         aia.invoice_amount,
+         aia.doc_sequence_value Voucher_No,
+         aida.status  Distribution_Status,
+         aia.APPROVAL_STATUS_lookup_code Invoice_Status,
+         fu.description  user_name,
+         fu.user_id,
+         XXSREI_EMP_LOCATION_FUNC( fu.user_id)  Location ,
+         :P_PERIOD_FR_STDT,
+         :P_PERIOD_TO_ENDT,
+         (select
+         MEANING from FND_LOOKUP_VALUES_VL ,hr_operating_units where
+         LOOKUP_TYPE = 'XX_ORGANIZATION_NAME' and name = lookup_code and
+         ORGANIZATION_ID=:p_org_id)  Organization_Name,
+         decode(aia.posting_flag,'N','No','P','Partial')    Accounted
+         from ap_invoice_distributions_v  aida,
+         ap_invoice_lines_v          ail,
+         ap_invoices_v               aia,
+         ap_suppliers                aps,
+         fnd_user                    fu
+         where aia.invoice_id=ail.invoice_id
+         and  ail.invoice_id=aida.invoice_id
+         and  aia.vendor_id= aps.vendor_id
+         and  aia.created_by=fu.user_id
+         and  aida.status in ('Never Validated','Needs Revalidation')
+         and aida.org_id=:p_org_id
+         and Trunc(ail.gl_date)>=:P_PERIOD_FR_STDT  and
+         Trunc(ail.gl_date)<=:P_PERIOD_TO_ENDT
+         UNION
+         select distinct aps.VENDOR_NAME Supplier_Name,
+         aps.segment1 Supplier_No,
+         aia.invoice_id,
+         aia.invoice_num,
+         aia.invoice_date,
+         aia.gl_date,
+         aia.invoice_type,
+         aia.invoice_amount,
+         aia.doc_sequence_value Voucher_No,
+         aida.status  Distribution_Status,
+         aia.APPROVAL_STATUS_lookup_code Invoice_Status,
+         fu.description  user_name,
+         fu.user_id,
+         XXSREI_EMP_LOCATION_FUNC( fu.user_id)  Location,
+         :P_PERIOD_FR_STDT,
+         :P_PERIOD_TO_ENDT,
+         (select
+         MEANING from FND_LOOKUP_VALUES_VL ,hr_operating_units where
+         LOOKUP_TYPE = 'XX_ORGANIZATION_NAME' and name = lookup_code and
+         ORGANIZATION_ID= :p_org_id)  Organization_Name,
+         decode(aia.posting_flag,'N','No','P','Partial')    Accounted
+         from ap_invoice_distributions_v  aida,
+         ap_invoices_v                 aia,
+         ap_invoice_lines_v          ail,
+         ap_suppliers                    aps,
+         fnd_user                          fu
+         where aia.invoice_id=ail.invoice_id
+         and  ail.invoice_id=aida.invoice_id
+         and  aia.vendor_id= aps.vendor_id
+         and  aia.created_by=fu.user_id
+         and aida.status='Validated'
+         and aida.org_id=:p_org_id
+         and Trunc(ail.gl_date)>=:P_PERIOD_FR_STDT and
+         Trunc(ail.gl_date)<=:P_PERIOD_TO_ENDT
+         and aia.posting_flag in ('N','P')
+         UNION
+         select distinct aps.VENDOR_NAME Supplier_Name,
+         aps.segment1 Supplier_No,
+         aia.invoice_id,
+         aia.invoice_num,
+         aia.invoice_date,
+         aia.gl_date,
+         aia.invoice_type,
+         aia.invoice_amount,
+         aia.doc_sequence_value Voucher_No,
+         'Never Validated'  Distribution_Status,
+         aia.APPROVAL_STATUS_lookup_code Invoice_Status,
+         fu.description  user_name,
+         fu.user_id,
+         XXSREI_EMP_LOCATION_FUNC( fu.user_id)    Location,
+         :P_PERIOD_FR_STDT,
+         :P_PERIOD_TO_ENDT,
+         (select
+         MEANING from FND_LOOKUP_VALUES_VL ,hr_operating_units where
+         LOOKUP_TYPE = 'XX_ORGANIZATION_NAME' and name = lookup_code and
+         ORGANIZATION_ID= :p_org_id)  Organization_Name,
+         decode(aia.posting_flag,'N','No','P','Partial')   Accounted
+         from ap_invoice_lines_v ail,
+         ap_invoices_v      aia,
+         ap_suppliers       aps,
+         fnd_user           fu
+         where aia.invoice_id=ail.invoice_id
+         and  aia.vendor_id= aps.vendor_id
+         and  aia.created_by=fu.user_id
+         and aia.source <>'INDIA TDS'
+         and aia.org_id=:p_org_id
+         and ail.validation_status='NEVER APPROVED'
+         and ail.validation_status!='CANCELLED'
+         and not exists ( select 'x' from ap_invoice_distributions_v aid where
+         ail.invoice_id=aid.invoice_id)
+         and Trunc(ail.gl_date)>=:P_PERIOD_FR_STDT and
+         Trunc(ail.gl_date)<=:P_PERIOD_TO_ENDT
+         order by 1,2,4,9,5
+
+   Recommendation 4: SQL Tuning
+   Estimated benefit is .18 active sessions, 4.17% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Run SQL Tuning Advisor on the SELECT statement with SQL_ID
+      "7xx25ktvmc77g".
+      Related Object
+         SQL statement with SQL_ID 7xx25ktvmc77g.
+         SELECT SUM (GJL.ACCOUNTED_DR) JOURNAL_ACCOUNTED_DR, SUM
+         (GJL.ACCOUNTED_CR) JOURNAL_ACCOUNTED_CR FROM GL_JE_BATCHES GJB,
+         GL_JE_HEADERS GJH, GL_JE_LINES GJL, GL_LEDGERS GLG, GL_JE_SOURCES
+         GJS, GL_JE_CATEGORIES GJC, GL_CODE_COMBINATIONS_KFV GCCK,
+         HR_OPERATING_UNITS HRU WHERE GJB.JE_BATCH_ID = GJH.JE_BATCH_ID AND
+         GJH.JE_HEADER_ID = GJL.JE_HEADER_ID AND GJH.LEDGER_ID = GLG.LEDGER_ID
+         AND GJH.JE_SOURCE = GJS.JE_SOURCE_NAME AND GJH.JE_CATEGORY =
+         GJC.JE_CATEGORY_NAME AND GJL.CODE_COMBINATION_ID =
+         GCCK.CODE_COMBINATION_ID AND GLG.CHART_OF_ACCOUNTS_ID =
+         GCCK.CHART_OF_ACCOUNTS_ID AND GJH.JE_SOURCE IN ('2') AND
+         GLG.LEDGER_ID = HRU.SET_OF_BOOKS_ID AND GJH.DEFAULT_EFFECTIVE_DATE >=
+         TRUNC (:B4 ) AND GJH.DEFAULT_EFFECTIVE_DATE <= TRUNC (:B3 ) AND
+         HRU.ORGANIZATION_ID = :B2 AND GCCK.SEGMENT5 = :B1 AND GJH.STATUS =
+         'P'
+   Rationale
+      The SQL spent 100% of its database time on CPU, I/O and Cluster waits.
+      This part of database time may be improved by the SQL Tuning Advisor.
+   Rationale
+      Database time for this SQL was divided as follows: 0% for SQL execution,
+      0% for parsing, 100% for PL/SQL execution and 0% for Java execution.
+   Rationale
+      SQL statement with SQL_ID "7xx25ktvmc77g" was executed 1071 times and
+      had an average elapsed time of 12 seconds.
+
+   Recommendation 5: SQL Tuning
+   Estimated benefit is .13 active sessions, 3.14% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Run SQL Tuning Advisor on the SELECT statement with SQL_ID
+      "dwd9c3pxvna28".
+      Related Object
+         SQL statement with SQL_ID dwd9c3pxvna28.
+         SELECT SUM (GJL.ACCOUNTED_DR) JOURNAL_ACCOUNTED_DR, SUM
+         (GJL.ACCOUNTED_CR) JOURNAL_ACCOUNTED_CR FROM GL_JE_BATCHES GJB,
+         GL_JE_HEADERS GJH, GL_JE_LINES GJL, GL_LEDGERS GLG, GL_JE_SOURCES
+         GJS, GL_JE_CATEGORIES GJC, GL_CODE_COMBINATIONS_KFV GCCK,
+         HR_OPERATING_UNITS HRU WHERE GJB.JE_BATCH_ID = GJH.JE_BATCH_ID AND
+         GJH.JE_HEADER_ID = GJL.JE_HEADER_ID AND GJH.LEDGER_ID = GLG.LEDGER_ID
+         AND GJH.JE_SOURCE = GJS.JE_SOURCE_NAME AND GJH.JE_CATEGORY =
+         GJC.JE_CATEGORY_NAME AND GJL.CODE_COMBINATION_ID =
+         GCCK.CODE_COMBINATION_ID AND GLG.CHART_OF_ACCOUNTS_ID =
+         GCCK.CHART_OF_ACCOUNTS_ID AND GJH.JE_SOURCE NOT IN ('Payables',
+         'Receivables', 'Assets', '1', '2', '3', '4', '5') AND GLG.LEDGER_ID =
+         HRU.SET_OF_BOOKS_ID AND GJH.DEFAULT_EFFECTIVE_DATE >= TRUNC (:B4 )
+         AND GJH.DEFAULT_EFFECTIVE_DATE <= TRUNC (:B3 ) AND
+         HRU.ORGANIZATION_ID = :B2 AND GCCK.SEGMENT5 = :B1 AND GJH.STATUS =
+         'P'
+   Rationale
+      The SQL spent 100% of its database time on CPU, I/O and Cluster waits.
+      This part of database time may be improved by the SQL Tuning Advisor.
+   Rationale
+      Database time for this SQL was divided as follows: 0% for SQL execution,
+      0% for parsing, 100% for PL/SQL execution and 0% for Java execution.
+   Rationale
+      SQL statement with SQL_ID "dwd9c3pxvna28" was executed 1074 times and
+      had an average elapsed time of 9.5 seconds.
+
+
+Finding 2: Top Segments by "User I/O" and "Cluster"
+Impact is .71 active sessions, 16.43% of total activity.
+--------------------------------------------------------
+Individual database segments responsible for significant "User I/O" and
+"Cluster" waits were found.
+
+   Recommendation 1: Segment Tuning
+   Estimated benefit is .71 active sessions, 16.43% of total activity.
+   -------------------------------------------------------------------
+   Action
+      Run "Segment Advisor" on TABLE "APPS.PWC_CSV_TBL" with object ID
+      4436596.
+      Related Object
+         Database object with ID 4436596.
+   Action
+      Investigate application logic involving I/O on TABLE "APPS.PWC_CSV_TBL"
+      with object ID 4436596.
+      Related Object
+         Database object with ID 4436596.
+   Action
+      Look at the "Top SQL Statements" finding for SQL statements consuming
+      significant I/O on this segment. For example, the SELECT statement with
+      SQL_ID "12777w8cuf5j2" is responsible for 100% of "User I/O" and
+      "Cluster" waits for this segment.
+   Rationale
+      The I/O usage statistics for the object are: 1798 full object scans,
+      540183178 physical reads, 70 physical writes and 539881449 direct reads.
+
+   Symptoms That Led to the Finding:
+   ---------------------------------
+      Wait class "User I/O" was consuming significant database time.
+      Impact is 1.02 active sessions, 23.62% of total activity.
+
+
+Finding 3: Undersized SGA
+Impact is .27 active sessions, 6.39% of total activity.
+-------------------------------------------------------
+The SGA was inadequately sized, causing additional I/O or hard parses.
+The value of parameter "sga_target" was "16384 M" during the analysis period.
+
+   Recommendation 1: Database Configuration
+   Estimated benefit is .08 active sessions, 1.79% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Increase the size of the SGA by setting the parameter "sga_target" to
+      18432 M.
+
+   Symptoms That Led to the Finding:
+   ---------------------------------
+      Wait class "User I/O" was consuming significant database time.
+      Impact is 1.02 active sessions, 23.62% of total activity.
+      Hard parsing of SQL statements was consuming significant database time.
+      Impact is .1 active sessions, 2.35% of total activity.
+
+
+Finding 4: Unusual "Application" Wait Event
+Impact is .22 active sessions, 5.02% of total activity.
+-------------------------------------------------------
+Wait event "SQL*Net break/reset to client" in wait class "Application" was
+consuming significant database time.
+
+   Recommendation 1: Application Analysis
+   Estimated benefit is .22 active sessions, 5.02% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Investigate the cause for high "SQL*Net break/reset to client" waits.
+      Refer to Oracle's "Database Reference" for the description of this wait
+      event.
+
+   Recommendation 2: Application Analysis
+   Estimated benefit is .22 active sessions, 5.01% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Investigate the cause for high "SQL*Net break/reset to client" waits
+      with P1 ("driver id") value "1952673792" and P2 ("break?") value "0".
+
+   Recommendation 3: Application Analysis
+   Estimated benefit is .21 active sessions, 4.99% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Investigate the cause for high "SQL*Net break/reset to client" waits in
+      Service "EBS".
+
+   Recommendation 4: Application Analysis
+   Estimated benefit is .21 active sessions, 4.98% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Investigate the cause for high "SQL*Net break/reset to client" waits in
+      Module "SaviorCommunicatorFR200.exe".
+
+   Symptoms That Led to the Finding:
+   ---------------------------------
+      Wait class "Application" was consuming significant database time.
+      Impact is .27 active sessions, 6.36% of total activity.
+
+
+Finding 5: Shared Pool Latches
+Impact is .14 active sessions, 3.31% of total activity.
+-------------------------------------------------------
+Contention for latches related to the shared pool was consuming significant
+database time.
+Waits for "latch: shared pool" amounted to 1% of database time.
+
+   Recommendation 1: Application Analysis
+   Estimated benefit is .14 active sessions, 3.31% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Investigate the cause for latch contention using the given blocking
+      sessions or modules.
+   Rationale
+      The session with ID 1493 and serial number 1 in instance number 1 was
+      the blocking session responsible for 33% of this recommendation's
+      benefit.
+   Rationale
+      The session with ID 449 and serial number 10801 in instance number 1 was
+      the blocking session responsible for 17% of this recommendation's
+      benefit.
+   Rationale
+      The session with ID 1952 and serial number 50889 in instance number 1
+      was the blocking session responsible for 15% of this recommendation's
+      benefit.
+
+   Symptoms That Led to the Finding:
+   ---------------------------------
+      Wait class "Concurrency" was consuming significant database time.
+      Impact is .14 active sessions, 3.36% of total activity.
+
+
+Finding 6: PL/SQL Execution
+Impact is .1 active sessions, 2.34% of total activity.
+------------------------------------------------------
+PL/SQL execution consumed significant database time.
+
+   Recommendation 1: SQL Tuning
+   Estimated benefit is .06 active sessions, 1.45% of total activity.
+   ------------------------------------------------------------------
+   Action
+      Tune the entry point PL/SQL
+      "APPS.XXHR_SREI_INCOME_TAX_COMP_PKG.XXHR_SREI_INCOME_TAX_COMP_PRC" of
+      type "PACKAGE" and ID 517119. Refer to the PL/SQL documentation for
+      addition information.
+   Rationale
+      2198 seconds spent in executing PL/SQL "APPS.FND_PROFILE.GET" of type
+      "PACKAGE" and ID 52326.
+   Rationale
+      642 seconds spent in executing PL/SQL
+      "APPS.XXHR_SREI_GLOBAL_UTILS_PKG.GET_ORGANIZATION_NAME" of type
+      "PACKAGE" and ID 508237.
+   Rationale
+      481 seconds spent in executing PL/SQL "APPS.FND_GLOBAL.USER_ID" of type
+      "PACKAGE" and ID 52329.
+   Rationale
+      261 seconds spent in executing PL/SQL
+      "APPS.FND_GLOBAL.PER_SECURITY_PROFILE_ID" of type "PACKAGE" and ID
+      52329.
+   Rationale
+      190 seconds spent in executing PL/SQL "SYS.DBMS_UTILITY.GET_HASH_VALUE"
+      of type "PACKAGE" and ID 2299.
+
+   Recommendation 2: SQL Tuning
+   Estimated benefit is .01 active sessions, .25% of total activity.
+   -----------------------------------------------------------------
+   Action
+      Tune the entry point PL/SQL "APPS.FND_GLOBAL.APPS_INITIALIZE" of type
+      "PACKAGE" and ID 52329. Refer to the PL/SQL documentation for addition
+      information.
+   Rationale
+      743 seconds spent in executing PL/SQL "SYS.DBMS_SESSION.SET_NLS" of type
+      "PACKAGE" and ID 2295.
+
+   Recommendation 3: SQL Tuning
+   Estimated benefit is .01 active sessions, .22% of total activity.
+   -----------------------------------------------------------------
+   Action
+      Tune the entry point PL/SQL "APPS.FND_AOLJ_UTIL.IS_VALID_ICX" of type
+      "PACKAGE" and ID 52452. Refer to the PL/SQL documentation for addition
+      information.
+   Rationale
+      562 seconds spent in executing PL/SQL "SYS.DBMS_SESSION.SET_NLS" of type
+      "PACKAGE" and ID 2295.
+   Rationale
+      50 seconds spent in executing PL/SQL "APPS.FND_GLOBAL.INITIALIZE#2" of
+      type "PACKAGE" and ID 52329.
+
+   Recommendation 4: SQL Tuning
+   Estimated benefit is .01 active sessions, .22% of total activity.
+   -----------------------------------------------------------------
+   Action
+      Tune the entry point PL/SQL "APPS.HR_GENERAL.GET_XBG_PROFILE" of type
+      "PACKAGE" and ID 54679. Refer to the PL/SQL documentation for addition
+      information.
+   Rationale
+      391 seconds spent in executing PL/SQL "APPS.FND_PROFILE.GET" of type
+      "PACKAGE" and ID 52326.
+   Rationale
+      100 seconds spent in executing PL/SQL
+      "APPS.FND_GLOBAL.PER_SECURITY_PROFILE_ID" of type "PACKAGE" and ID
+      52329.
+   Rationale
+      90 seconds spent in executing PL/SQL "APPS.FND_GLOBAL.USER_ID" of type
+      "PACKAGE" and ID 52329.
+   Rationale
+      50 seconds spent in executing PL/SQL "SYS.DBMS_UTILITY.GET_HASH_VALUE"
+      of type "PACKAGE" and ID 2299.
+   Rationale
+      50 seconds spent in executing PL/SQL "APPS.HR_GENERAL.GET_XBG_PROFILE"
+      of type "PACKAGE" and ID 54679.
+
+   Recommendation 5: SQL Tuning
+   Estimated benefit is .01 active sessions, .2% of total activity.
+   ----------------------------------------------------------------
+   Action
+      Tune the entry point PL/SQL "SYS.DBMS_SPACE_ADMIN.SEGMENT_NUMBER_BLOCKS"
+      of type "PACKAGE" and ID 2223. Refer to the PL/SQL documentation for
+      addition information.
+   Rationale
+      642 seconds spent in executing PL/SQL
+      "SYS.DBMS_SPACE_ADMIN.SEGMENT_NUMBER_BLOCKS" of type "PACKAGE" and ID
+      2223.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+          Additional Information
+          ----------------------
+
+Miscellaneous Information
+-------------------------
+Wait class "Cluster" was not consuming significant database time.
+Wait class "Commit" was not consuming significant database time.
+Wait class "Configuration" was not consuming significant database time.
+CPU was not a bottleneck for the instance.
+Wait class "Network" was not consuming significant database time.
+The network latency of the cluster interconnect was within acceptable limits
+of 1 milliseconds.
+Session connect and disconnect calls were not consuming significant database
+time.
+
+The database's maintenance windows were active during 19% of the analysis
+period.
+

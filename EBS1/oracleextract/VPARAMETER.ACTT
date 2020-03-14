@@ -1,0 +1,350 @@
+DESCRIPTION VARCHAR2(255)|^|DISPLAY_VALUE VARCHAR2(4000)|^|HASH NUMBER(38,127)|^|ISADJUSTED VARCHAR2(5)|^|ISBASIC VARCHAR2(5)|^|ISDEFAULT VARCHAR2(9)|^|ISDEPRECATED VARCHAR2(5)|^|ISINSTANCE_MODIFIABLE VARCHAR2(5)|^|ISMODIFIED VARCHAR2(10)|^|ISSES_MODIFIABLE VARCHAR2(5)|^|ISSYS_MODIFIABLE VARCHAR2(9)|^|NAME VARCHAR2(80)|^|NUM NUMBER(38,127)|^|TYPE NUMBER(38,127)|^|UPDATE_COMMENT VARCHAR2(255)|^|VALUE VARCHAR2(4000)
+lock name space used for generating lock names for standby/clone database|^||^|1022980314|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|lock_name_space|^|38|^|2|^||^|
+user processes|^|1400|^|4162014761|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|processes|^|39|^|3|^||^|1400
+user and system sessions|^|2124|^|3194028855|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|sessions|^|40|^|3|^||^|2124
+maintain internal timing statistics|^|TRUE|^|2224114877|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|timed_statistics|^|41|^|1|^||^|TRUE
+internal os statistic gathering interval in seconds|^|0|^|2425331770|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|timed_os_statistics|^|42|^|3|^||^|0
+master switch for resource limit|^|FALSE|^|19363908|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|resource_limit|^|43|^|1|^||^|FALSE
+maximum number of non-system user sessions allowed|^|0|^|2409810571|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|license_max_sessions|^|44|^|3|^||^|0
+warning level for number of non-system user sessions|^|0|^|4168462818|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|license_sessions_warning|^|45|^|3|^||^|0
+number of CPUs for this instance|^|14|^|1095434542|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|cpu_count|^|84|^|3|^||^|14
+list of instance group names|^||^|714080904|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|instance_groups|^|89|^|2|^||^|
+debug event control - default null string|^||^|557769962|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|event|^|93|^|2|^||^|
+max total SGA size|^|16G|^|3640569645|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|sga_max_size|^|105|^|6|^|internally adjusted|^|17179869184
+Use hugepages if available (TRUE/FALSE/ONLY)|^|TRUE|^|3303635063|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|use_large_pages|^|112|^|2|^||^|TRUE
+pre-page sga for process|^|FALSE|^|4157293338|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|pre_page_sga|^|113|^|1|^||^|FALSE
+SGA starting address (low order 32-bits on 64-bit platforms)|^|0|^|1147088340|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|shared_memory_address|^|114|^|3|^||^|0
+SGA starting address (high order 32-bits on 64-bit platforms)|^|0|^|2467282562|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|hi_shared_memory_address|^|115|^|3|^||^|0
+Enable indirect data buffers (very large SGA on 32-bit platforms)|^|FALSE|^|1450736570|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|use_indirect_data_buffers|^|116|^|1|^||^|FALSE
+Lock entire SGA in physical memory|^|FALSE|^|3105560606|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|lock_sga|^|118|^|1|^||^|FALSE
+size in bytes of shared pool|^|0|^|1378805370|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|shared_pool_size|^|160|^|6|^||^|0
+size in bytes of large pool|^|0|^|4033299612|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|large_pool_size|^|162|^|6|^||^|0
+size in bytes of java pool|^|0|^|682389752|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|java_pool_size|^|164|^|6|^||^|0
+size in bytes of the streams pool|^|0|^|4113905875|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|streams_pool_size|^|166|^|6|^||^|0
+size in bytes of reserved area of shared pool|^|345610649|^|3099794371|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|shared_pool_reserved_size|^|168|^|6|^||^|345610649
+warning limit on size in bytes of a Java sessionspace|^|0|^|2289238341|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|java_soft_sessionspace_limit|^|171|^|3|^||^|0
+max allowed size in bytes of a Java sessionspace|^|0|^|2976582011|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|java_max_sessionspace_size|^|172|^|3|^||^|0
+server parameter file|^|+DATABASE/ebs/spfileebs.ora|^|3653611964|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|spfile|^|180|^|2|^||^|+DATABASE/ebs/spfileebs.ora
+type of instance to be executed|^|RDBMS|^|3061809694|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|instance_type|^|181|^|2|^||^|RDBMS
+NLS language name|^|AMERICAN|^|3485237129|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_language|^|218|^|2|^||^|AMERICAN
+NLS territory name|^|AMERICA|^|4101776966|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_territory|^|219|^|2|^||^|AMERICA
+NLS linguistic definition name|^|BINARY|^|1540560305|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_sort|^|220|^|2|^||^|BINARY
+NLS date language name|^|AMERICAN|^|1568340031|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_date_language|^|221|^|2|^||^|AMERICAN
+NLS Oracle date format|^|DD-MON-RR|^|677968994|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_date_format|^|222|^|2|^||^|DD-MON-RR
+NLS local currency symbol|^|$|^|1866631167|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_currency|^|223|^|2|^||^|$
+NLS numeric characters|^|.,|^|1350504691|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_numeric_characters|^|224|^|2|^||^|.,
+NLS ISO currency territory name|^|AMERICA|^|1902084911|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_iso_currency|^|225|^|2|^||^|AMERICA
+NLS calendar system name|^|GREGORIAN|^|600406646|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_calendar|^|226|^|2|^||^|GREGORIAN
+time format|^|HH.MI.SSXFF AM|^|279591871|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_time_format|^|227|^|2|^||^|HH.MI.SSXFF AM
+time stamp format|^|DD-MON-RR HH.MI.SSXFF AM|^|1867855122|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_timestamp_format|^|228|^|2|^||^|DD-MON-RR HH.MI.SSXFF AM
+time with timezone format|^|HH.MI.SSXFF AM TZR|^|3395216182|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_time_tz_format|^|229|^|2|^||^|HH.MI.SSXFF AM TZR
+timestamp with timezone format|^|DD-MON-RR HH.MI.SSXFF AM TZR|^|197674624|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_timestamp_tz_format|^|230|^|2|^||^|DD-MON-RR HH.MI.SSXFF AM TZR
+Dual currency symbol|^|$|^|3671532261|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_dual_currency|^|231|^|2|^||^|$
+NLS comparison|^|BINARY|^|2564149862|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|MODIFIED|^|TRUE|^|FALSE|^|nls_comp|^|232|^|2|^||^|BINARY
+create columns using byte or char semantics by default|^|BYTE|^|726541850|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|nls_length_semantics|^|233|^|2|^| Required 11i setting  |^|BYTE
+NLS raise an exception instead of allowing implicit conversion|^|FALSE|^|928612038|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|nls_nchar_conv_excp|^|234|^|2|^||^|FALSE
+Network Adapters for File I/O|^||^|3529525450|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|fileio_network_adapters|^|240|^|2|^||^|
+IO operations on filesystem files|^|none|^|752770605|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|filesystemio_options|^|242|^|2|^||^|none
+Use asynch I/O for random access devices|^|TRUE|^|629465343|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|disk_asynch_io|^|259|^|1|^||^|TRUE
+Use asynch I/O requests for tape devices|^|TRUE|^|4219463829|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|tape_asynch_io|^|260|^|1|^||^|TRUE
+DBWR I/O slaves|^|0|^|3394903742|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|dbwr_io_slaves|^|262|^|3|^||^|0
+BACKUP Tape I/O slaves|^|FALSE|^|3484415485|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|DEFERRED|^|backup_tape_io_slaves|^|266|^|1|^||^|FALSE
+Resource Manager CPU allocation|^|12|^|2295969896|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|resource_manager_cpu_allocation|^|274|^|3|^||^|12
+resource mgr top plan|^||^|771115908|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|resource_manager_plan|^|276|^|2|^||^|
+interconnects for RAC use|^||^|453198651|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|cluster_interconnects|^|333|^|2|^||^|
+enable file mapping|^|FALSE|^|232153461|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|file_mapping|^|396|^|1|^||^|FALSE
+number of background gcs server processes to start|^|2|^|3586934196|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|gcs_server_processes|^|482|^|3|^||^|2
+number of active instances in the cluster database|^||^|1385697455|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|active_instance_count|^|492|^|3|^||^|
+Target size of SGA|^|16G|^|3134551790|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|sga_target|^|668|^|6|^||^|17179869184
+Target size of Oracle SGA and PGA memory|^|0|^|1127054141|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|memory_target|^|670|^|6|^||^|0
+Max size for Memory Target|^|0|^|3306918234|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|memory_max_target|^|671|^|6|^||^|0
+control file names list|^|+DATABASE/cntr_l01.dbf|^|2567365799|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|control_files|^|697|^|2|^|Restore Controlfile|^|+DATABASE/cntr_l01.dbf
+datafile name convert patterns and strings for standby/clone db|^|+DATA/ep01/datafile/, +DATABASE/, +DATA/ep01/tempfile/, +DATABASE/|^|2967069573|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|db_file_name_convert|^|706|^|2|^||^|+DATA/ep01/datafile/, +DATABASE/, +DATA/ep01/tempfile/, +DATABASE/
+logfile name convert patterns and strings for standby/clone db|^|+DATA/ep01/onlinelog/, +ARCHIVELOG/|^|3861982543|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|log_file_name_convert|^|707|^|2|^||^|+DATA/ep01/onlinelog/, +ARCHIVELOG/
+control file record keep time in days|^|7|^|98688804|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|control_file_record_keep_time|^|708|^|3|^||^|7
+Number of database blocks cached in memory|^|0|^|2234540729|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|db_block_buffers|^|711|^|3|^||^|0
+store checksum in db blocks and check during reads|^|TRUE|^|236379301|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_block_checksum|^|715|^|2|^||^|TRUE
+Sets defaults for other parameters that control protection levels|^|OFF|^|93442106|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|db_ultra_safe|^|716|^|2|^||^|OFF
+Size of database block in bytes|^|8192|^|3433134853|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|db_block_size|^|717|^|3|^||^|8192
+Size of DEFAULT buffer pool for standard block size buffers|^|0|^|1878231416|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_cache_size|^|733|^|6|^||^|0
+Size of cache for 2K buffers|^|0|^|1251260559|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_2k_cache_size|^|735|^|6|^||^|0
+Size of cache for 4K buffers|^|0|^|2460170291|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_4k_cache_size|^|736|^|6|^||^|0
+Size of cache for 8K buffers|^|0|^|1564706367|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_8k_cache_size|^|737|^|6|^||^|0
+Size of cache for 16K buffers|^|0|^|1652300362|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_16k_cache_size|^|738|^|6|^||^|0
+Size of cache for 32K buffers|^|0|^|63005144|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_32k_cache_size|^|739|^|6|^||^|0
+Size of KEEP buffer pool for standard block size buffers|^|0|^|1851163622|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_keep_cache_size|^|740|^|6|^||^|0
+Size of RECYCLE buffer pool for standard block size buffers|^|0|^|409865660|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_recycle_cache_size|^|741|^|6|^||^|0
+number of background database writer  processes to start|^|2|^|2675391963|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|db_writer_processes|^|752|^|3|^||^|2
+Number of database blocks/latches in keep buffer pool|^||^|4221146327|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|buffer_pool_keep|^|773|^|2|^||^|
+Number of database blocks/latches in recycle buffer pool|^||^|243965399|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|buffer_pool_recycle|^|774|^|2|^||^|
+flash cache file for default block size|^||^|2154593857|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|db_flash_cache_file|^|826|^|2|^||^|
+flash cache size for db_flash_cache_file|^|0|^|2662488753|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_flash_cache_size|^|827|^|6|^||^|0
+Buffer cache sizing advisory|^|ON|^|76537751|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_cache_advice|^|842|^|2|^||^|ON
+Database will be completely compatible with this software version|^|11.2.0|^|2586206788|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|compatible|^|857|^|2|^||^|11.2.0
+archival destination #1 text string|^|LOCATION=+ARCHIVELOG|^|2668113655|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_1|^|868|^|2|^||^|LOCATION=+ARCHIVELOG
+archival destination #2 text string|^||^|993174268|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_2|^|869|^|2|^||^|
+archival destination #3 text string|^||^|4019416444|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_3|^|870|^|2|^||^|
+archival destination #4 text string|^||^|4076933173|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_4|^|871|^|2|^||^|
+archival destination #5 text string|^||^|2983371913|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_5|^|872|^|2|^||^|
+archival destination #6 text string|^||^|3163254911|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_6|^|873|^|2|^||^|
+archival destination #7 text string|^||^|1195731386|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_7|^|874|^|2|^||^|
+archival destination #8 text string|^||^|1294131998|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_8|^|875|^|2|^||^|
+archival destination #9 text string|^||^|2975895765|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_9|^|876|^|2|^||^|
+archival destination #10 text string|^||^|4052929217|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_10|^|877|^|2|^||^|
+archival destination #11 text string|^||^|250996408|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_11|^|878|^|2|^||^|
+archival destination #12 text string|^||^|2055242793|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_12|^|879|^|2|^||^|
+archival destination #13 text string|^||^|3129541886|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_13|^|880|^|2|^||^|
+archival destination #14 text string|^||^|646973396|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_14|^|881|^|2|^||^|
+archival destination #15 text string|^||^|2102065363|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_15|^|882|^|2|^||^|
+archival destination #16 text string|^||^|3433075299|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_16|^|883|^|2|^||^|
+archival destination #17 text string|^||^|3605958982|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_17|^|884|^|2|^||^|
+archival destination #18 text string|^||^|2185923656|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_18|^|885|^|2|^||^|
+archival destination #19 text string|^||^|3460444459|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_19|^|886|^|2|^||^|
+archival destination #20 text string|^||^|4223402204|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_20|^|887|^|2|^||^|
+archival destination #21 text string|^||^|1524973738|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_21|^|888|^|2|^||^|
+archival destination #22 text string|^||^|2302788208|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_22|^|889|^|2|^||^|
+archival destination #23 text string|^||^|428356674|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_23|^|890|^|2|^||^|
+archival destination #24 text string|^||^|875888895|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_24|^|891|^|2|^||^|
+archival destination #25 text string|^||^|2545053957|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_25|^|892|^|2|^||^|
+archival destination #26 text string|^||^|1817558786|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_26|^|893|^|2|^||^|
+archival destination #27 text string|^||^|4097113290|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_27|^|894|^|2|^||^|
+archival destination #28 text string|^||^|1607184325|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_28|^|895|^|2|^||^|
+archival destination #29 text string|^||^|3817697632|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_29|^|896|^|2|^||^|
+archival destination #30 text string|^||^|2615509879|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_30|^|897|^|2|^||^|
+archival destination #31 text string|^||^|3017163142|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_31|^|898|^|2|^||^|
+archival destination #1 state text string|^|enable|^|2730384854|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_1|^|899|^|2|^||^|enable
+archival destination #2 state text string|^|enable|^|148092523|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_2|^|900|^|2|^||^|enable
+archival destination #3 state text string|^|enable|^|2513869874|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_3|^|901|^|2|^||^|enable
+archival destination #4 state text string|^|enable|^|3691366817|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_4|^|902|^|2|^||^|enable
+archival destination #5 state text string|^|enable|^|3081952655|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_5|^|903|^|2|^||^|enable
+archival destination #6 state text string|^|enable|^|304021296|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_6|^|904|^|2|^||^|enable
+archival destination #7 state text string|^|enable|^|3630253584|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_7|^|905|^|2|^||^|enable
+archival destination #8 state text string|^|enable|^|3554679994|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_8|^|906|^|2|^||^|enable
+archival destination #9 state text string|^|enable|^|1436305019|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_9|^|907|^|2|^||^|enable
+archival destination #10 state text string|^|enable|^|1751244906|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_10|^|908|^|2|^||^|enable
+archival destination #11 state text string|^|enable|^|2886606469|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_11|^|909|^|2|^||^|enable
+archival destination #12 state text string|^|enable|^|3304517691|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_12|^|910|^|2|^||^|enable
+archival destination #13 state text string|^|enable|^|2269052938|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_13|^|911|^|2|^||^|enable
+archival destination #14 state text string|^|enable|^|2727699920|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_14|^|912|^|2|^||^|enable
+archival destination #15 state text string|^|enable|^|2514322449|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_15|^|913|^|2|^||^|enable
+archival destination #16 state text string|^|enable|^|2187424721|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_16|^|914|^|2|^||^|enable
+archival destination #17 state text string|^|enable|^|1347081708|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_17|^|915|^|2|^||^|enable
+archival destination #18 state text string|^|enable|^|2558416988|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_18|^|916|^|2|^||^|enable
+archival destination #19 state text string|^|enable|^|1838072217|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_19|^|917|^|2|^||^|enable
+archival destination #20 state text string|^|enable|^|2897696991|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_20|^|918|^|2|^||^|enable
+archival destination #21 state text string|^|enable|^|1810950964|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_21|^|919|^|2|^||^|enable
+archival destination #22 state text string|^|enable|^|3965758431|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_22|^|920|^|2|^||^|enable
+archival destination #23 state text string|^|enable|^|1640771709|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_23|^|921|^|2|^||^|enable
+archival destination #24 state text string|^|enable|^|312358666|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_24|^|922|^|2|^||^|enable
+archival destination #25 state text string|^|enable|^|2480335086|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_25|^|923|^|2|^||^|enable
+archival destination #26 state text string|^|enable|^|2373194801|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_26|^|924|^|2|^||^|enable
+archival destination #27 state text string|^|enable|^|3084460413|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_27|^|925|^|2|^||^|enable
+archival destination #28 state text string|^|enable|^|1760097473|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_28|^|926|^|2|^||^|enable
+archival destination #29 state text string|^|enable|^|2023610917|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_29|^|927|^|2|^||^|enable
+archival destination #30 state text string|^|enable|^|2972207749|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_30|^|928|^|2|^||^|enable
+archival destination #31 state text string|^|enable|^|4128759905|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_dest_state_31|^|929|^|2|^||^|enable
+start archival process on SGA initialization|^|FALSE|^|952772995|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|log_archive_start|^|930|^|1|^||^|FALSE
+archival destination text string|^||^|2428527576|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|log_archive_dest|^|931|^|2|^||^|
+duplex archival destination text string|^||^|3687644184|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|log_archive_duplex_dest|^|932|^|2|^||^|
+minimum number of archive destinations that must succeed|^|1|^|3835057806|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|log_archive_min_succeed_dest|^|933|^|3|^||^|1
+standby database archivelog destination text string|^|?/dbs/arch|^|323222115|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|standby_archive_dest|^|934|^|2|^||^|?/dbs/arch
+FAL client|^||^|1512728298|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|fal_client|^|939|^|2|^||^|
+FAL server list|^||^|72419950|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|fal_server|^|940|^|2|^||^|
+Establish archivelog operation tracing level|^|0|^|967210318|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|log_archive_trace|^|943|^|3|^||^|0
+log archive config parameter|^||^|1745268181|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|log_archive_config|^|959|^|2|^||^|
+Establish EXPEDITE attribute default value|^|TRUE|^|438609192|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|log_archive_local_first|^|964|^|1|^||^|TRUE
+archival destination format|^|%t_%s_%r.dbf|^|267180648|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|log_archive_format|^|966|^|2|^||^|%t_%s_%r.dbf
+Data Guard transport user when using password file|^||^|2619943614|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|redo_transport_user|^|970|^|2|^||^|
+maximum number of active ARCH processes|^|4|^|3132953756|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|log_archive_max_processes|^|975|^|3|^||^|4
+redo circular buffer size|^|10485760|^|1173026923|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|log_buffer|^|988|^|3|^|log buffer update|^|10485760
+# redo blocks checkpoint threshold|^|100000|^|421865232|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|log_checkpoint_interval|^|991|^|3|^||^|100000
+Maximum time interval between checkpoints in seconds|^|1200|^|1325866608|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|log_checkpoint_timeout|^|992|^|3|^||^|1200
+Maximum number of seconds of redos the standby could lose|^|0|^|592789495|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|archive_lag_target|^|994|^|3|^||^|0
+max allowable # db files|^|512|^|314572703|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|db_files|^|1024|^|3|^| Max. no. of database files|^|512
+db block to be read each IO|^|128|^|1428169303|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|db_file_multiblock_read_count|^|1025|^|3|^||^|128
+if TRUE delay opening of read only files until first access|^|FALSE|^|3134028732|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|read_only_open_delayed|^|1029|^|1|^||^|FALSE
+if TRUE startup in cluster database mode|^|TRUE|^|3044213568|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|cluster_database|^|1030|^|1|^||^|TRUE
+if TRUE startup in parallel server mode|^|TRUE|^|463488463|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|parallel_server|^|1031|^|1|^||^|TRUE
+number of instances to use for sizing OPS SGA structures|^|2|^|623279130|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|parallel_server_instances|^|1032|^|3|^||^|2
+number of instances to use for sizing cluster db SGA structures|^|2|^|2296134110|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|cluster_database_instances|^|1033|^|3|^||^|2
+default database location|^|+DATABASE|^|203090614|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|db_create_file_dest|^|1034|^|2|^||^|+DATABASE
+online log/controlfile destination #1|^||^|1631516011|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|db_create_online_log_dest_1|^|1035|^|2|^||^|
+online log/controlfile destination #2|^||^|563999388|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|db_create_online_log_dest_2|^|1036|^|2|^||^|
+online log/controlfile destination #3|^||^|1878635215|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|db_create_online_log_dest_3|^|1037|^|2|^||^|
+online log/controlfile destination #4|^||^|2503927821|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|db_create_online_log_dest_4|^|1038|^|2|^||^|
+online log/controlfile  destination #5|^||^|1433039549|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|db_create_online_log_dest_5|^|1039|^|2|^||^|
+default database recovery file location|^||^|3387568471|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_recovery_file_dest|^|1040|^|2|^||^|
+database recovery files size limit|^|0|^|1541539076|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_recovery_file_dest_size|^|1041|^|6|^||^|0
+if auto then files are created/dropped automatically on standby|^|MANUAL|^|3958066716|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|standby_file_management|^|1043|^|2|^||^|MANUAL
+Track nologging SCN in controlfile|^|TRUE|^|1772971972|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|db_unrecoverable_scn_tracking|^|1118|^|1|^||^|TRUE
+Redo thread to mount|^|1|^|2684606808|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|thread|^|1122|^|3|^||^|1
+Upper bound on recovery reads|^|0|^|1445495989|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|fast_start_io_target|^|1129|^|3|^||^|0
+MTTR target in seconds|^|0|^|3666596407|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|fast_start_mttr_target|^|1130|^|3|^||^|0
+log checkpoint begin/end to alert file|^|TRUE|^|1565101272|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|log_checkpoints_to_alert|^|1136|^|1|^||^|TRUE
+enable lost write detection|^|NONE|^|1160013993|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_lost_write_protect|^|1137|^|2|^||^|NONE
+number of server processes to use for parallel recovery|^|0|^|4261073806|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|recovery_parallelism|^|1139|^|3|^||^|0
+Maximum Flashback Database log retention time in minutes.|^|1440|^|2211957778|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_flashback_retention_target|^|1222|^|3|^||^|1440
+dml locks - one for each table modified in a transaction|^|10000|^|1576699050|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|dml_locks|^|1311|^|3|^||^|10000
+tracking dependency for Replication parallel propagation|^|TRUE|^|2475358177|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|replication_dependency_tracking|^|1316|^|1|^||^|TRUE
+max. number of concurrent active transactions|^|2336|^|812710636|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|transactions|^|1324|^|3|^||^|2336
+number of active transactions per rollback segment|^|5|^|2728085332|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|transactions_per_rollback_segment|^|1325|^|3|^||^|5
+undo segment list|^||^|1884290623|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|rollback_segments|^|1327|^|2|^||^|
+instance runs in SMU mode if TRUE, else in RBU mode|^|AUTO|^|1401409411|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|undo_management|^|1335|^|2|^| Required 11i setting|^|AUTO
+use/switch undo tablespace|^|APPS_UNDOTS1|^|2692150816|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|undo_tablespace|^|1336|^|2|^||^|APPS_UNDOTS1
+undo retention in seconds|^|7200|^|3327480172|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|undo_retention|^|1353|^|3|^||^|7200
+max number of parallel recovery slaves that may be used|^|LOW|^|1116456128|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|fast_start_parallel_rollback|^|1356|^|2|^||^|LOW
+set resumable_timeout|^|0|^|3544280463|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|resumable_timeout|^|1358|^|3|^||^|0
+instance number|^|1|^|3331028598|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|instance_number|^|1376|^|3|^||^|1
+header checking and data and index block checking|^|FALSE|^|1476124072|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|db_block_checking|^|1421|^|2|^||^|FALSE
+recyclebin processing|^|on|^|4276141125|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|DEFERRED|^|recyclebin|^|1423|^|2|^||^|on
+permit securefile storage during lob creation|^|PERMITTED|^|3201873517|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|db_securefile|^|1540|^|2|^||^|PERMITTED
+create stored outlines for DML statements|^||^|4265209363|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|create_stored_outlines|^|1581|^|2|^||^|
+reuse the frame segments|^|disable|^|319631122|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|serial_reuse|^|1584|^|2|^||^|disable
+RDBMS's LDAP access option|^|NONE|^|366357953|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|ldap_directory_access|^|1592|^|2|^||^|NONE
+OID usage parameter|^|no|^|3590721065|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|ldap_directory_sysauth|^|1593|^|2|^||^|no
+retrieve roles from the operating system|^|FALSE|^|3783461165|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|os_roles|^|1594|^|1|^||^|FALSE
+RDBMS's Distinguished Name|^||^|3271017715|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|rdbms_server_dn|^|1595|^|2|^||^|
+max number of roles a user can have enabled|^|150|^|2310035663|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|max_enabled_roles|^|1596|^|3|^||^|150
+allow non-secure remote clients to use auto-logon accounts|^|FALSE|^|1794288875|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|remote_os_authent|^|1597|^|1|^||^|FALSE
+allow non-secure remote clients to use os roles|^|FALSE|^|1402234932|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|remote_os_roles|^|1598|^|1|^||^|FALSE
+case sensitive password enabled for logon|^|FALSE|^|1474075370|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|sec_case_sensitive_logon|^|1600|^|1|^||^|FALSE
+Version 7 Dictionary Accessibility Support|^|FALSE|^|1977079269|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|O7_DICTIONARY_ACCESSIBILITY|^|1601|^|1|^|MP|^|FALSE
+password file usage parameter|^|EXCLUSIVE|^|3127891494|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|remote_login_passwordfile|^|1603|^|2|^||^|EXCLUSIVE
+maximum number of named users that can be created in the database|^|0|^|849023886|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|license_max_users|^|1604|^|3|^||^|0
+enable sys auditing|^|TRUE|^|2991425711|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|audit_sys_operations|^|1608|^|1|^||^|TRUE
+Global Application Context Pool Size in Bytes|^||^|1444745400|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|global_context_pool_size|^|1611|^|2|^||^|
+directory part of global database name stored with CREATE DATABASE|^||^|2669961844|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|db_domain|^|1614|^|2|^||^|
+enforce that database links have same name as remote database|^|FALSE|^|2700405834|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|global_names|^|1615|^|1|^||^|FALSE
+number of seconds a distributed transaction waits for a lock|^|60|^|842900040|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|distributed_lock_timeout|^|1616|^|3|^||^|60
+Bias this node has toward not preparing in a two-phase commit|^|1|^|2235849826|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|commit_point_strength|^|1618|^|3|^||^|1
+number of background global transaction processes to start|^|1|^|1426614060|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|global_txn_processes|^|1621|^|3|^||^|1
+instance name supported by the instance|^|EBS1|^|2256857119|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|instance_name|^|1628|^|2|^||^|EBS1
+service names supported by the instance|^|SYS$APPLSYS.WF_CONTROL.EP01.SREI.COM|^|715667293|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|SYSTEM_MOD|^|FALSE|^|IMMEDIATE|^|service_names|^|1629|^|2|^||^|SYS$APPLSYS.WF_CONTROL.EP01.SREI.COM
+specifications of dispatchers|^||^|2044337135|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|dispatchers|^|1631|^|2|^||^|
+number of shared servers to start up|^|0|^|3176325557|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|shared_servers|^|1632|^|3|^||^|0
+max number of shared servers|^||^|2826600650|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|max_shared_servers|^|1633|^|3|^||^|
+max number of dispatchers|^||^|1521154394|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|max_dispatchers|^|1634|^|3|^||^|
+max number of circuits|^||^|4176376279|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|circuits|^|1635|^|3|^||^|
+max number of shared server sessions|^||^|3395071916|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|shared_server_sessions|^|1636|^|3|^||^|
+local listener|^|(ADDRESS=(PROTOCOL=TCP)(HOST=sreikolebz1.srei.com)(PORT=1525))|^|1166810346|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|local_listener|^|1637|^|2|^||^|(ADDRESS=(PROTOCOL=TCP)(HOST=sreikolebz1.srei.com)(PORT=1525))
+remote listener|^|sreikolebzscan:1521|^|3804628476|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|remote_listener|^|1638|^|2|^||^|sreikolebzscan:1521
+listener registration networks|^||^|131162088|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|listener_networks|^|1639|^|2|^||^|
+use more memory in order to get faster execution|^|FALSE|^|4277774490|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|cursor_space_for_time|^|1652|^|1|^||^|FALSE
+Number of cursors to cache in a session.|^|1000|^|766615249|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|session_cached_cursors|^|1653|^|3|^||^|1000
+remote-procedure-call dependencies mode parameter|^|TIMESTAMP|^|3590465749|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|remote_dependencies_mode|^|1655|^|2|^||^|TIMESTAMP
+utl_file accessible directories list|^|/usr/tmp, /xx42/INST8005/ORACLE_OUT/SIFL, /xx42/INST8005/ORACLE_OUT/SEFPL, /xx42/INST8005/ORACLE_OUT/winshare/SIFL/ICICI_NEFT/outbound, /xx42/INST8005/ORACLE_OUT/winshare/AXIS_H2H, /xx42/INST8005/ORACLE_OUT/SEFPL/Employee, /xx42/INST8005/ORACLE_OUT/SIFL/Employee|^|379739569|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|utl_file_dir|^|1656|^|2|^||^|/usr/tmp, /xx42/INST8005/ORACLE_OUT/SIFL, /xx42/INST8005/ORACLE_OUT/SEFPL, /xx42/INST8005/ORACLE_OUT/winshare/SIFL/ICICI_NEFT/outbound, /xx42/INST8005/ORACLE_OUT/winshare/AXIS_H2H, /xx42/INST8005/ORACLE_OUT/SEFPL/Employee, /xx42/INST8005/ORACLE_OUT/SIFL/Employee
+utl_smtp server and port configuration parameter|^||^|3248157648|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|smtp_out_server|^|1657|^|2|^||^|
+PL/SQL version 2.x compatibility flag|^|FALSE|^|3179637611|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|plsql_v2_compatibility|^|1659|^|1|^||^|FALSE
+PL/SQL compiler warnings settings|^|DISABLE:ALL|^|1215950514|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|plsql_warnings|^|1661|^|2|^|PL/SQL warnings at init.ora|^|DISABLE:ALL
+PL/SQL code-type|^|INTERPRETED|^|2972627138|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|plsql_code_type|^|1662|^|2|^| Default 11i setting|^|INTERPRETED
+PL/SQL debug|^|FALSE|^|2795594338|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|plsql_debug|^|1664|^|1|^||^|FALSE
+PL/SQL optimize level|^|2|^|818269884|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|plsql_optimize_level|^|1665|^|3|^| Required 11i setting|^|2
+PL/SQL ccflags|^||^|2398569109|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|plsql_ccflags|^|1666|^|2|^||^|
+plscope_settings controls the compile time collection, cross reference, and storage of PL/SQL source code identifier data|^|IDENTIFIERS:NONE|^|3026899342|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|plscope_settings|^|1668|^|2|^||^|IDENTIFIERS:NONE
+allow 9.2 or older wrap format in PL/SQL|^|TRUE|^|3263158038|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|permit_92_wrap_format|^|1672|^|1|^||^|TRUE
+Java VM JIT enabled|^|FALSE|^|3091533831|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|java_jit_enabled|^|1673|^|1|^||^|FALSE
+maximum number of job queue slave processes|^|20|^|1663833312|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|job_queue_processes|^|1674|^|3|^||^|20
+minimum percent of threads required for parallel query|^|0|^|2166267089|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|parallel_min_percent|^|1677|^|3|^||^|0
+are system triggers enabled|^|TRUE|^|2346083452|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|_system_trig_enabled|^|1679|^|1|^||^|TRUE
+size of create bitmap buffer for bitmap index|^|8388608|^|2520699331|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|create_bitmap_area_size|^|1680|^|3|^||^|8388608
+maximum memory allow for BITMAP MERGE|^|1048576|^|1575972631|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|bitmap_merge_area_size|^|1681|^|3|^||^|1048576
+cursor sharing mode|^|EXACT|^|3355675594|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|cursor_sharing|^|1683|^|2|^| Required 11i settting|^|EXACT
+result cache operator usage mode|^|MANUAL|^|866827446|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|result_cache_mode|^|1686|^|2|^||^|MANUAL
+minimum parallel query servers per instance|^|0|^|759236997|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|parallel_min_servers|^|1700|^|3|^||^|0
+maximum parallel query servers per instance|^|8|^|3629921023|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|parallel_max_servers|^|1701|^|3|^||^|8
+instance group to use for all parallel operations|^||^|1634530335|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|parallel_instance_group|^|1706|^|2|^||^|
+message buffer size for parallel execution|^|16384|^|502422959|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|parallel_execution_message_size|^|1710|^|3|^||^|16384
+size of in-memory hash work area|^|131072|^|3018060907|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|hash_area_size|^|1721|^|3|^||^|131072
+maximum amount of memory to be used by the cache|^|83904K|^|4221019766|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|result_cache_max_size|^|1741|^|6|^||^|85917696
+maximum result size as percent of cache size|^|5|^|4174962580|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|result_cache_max_result|^|1742|^|3|^||^|5
+maximum life time (min) for any result using a remote object|^|0|^|2062733047|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|result_cache_remote_expiration|^|1743|^|3|^||^|0
+Core Size for Shadow Processes|^|partial|^|89911312|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|shadow_core_dump|^|1755|^|2|^||^|partial
+Core Size for Background Processes|^|partial|^|1863643544|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|background_core_dump|^|1756|^|2|^||^|partial
+Detached process dump directory|^|/u01/rac/oracle_base/diag/rdbms/ebs/EBS1/trace|^|3665100166|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|background_dump_dest|^|1757|^|2|^||^|/u01/rac/oracle_base/diag/rdbms/ebs/EBS1/trace
+User process dump directory|^|/u01/rac/oracle_base/diag/rdbms/ebs/EBS1/trace|^|2332088509|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|user_dump_dest|^|1758|^|2|^||^|/u01/rac/oracle_base/diag/rdbms/ebs/EBS1/trace
+Core dump directory|^|/u01/rac/oracle_base/diag/rdbms/ebs/EBS1/cdump|^|18033226|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|core_dump_dest|^|1759|^|2|^||^|/u01/rac/oracle_base/diag/rdbms/ebs/EBS1/cdump
+Directory in which auditing files are to reside|^|/u01/rac/oracle_base/admin/EBS/adump|^|2188534560|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|DEFERRED|^|audit_file_dest|^|1768|^|2|^||^|/u01/rac/oracle_base/admin/EBS/adump
+Syslog facility and level|^||^|1189300432|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|audit_syslog_level|^|1769|^|2|^||^|
+optimal size of the user session's object cache in bytes|^|102400|^|2564444157|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|DEFERRED|^|object_cache_optimal_size|^|1772|^|3|^||^|102400
+percentage of maximum size over optimal of the user session's object cache|^|10|^|3695573432|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|DEFERRED|^|object_cache_max_size_percent|^|1773|^|3|^||^|10
+maximum number of open files allowed per session|^|10|^|3334892241|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|session_max_open_files|^|1777|^|3|^||^|10
+max # open links per session|^|4|^|3842870833|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|open_links|^|1783|^|3|^||^|4
+max # open links per instance|^|4|^|1931961830|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|open_links_per_instance|^|1784|^|3|^||^|4
+transaction commit log write behaviour|^||^|4194277916|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|commit_write|^|1788|^|2|^||^|
+transaction commit log wait behaviour|^||^|3338003716|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|commit_wait|^|1789|^|2|^||^|
+transaction commit log write behaviour|^||^|1056517785|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|commit_logging|^|1790|^|2|^||^|
+optimizer plan compatibility parameter|^|11.2.0.2|^|2759770534|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|optimizer_features_enable|^|1792|^|2|^||^|11.2.0.2
+fixed SYSDATE value|^||^|48917745|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|fixed_date|^|1793|^|2|^||^|
+enable system auditing|^|DB, EXTENDED|^|4289193100|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|audit_trail|^|1794|^|2|^||^|DB, EXTENDED
+size of in-memory sort work area|^|65536|^|2099108347|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|DEFERRED|^|sort_area_size|^|1795|^|3|^||^|65536
+size of in-memory sort work area retained between fetch calls|^|0|^|3312265650|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|DEFERRED|^|sort_area_retained_size|^|1796|^|3|^||^|0
+enable SQL processing offload to cells|^|TRUE|^|3671696352|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|cell_offload_processing|^|1810|^|1|^||^|TRUE
+enable SQL processing offload of encrypted data to cells|^|TRUE|^|1760070659|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|cell_offload_decryption|^|1811|^|1|^||^|TRUE
+Additional cell offload parameters|^||^|2383178748|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|cell_offload_parameters|^|1812|^|2|^||^|
+Cell packet compaction strategy|^|ADAPTIVE|^|3388561534|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|cell_offload_compaction|^|1813|^|2|^||^|ADAPTIVE
+Cell offload explain plan display|^|AUTO|^|1313668841|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|cell_offload_plan_display|^|1814|^|2|^||^|AUTO
+database name specified in CREATE DATABASE|^|EBS|^|704871292|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|db_name|^|1817|^|2|^|Reset to original value by RMAN|^|EBS
+Database Unique Name|^|EBS|^|2994684304|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|db_unique_name|^|1818|^|2|^||^|EBS
+max # cursors per session|^|3000|^|4033294835|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|open_cursors|^|1819|^|3|^||^|3000
+include file in init.ora|^||^|636214420|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|ifile|^|1820|^|4|^||^|
+enable SQL trace|^|FALSE|^|750089050|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|sql_trace|^|1821|^|1|^||^|FALSE
+prefix for auto-logon accounts|^||^|4201741605|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|os_authent_prefix|^|1822|^|2|^||^|
+optimizer mode|^|ALL_ROWS|^|487657984|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|optimizer_mode|^|1824|^|2|^||^|ALL_ROWS
+cost ratio for sort eimination under first_rows mode|^|5|^|3565357226|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|_sort_elimination_cost_ratio|^|1828|^|3|^||^|5
+require select privilege for searched update/delete|^|TRUE|^|2745708589|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|sql92_security|^|1829|^|1|^||^|TRUE
+blank trimming semantics parameter|^|FALSE|^|1367606241|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|blank_trimming|^|1831|^|1|^||^|FALSE
+enable the use of star transformation|^|FALSE|^|1860374294|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|star_transformation_enabled|^|1837|^|2|^||^|FALSE
+policy used to compute the degree of parallelism (MANUAL/LIMITED/AUTO)|^|MANUAL|^|1979359697|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|parallel_degree_policy|^|1879|^|2|^||^|MANUAL
+enable adaptive setting of degree for multiple user streams|^|TRUE|^|1602823864|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|parallel_adaptive_multi_user|^|1887|^|1|^||^|TRUE
+number of parallel execution threads per CPU|^|2|^|1020981983|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|parallel_threads_per_cpu|^|1888|^|3|^||^|2
+enable intelligent defaults for parallel execution parameters|^|FALSE|^|2442154617|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|parallel_automatic_tuning|^|1889|^|1|^||^|FALSE
+enable capping DOP by IO bandwidth|^|FALSE|^|1152212467|^|FALSE|^|FALSE|^|TRUE|^|TRUE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|parallel_io_cap_enabled|^|1895|^|1|^||^|FALSE
+optimizer index cost adjustment|^|100|^|3753899412|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|optimizer_index_cost_adj|^|1916|^|3|^||^|100
+optimizer percent index caching|^|0|^|699019442|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|optimizer_index_caching|^|1917|^|3|^||^|0
+allow rewrite of queries using materialized views if enabled|^|TRUE|^|3941771694|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|query_rewrite_enabled|^|1929|^|2|^||^|TRUE
+perform rewrite using materialized views with desired integrity|^|enforced|^|485484145|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|query_rewrite_integrity|^|1930|^|2|^||^|enforced
+treat LIKE predicate with bind as an equality predicate|^|TRUE|^|1711784066|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|_like_with_bind_as_equality|^|1968|^|1|^||^|TRUE
+Target size for the aggregate PGA memory consumed by the instance|^|8G|^|2184567208|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|pga_aggregate_target|^|1985|^|6|^||^|8589934592
+policy used to size SQL working areas (MANUAL/AUTO)|^|AUTO|^|4004437305|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|workarea_size_policy|^|1988|^|2|^| Required 11i setting|^|AUTO
+optimizer dynamic sampling|^|2|^|549852465|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|optimizer_dynamic_sampling|^|2007|^|3|^||^|2
+enable/disable auto stats collection job|^|FALSE|^|1737912960|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|_optimizer_autostats_job|^|2028|^|1|^| Turning off auto statistics |^|FALSE
+statistics level|^|TYPICAL|^|3696230136|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|statistics_level|^|2037|^|2|^||^|TYPICAL
+Allowed destination for captured bind variables|^|memory+disk|^|766397948|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|cursor_bind_capture_destination|^|2062|^|2|^||^|memory+disk
+skip unusable indexes if set to TRUE|^|TRUE|^|3916780315|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|skip_unusable_indexes|^|2081|^|1|^||^|TRUE
+optimizer secure view merging and predicate pushdown/movearound|^|FALSE|^|2261060089|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|optimizer_secure_view_merging|^|2161|^|1|^||^|FALSE
+timeout to restrict the time that ddls wait for dml lock|^|0|^|2606707053|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|ddl_lock_timeout|^|2205|^|3|^||^|0
+defer segment creation to first insert|^|TRUE|^|2736380908|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|deferred_segment_creation|^|2207|^|1|^||^|TRUE
+Control whether to use optimizer pending statistics|^|FALSE|^|244859984|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|optimizer_use_pending_statistics|^|2215|^|1|^||^|FALSE
+automatic capture of SQL plan baselines for repeatable statements|^|FALSE|^|147559078|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|optimizer_capture_sql_plan_baselines|^|2220|^|1|^||^|FALSE
+use of SQL plan baselines for captured sql statements|^|TRUE|^|2379667345|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|optimizer_use_sql_plan_baselines|^|2221|^|1|^||^|TRUE
+threshold above which a plan is a candidate for parallelization (in seconds)|^|AUTO|^|1842587524|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|parallel_min_time_threshold|^|2242|^|2|^||^|AUTO
+limit placed on degree of parallelism|^|CPU|^|3004872640|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|parallel_degree_limit|^|2244|^|2|^||^|CPU
+force single instance execution|^|FALSE|^|1406010451|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|parallel_force_local|^|2245|^|1|^||^|FALSE
+Usage of invisible indexes (TRUE/FALSE)|^|FALSE|^|1348858726|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|optimizer_use_invisible_indexes|^|2254|^|1|^||^|FALSE
+Enables/Disables internal conversions during DST upgrade|^|TRUE|^|2379457992|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|dst_upgrade_insert_conv|^|2278|^|1|^||^|TRUE
+instance target in terms of number of parallel servers|^|192|^|3701086916|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|parallel_servers_target|^|2283|^|3|^||^|192
+TTC protocol error action|^|TRACE|^|1358668447|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|sec_protocol_error_trace_action|^|2323|^|2|^||^|TRACE
+TTC protocol error continue action|^|CONTINUE|^|3049131826|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|sec_protocol_error_further_action|^|2324|^|2|^||^|CONTINUE
+maximum number of failed login attempts on a connection|^|10|^|121837060|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|sec_max_failed_login_attempts|^|2325|^|3|^||^|10
+whether the server retruns the complete version information|^|FALSE|^|3794764196|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|sec_return_server_release_banner|^|2326|^|1|^||^|FALSE
+enable ddl logging|^|FALSE|^|2442221836|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|enable_ddl_logging|^|2329|^|1|^||^|FALSE
+client result cache max size in bytes|^|0|^|3890547889|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|client_result_cache_size|^|2332|^|6|^||^|0
+client result cache maximum lag in milliseconds|^|3000|^|1078110587|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|client_result_cache_lag|^|2333|^|6|^||^|3000
+number of AQ Time Managers to start|^|1|^|2948523121|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|aq_tm_processes|^|2356|^|3|^||^|1
+enable automatic server DD updates in HS agent self-registration|^|TRUE|^|3959246632|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|hs_autoregister|^|2372|^|1|^||^|TRUE
+are XML DB events enabled|^|enable|^|2688671432|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|xml_db_events|^|2373|^|2|^||^|enable
+start Data Guard broker (DMON process)|^|FALSE|^|2843461333|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|dg_broker_start|^|2374|^|1|^||^|FALSE
+data guard broker configuration file #1|^|/u01/rac/oracle_base/db/tech_st/11.2.0/dbs/dr1EBS.dat|^|2265440370|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|dg_broker_config_file1|^|2375|^|2|^||^|/u01/rac/oracle_base/db/tech_st/11.2.0/dbs/dr1EBS.dat
+data guard broker configuration file #2|^|/u01/rac/oracle_base/db/tech_st/11.2.0/dbs/dr2EBS.dat|^|2561076650|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|dg_broker_config_file2|^|2376|^|2|^||^|/u01/rac/oracle_base/db/tech_st/11.2.0/dbs/dr2EBS.dat
+size of the olap page pool in bytes|^|4M|^|3715775675|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|DEFERRED|^|olap_page_pool_size|^|2387|^|6|^||^|4194304
+disk set locations for discovery|^||^|2084877408|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|asm_diskstring|^|2482|^|2|^||^|
+preferred read failure groups|^||^|1510746396|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|asm_preferred_read_failure_groups|^|2484|^|2|^||^|
+disk groups to mount automatically|^||^|3280069317|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|asm_diskgroups|^|2494|^|2|^||^|
+number of parallel relocations for disk rebalancing|^|1|^|3074083193|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|asm_power_limit|^|2495|^|3|^||^|1
+declares which manageability packs are enabled|^|DIAGNOSTIC+TUNING|^|1240641681|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|control_management_pack_access|^|2559|^|2|^||^|DIAGNOSTIC+TUNING
+Category qualifier for applying hintsets|^|DEFAULT|^|161860720|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|sqltune_category|^|2584|^|2|^||^|DEFAULT
+diagnostic base directory|^|/u01/rac/oracle_base|^|3957361937|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|diagnostic_dest|^|2616|^|2|^||^|/u01/rac/oracle_base
+trace file custom identifier|^||^|978134115|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|tracefile_identifier|^|2640|^|2|^||^|
+Create publicly accessible trace files|^|FALSE|^|3324140323|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|_trace_files_public|^|2641|^|1|^||^|FALSE
+Maximum size (in bytes) of dump file|^|20480|^|1271961010|^|FALSE|^|FALSE|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|IMMEDIATE|^|max_dump_file_size|^|2642|^|2|^| trace file size |^|20480
+enable in memory tracing|^|TRUE|^|1583875908|^|FALSE|^|FALSE|^|TRUE|^|FALSE|^|TRUE|^|FALSE|^|FALSE|^|IMMEDIATE|^|trace_enabled|^|2645|^|1|^||^|TRUE

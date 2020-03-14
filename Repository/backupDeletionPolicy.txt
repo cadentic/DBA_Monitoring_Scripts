@@ -1,0 +1,46 @@
+
+1)
+
+
+On Primary
+
+
+CONFIGURE ARCHIVELOG DELETION POLICY TO APPLIED ON STANDBY;
+
+
+On Standby ( Depends upon where backup is preformed )
+
+
+CONFIGURE ARCHIVELOG DELETION POLICY TO NONE; 
+
+Or
+
+CONFIGURE ARCHIVELOG DELETION POLICY TO APPLIED ON ALL STANDBY; ( if Standby Where Backups Are Not Performed )
+
+Source
+
+Data Guard Concepts and Administration 11g Release 2 (11.2) E10700-02
+
+11.3.2 RMAN Configurations at the Primary Database
+
+3. Specify when archived logs can be deleted with the CONFIGURE ARCHIVELOG
+DELETION POLICY command
+
+
+2)
+
+
+Backups Occur on Primary
+
+
+On Primary
+
+CONFIGURE ARCHIVELOG DELETION POLICY TO APPLIED ON STANDBY;
+
+
+
+On Standby
+
+CONFIGURE ARCHIVELOG DELETION POLICY TO NONE; 
+
+

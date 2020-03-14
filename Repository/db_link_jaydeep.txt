@@ -1,0 +1,40 @@
+create user DL_COMMON identified by sreig00d;
+grant connect,resource to CDS_READONLY 
+
+GRANT create database link TO otheruser
+
+select 'GRANT EXECUTE ON '||owner||'.'||object_name||' TO CDS_READONLY;' from all_objects
+where owner = 'SREI_CDS_AMBIT'
+and object_type in ('FUNCTION','PROCEDURE')
+
+select 'GRANT SELECT ON '||owner||'.'||object_name||' TO DL_COMMON;' from all_objects
+where owner = 'SEFPLLIVEPHASE2_TEST'
+and object_type in ('VIEW','TABLE')
+
+sefpllivephase2_test
+
+
+DESC SEFPLLIVEPHASE2_TEST.AXVW_COLL_EXP_FLOW@DLN_COLLECTION_AAF
+
+
+
+CREATE DATABASE LINK "DLN_COLLECTION_AAF"
+CONNECT TO SEFPLLIVEPHASE2_TEST IDENTIFIED BY sreig00d
+USING 'AMBITRPT';
+   
+
+=================================================================================================
+ 
+select 'GRANT SELECT ON '||owner||'.'||object_name||' TO CDS_READONLY;' from all_objects
+where owner = 'SREI_CDS_AMBIT'
+and object_type ='TABLE' and OBJECT_NAME like 'Z_NG%'
+
+
+=================================================================================================
+
+
+After refreshing 'SEFLKASTLENEW'
+
+select 'GRANT SELECT ON '||owner||'.'||object_name||' TO SCDP_TO_CDSAMBIT;' from all_objects
+where owner = 'SEFLKASTLENEW'
+and object_type in ('VIEW','TABLE')

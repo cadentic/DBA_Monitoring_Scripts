@@ -1,0 +1,60 @@
+select STATUS,PROCESS from v$managed_standby
+
+SELECT PROCESS, CLIENT_PROCESS, SEQUENCE#, STATUS FROM V$MANAGED_STANDBY 
+
+
+
+PATH=$PATH:$HOME/bin
+export ORACLE_HOME=/u01/rac/product/11.2.0/dbhome_1
+export ORACLE_SID=sp011
+export ORACLE_UNQNAME=SP01
+export PATH=$PATH:$ORACLE_HOME/bin:$ORACLE_HOME/rdbms/admin:$ORACLE_HOME/lib:$ORACLE_HOME/OPatch:/sbin
+export alrt=/rac/app/oracle/diag/rdbms/sp01/SP011/trace/alert_SP011.log
+export asmalrt=/rac/app/oracle/diag/asm/+asm/+ASM1/trace/alert_+ASM1.log
+
+export TNS_ADMIN=$ORACLE_HOME/network/admin
+alias sq='sqlplus "/as sysdba"'
+
+
+
+
+SELECT high.thread#, "LowGap#", "HighGap#"
+  FROM
+       (
+        SELECT thread#, MIN(sequence#)-1 "HighGap#"
+        FROM
+       (
+           SELECT a.thread#, a.sequence#
+           FROM
+           (
+              SELECT *
+              FROM v$archived_log
+          ) a,
+         (
+             SELECT thread#, MAX(next_change#)gap1
+             FROM v$log_history
+            GROUP BY thread#
+        ) b
+         WHERE a.thread# = b.thread#
+         AND a.next_change# > gap1
+     )
+       GROUP BY thread#
+  ) high,
+  (
+       SELECT thread#, MIN(sequence#) "LowGap#"
+     FROM
+      (
+          SELECT thread#, sequence#
+         FROM v$log_history, v$datafile
+           WHERE checkpoint_change# <= next_change#
+          AND checkpoint_change# >= first_change#
+    )
+       GROUP BY thread#
+   ) low
+  WHERE low.thread# = high.thread#
+
+
+grant execute on SREI_CDS_AMBIT.SP_SREI_VP_CONTRACT_EXPOSURE to  VARPAY_AGENT1
+
+
+grant select on SREI_CDS_AMBIT.Z_VP_CONTRACT_MONTH_EXPOSURE to  VARPAY_AGENT1

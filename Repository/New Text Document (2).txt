@@ -1,0 +1,3 @@
+cd /newdump/filesystems/SANP05/
+
+nohup expdp system/lenovo123 dumpfile=SEFPLLIVE_07072016.DMP LOGFILE=SEFPLLIVE_07072016.log schemas=SEFPLLIVE directory=SANP05 &

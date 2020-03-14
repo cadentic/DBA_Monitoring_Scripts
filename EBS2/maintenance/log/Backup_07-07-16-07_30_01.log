@@ -1,0 +1,31 @@
+
+Recovery Manager: Release 11.2.0.2.0 - Production on Thu Jul 7 07:30:01 2016
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+ORACLE_HOME = /u01/rac/oracle_base/db/tech_st/11.2.0/
+System name:	Linux
+Node name:	sreikolebz2.srei.com
+Release:	2.6.39-400.247.1.el5uek
+Version:	#1 SMP Thu Feb 5 15:53:28 PST 2015
+Machine:	x86_64
+
+Starting with debugging turned off
+
+connected to target database: EBS (DBID=2012991160)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 10> 11> 12> 13> 14> 15> 16> 17> 18> 19> 20> 
+using target database control file instead of recovery catalog
+Calling krmmpem from krmmexe
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-12001: could not open channel t1
+RMAN-10008: could not create channel context
+RMAN-10003: unable to connect to target database
+RMAN-04005: error from target database: 
+ORA-12154: TNS:could not resolve the connect identifier specified
+
+RMAN> 
+
+Recovery Manager complete.

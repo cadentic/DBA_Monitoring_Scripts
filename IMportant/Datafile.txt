@@ -1,0 +1,18 @@
+SELECT owner_name, job_name, operation, job_mode, state FROM dba_datapump_jobs;
+SYS_EXPORT_SCHEMA_53
+
+CREATE OR REPLACE DIRECTORY SANP05 AS '/newdump/filesystems/SANP05/';
+
+alter tablespace LIFERAYPORTAL add datafile '/var/oracle/datafile/TCL/LIFERAYPORTAL_02.dbf' size 500M autoextend on maxsize 2G;
+grant read, write on directory SANP05 to SRTS_PROD;
+
+alter tablespace SREICAB4 add datafile '/var/oracle/datafile/NGD01/NGD01/SREICAB4_1087.dbf' size 10G autoextend on maxsize 20G
+
+
+alter tablespace SREICAB4 add datafile '/var/oracle/datafile/NGD01/NGD01/SREICAB4_1187.dbf' resize 7G;
+alter tablespace temp add tempfile '/var/oracle/datafile/NGD01/NGD01/temp02.dbf' size 1G;
+
+
+alter database datafile '/var/oracle/datafile/TCL/NGD01/SREICAB4_587.dbf' resize 1G;
+
+drop tablespace SREICAB4 including contents cascade constraints;

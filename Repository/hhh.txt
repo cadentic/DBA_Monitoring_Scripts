@@ -1,0 +1,1 @@
+/home/orasp01/daily_scheduled_backup.sh

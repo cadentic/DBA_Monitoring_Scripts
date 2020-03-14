@@ -1,0 +1,43 @@
+Dear Team,
+Kindly create a new database link between SREICABINETUAT and SREI_CDS_NEWGEN.
+From SREI_CDS_NEWGEN user we want to access all table of  SREICABINETUAT. 
+
+
+
+Schema name : SREICABINETUAT 
+Host Name :  10.90.5.226
+Service Name : NGD02
+
+
+
+Schema name : SREI_CDS_NEWGEN.
+Host Name= 10.90.5.231
+Service Name: CDSUAT
+
+Also requesting you kindly provide select access of all table of SREICABINETUAT in SREI_CDS_NEWGEN 
+
+create database link SREICABINETUAT_LINK 
+CONNECT TO SREICABINETUAT IDENTIFIED BY password
+   USING 'servicename';
+
+
+CREATE SYNONYM emp_table 
+   FOR oe.employees@remote.us.oracle.com;
+
+
+create database link DL_SREICABINETUAT
+CONNECT TO SREICABINETUAT IDENTIFIED BY sreig00d
+	USING 'CDSUAT';
+
+
+
+
+select u_dump.value || '/' || instance.value || '_ora_' || v$process.spid 
+|| nvl2(v$process.traceid, '_' || v$process.traceid, null ) || '.trc'"Trace File"
+from V$PARAMETER u_dump 
+cross join V$PARAMETER instance 
+cross join V$PROCESS 
+join V$SESSION on v$process.addr = V$SESSION.paddr 
+where u_dump.name = 'user_dump_dest' 
+and instance.name = 'instance_name' 
+and V$SESSION.audsid=sys_context('userenv','sessionid'); 

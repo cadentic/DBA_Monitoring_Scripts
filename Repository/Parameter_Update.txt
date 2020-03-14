@@ -1,0 +1,38 @@
+How to change SPFILE parameters for a RAC database
+
+Well, this is a simple task as it sounds. But believe me when i was supposed to do this for the first time in my career i had a hard time searching for exact solution. Here i am just sharing my experience in doing this task
+There are definitely 2 known methods available to perform this task
+
+METHOD 1:
+Simply issue the following SQL statement from any of the nodes
+ALTER SYSTEM SET = scope=spfile;
+There are 3 possible values for the 'scope' clause in this statement:
+1. MEMORY: The change is immediate but will not be available after next startup or reboot of the instance.
+2. SPFILE: The change will be effective in SPFILE only and will be available after next startup or reboot
+3. BOTH: The change is effective for both MEMORY and SPFILE and will be available after next startup also.
+Default is BOTH 
+You could also specify another clause called 'sid' at the end of the above ALTER statement which is specifically meant for a RAC database. This is to specify the instance where you want to make that change. For example, 
+ALTER SYSTEM SET = scope=spfile sid='*'; 
+means that this particular change in the parameter will happen on all instances after rebooting them (Default is '*')
+
+METHOD 2:
+Another method to change a parameter in the spfile is to export it to a pfile, change it and then create a new spfile. Let me detail out the various steps involved:
+1. On one instance, create a pfile from the existing spfile: SQL> CREATE PFILE FROM SPFILE. This will create a pfile called initSID.ora at /$ORACLE_HOME/dbs
+2. Edit the resulting PFILE initSID.ora in a vi editor (Add/alter the required parameter). You should use *. so that this parameter value is applied to all instances
+3. Now shutdown all the instances
+4. startup the instance (and hence the database) where you created and altered the pfile using this pfile only
+STARTUP PFILE=$ORACLE_HOME/dbs/initSID.ora
+Do not start other instances yet
+5. Now through this instance only, create a new spfile (which can be at a common location being accesses by all instances)
+CREATE SPFILE=‘commom_location/spfile.ora’ FROM PFILE=‘$ORACLE_HOME/dbs/initSID.ora’;
+This will overwrite the existing spfile with the spfile which has the new/altered parameter
+6. Now shutdown this instance again
+7. Now startup normally all the 3 instances without PFILE or SPFILE option: 
+STARTUP
+By default startup will now consider the new spfile 
+8. To confirm that the new parameters have been set/removed, issue following sql statement from all 3 instances
+SHOW PARAMETER 
+
+The method would not be much different if this is a single instance database instead of a RAC database (In Step#7 you would be starting only that single instance)
+
+-Rohit

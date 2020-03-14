@@ -1,0 +1,24 @@
+create tablespace VARPAY_AGENT1 datafile '/var/oracle/datafile/TCL/VARPAY_AGENT1_01.dbf' size 64M autoextend on next 128m maxsize 1G;
+create user VARPAY_AGENT1 identified by sreig00d default tablespace VARPAY_AGENT1 quota unlimited on VARPAY_AGENT1;
+grant connect,resource to VARPAY_AGENT1;
+grant read,write on directory SP02_DIR to VARPAY_AGENT1;
+grant read,write on directory DATAPUMP_DI to VARPAY_AGENT1;
+grant read,write on directory DATA_PUMP_DIR to VARPAY_AGENT1;
+grant read,write on directory LOCAL to VARPAY_AGENT1;
+grant CREATE SEQUENCE,CREATE TABLE,CREATE TRIGGER,CREATE PROCEDURE,CREATE VIEW,CREATE TYPE to VARPAY_AGENT1;
+
+
+nohup expdp system/oratcora dumpfile=VARPAY_AGENT_13JUL2016.DMP LOGFILE=VARPAY_AGENT_13JUL2016.log schemas=VARPAY_AGENT1 directory=DATA_PUMP_DIR &
+
+/var/oracle/admin/CDSUAT/dpdump/
+
+
+ALTER TABLESPACE VARPAY_AGENT1
+   ADD DATAFILE '/var/oracle/datafile/TCL/VARPAY_AGENT1_02.dbf' SIZE 6M autoextend on next 128m maxsize 5G;
+
+nohup impdp system/oratcora dumpfile=VARPAY_AGENT_13JUL2016.DMP logfile=VARPAY_AGENT_13JUL2016_imp.log remap_schema=VARPAY_AGENT:VARPAY_AGENT1 remap_tablespace=VARPAY_AGENT:VARPAY_AGENT1 directory=DATA_PUMP_DIR &
+select count(1),object_type from dba_objects where owner='VARPAY_AGENT1' group by object_type order by 2 ;
+
+alter user VARPAY_AGENT1  temporary tablespace TEMP;
+
+select username,TEMPORARY_TABLESPACE from DBA_USERS

@@ -1,0 +1,48 @@
+=======CPU_METRICS SP011======
+<br>
+<pre>
+select DAY, HOST_CPU_UTIL_PCT,ORA_CPU_UTIL_PCT, ORA_CPU_WAIT_PCT  from tbl_monthly_cpu_metrics where trim(month) = 'JUNE' AND INST_ID=1 AND TO_CHAR(TO_DAY,'YYYY') = '2016' order by DAY ASC
+                                                                       *
+</pre>
+ERROR at line 1:
+<br>
+ORA-00942: table or view does not exist
+<br>
+
+
+=======CPU_METRICS SP012======
+<br>
+<pre>
+select DAY, HOST_CPU_UTIL_PCT,ORA_CPU_UTIL_PCT, ORA_CPU_WAIT_PCT  from tbl_monthly_cpu_metrics where trim(month) = 'JUNE' AND INST_ID=2 AND TO_CHAR(TO_DAY,'YYYY') = '2016' order by DAY ASC
+                                                                       *
+</pre>
+ERROR at line 1:
+<br>
+ORA-00942: table or view does not exist
+<br>
+
+
+======MEM_METRICS SP011=======
+<br>
+<pre>
+select	DAY,SGA_MAX_SIZE, SGA_VARIABLE_SIZE, SGA_TARGET, PGA_AGGREGATE_TARGET, PGA_ALLOCATED , PGA_USED from tbl_monthly_mem_metrics where trim(month) = 'JUNE' AND TO_CHAR(TO_DAY, 'YYYY') = '2016' AND INST_ID = 1 order by DAY ASC
+                                                                                                             *
+</pre>
+ERROR at line 1:
+<br>
+ORA-00942: table or view does not exist
+<br>
+
+
+======MEM_METRICS SP012=======
+<br>
+<pre>
+select	DAY, SGA_MAX_SIZE, SGA_VARIABLE_SIZE, SGA_TARGET, PGA_AGGREGATE_TARGET, PGA_ALLOCATED , PGA_USED from tbl_monthly_mem_metrics where trim(month) = 'JUNE' AND TO_CHAR(TO_DAY,'YYYY') = '2016' AND INST_ID = 2 order by DAY ASC
+                                                                                                              *
+</pre>
+ERROR at line 1:
+<br>
+ORA-00942: table or view does not exist
+<br>
+
+

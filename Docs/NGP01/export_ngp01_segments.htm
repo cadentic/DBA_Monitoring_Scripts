@@ -1,0 +1,7540 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252">
+<!-- base href="http://apexdev.us.oracle.com:7778/pls/apx11w/" -->
+<style type="text/css">
+table {
+background-color:#F2F2F5;
+border-width:1px 1px 0px 1px;
+border-color:#C9CBD3;
+border-style:solid;
+}
+td {
+color:#000000;
+font-family:Tahoma,Arial,Helvetica,Geneva,sans-serif;
+font-size:9pt;
+background-color:#EAEFF5;
+padding:8px;
+background-color:#F2F2F5;
+border-color:#ffffff #ffffff #cccccc #ffffff;
+border-style:solid solid solid solid;
+border-width:1px 0px 1px 0px;
+}
+th {
+font-family:Tahoma,Arial,Helvetica,Geneva,sans-serif;
+font-size:9pt;
+padding:8px;
+background-color:#CFE0F1;
+border-color:#ffffff #ffffff #cccccc #ffffff;
+border-style:solid solid solid none;
+border-width:1px 0px 1px 0px;
+white-space:nowrap;
+}
+</style>
+<script type="text/javascript">
+window.apex_search = {};
+apex_search.init = function (){
+	this.rows = document.getElementById('data').getElementsByTagName('TR');
+	this.rows_length = apex_search.rows.length;
+	this.rows_text =  [];
+	for (var i=0;i<apex_search.rows_length;i++){
+        this.rows_text[i] = (apex_search.rows[i].innerText)?apex_search.rows[i].innerText.toUpperCase():apex_search.rows[i].textContent.toUpperCase();
+	}
+	this.time = false;
+}
+
+apex_search.lsearch = function(){
+	this.term = document.getElementById('S').value.toUpperCase();
+	for(var i=0,row;row = this.rows[i],row_text = this.rows_text[i];i++){
+		row.style.display = ((row_text.indexOf(this.term) != -1) || this.term  === '')?'':'none';
+	}
+	this.time = false;
+}
+
+apex_search.search = function(e){
+    var keycode;
+    if(window.event){keycode = window.event.keyCode;}
+    else if (e){keycode = e.which;}
+    else {return false;}
+    if(keycode == 13){
+		apex_search.lsearch();
+	}
+    else{return false;}
+}</script>
+</head><body onload="apex_search.init();">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td><input type="text" size="30" maxlength="1000" value="" id="S" onkeyup="apex_search.search(event);" /><input type="button" value="Search" onclick="apex_search.lsearch();"/> 
+</td></tr>
+</tbody></table>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>	<th>SEGMENT_NAME</th>
+	<th>GB</th>
+</tr>
+<tbody id="data">
+
+	<tr>
+<td>TMP_WEL_FINAL_RESULT21994</td>
+<td align="right">0.0006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_19112015</td>
+<td align="right">0.025390625</td>
+	</tr>
+	<tr>
+<td>EXT_LMS_08122015</td>
+<td align="right">0.0703125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23152</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL02_NO_OF_ATTEMPTS22192</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>BUSINESSUMARYTEMP_697</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS22193</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS22197</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_822</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT14185</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH22197</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET22197</td>
+<td align="right">0.0078125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL03_WELCOME_DET22197</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_PROCESSINSTANCET</td>
+<td align="right">0.0703125</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_PENDWORKLISTTABLE</td>
+<td align="right">0.095703125</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_PARTY_MASTER</td>
+<td align="right">0.0498046875</td>
+	</tr>
+	<tr>
+<td>DDT_563</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>TEMPPDBDATADEFINITION_542</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPPDBGLOBALINDEX_542</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPPDBDATAFIELDSTABLE_542</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_545</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT17537</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>EXT_WRONGNUMBER_BAM</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>AMBIT_NOT_IN_NG</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT13684</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT13084</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>TMP_EMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXT_LOS_CAM_100415</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>EXT_LOS_CAM_20042016</td>
+<td align="right">0.0703125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22198</td>
+<td align="right">0.0006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_1022</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_1003</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_SMSDETAILS_2</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_SMSDETAILS_090215</td>
+<td align="right">0.0263671875</td>
+	</tr>
+	<tr>
+<td>UPDATEISWIPRESTN2</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>UPDATEISWIPRESTN</td>
+<td align="right">0.0008544921875</td>
+	</tr>
+	<tr>
+<td>Z_NG_USER_PIORITY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_USER_PIORITY_HISTORY</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>CUSTOM_DMSVIEWDOC</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>C_1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22927</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>BIN$OB/QLnoeKdLgU/UWqMDmxg==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>LMS_INTEGRATION_LOGS</td>
+<td align="right">0.021484375</td>
+	</tr>
+	<tr>
+<td>CONTRACT_NEWGEN_DTL</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_BS_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BUSINESSUMARYTEMP_717</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTORS_11042016</td>
+<td align="right">0.0166015625</td>
+	</tr>
+	<tr>
+<td>TMP_BS_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>TMP_BS_CONTRACT_MASTER</td>
+<td align="right">0.0224609375</td>
+	</tr>
+	<tr>
+<td>TMP_BS_PARTY_CONTACT_MASTER</td>
+<td align="right">0.02734375</td>
+	</tr>
+	<tr>
+<td>TMP_BS_PARTY_MASTER</td>
+<td align="right">0.0498046875</td>
+	</tr>
+	<tr>
+<td>TMP_BS_DEBTORS</td>
+<td align="right">0.0146484375</td>
+	</tr>
+	<tr>
+<td>DDT_522</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>TEST_SREI</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DDT_502</td>
+<td align="right">0.00091552734375</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT14222</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>TMP_DLN04_DELINQUENCY_DET13765</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_DLN03_NO_OF_ATTEMPTS13765</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT13644</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT13641</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT14659</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT10368</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_3_10368</td>
+<td align="right">0.0087890625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT10373</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>EXT_WRONGNUMBER_2402102276</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS17468</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT17463</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT17455</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT17454</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS17453</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT20053</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23287</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23284</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS17445</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH17445</td>
+<td align="right">0.0126953125</td>
+	</tr>
+	<tr>
+<td>TMP_BS_PARTY_ADDRESS_MASTER</td>
+<td align="right">0.0380859375</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT20057</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_QUEUEDATATABLE</td>
+<td align="right">0.1640625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_PROCESSINSTANCET</td>
+<td align="right">0.1015625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_PENDWORKLISTTABLE</td>
+<td align="right">0.1484375</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_PARTY_MASTER</td>
+<td align="right">0.0546875</td>
+	</tr>
+	<tr>
+<td>DDT_862</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_843</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_GC_GO_NOGO_BKUP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_GREENCHANNEL_CONFIG_BKP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT21965</td>
+<td align="right">0.0006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS23899</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>TEMP_DPD</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23897</td>
+<td align="right">0.0003662109375</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24277</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>NG_EMPLOYEE_MASTER_TRNS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24325</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>EXT_CONTRACT_BKUP11022016</td>
+<td align="right">0.0263671875</td>
+	</tr>
+	<tr>
+<td>PRODUCT_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PRODUCT_MASTERBKUP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXT_CONTRACT_BKP8_12_15</td>
+<td align="right">0.0234375</td>
+	</tr>
+	<tr>
+<td>EXT_LOS_CAM_BKP8_12_15</td>
+<td align="right">0.0498046875</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_QUEUEDATATABLE</td>
+<td align="right">0.1484375</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_PROCESSINSTANCET</td>
+<td align="right">0.09375</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22045</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_PENDWORKLISTTABLE</td>
+<td align="right">0.140625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_PARTY_MASTER</td>
+<td align="right">0.0537109375</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_PARTY_CONT_MASTER</td>
+<td align="right">0.0283203125</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_PARTY_ADD_MASTER</td>
+<td align="right">0.04296875</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.00091552734375</td>
+	</tr>
+	<tr>
+<td>BUSINESSUMARYTEMP_727</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_CONTRACT_MASTER</td>
+<td align="right">0.025390625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_BUSI_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS22055</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH22055</td>
+<td align="right">0.015625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22054</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET22055</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24162</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24163</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24167</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>SUPPLIER_MASTER_AGENT_ID</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_GUARANTORTYPE_22042016</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_20042016</td>
+<td align="right">0.0283203125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23924</td>
+<td align="right">0.0006103515625</td>
+	</tr>
+	<tr>
+<td>SESSIONTABLE</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>OFFERDESC</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>OFFERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PASSPOLICY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_LOGIN</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CP_SECQUES</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CP_REQUEST_TYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_IT_13112015</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS23037</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_EXT_COLLECTION</td>
+<td align="right">0.6875</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_USR_0_WELCOME_DUMP</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.015625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_WORKLISTTABLE</td>
+<td align="right">0.078125</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>SUPPLIER_MASTER_AMBIT</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24352</td>
+<td align="right">0.00042724609375</td>
+	</tr>
+	<tr>
+<td>TEMP7</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP6</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP5</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP4</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP3</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP2</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BUSINESSUMARYTEMP_677</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP_DISTANCE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_COLLECTION</td>
+<td align="right">0.0126953125</td>
+	</tr>
+	<tr>
+<td>CONTRACT_FOR_COLLECTION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXT_CONTRACT_20042016</td>
+<td align="right">0.029296875</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTORS_SUCCESS_BCK</td>
+<td align="right">7.869140625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT11586</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>BUSINESSUMARYTEMP_651</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT17532</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>TMP_DLN06_EXIT_STAT17538</td>
+<td align="right">0.017578125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT19721</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>FI_TEST</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_3_19721</td>
+<td align="right">0.01171875</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.015625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_EXT_COLLECTION</td>
+<td align="right">0.6484375</td>
+	</tr>
+	<tr>
+<td>USR_0_SMSDETAILS_07</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23860</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT21978</td>
+<td align="right">0.0006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT13073</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_3_13073</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT13066</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_WORKLISTTABLE</td>
+<td align="right">0.0703125</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_USR_0_WELCOME_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.0146484375</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT13069</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>TEMP_TEST</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLECTION_ASSET_NAME</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>CC_TEMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_IT_SS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CAM_LEVELMASTER_BKUP18052015</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_PARTY_MASTER</td>
+<td align="right">0.052734375</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_PARTY_CONT_MASTER</td>
+<td align="right">0.0283203125</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_PARTY_ADD_MASTER</td>
+<td align="right">0.0419921875</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_QUEUEDATATABLE</td>
+<td align="right">0.140625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_PROCESSINSTANCET</td>
+<td align="right">0.0859375</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_PENDWORKLISTTABLE</td>
+<td align="right">0.1328125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS22182</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_DLN06_EXIT_STAT17623</td>
+<td align="right">0.0166015625</td>
+	</tr>
+	<tr>
+<td>EXT_LMS_BACKUP_28_7_15</td>
+<td align="right">0.0400390625</td>
+	</tr>
+	<tr>
+<td>EXT_WRONGNUMBER_2701100304</td>
+<td align="right">0.0003662109375</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLECTION_BUS_VERTICAL</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23667</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS22966</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET22966</td>
+<td align="right">0.0078125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL03_WELCOME_DET22966</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>FI_TEMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PARTY_CONTACTID</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22682</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22681</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT16777</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23603</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS23377</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH23377</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>CMPLX_COLLECTION_REPOASSET</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CAM_TEST</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>CON_TEST</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>TMP_DLN06_EXIT_STAT15546</td>
+<td align="right">0.0166015625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24058</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>Z_NG_MST_ERROR_LOG</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT20063</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT16862</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_EXT_COLLECTION</td>
+<td align="right">0.546875</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_CONTRACT_MASTER</td>
+<td align="right">0.0244140625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_BUSI_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.00091552734375</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_15_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22117</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH22966</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23663</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS23453</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH23453</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23662</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>Z_NG_ACCESS_HO_DELIGATION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_788</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_812</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_811</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLETCION_FUT_SETTLE_AMT</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLECTION_AGENT_RM</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>T_ALL_SUMMARY_FINAL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BUSINESSUMARYTEMP_732</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AGENTTYPE_MASTER_08112015</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_PRIORITYASSETCATEGORY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>APPROVALROUTING_081115</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CAM_LEVELMASTER_081115</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>OTHER_DEVIATION_MASTER_BKP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>FINANCIAL_DEVIATION_MASTER_BKP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLECTION_ASSET_1</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLECTION_ASSET</td>
+<td align="right">0.0087890625</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLECTION_CUSTOMER_CITY</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>DDT_922</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_271115</td>
+<td align="right">0.025390625</td>
+	</tr>
+	<tr>
+<td>DDT_903</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_891</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS24315</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLECTION_VERTICAL</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_USR_0_WELCOME_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.0146484375</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_SMSDETAILS_12052015</td>
+<td align="right">0.0107421875</td>
+	</tr>
+	<tr>
+<td>EXT_WRONGNUMBER_KAMAL</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>EXT_WRONGNUMBER_0709103553</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>T_ALL_SUMMARY</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL03_WELCOME_DET21879</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_PENDWORKLISTTABLE</td>
+<td align="right">0.1171875</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_PARTY_MASTER</td>
+<td align="right">0.0517578125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23821</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_PROCESSINSTANCET</td>
+<td align="right">0.078125</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_PENDWORKLISTTABLE</td>
+<td align="right">0.1123046875</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_PARTY_MASTER</td>
+<td align="right">0.05078125</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_PARTY_CONT_MASTER</td>
+<td align="right">0.0283203125</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_PARTY_ADD_MASTER</td>
+<td align="right">0.041015625</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLECTION_CO_OFF</td>
+<td align="right">0.0078125</td>
+	</tr>
+	<tr>
+<td>TEMP_ASSET</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_QUEUEDATATABLE</td>
+<td align="right">0.171875</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_PROCESSINSTANCET</td>
+<td align="right">0.109375</td>
+	</tr>
+	<tr>
+<td>CUSTOM_REPO_ASSET_MASTER</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>DDT_890</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_889</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_SUPPLIER_MASTER_AMBIT</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_887</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_MANUFAC_DEALER_MASTER</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>ROLE_DEPARTMENT_MAP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_SUPPLIER_MASTER_NG</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>DDT_884</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_883</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CAM_LEVELMASTER_24112015</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_BOUNCE_FINAL_RESULT23512</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CON_NEWGEN</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BIN$OCI+dxd3etrgUwEAAH/ZAw==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_WELCOME_TEMP_BKP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET23497</td>
+<td align="right">0.0087890625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL03_WELCOME_DET23497</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>REGION_CHANGE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ZIP_CODE_MASTER_21122015</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS25322</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>T_GPS_INSTALLED</td>
+<td align="right">0.005859375</td>
+	</tr>
+	<tr>
+<td>TEMP_COLL_ASSET_WITH_SRE1</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24347</td>
+<td align="right">0.0006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_WORKLISTTABLE</td>
+<td align="right">0.0615234375</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EMPLOYEE_MASTER_CNH</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>TEMP_AMBIT_DATA</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODZv/m0QIYzgUwEAAH+mSw==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODTAJeB/KuPgU/UWqMCO9A==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODRugt/kZp/gUwEAAH89FQ==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT18649</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>PROCESS_TEMP_1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WORKLISTTABLE_27082015</td>
+<td align="right">0.0703125</td>
+	</tr>
+	<tr>
+<td>PROCESS_TEMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BUSINESS_MODEL_MASTER_22022016</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL02_NO_OF_ATTEMPTS24397</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TEMP_CAM_APPROVAL_AUTHORITY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_SMSDETAILS_29102015</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>EXT_LMS_20042016</td>
+<td align="right">0.1015625</td>
+	</tr>
+	<tr>
+<td>REGION_MASTER_20042016</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_PROCESSINSTANCET</td>
+<td align="right">0.0537109375</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_PENDWORKLISTTABLE</td>
+<td align="right">0.078125</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_PARTY_CONT_MASTER</td>
+<td align="right">0.0263671875</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_PARTY_ADD_MASTER</td>
+<td align="right">0.0341796875</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_BUSI_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_WORKWITHPSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_WORKLISTTABLE</td>
+<td align="right">0.048828125</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_WORKDONETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_USR_0_WELCOME_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_QUEUEDATATABLE</td>
+<td align="right">0.0859375</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_PARTY_MASTER</td>
+<td align="right">0.0478515625</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_EXT_COLLECTION</td>
+<td align="right">0.4150390625</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_CONTRACT_MASTER</td>
+<td align="right">0.021484375</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_APR_15_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.00079345703125</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_QUEUEDATATABLE</td>
+<td align="right">0.109375</td>
+	</tr>
+	<tr>
+<td>DDT_982</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_AMBIT_DTL</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>DDT_962</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_943</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_942</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT15935</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT17663</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT18621</td>
+<td align="right">0.0078125</td>
+	</tr>
+	<tr>
+<td>T_DEBTORS_DUMP</td>
+<td align="right">0.037109375</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22620</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_02_MAY_2015</td>
+<td align="right">0.021484375</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS21861</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH21861</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT10880</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>TMP_DLN09_FINAL_STAT10880</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_817</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_790</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_816</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_815</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_814</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DDT_813</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPPDBDATADEFINITION_789</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPPDBGLOBALINDEX_789</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPPDBDATAFIELDSTABLE_789</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_791</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_819</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_AUTH_130415</td>
+<td align="right">0.0361328125</td>
+	</tr>
+	<tr>
+<td>BUSINESSUMARYTEMP_712</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_SMSDETAILS_BOUNCE</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>TEMP_TABLE_PARTY_UPDATE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_SMSDETAILS_BCK</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_2_13086</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT18646</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT18664</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT18642</td>
+<td align="right">0.0078125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS21988</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH21988</td>
+<td align="right">0.0146484375</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET21988</td>
+<td align="right">0.005859375</td>
+	</tr>
+	<tr>
+<td>TMP_WEL03_WELCOME_DET21988</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>TT_TAB</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT20167</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS23329</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS23326</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23305</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLECTION_ASSET_COUNT</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>BAM_PERFORMANCE_TEMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS23394</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS22663</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23792</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23772</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>USR_0_OPUSERPREFERENCES</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23047</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ACTIVITYPERMI_130415</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXT_CONTRACT_14APR</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>EXT_LOS_CAM_14APR</td>
+<td align="right">0.0146484375</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT13773</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>TMP_DLN09_FINAL_STAT13773</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT13659</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>DDT_806</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_808</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_807</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_810</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_809</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_787</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_818</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT17542</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT21762</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS23497</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH23497</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT21885</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_805</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS21885</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_804</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_803</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_786</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_785</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BIN$OCbNVUSLE2bgUwEAAH/Pqw==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$OCajQyrVDU/gUwEAAH9//A==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$OCaKyST8CavgUwEAAH/DEA==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$OCaKyST6CavgUwEAAH/DEA==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$OCaKyST4CavgUwEAAH/DEA==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$OCaKyST2CavgUwEAAH/DEA==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24280</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>TMP_BS_USR_0_WELCOME_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23633</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23845</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TESTTABLE</td>
+<td align="right">4.43359375</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS24278</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH24278</td>
+<td align="right">0.0244140625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET24278</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>BIN$OCPQGQzuLgrgUwEAAH8YgQ==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_WORKLISTTABLE</td>
+<td align="right">0.056640625</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_USR_0_WELCOME_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT16797</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>NG_EMP</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>T_I</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>Z_NG_MANUFAC_DEALER_MASTER_BCK</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_WORKLISTTABLE</td>
+<td align="right">0.078125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_USR_0_WELCOME_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_CONTRACT_MASTER</td>
+<td align="right">0.025390625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_BUSI_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_SYSTEM_QUEUE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_FI_DUMP</td>
+<td align="right">0.0859375</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_QUEUEDATATABLE</td>
+<td align="right">0.1171875</td>
+	</tr>
+	<tr>
+<td>DDT_802</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_784</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_783</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_782</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_QUEUEDATATABLE</td>
+<td align="right">0.1328125</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_PROCESSINSTANCET</td>
+<td align="right">0.078125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT21878</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT21873</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH21874</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS21879</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH21879</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT13991</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_3_13991</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_PARTY_CONT_MASTER</td>
+<td align="right">0.0283203125</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_PARTY_ADD_MASTER</td>
+<td align="right">0.041015625</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.00091552734375</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_17112015</td>
+<td align="right">0.025390625</td>
+	</tr>
+	<tr>
+<td>AGENT_ORACLE_ID_MAP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CONSTI_MASTER_29_04</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.0146484375</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_EXT_COLLECTION</td>
+<td align="right">0.6015625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_WORKLISTTABLE</td>
+<td align="right">0.078125</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_15_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS22064</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_725</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_703</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DDT_724</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DDT_723</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PSREGISTERATIONTABLE_BKP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_SCHEME_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_SCHEME_MASTER_NG</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>IIR_PARTY_DEMOG</td>
+<td align="right">0.0576171875</td>
+	</tr>
+	<tr>
+<td>IIR_PARTY_ADDRESS</td>
+<td align="right">0.046875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24398</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS24399</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH24399</td>
+<td align="right">0.0263671875</td>
+	</tr>
+	<tr>
+<td>DEBTOR_RECON_TEMP</td>
+<td align="right">0.0126953125</td>
+	</tr>
+	<tr>
+<td>Z_NG_MASTER_SYN_CONT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AMBIT_CONTRACT_PARTY_INFO</td>
+<td align="right">0.02734375</td>
+	</tr>
+	<tr>
+<td>AMBIT_CONTRACT_BENEFICRY_INFO</td>
+<td align="right">0.01171875</td>
+	</tr>
+	<tr>
+<td>AMBIT_CONTRACT_ASSET_DET</td>
+<td align="right">0.015625</td>
+	</tr>
+	<tr>
+<td>CAM_DEVIATION_MOVEMENT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_3_17745</td>
+<td align="right">0.01171875</td>
+	</tr>
+	<tr>
+<td>DDT_667</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DDT_686</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_666</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>APPROVAL_COMMITTEE_MAP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOMFLOW_MASTER_08112015</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ASSET_MASTER_08112015</td>
+<td align="right">0.00042724609375</td>
+	</tr>
+	<tr>
+<td>CUSTOM_SEFCLIENTGR_08112015</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>INSURANCEBYMASTER_08112015</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BUSINESS_MODEL_MASTER_08112015</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_TRANSACTIONRATINGMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_NEW_SCHEME_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTCALCRESULT</td>
+<td align="right">0.05859375</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_EXT_COLLECTION</td>
+<td align="right">0.4375</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_CONTRACT_MASTER</td>
+<td align="right">0.0224609375</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_BUSI_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_PARTY_CONT_MASTER</td>
+<td align="right">0.02734375</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_PARTY_ADD_MASTER</td>
+<td align="right">0.0390625</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.0008544921875</td>
+	</tr>
+	<tr>
+<td>APPROVALROUTING_12_05_2016</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT19659</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_PENDWORKLISTTABLE</td>
+<td align="right">0.171875</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTOR_DD1</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS21874</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>Z_NG_SUPPLIER_MASTER</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_PARTY_MASTER</td>
+<td align="right">0.0556640625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_PARTY_CONT_MASTER</td>
+<td align="right">0.0283203125</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_PARTY_ADD_MASTER</td>
+<td align="right">0.044921875</td>
+	</tr>
+	<tr>
+<td>DDT_729</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_728</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_707</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT13982</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>DDT_727</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_726</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_706</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH24315</td>
+<td align="right">0.0244140625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET24315</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>DDT_623</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_643</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_642</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EMPLOYEE_MASTER_FOR_OLAS</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>RECOMMAND_ROUTING_12092016</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>FY_MASTER_CUSTOMER_PORTAL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP_CONTRACT</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_PARTY_CONT_MASTER</td>
+<td align="right">0.0283203125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_PARTY_ADD_MASTER</td>
+<td align="right">0.0439453125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_15_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.0009765625</td>
+	</tr>
+	<tr>
+<td>EXT_LOS_CAM_BK</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>NG_EMPLOYEE_MASTER_15072016</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>BIN$ODktBsH5LavgU/UWqMCudw==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_WORKLISTTABLE</td>
+<td align="right">0.0419921875</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_WORKDONETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_USR_0_WELCOME_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_QUEUEDATATABLE</td>
+<td align="right">0.078125</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_PROCESSINSTANCE</td>
+<td align="right">0.0478515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_PENDINGWORKLIST</td>
+<td align="right">0.0703125</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_PARTY_MASTER</td>
+<td align="right">0.046875</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_PARTY_CON_MASTER</td>
+<td align="right">0.025390625</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_PARTY_ADD_MASTER</td>
+<td align="right">0.033203125</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_CONTRACT_MASTER</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_BUS_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP_COLL_CONTRACT</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT20438</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>USR_0_SMSDETAIL_TEST</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TEMP_PARTYMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP_CAM</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>T1</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_MAR_15_EXT_COLLECTION</td>
+<td align="right">0.640625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET23846</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL02_NO_OF_ATTEMPTS23847</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL03_WELCOME_DET23846</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT10150</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DDT_1162</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_SCHEME_MASTER_AMBIT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODhlatOPDhngU/UWqMC7NQ==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODhlatOJDhngU/UWqMC7NQ==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODhlatODDhngU/UWqMC7NQ==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODhL3MPQXw3gUwEAAH/NWQ==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODhL3MPKXw3gUwEAAH/NWQ==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODhL3MPEXw3gUwEAAH/NWQ==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODhbTrnlDhvgU/UWqMDR2w==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CONTRACTDEVAMOUNT_TRACK</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_1023</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_CP_OTPDETAILS</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>APPROVALROUTING_04_05_2016</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CAM_LEVELMASTER_04_05_2016</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22229</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>DDT_1066</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_1064</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_1063</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_1062</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_1065</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USERMASTER_07072015</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DDT_1102</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS24221</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_EXT_COLLECTION</td>
+<td align="right">0.5078125</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_CONTRACT_MASTER</td>
+<td align="right">0.0234375</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_BUSI_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_762</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_733</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_732</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_731</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXT_LMS_BKP_29042015</td>
+<td align="right">0.0234375</td>
+	</tr>
+	<tr>
+<td>TEST</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT13983</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT13985</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_3_13985</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS23846</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH23846</td>
+<td align="right">0.0234375</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23834</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS22359</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_736</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_735</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_708</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_734</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BUSINESSUMARYTEMP_722</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_730</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_683</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_664</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_663</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_682</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_742</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_709</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPPDBDATADEFINITION_662</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPPDBGLOBALINDEX_662</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPPDBDATAFIELDSTABLE_662</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_625</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CAM_GRADE_UPD</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22097</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT14735</td>
+<td align="right">0.0068359375</td>
+	</tr>
+	<tr>
+<td>CONTRACT_CANCELLED</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_USR_0_WELCOME_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DDT_644</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_624</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>NG_EMPLOYEE_MASTER</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_622</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_585</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_604</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_603</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS22058</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>ONLY_FOR_ALLIANCE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>NG_ACCESS_REJECT</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>Z_NG_ACCESS_DELIGATION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_ACCESS_ROUTING</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_CALLSUMRY_CALLTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_CALL_SUMMARY_MAIN</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_STAGE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PARTY_MASTER_STAGE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AU_Z_NG_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_REGION_MASTER_AMBIT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>Z_NG_REGION_MASTER_NG</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AU_Z_NG_SCHEME_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT17762</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS24239</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH24239</td>
+<td align="right">0.0244140625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET24239</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_21032015</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>BOUNCE_DETAILS_21032015</td>
+<td align="right">0.0003662109375</td>
+	</tr>
+	<tr>
+<td>EMPLOYEE_MASTER_21032015</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_CONTACT_210315</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_ADDRESS_210315</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS22143</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>BAM_PARTYWISE_REPORTTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_PARTYWISE_TEMPFILTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_COWISE_TEMPFILTER</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>TMP_DLN06_EXIT_STAT14428</td>
+<td align="right">0.0166015625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT17760</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TESTQUERY_1</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>BIN$ODhbTrnfDhvgU/UWqMDR2w==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODhbTrnZDhvgU/UWqMDR2w==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODhL3MPAXw3gUwEAAH/NWQ==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODhL3MO6Xw3gUwEAAH/NWQ==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODhL3MO0Xw3gUwEAAH/NWQ==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODaPDo1sKjTgUwEAAH+66Q==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_20032015_3</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_CONTRACT_MASTER</td>
+<td align="right">0.0234375</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_BUSI_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ZIP_CODE_MASTER</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>PARTY_CHECKLIST_BKUP030815</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_RESIDENCETYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24202</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_20032015</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_ADDRESS160315</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_WORKLISTTABLE</td>
+<td align="right">0.0390625</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_WORKDONETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_USR_0_WELCOME_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_QUEUEDATATABLE</td>
+<td align="right">0.0703125</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_PROCESSINSTANCE</td>
+<td align="right">0.04296875</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_PENDINGWORKLIST</td>
+<td align="right">0.0595703125</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_PARTY_MASTER</td>
+<td align="right">0.046875</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_PARTY_CON_MASTER</td>
+<td align="right">0.025390625</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_PARTY_ADD_MASTER</td>
+<td align="right">0.03125</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_EXT_COLLECTION</td>
+<td align="right">0.5625</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_CONTRACT_MASTER</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_BUS_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_FEB_15_BOUNCE_DETAILS</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>ZAPIN_CUSTMASTERINFO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_CONFIGTBL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_IT_DP</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>USR_0_SMSDETAILS_1</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET21879</td>
+<td align="right">0.005859375</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT21877</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS22262</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH22262</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>BAM_AUG_15_WORKLISTTABLE</td>
+<td align="right">0.0703125</td>
+	</tr>
+	<tr>
+<td>TMP_DLN04_DELINQUENCY_DET17619</td>
+<td align="right">0.0003662109375</td>
+	</tr>
+	<tr>
+<td>COLLECTION_AUTH_11032015</td>
+<td align="right">0.0302734375</td>
+	</tr>
+	<tr>
+<td>NEW_COLL_ENTRIES</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_546</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_544</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_543</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>DDT_547</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_VIEWRIGHTS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BUSINESSUMARYTEMP_707</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH22179</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>Z_NG_ASSET_MASTER_NG</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>Z_NG_ASSET_MASTER</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>Z_NG_ZIP_CODE_MASTER_AMBIT</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>Z_NG_ZIP_CODE_MASTER</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>Z_NG_ZIP_CODE_MASTER_NG</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TV</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TNV</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_20032015_2</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>CON_T1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_BS</td>
+<td align="right">0.0322265625</td>
+	</tr>
+	<tr>
+<td>EXT_LMS_18012016</td>
+<td align="right">0.0859375</td>
+	</tr>
+	<tr>
+<td>TEST34</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.00091552734375</td>
+	</tr>
+	<tr>
+<td>FIACTIVITY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CP_OTPDETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_WORKDONETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_USR_0_WELCOME_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.0146484375</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PARTY_BANK_MASTER_19032015</td>
+<td align="right">0.0008544921875</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_EMPLOYEE_MASTER</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_CONTRACT_MASTER</td>
+<td align="right">0.0263671875</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_BUSI_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_15_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SLA_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24428</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24427</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24422</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS22179</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>BIN$OHDxAzLYV+LgUwEAAH+sLg==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODmBJtoWOHDgU/UWqMBXEg==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_705</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_704</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>WFTEMPPROCESSDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PASSWORDHISTORY</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>DDT_584</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT17745</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>DDT_602</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_582</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_684</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_562</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_548</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_665</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_685</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_722</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_702</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DDT_687</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT17755</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_3_14735</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT14619</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_3_14619</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_2_14619</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ERROR_MSG</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_583</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT26217</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>EXT_CONTRACT_BKUP</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT18699</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>Z_NG_ASSET_MASTER_AMBIT</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>Z_NG_SUPPLIER_MASTER_AUDIT_LOG</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>T_1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AU_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH23899</td>
+<td align="right">0.0234375</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET23899</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL03_WELCOME_DET23899</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_3_13069</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT21810</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL03_WELCOME_DET10073</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS10073</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH10073</td>
+<td align="right">0.0107421875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET10073</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.0146484375</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_JUN_15_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH22064</td>
+<td align="right">0.015625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22100</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>DDT_842</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLECTION_CON_STATUS</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT14426</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH24221</td>
+<td align="right">0.0244140625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24204</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT24203</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>BUSINESSUMARYTEMP_685</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_EXT_COLLECTION</td>
+<td align="right">0.46875</td>
+	</tr>
+	<tr>
+<td>BAM_JUL_15_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23493</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>DDT_1083</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_1082</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23472</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22227</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>DDT_1002</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_EXPIRYDAYS_LOS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_1042</td>
+<td align="right">0.0087890625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT22228</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT21772</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_482</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH22182</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>TMP_WEL04_VERIFY_DET22182</td>
+<td align="right">0.0078125</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTORS_08042015</td>
+<td align="right">0.0166015625</td>
+	</tr>
+	<tr>
+<td>DDT_1123</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>S_1</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>TMP_NORMAL_FINAL_RESULT9808</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>CUSTOM_PRODUCT_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_PRODUCT_MASTERBKUP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_PRODUCT_COF</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_PRODUCT_COFBKUP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_SEGSUBSEG_MAPPING</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ENDUSEOFASSET_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_RISKCATEGORY_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_INTERNALSCHEME_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ORIGINSALES_LOCATION_PARTY</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>PURCHASE_LOCATION_PARTY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_PARTY_MASTER</td>
+<td align="right">0.048828125</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_PARTY_CONT_MASTER</td>
+<td align="right">0.0263671875</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_PARTY_ADD_MASTER</td>
+<td align="right">0.0361328125</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.0008544921875</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_EXT_COLLECTION</td>
+<td align="right">0.4033203125</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_CONTRACT_MASTER</td>
+<td align="right">0.0224609375</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_BUSI_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_TMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL02_NO_OF_ATTEMPTS22167</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>CAM_ACCESS_CONTOL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_BACKUP_20032015</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_25022015</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_PENDWORKLISTTABLE</td>
+<td align="right">0.0859375</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_CONTACT_BKP_NEW</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_ADDRESS_BKP_NEW</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>AUDIT_CONTRACT</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_WORKWITHPSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_WORKLISTTABLE</td>
+<td align="right">0.052734375</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_USR_0_WELCOME_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>EXT_WRONGNUMBER_V1</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>TMP_DELIN_FINAL_RESULT16799</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_QUEUEDATATABLE</td>
+<td align="right">0.0927734375</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_PROCESSINSTANCET</td>
+<td align="right">0.05859375</td>
+	</tr>
+	<tr>
+<td>ISSUE_TABLE_FI</td>
+<td align="right">0.005859375</td>
+	</tr>
+	<tr>
+<td>AMBIT_DUMP1</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>AMBIT_DUMP</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>TEMP_XX1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP_XX</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT23359</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>BAM_MAY_15_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>EMPLOYEE_MASTER_02032015</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>EMPLOYEE_MASTER_BS</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_EMPLOYEE_MASTER</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_EMPLOYEE_MASTER</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_EMPLOYEE_MASTER</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_EMPLOYEE_MASTER</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_EMPLOYEE_MASTER</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>EMPLOYEE_MASTER</td>
+<td align="right">0.00079345703125</td>
+	</tr>
+	<tr>
+<td>DR$FTSVERSIONCATALOG$R</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DR$FTSVERSIONCATALOG$I</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BIN$ODkQbwJMKwzgU/UWqMDVMQ==$0</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DR$FTSCATALOG$R</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DR$FTSCATALOG$I</td>
+<td align="right">0.9609375</td>
+	</tr>
+	<tr>
+<td>EXT_CONTRACT_1912</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DEBUGTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_FORMAT_EMAILSMS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_COLL_MONITORING_TEMP</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>BAM_LEADSUMMARY_TEMP</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>BAM_CUMULATIVE_PERFORMANCE_TMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_ARMALLOCATION_TEMPFILTER</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_ARM_PERFORMANCE_TEMPFILTER</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>BAM_PNPA_TEMPFILTER</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>EXT_CONTRACT</td>
+<td align="right">0.033203125</td>
+	</tr>
+	<tr>
+<td>USR_0_ACTIVITYWISE_EMAILSMS</td>
+<td align="right">0.044921875</td>
+	</tr>
+	<tr>
+<td>BAM_RMWISE_TEMPFILTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DASH_TEMPFILTER</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>BAM_PENDING_TEMPFILTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBLDAPXML</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ADUSER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>METADATAMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CRSCHEDULERDESTPROP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CRTEMPLATETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CRREPORTRULESTABLE</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CRREPORTINSTANCETABLE</td>
+<td align="right">0.00091552734375</td>
+	</tr>
+	<tr>
+<td>CRHISTORY</td>
+<td align="right">0.017578125</td>
+	</tr>
+	<tr>
+<td>CRALERTTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PRINTFAXEMAILTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSYSTEMSERVICESTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFBPELDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFFORMFRAGMENTTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFPURGECRITERIATABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFWSASYNCRESPONSETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPLATEMULTILANGUAGETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFWEBSERVICETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFJMSPUBLISHTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFJMSFAILEDMESSAGETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFJMSMESSAGEINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFJMSMESSAGETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFESCINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFESCALATIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFFAILEDMESSAGETABLE</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>WFMESSAGEINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFFORM_TABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PROCESSINITABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ACTIONDEFTABLE</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>WFMAILQUEUEHISTORYTABLE</td>
+<td align="right">0.0008544921875</td>
+	</tr>
+	<tr>
+<td>WFMAILQUEUETABLE</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>USERPREFERENCESTABLE</td>
+<td align="right">0.0146484375</td>
+	</tr>
+	<tr>
+<td>TEMPLATEDEFINITIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>MAILTRIGGERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ACTIVITYTABLE</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>PDBREGISTEREDSERVICE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBTHUMBNAILVERSION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBPERSONALROUTES</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBTHUMBNAIL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBFTSDATAVERSION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBFTSDATA</td>
+<td align="right">0.044921875</td>
+	</tr>
+	<tr>
+<td>PDBFORM</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBANNOTATIONDATAVERSION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBANNOTATIONDATA</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBANNOTATIONVERSION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBANNOTATION</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT9647</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS9651</td>
+<td align="right">0.00091552734375</td>
+	</tr>
+	<tr>
+<td>TMP_WEL05_WELCOME_AUTH9651</td>
+<td align="right">0.0078125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT9646</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT9650</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT9623</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL06_VERIFY_STATUS9622</td>
+<td align="right">0.00091552734375</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_21022015</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>RECOMMANDATION_ROUTING_B</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT9564</td>
+<td align="right">0.0003662109375</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_12022015</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_07022015</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>YYSREI_NEWGEN_EMP_OUT</td>
+<td align="right">0.00079345703125</td>
+	</tr>
+	<tr>
+<td>EMPLOYEE_MASTER_INSERT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_WORKWITHPSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_WORKLISTTABLE</td>
+<td align="right">0.0380859375</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_WORKDONETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_USR_0_WELCOME_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.0126953125</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_QUEUEHISTORYTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_QUEUEDATATABLE</td>
+<td align="right">0.0576171875</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_PROCESSINSTANCE</td>
+<td align="right">0.0380859375</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_PENDINGWORKLIST</td>
+<td align="right">0.0498046875</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_PARTY_MASTER</td>
+<td align="right">0.0458984375</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_PARTY_CON_MASTER</td>
+<td align="right">0.0244140625</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_PARTY_ADD_MASTER</td>
+<td align="right">0.0302734375</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_EXT_COLLECTION</td>
+<td align="right">0.5146484375</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_CONTRACT_MASTER</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_BUS_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_JAN_15_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EMPLOYEE_MASTER_DELETE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_BS_EMPLOYEE_MASTER_DELETE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>YYSREI_NEWGEN_EMP_OUT_TEST</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>YYSREI_NEWGEN_EMP_OUT_BKP_0302</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>YYSREI_NEWGEN_EMP_OUT_03022015</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_LOS_BUSINESSSUMMARY</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>BUSINESSUMARYTEMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_WELCOME_UNPROCESS_29JAN</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP_PARTY_ADDRESS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PARTY_ADDRESS_DIFF_21012015</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER2001</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER190115</td>
+<td align="right">0.00042724609375</td>
+	</tr>
+	<tr>
+<td>ASSET_MASTER_19012015</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_1BS</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_TMP_BS</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_17012015</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_15012015</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>BOUNCE_DETAILS_BS</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_13_JAN_2015</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT9435</td>
+<td align="right">0.0006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_AUTHORIZATION_BS</td>
+<td align="right">0.0205078125</td>
+	</tr>
+	<tr>
+<td>FINANCIAL_DEV_MASTER_0701</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>LEAD_MASTER</td>
+<td align="right">0.01171875</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_WORKWITHPSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_WORKLISTTABLE</td>
+<td align="right">0.0341796875</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_WORKINPROCESSTABLE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_WORKDONETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_USR_0_WELCOME_DUMP</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.0126953125</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_QUEUEHISTORYTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_QUEUEDATATABLE</td>
+<td align="right">0.0478515625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_PROCESSINSTANCE</td>
+<td align="right">0.0322265625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_PENDINGWORKLIST</td>
+<td align="right">0.0400390625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_PARTY_MASTER</td>
+<td align="right">0.044921875</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_PARTY_CON_MASTER</td>
+<td align="right">0.0234375</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_PARTY_ADD_MASTER</td>
+<td align="right">0.02734375</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.000732421875</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_EXT_COLLECTION</td>
+<td align="right">0.3828125</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_CONTRACT_MASTER</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_BUS_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DEC_14_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CAM_CONSOLE</td>
+<td align="right">0.0703125</td>
+	</tr>
+	<tr>
+<td>AMBIT_PARTY_ADDRESS_MASTER_REF</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_462</td>
+<td align="right">0.0419921875</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_02012015</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>SUPPLIER_DUPLICATE2</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>SUPPLIER_DUPLICATE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_PARTYLINK</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>DDT_442</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER_31122014</td>
+<td align="right">0.01953125</td>
+	</tr>
+	<tr>
+<td>CUSTOMFLOW_MASTER3012</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BKUP_AMBIT_NEWGEN_PARTY</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>AMBIT_NG_CONTRACT_REF_SEFPL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_BUSINESS_SUMMARY_DETAIL_1</td>
+<td align="right">0.00079345703125</td>
+	</tr>
+	<tr>
+<td>CAM_LEVELMASTER</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>FLAR_261214</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ACTYPERMISSION_261214</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>OTHER_DEVIATION_MASTER_241214</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_OTHER_DEVIATION_241214</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CAM_DEVIATION_241214</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_DEVIATION_241214</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>FINANC_DEVIATION_MASTER_241214</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ASSET_MASTER_23122014</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>AMBIT_NG_PARTY_REF_SEFPL</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTCUSTOMFLOW_12</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTRELATEDPARTY_12</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTCAMDETAILS_12</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_OFFICE_FOLLOWUP_1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_CHECKLIST_1912</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_CONTACT_1912</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_ADDRESS_1912</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXT_LOS_CAM_1912</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXT_LMS_1912</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>MOUMAPPING_171214</td>
+<td align="right">0.0008544921875</td>
+	</tr>
+	<tr>
+<td>DEBUG_TABLE</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>DDT_422</td>
+<td align="right">0.0087890625</td>
+	</tr>
+	<tr>
+<td>BUSINESS_MODEL_MASTER_151214</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>MOU_MASTER_151214</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>MOUMAPPING_151214</td>
+<td align="right">0.0006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_MODULEWISE_VARIABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_EXITWI_2</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_COLLMONITORING</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>VENDOR_LOCATION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>VENDOR_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WELCOME_DOUBLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_WORKWITHPSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_WORKLISTTABLE</td>
+<td align="right">0.03125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_WORKDONETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_USR_0_WELCOME_DUMP</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.0126953125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_QUEUEHISTORYTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_QUEUEDATATABLE</td>
+<td align="right">0.0390625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_PROCESSINSTANCE</td>
+<td align="right">0.0283203125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_PENDINGWORKLIST</td>
+<td align="right">0.03125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_PARTY_MASTER</td>
+<td align="right">0.041015625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_PARTY_CON_MASTER</td>
+<td align="right">0.0234375</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_PARTY_ADD_MASTER</td>
+<td align="right">0.0263671875</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.0003662109375</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_EXT_COLLECTION</td>
+<td align="right">0.2421875</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_CONTRACT_MASTER</td>
+<td align="right">0.017578125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_BUS_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV1_14_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_DLN10_FINAL_STAT9255</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_DLN10_FINAL_STAT9079</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_DLN10_FINAL_STAT9078</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_DLN10_FINAL_STAT9077</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PARTY_MASTER_HISTORY</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>PARTY_ADDRESS_HISTORY</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>PARTY_CONTACT_HISTORY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DEBTORS_TEMP_2DEC_DELINCALL</td>
+<td align="right">0.0078125</td>
+	</tr>
+	<tr>
+<td>VIEW_DEBTOR_2DEC_DELINCALL</td>
+<td align="right">0.017578125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_PROCESSINSTANCE</td>
+<td align="right">0.0283203125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_PENDINGWORKLIST</td>
+<td align="right">0.03125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_PARTY_CON_MASTER</td>
+<td align="right">0.0234375</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_PARTY_ADD_MASTER</td>
+<td align="right">0.0263671875</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_BUS_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_WORKWITHPSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_WORKLISTTABLE</td>
+<td align="right">0.025390625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_WORKDONETABLE</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_USR_0_WELCOME_DUMP</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.0126953125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_QUEUEHISTORYTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_QUEUEDATATABLE</td>
+<td align="right">0.037109375</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_PARTY_MASTER</td>
+<td align="right">0.041015625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.0003662109375</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_EXT_COLLECTION</td>
+<td align="right">0.234375</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_CONTRACT_MASTER</td>
+<td align="right">0.017578125</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_NOV_14_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_CLEANUP_UTIL</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>COLLECTION_CLEANUP_ACTIVITY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_LEADSUMASSETWISE_TEMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_BUSINESS_SUMMARY_DETAIL</td>
+<td align="right">1.37890625</td>
+	</tr>
+	<tr>
+<td>BAM_BUSINESSSUMMARY_TEMP</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>BAM_LOS_COLUMNTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_LOS_GROUPBYTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_ARM_ONECR</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_PNPA_REPORT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_EXITWI_1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXT_FINAL_EXIT_11NOV</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>EXT_FINAL_EXIT_10NOV</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>EXT_COLL_EXIT_NEW1</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>EXT_COLL_EXIT1</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>EXT_COLL_EXIT_NEW</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>USR_0_SREI_EXCEPTION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXT_COLL_EXIT</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>USR_0_EXITWI</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_PENDINGWORKLISTTABLE</td>
+<td align="right">0.0234375</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_WORKWITHPSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_WORKDONETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_WORKLISTTABLE</td>
+<td align="right">0.03125</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_PROCESSINSTANCETABLE</td>
+<td align="right">0.025390625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_QUEUEHISTORYTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_QUEUEDATATABLE</td>
+<td align="right">0.033203125</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_EXT_COLLECTION</td>
+<td align="right">0.21875</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.0003662109375</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_BUSINESS_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_USR_0_WELCOME_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.0126953125</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_PARTY_MASTER</td>
+<td align="right">0.0400390625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_PARTY_CONTACT_MASTER</td>
+<td align="right">0.0224609375</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_PARTY_ADDRESS_MASTER</td>
+<td align="right">0.0263671875</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_CONTRACT_MASTER</td>
+<td align="right">0.0166015625</td>
+	</tr>
+	<tr>
+<td>BAM_OCT_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SREI_DELIN_MONTH_DETAIL1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_PARTY_MASTER</td>
+<td align="right">0.0390625</td>
+	</tr>
+	<tr>
+<td>TESTF</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>RECON_COLL_AUTH_161014</td>
+<td align="right">0.0087890625</td>
+	</tr>
+	<tr>
+<td>PDD_ROC</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDD_MASTERS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDD_COMMENTHISTORY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXT_PDD</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDDHISTORY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_SALEDEED</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_RC</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_MREXT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_MR</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_INVOICEEXT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_INVOICE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_INSURANCE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_COLLATERAL_MOVABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_COLLATERAL_LIQUID</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_COLLATERAL_IMMOVABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_CHALLANEXT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_CHALLAN</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PDD_BILLOFENTRY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_RELATEDPARTY_GC</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>CMPLX_QUOTE_CUSTOMFLOW</td>
+<td align="right">0.0087890625</td>
+	</tr>
+	<tr>
+<td>CMPLX_LEAD_FOLLOWUP</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>EXT_LMS</td>
+<td align="right">0.1083984375</td>
+	</tr>
+	<tr>
+<td>CMPLX_QUOTE_RATE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_QUOTE_INSTALLMENT</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_LANGUAGE</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>PARTYTYPE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_LEAD_ASSETBREAKUP</td>
+<td align="right">0.005859375</td>
+	</tr>
+	<tr>
+<td>CMPLX_QUOTE_PAYMENTTERMS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_HISTORY</td>
+<td align="right">0.0234375</td>
+	</tr>
+	<tr>
+<td>CMPLX_QUOTE_ASSET</td>
+<td align="right">0.005859375</td>
+	</tr>
+	<tr>
+<td>CUSTOM_RELATEDPARTYTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ENABLEFTSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BUSINESS_MODEL_MASTER_09102014</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CAM_APPROVAL_HISTORY</td>
+<td align="right">0.0078125</td>
+	</tr>
+	<tr>
+<td>CUSTOM_TARGETALLOCATION</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_WORKWITHPSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_WORKLISTTABLE</td>
+<td align="right">0.0283203125</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_WORKDONETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_USR_0_WELCOME_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.01171875</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_QUEUEHISTORYTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_QUEUEDATATABLE</td>
+<td align="right">0.02734375</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_PROCESSINSTANCETABLE</td>
+<td align="right">0.021484375</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_PENDINGWORKLISTTABLE</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_PARTY_MASTER</td>
+<td align="right">0.0390625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_PARTY_CONTACT_MASTER</td>
+<td align="right">0.0224609375</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_PARTY_ADDRESS_MASTER</td>
+<td align="right">0.025390625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_CONTRACT_MASTER</td>
+<td align="right">0.0166015625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_BUSINESS_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SEP_EXT_COLLECTION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>RECOMMANDATION_ROUTING</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AGENCY_RATE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CONTRACT_CHECKLIST</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CONTRACT_DOCMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_QUOTEMAPPING</td>
+<td align="right">0.00091552734375</td>
+	</tr>
+	<tr>
+<td>CMPLX_PREOWNED_COLLATERAL</td>
+<td align="right">0.0087890625</td>
+	</tr>
+	<tr>
+<td>OTHER_DEVIATION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CONTRACT_DOCTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DEALER_ASSET_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ALLIANCE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ASSET_MASTER</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>RM_OPS_ROUTING</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AGENTTYPE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>MANUFACTURERMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ADDLTVMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CHECKLIST_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>RATETYPE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>FUNDINGTYPE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TRANSACTIONTYPE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>INDUSTRY_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTQUOTEDETAILS</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTCAMASSETDEV</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTCLDOC</td>
+<td align="right">0.0703125</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTASSETDEV</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTMOU</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTCUSTOMFLOW</td>
+<td align="right">0.033203125</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTDEVFINANCIAL</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTCLAUTH</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTKYC</td>
+<td align="right">0.01171875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTRATE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTCOMMENTS</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTCLCOLLATERAL</td>
+<td align="right">0.0302734375</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTINSTALLMENT</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTDEVOTHERTERMS</td>
+<td align="right">0.0224609375</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTLINKED</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTCAMDETAILS</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTRELATEDPARTY</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTASSETDETAILS</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTCOLLATERAL</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CONTRACTDOCUMENT</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ROUTE_TO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_LEAD_PARTY</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>CALCULATEFOR_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PARTY_CHECKLIST_MASTER</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DUMMYDDTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_LEAD_CATEGORY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>MANUFACTURER_DEALER_MASTER</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>SUPPLIER_MASTER</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>GRIDLTVCAP_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>LINKEDASSETCATEGORY_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ROLESLEAD_ASSIGNTO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_GRIDVALUES</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>RELATIONSHIPTYPE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_GREENCHANNEL_QUESTION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_GREENCHANNEL_CONFIG</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_GC_GO_NOGO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>MOUMAPPING</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>MOU_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTYHISTORY</td>
+<td align="right">0.005859375</td>
+	</tr>
+	<tr>
+<td>CUSTOM_PARTYMERGE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>CMPLX_LEAD_HISTORY</td>
+<td align="right">0.0126953125</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_CONTACT</td>
+<td align="right">0.00079345703125</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_CHECKLIST</td>
+<td align="right">0.0107421875</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_OFFICE_FOLLOWUP</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>CMPLX_PARTY_ADDRESS</td>
+<td align="right">0.0302734375</td>
+	</tr>
+	<tr>
+<td>CMPLX_QUOTE_MOU</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>CUSTOM_VERTICAL_SCHEME</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>SCHEME_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>GUARANTEETYPE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>FINANCIAL_DEVIATION_MASTER</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>STATUS_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>FIRST_LEVEL_APPROVAL_ROUTING</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>FI_ASSET_DETAILS</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>EXT_LOS_CAM</td>
+<td align="right">0.080078125</td>
+	</tr>
+	<tr>
+<td>SOLVEFOR_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>FI_ADDRESSCONDITIONMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>FI_FINAL_RECOMMENDATION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>INSURANCEBYMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>FI_NEIGHBOUR_CONFIRMATION</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>CUSTOMFLOW_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_YEARS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_WORKORDERSTATUS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_SUBBUSINESSMODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_VALUATION_REQUESTTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_SECTORIFORMATION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_SEFPLCLIENTGRADING</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>CUSTOM_SEGMENT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_SCHEME_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_REQUIKTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_REPAYMENTTRACKWITHSREI</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_REPAYMENTMODE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_REASONSFORPARTY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_RELATIONWITHHIRER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_RELATIONSHIP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_PRIORITYMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_PARTYSTATUS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_PERIOD</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_OWNERSHIP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_OTHERLIABILITY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_OTHER_DEVIATION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_NORECOMMENDATION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_NATUREOFRELATIONSHIP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_NATUREOFCOLLATERAL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_NATUREOFACCOUNT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_MONTHS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_GUARANTORTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_FISTATUSMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_EXTERNALLIABILITY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_EXPIRYDATECONFIG</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_EXTERNALCLIENTGRADING</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_DOCMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CUSTOMER_CATEGORY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CREDITRATINGAGENCY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CONSTITUTION_MASTER</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CONSTANTMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CONDUCTOFACCOUNT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_COMPANY_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_COMMENTGRADE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CLASSOFCONTRACTOR</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CHARGES_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CAMTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_CAM_DEVIATION</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>CUSTOM_BILLINGCYCLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ASSETTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_AWP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_BALANCESHEET</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_AUTOSAVE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_AGENTPERMISSION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ADDRESSTYPEMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ADDRESSTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ACTIVITYPERMISSION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_FIAGENCYDETAILS</td>
+<td align="right">0.0537109375</td>
+	</tr>
+	<tr>
+<td>CMPLX_FI_APPLIED_ASSET</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_VALUATIONCOMMENTS</td>
+<td align="right">0.0107421875</td>
+	</tr>
+	<tr>
+<td>CMPLX_VALUATIONAGENCYDETAILS</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>CMPLX_VALUATION_COMMENTS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_VALASSETDETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_SREU</td>
+<td align="right">0.00091552734375</td>
+	</tr>
+	<tr>
+<td>CMPLX_RURAL</td>
+<td align="right">0.00091552734375</td>
+	</tr>
+	<tr>
+<td>CMPLX_LOGISTICS_VEHICLE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>CMPLX_IT</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>CMPLX_HEALTHCARE</td>
+<td align="right">0.00079345703125</td>
+	</tr>
+	<tr>
+<td>CMPLX_GREENCHANNEL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_QUOTESATTACH</td>
+<td align="right">0.0087890625</td>
+	</tr>
+	<tr>
+<td>CMPLX_BUSINESSASSETS</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_FUTPROJECTION</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_OTHERDEVIATION</td>
+<td align="right">0.0078125</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_TRADEREF</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>CMPLX_CMERETAIL</td>
+<td align="right">0.0263671875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_COMMENT</td>
+<td align="right">0.0400390625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_SHAREHOLDING</td>
+<td align="right">0.00042724609375</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_BANKDETAIL</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_LISTEDCOMPANY</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_COLLATERAL</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_DEBT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_MANAGEMENT</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_PARTYBACKGRND</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_RATIOANALYSIS</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_FLEETBRKUP</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_ASSETDETAILS</td>
+<td align="right">0.0087890625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_GROUPCOMPANY</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_WORKORDER</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_MATCH</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_RATING</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_EXTERNALLIABILITY</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CAM_RECOMM_HISTORY</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_FINHIGHLIGHTS</td>
+<td align="right">0.00042724609375</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_EXPOSURE</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_OTHERSOI</td>
+<td align="right">0.00042724609375</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_SREIRELATION</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CAM_APPROVALDESC</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CAM_LEVELMASTER_030215</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CAM_RECOMMENDATIONDESC</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_EXISTINGASSET</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>APPROVALROUTING</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_OTHERLIABILITY</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_RELATEDPARTY</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_REPAYTRACKRECORD</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_FINHIFHLIGHT</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>CAM_APPROVAL_TEMP</td>
+<td align="right">&nbsp;</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_GUARANTOR</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_PROCPATTERN</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_CREDITREFERENCE</td>
+<td align="right">0.0008544921875</td>
+	</tr>
+	<tr>
+<td>CMPLX_CAM_DIRECTOR</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>DDT_22</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLECTION_ENTRIES11</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_402</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_382</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_GRPPERMISSION_1509</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_362</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>AUG_PENDINGWORKLISTTABLE</td>
+<td align="right">0.013671875</td>
+	</tr>
+	<tr>
+<td>AUG_WORKWITHPSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AUG_WORKDONETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AUG_WORKINPROCESSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AUG_WORKLISTTABLE</td>
+<td align="right">0.0244140625</td>
+	</tr>
+	<tr>
+<td>AUG_PROCESSINSTANCETABLE</td>
+<td align="right">0.0185546875</td>
+	</tr>
+	<tr>
+<td>AUG_QUEUEHISTORYTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AUG_QUEUEDATATABLE</td>
+<td align="right">0.021484375</td>
+	</tr>
+	<tr>
+<td>AUG_BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AUG_REGION_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AUG_EXT_COLLECTION</td>
+<td align="right">0.15625</td>
+	</tr>
+	<tr>
+<td>AUG_NG_EMPLOYEE_MASTER</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>AUG_BUSINESS_MODEL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AUG_USR_0_WELCOME_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>AUG_USR_0_DEBTORS_DUMP</td>
+<td align="right">0.01171875</td>
+	</tr>
+	<tr>
+<td>AUG_USR_0_BOUNCE_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>AUG_PARTY_MASTER</td>
+<td align="right">0.0380859375</td>
+	</tr>
+	<tr>
+<td>AUG_PARTY_CONTACT_MASTER</td>
+<td align="right">0.021484375</td>
+	</tr>
+	<tr>
+<td>AUG_PARTY_ADDRESS_MASTER</td>
+<td align="right">0.0263671875</td>
+	</tr>
+	<tr>
+<td>AUG_EMPLOYEE_MASTER</td>
+<td align="right">0.0006103515625</td>
+	</tr>
+	<tr>
+<td>AUG_CONTRACT_MASTER</td>
+<td align="right">0.015625</td>
+	</tr>
+	<tr>
+<td>AUG_BOUNCE_DETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_SREI_DELIN_MONTH_DETAIL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_342</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_COLLECTION_CALLING_REPORT</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>DDT_322</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>CLIENTSDATA_0208</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DEALSDATA02082014</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_302</td>
+<td align="right">0.0107421875</td>
+	</tr>
+	<tr>
+<td>OPERATORS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_AUTH_DUMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>TEMP_COLLECTION_ENTRIES1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_262</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>COLL_ENTRIES</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>PROCESSED</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PBCATEDT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PBCATVLD</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PBCATFMT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PBCATCOL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DEALSDATA</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PBCATTBL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>SCRIPSDATA_TBL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CLIENTSDATA</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>GL_UPDATE_SCHEDULE_CHECK_SEFPL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WI_NULL_VALUE_NEW</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>REQEMPDATA</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>GL_PROCESS_HISTORY_SEFPL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WORK_ITEM_UPDATE</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>DEALSDATA1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>SCRIPSDATA1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CLIENTSDATA1</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>BAM_DASH_TEMPSUM</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EMPLOYEE_MASTER06JUN</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>EMPLOYEE_MASTER_4JUN</td>
+<td align="right">0.00048828125</td>
+	</tr>
+	<tr>
+<td>YYSREI_NEWGEN_EMP_OUT_BKP</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>EMPLOYEE_MASTER_DUMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_EMPLOYEE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_REGION_NEW</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_EXT_COLLECTION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>REGION_MASTER_2705</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_REGION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_ROLEFORASSIGNMENT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ZAPINCOLLECTION</td>
+<td align="right">0.037109375</td>
+	</tr>
+	<tr>
+<td>DDT_242</td>
+<td align="right">0.017578125</td>
+	</tr>
+	<tr>
+<td>CONTRACT_CATEGORY_MASTER_BK</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_CASHBANK_MASTER_BK</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_BANK_MASTER_BKUP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_PAYMENTTYPE_BKUP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BRANCH_MASTER_08052014</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>REGION_MASTER_08052014</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>CONTRACTCATEGORY_RULE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_STATUS_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_VERTICAL_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONTRACT_CATEGORY_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ALLIANCE_MASTER_01102014</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ROLE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PAYMENT_BEHAVIOUR_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_205</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_204</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_203</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_202</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_222</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_WELCOME_DUMP</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>DDT_183</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_182</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_162</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DDT_142</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BOUNCE_DETAILS</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>BOUNCE_DETLS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTORS_DUMP</td>
+<td align="right">0.0341796875</td>
+	</tr>
+	<tr>
+<td>PARTY_BANK_MASTER</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>BANK_MASTER_2APR</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTORS_UNPROCESS_1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_GRPPERMISSION_BKUP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_65</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_84</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_83</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_64</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>COLLECTION_CASHBANK_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_BANK_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_PAYMENTTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_82</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_63</td>
+<td align="right">0.1640625</td>
+	</tr>
+	<tr>
+<td>DDT_62</td>
+<td align="right">0.0859375</td>
+	</tr>
+	<tr>
+<td>COLLECTION_AUTHORIZATION</td>
+<td align="right">0.166015625</td>
+	</tr>
+	<tr>
+<td>SOURCE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_VERTICAL_AGENTTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>GENTEMINFOPTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_25</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_43</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DDT_24</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_42</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_23</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_AUTHORIZATION_TYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_AUTHORIZATION_COLUMN</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ZIP_CODE_MST_BKUP030815</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>DEBTORS_AC_HISTORY_SEFPL</td>
+<td align="right">0.2578125</td>
+	</tr>
+	<tr>
+<td>BUCKET_HISTORY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BUCKET</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPREPORT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DASH_GROUPBYTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_DASH_COLUMNTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBLDAPNONDOMAINUSER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>GETMASTERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_PENDING_TEMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_PENDING_STATUS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_PENDING_GROUPBY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_PENDING_CALLTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_PENDING_COLUMN</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BAM_PENDING_CALLCENTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_EXTERNALUSERMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DDT_3</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BRANCH_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CALLTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_LANGUAGE_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BOUNCE_REASON</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ZAPINUSER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_VERTICAL_ALLIANCE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BUCKETTYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>BUSINESS_MODEL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ROLEMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_ADSESSIONTABLE</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>APKMANAGEMENT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ZAPIN_ACTIVITY_ACRONYM</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ORGANIZATIONMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USERMASTER</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>DOCTYPEMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USERCASHLIMIT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>FORMMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>APKMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>INDEXFIELDMASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_SMSDETAILS</td>
+<td align="right">0.3037109375</td>
+	</tr>
+	<tr>
+<td>USR_0_MESSAGECONFIGTBL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CUSTOM_GRPPERMISSION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_REPO_HISTORY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_LEGALCASEHISTORY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_LEGALCASEDETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_LEGALACTIONPRIORITY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>COLLECTION_COMMENTHISTORYTABLE</td>
+<td align="right">0.251953125</td>
+	</tr>
+	<tr>
+<td>COLL_CONTACT_UPDATION_HISTORY</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>COLL_CO_RM_TEMP_FILTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CMPLX_BOUNCEDETAILS</td>
+<td align="right">0.02734375</td>
+	</tr>
+	<tr>
+<td>REGION_MASTER</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>USR_0_TBL_CONFIGVAL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_WELCOMECALLRULE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_WELCOME_UNPROCESS</td>
+<td align="right">0.0029296875</td>
+	</tr>
+	<tr>
+<td>USR_0_WELCOME_TEMP</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>USR_0_WELCOME_SUCCESS</td>
+<td align="right">0.005859375</td>
+	</tr>
+	<tr>
+<td>USR_0_WELCOME_REPORT</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>USR_0_WELCOME_FAIL</td>
+<td align="right">0.052734375</td>
+	</tr>
+	<tr>
+<td>USR_0_WEL_EXCEPTION</td>
+<td align="right">0.0595703125</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTORS_REPOLEGAL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTORS_UNPROCESS</td>
+<td align="right">0.2294921875</td>
+	</tr>
+	<tr>
+<td>USR_0_NORMAL_ERROR</td>
+<td align="right">0.00390625</td>
+	</tr>
+	<tr>
+<td>USR_0_NORMALCALLRULE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_DELINCALLRULE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTORS_FAIL</td>
+<td align="right">0.109375</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTORS_SUCCESS</td>
+<td align="right">5.1025390625</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTORS_TEMP</td>
+<td align="right">0.009765625</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTOR_REPORT</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTOR_EXIT</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>USR_0_DEBTOR_EXCEPTION</td>
+<td align="right">0.078125</td>
+	</tr>
+	<tr>
+<td>USR_0_COOLINGPERIODRULE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_BUCKETMOVEMENT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_BOUNCE_DUMP_SUCCESS</td>
+<td align="right">0.033203125</td>
+	</tr>
+	<tr>
+<td>USR_0_BOUNCE_DUMP_FAIL</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>USR_0_BOUNCECALLRULE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_BOUNCE_UNPROCESS</td>
+<td align="right">0.0048828125</td>
+	</tr>
+	<tr>
+<td>USR_0_BOUNCE_TEMP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_BOUNCE_REPORT</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>USR_0_BOUNCE_EXCEPTION</td>
+<td align="right">0.0126953125</td>
+	</tr>
+	<tr>
+<td>USR_0_BOUNCE_DUMP</td>
+<td align="right">0.0006103515625</td>
+	</tr>
+	<tr>
+<td>FEEDSTATUS</td>
+<td align="right">0.0008544921875</td>
+	</tr>
+	<tr>
+<td>UTILITYERRORMSG</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>UTILITYSTATUS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>SREI_HOLIDAYS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PARTY_MASTER</td>
+<td align="right">0.0615234375</td>
+	</tr>
+	<tr>
+<td>PARTY_CONTACT_MASTER</td>
+<td align="right">0.0341796875</td>
+	</tr>
+	<tr>
+<td>PARTY_ADDRESS_MASTER</td>
+<td align="right">0.0537109375</td>
+	</tr>
+	<tr>
+<td>INSTALLMENT_FREQUENCY_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXT_COLLECTION</td>
+<td align="right">1.0654296875</td>
+	</tr>
+	<tr>
+<td>CONTRACT_MASTER</td>
+<td align="right">0.0322265625</td>
+	</tr>
+	<tr>
+<td>BUSINESS_MODEL_MASTER</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>CRUSERIDSESSIONIDTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CRSCHEDULERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CRSCHEDULERSTATETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CRSCHEDULERRECURRENCE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CRSCHEDULERPROPERTIES</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CRSCHEDULERINSTANCEMAPPING</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CRSCHEDULERIDUSERIDTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CRUSERTABTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CRUSERPREFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CRTABREPORTTABLE</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>BANK_MASTER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WORKDONESUSPECTTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFMULTILINGUALTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFFAILEDSERVICESTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFLASTREMINDERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFCREATECHILDWITABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ROUTEFOLDERDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSHAREPOINTDOCASSOCTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSHAREPOINTDATAMAPTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFARCHIVEINSHAREPOINT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFPROCESSSHAREPOINTASSOC</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFDMSLIBRARY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSHAREPOINTINFO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFUNDERLYINGDMS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFUSERWEBSERVERINFOTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFDATACLASSUSERINFO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_NOTENOTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFDOCTYPESEARCHMAPPING</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFDOCTYPEFIELDMAPPING</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBPICKLIST</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>WFWEBSERVICEINFOTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFTMSADDCALENDAR</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFTMSSETCALENDARDATA</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFTRANSPORTREGISTERATIONINFO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFTMSSETQUICKSEARCHVARIABLES</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFTMSSETDYNAMICCONSTANTS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFTMSSETACTIONLIST</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFTMSSETTURNAROUNDTIME</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFTMSSETVARIABLEMAPPING</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>WFTMSSTREAMOPERATION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFTMSDELETEQUEUE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFTMSCHANGEQUEUEPROPERTYEX</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>WFTMSCHANGEPROCESSDEFSTATE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFTMSADDQUEUE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFTRANSPORTDATATABLE</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>WFSOURCECABINETINFOTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFEXPORTINFOTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFIMPORTFILEDATA</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFEXTINTERFACEOPERATIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFEXTINTERFACECONDITIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFPDACONTROLVALUETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFPDA_FORMTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFPDATABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSAPADAPTERASSOCTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSAPGUIASSOCTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSAPGUIFIELDMAPPINGTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSAPGUIDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSAPCONNECTTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFACTIVITYSCOPEASSOCTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFEVENTDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSCOPEDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSOAPREQCORRELATIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFAUTHORIZEPROCESSDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFAUTHORIZEQUEUEUSERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFAUTHORIZEQUEUESTREAMTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFAUTHORIZEQUEUEDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFAUTHORIZATIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFPROXYINFO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSEARCHVARIABLETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFAUTOGENINFOTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFGROUPBOXTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFDATAOBJECTTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFVARRELATIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFUDTVARMAPPINGTABLE</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>WFTYPEDEFTABLE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>WFTYPEDESCTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFADMINLOGTABLE</td>
+<td align="right">0.00067138671875</td>
+	</tr>
+	<tr>
+<td>WFHISTORYROUTELOGTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFCURRENTROUTELOGTABLE</td>
+<td align="right">30.60546875</td>
+	</tr>
+	<tr>
+<td>WFROUTINGSERVERINFO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFDATAMAPTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFEXPORTTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFSWIMLANETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFFILTERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFCOMMENTSTABLE</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>WFDURATIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFQUICKSEARCHTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>FAILURELOGTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>SUCCESSLOGTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFREPORTDATATABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFACTIVITYREPORTTABLE</td>
+<td align="right">0.0087890625</td>
+	</tr>
+	<tr>
+<td>WFAUTHORIZEQUEUECOLORTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFQUEUECOLORTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>INTERFACEDESCLANGUAGETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFCALENDARASSOCTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFCALHOURDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFCALRULEDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFCALDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFACTIONSTATUSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFVARSTATUSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFDATASTRUCTURETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFJMSSUBSCRIBETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFJMSDESTINFO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXTMETHODPARAMMAPPINGTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXTMETHODPARAMDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXTMETHODDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CONSTANTDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>SUMMARYTABLE</td>
+<td align="right">0.0986328125</td>
+	</tr>
+	<tr>
+<td>PRINTFAXEMAILDOCTYPETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DOCUMENTTYPEDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXCEPTIONHISTORYTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXCEPTIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXCEPTIONDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TODOSTATUSHISTORYTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TODOSTATUSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TODOPICKLISTTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TODOLISTDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>CHECKOUTPROCESSESTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>SCANACTIONSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ARCHIVEDOCTYPETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ARCHIVEDATAMAPTABLE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>ARCHIVETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ACTIVITYINTERFACEASSOCTABLE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>ACTIONOPERATIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ACTIONCONDITIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USERQUEUETABLE</td>
+<td align="right">0.00091552734375</td>
+	</tr>
+	<tr>
+<td>PENDINGWORKLISTTABLE</td>
+<td align="right">0.2568359375</td>
+	</tr>
+	<tr>
+<td>WORKWITHPSTABLE</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>WORKDONETABLE</td>
+<td align="right">0.015625</td>
+	</tr>
+	<tr>
+<td>WORKINPROCESSTABLE</td>
+<td align="right">0.000244140625</td>
+	</tr>
+	<tr>
+<td>WORKLISTTABLE</td>
+<td align="right">0.109375</td>
+	</tr>
+	<tr>
+<td>QUEUEDATATABLE</td>
+<td align="right">0.2431640625</td>
+	</tr>
+	<tr>
+<td>PROCESSINSTANCETABLE</td>
+<td align="right">0.1484375</td>
+	</tr>
+	<tr>
+<td>WFREMINDERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>IMPORTEDPROCESSDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>INITIATEWORKITEMDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>VARALIASTABLE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>WFLINKSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PREFERREDQUEUETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USERWORKAUDITTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USERDIVERSIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PSREGISTERATIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>QUEUEUSERTABLE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>QUEUEDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>QUEUESTREAMTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXTDBFIELDDEFINITIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXCEPTIONTRIGGERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>GENERATERESPONSETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ROUTEPARENTTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>QUEUEHISTORYTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>STATESDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>RECORDMAPPINGTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXTDBCONFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>STREAMDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DATASETTRIGGERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>DATAENTRYTRIGGERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>LAUNCHAPPTRIGGERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>EXECUTETRIGGERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TRIGGERTYPEDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TRIGGERDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ACTIVITYASSOCIATIONTABLE</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>VARMAPPINGTABLE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>WORKSTAGELINKTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PROCESSDEFCOMMENTTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>RULEOPERATIONTABLE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>RULECONDITIONTABLE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>PROCESS_INTERFACETABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>INTERFACEDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PROCESSDEFTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>WFCABVERSIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ISREPORT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ISSITEMAP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ISCENTRAL</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ISDOC_BACKUP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ISVOLBLOCK_BACKUP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ISERRCODES</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ISDOC</td>
+<td align="right">0.1474609375</td>
+	</tr>
+	<tr>
+<td>ISLOCKUSER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ISVOLBLOCK</td>
+<td align="right">0.0078125</td>
+	</tr>
+	<tr>
+<td>ISREPLICATE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ISVOLDEF</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ISVOLUME</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>ISSITE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBARCHIVECABINET</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBCONCURRENTUSAGEINFO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBSERVICETYPE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USR_0_USERPREFERENCES</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>PDBMAKERCHECKERINFO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBUSERCONFIG</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBUSERLICENSEINFO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBLICENSE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBFOLDDOCLOCKSTATUS</td>
+<td align="right">0.001953125</td>
+	</tr>
+	<tr>
+<td>PDBCONNECTION</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>TEMPFAILEDDOCUMENT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPSUCCESSDOCUMENT</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>TEMPDELTABLE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>TEMPMOVEFOLDERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPSETANNOTATIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPANCESID</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>TEMPCUR1</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPFOLDERTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPPROCESSRIGHTSTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TEMPSETACLTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>GETFOLDERLISTTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBROLERIGHTS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBSCHEDJOB</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBBULKOPERATIONINFO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBPATCHDETAILS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBJOBS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBDELETEDUSER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBAUDITACTION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBROLEGROUP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBGROUPROLES</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBROLES</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>PDBNEWAUDITTRAIL_TABLE</td>
+<td align="right">2.0322265625</td>
+	</tr>
+	<tr>
+<td>PDBTRACKACTIONTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBUSERADDRESSLISTMEMBER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBUSERADDRESSLIST</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBLINKNOTESTABLE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBDIVERTACTION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBREMINDER</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBALARM</td>
+<td align="right">0.00042724609375</td>
+	</tr>
+	<tr>
+<td>PDBCONSTANT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBSERVICE</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBDOCUMENTVERSION</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>PDBALIAS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBKEYWORD</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBDICTIONARY</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBAPPLICATIONINFO</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBRIGHTS</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBGROUPMEMBER</td>
+<td align="right">0.00030517578125</td>
+	</tr>
+	<tr>
+<td>PDBTEXTGLOBALINDEX</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBDOCIDGLOBALINDEX</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBSTRINGGLOBALINDEX</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBDATEGLOBALINDEX</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBFLOATGLOBALINDEX</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBBOOLGLOBALINDEX</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBINTGLOBALINDEX</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBLONGGLOBALINDEX</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBDATAFIELDSTABLE</td>
+<td align="right">0.0001220703125</td>
+	</tr>
+	<tr>
+<td>PDBDATADEFINITION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBGLOBALINDEX</td>
+<td align="right">0.00018310546875</td>
+	</tr>
+	<tr>
+<td>PDBANNOTATIONOBJECTVERSION</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBANNOTATIONOBJECT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBDOCUMENTCONTENT</td>
+<td align="right">0.130859375</td>
+	</tr>
+	<tr>
+<td>PDBFOLDERCONTENT</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>PDBDOCUMENT</td>
+<td align="right">0.7314453125</td>
+	</tr>
+	<tr>
+<td>PDBFOLDER</td>
+<td align="right">0.654296875</td>
+	</tr>
+	<tr>
+<td>PDBGROUP</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>USERSECURITY</td>
+<td align="right">0.00054931640625</td>
+	</tr>
+	<tr>
+<td>PDBUSER</td>
+<td align="right">0.0008544921875</td>
+	</tr>
+	<tr>
+<td>PDBCABINET</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+	<tr>
+<td>TMP_WEL_FINAL_RESULT9605</td>
+<td align="right">0.00006103515625</td>
+	</tr>
+</tbody></table><!-- SQL:
+select segment_name,bytes/1024/1024/1024 "GB" from dba_segments where segment_type='TABLE' and owner ='SREICABINET'--></body></html>

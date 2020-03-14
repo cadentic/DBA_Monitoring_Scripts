@@ -1,0 +1,12 @@
+SREICAB4
+
+/var/oracle/datafile/NGD01/NGD01/SREICAB4_01.dbf
+
+create user FUNCTIONAL_READ_ONLY identified by sreig00d default tablespace SREICAB quota unlimited on SREICAB;
+
+GRANT SELECT ON SREICAB.SUPPLIER_MASTER_AMBIT TO FUNCTIONAL_READ_ONLY;
+
+select count(1),object_type from dba_objects where owner='SREICABINET' group by object_type ;
+select count(1),object_type from dba_objects where owner='SREICABINET' and status <> 'VALID' group by object_type;
+
+select count(1),object_type from dba_objects where owner='SREICAB' group by object_type ;

@@ -1,0 +1,99 @@
+
+Recovery Manager: Release 11.2.0.2.0 - Production on Thu Jul 7 08:00:01 2016
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+ORACLE_HOME = /u01/rac/oracle_base/db/tech_st/11.2.0/
+System name:	Linux
+Node name:	sreikolebz2.srei.com
+Release:	2.6.39-400.247.1.el5uek
+Version:	#1 SMP Thu Feb 5 15:53:28 PST 2015
+Machine:	x86_64
+
+Starting with debugging turned off
+
+connected to target database: EBS (DBID=2012991160)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 10> 
+using target database control file instead of recovery catalog
+allocated channel: t1
+channel t1: SID=1932 instance=EBS2 device type=DISK
+
+allocated channel: t2
+channel t2: SID=438 instance=EBS2 device type=DISK
+
+RMAN retention policy will be applied to the command
+RMAN retention policy is set to recovery window of 3 days
+Deleting the following obsolete backups and copies:
+Type                 Key    Completion Time    Filename/Handle
+-------------------- ------ ------------------ --------------------
+Backup Set           6443   16-JUN-16         
+  Backup Piece       6443   16-JUN-16          /newdump/rmanbackup/EBS/BackupEBS_DB_ear8ag50_6602_1_20160616.bkp
+Backup Set           6441   16-JUN-16         
+  Backup Piece       6441   16-JUN-16          /newdump/rmanbackup/EBS/BackupEBS_DB_ebr8ag50_6603_1_20160616.bkp
+Backup Set           6442   16-JUN-16         
+  Backup Piece       6442   16-JUN-16          /newdump/rmanbackup/EBS/BackupEBS_DB_edr8ag51_6605_1_20160616.bkp
+Backup Set           6459   17-JUN-16         
+  Backup Piece       6459   17-JUN-16          /newdump/rmanbackup/EBS/BackupEBS_DB_evr8d4ge_6623_1_20160617.bkp
+Backup Set           6728   03-JUL-16         
+  Backup Piece       6728   03-JUL-16          +ARCHIVELOG/ebs/autobackup/2016_07_03/s_916246851.348.916246853
+Backup Set           6739   03-JUL-16         
+  Backup Piece       6739   03-JUL-16          /newdump/rmanbackup/EBS/controlfile_obr9q6rr_1_1_03.bkp
+deleted backup piece
+backup piece handle=+ARCHIVELOG/ebs/autobackup/2016_07_03/s_916246851.348.916246853 RECID=6728 STAMP=916246853
+Deleted 1 objects
+
+deleted backup piece
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ear8ag50_6602_1_20160616.bkp RECID=6443 STAMP=914702496
+deleted backup piece
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ebr8ag50_6603_1_20160616.bkp RECID=6441 STAMP=914702496
+deleted backup piece
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_edr8ag51_6605_1_20160616.bkp RECID=6442 STAMP=914702497
+deleted backup piece
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_evr8d4ge_6623_1_20160617.bkp RECID=6459 STAMP=914788879
+deleted backup piece
+backup piece handle=/newdump/rmanbackup/EBS/controlfile_obr9q6rr_1_1_03.bkp RECID=6739 STAMP=916265854
+Deleted 5 objects
+
+
+specification does not match any archived log in the repository
+
+Starting backup at 07-JUL-16
+current log archived
+channel t1: starting archived log backup set
+channel t1: specifying archived log(s) in backup set
+input archived log thread=2 sequence=5161 RECID=8522 STAMP=916560012
+channel t1: starting piece 1 at 07-JUL-16
+channel t2: starting archived log backup set
+channel t2: specifying archived log(s) in backup set
+input archived log thread=1 sequence=3356 RECID=8521 STAMP=916560011
+channel t2: starting piece 1 at 07-JUL-16
+RMAN-03009: failure of backup command on t1 channel at 07/07/2016 08:00:18
+RMAN-10035: exception raised in RPC: 
+ORA-19624: operation failed, retry possible
+ORA-19504: failed to create file "/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6980.arc"
+ORA-27044: unable to write the header block of file
+Linux-x86_64 Error: 28: No space left on device
+Additional information: 3
+ORA-06512: at "SYS.DBMS_BACKUP_RESTORE", line 1381
+RMAN-10031: RPC Error: ORA-19624  occurred during call to DBMS_BACKUP_RESTORE.BACKUPPIECECREATE
+channel t1 disabled, job failed on it will be run on another channel
+released channel: t1
+released channel: t2
+Calling krmmpem from krmmexe
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03009: failure of backup command on t2 channel at 07/07/2016 08:00:18
+RMAN-10035: exception raised in RPC: 
+ORA-19624: operation failed, retry possible
+ORA-19504: failed to create file "/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6981.arc"
+ORA-27044: unable to write the header block of file
+Linux-x86_64 Error: 28: No space left on device
+Additional information: 3
+ORA-06512: at "SYS.DBMS_BACKUP_RESTORE", line 1381
+RMAN-10031: RPC Error: ORA-19624  occurred during call to DBMS_BACKUP_RESTORE.BACKUPPIECECREATE
+
+RMAN> 
+
+Recovery Manager complete.

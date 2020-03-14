@@ -1,0 +1,11 @@
+Dear Sirs:
+
+It is found that there are high active sessions (above 45) in EBS database. This may be due to long running
+queries / programs or connections to database not getting terminated gracefully.
+
+Kindly request users not to submit same job simultaneously in case system is slow and avoid concurrency.
+
+This is a system generated email.
+
+DB Support team
+

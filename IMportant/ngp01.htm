@@ -1,0 +1,169 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252">
+<!-- base href="http://apexdev.us.oracle.com:7778/pls/apx11w/" -->
+<style type="text/css">
+table {
+background-color:#F2F2F5;
+border-width:1px 1px 0px 1px;
+border-color:#C9CBD3;
+border-style:solid;
+}
+td {
+color:#000000;
+font-family:Tahoma,Arial,Helvetica,Geneva,sans-serif;
+font-size:9pt;
+background-color:#EAEFF5;
+padding:8px;
+background-color:#F2F2F5;
+border-color:#ffffff #ffffff #cccccc #ffffff;
+border-style:solid solid solid solid;
+border-width:1px 0px 1px 0px;
+}
+th {
+font-family:Tahoma,Arial,Helvetica,Geneva,sans-serif;
+font-size:9pt;
+padding:8px;
+background-color:#CFE0F1;
+border-color:#ffffff #ffffff #cccccc #ffffff;
+border-style:solid solid solid none;
+border-width:1px 0px 1px 0px;
+white-space:nowrap;
+}
+</style>
+<script type="text/javascript">
+window.apex_search = {};
+apex_search.init = function (){
+	this.rows = document.getElementById('data').getElementsByTagName('TR');
+	this.rows_length = apex_search.rows.length;
+	this.rows_text =  [];
+	for (var i=0;i<apex_search.rows_length;i++){
+        this.rows_text[i] = (apex_search.rows[i].innerText)?apex_search.rows[i].innerText.toUpperCase():apex_search.rows[i].textContent.toUpperCase();
+	}
+	this.time = false;
+}
+
+apex_search.lsearch = function(){
+	this.term = document.getElementById('S').value.toUpperCase();
+	for(var i=0,row;row = this.rows[i],row_text = this.rows_text[i];i++){
+		row.style.display = ((row_text.indexOf(this.term) != -1) || this.term  === '')?'':'none';
+	}
+	this.time = false;
+}
+
+apex_search.search = function(e){
+    var keycode;
+    if(window.event){keycode = window.event.keyCode;}
+    else if (e){keycode = e.which;}
+    else {return false;}
+    if(keycode == 13){
+		apex_search.lsearch();
+	}
+    else{return false;}
+}</script>
+</head><body onload="apex_search.init();">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td><input type="text" size="30" maxlength="1000" value="" id="S" onkeyup="apex_search.search(event);" /><input type="button" value="Search" onclick="apex_search.lsearch();"/> 
+</td></tr>
+</tbody></table>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>	<th>File Name</th>
+	<th>Blocks Read</th>
+	<th>Blocks Writen</th>
+	<th>Total I/O</th>
+</tr>
+<tbody id="data">
+
+	<tr>
+<td>+NGPD/ngp01/datafile/sreicabinet01.dbf</td>
+<td align="right">3400646769</td>
+<td align="right">13970359</td>
+<td align="right">3414617128</td>
+	</tr>
+	<tr>
+<td>+LOGARCHIVE/ngp01/datafile/sreicabinet.368.8917752</td>
+<td align="right">2116480444</td>
+<td align="right">5812939</td>
+<td align="right">2122293383</td>
+	</tr>
+	<tr>
+<td>+LOGARCHIVE/ngp01/datafile/sreicabinet.340.8845139</td>
+<td align="right">2009636773</td>
+<td align="right">6175154</td>
+<td align="right">2015811927</td>
+	</tr>
+	<tr>
+<td>+NGPD/ngp01/datafile/sreicabinet02.dbf</td>
+<td align="right">1826096727</td>
+<td align="right">15185655</td>
+<td align="right">1841282382</td>
+	</tr>
+	<tr>
+<td>+LOGARCHIVE/ngp01/datafile/sreicabinet04.dbf</td>
+<td align="right">1232005548</td>
+<td align="right">7429450</td>
+<td align="right">1239434998</td>
+	</tr>
+	<tr>
+<td>+LOGARCHIVE/ngp01/datafile/sreicabinet03.dbf</td>
+<td align="right">1191106814</td>
+<td align="right">15940625</td>
+<td align="right">1207047439</td>
+	</tr>
+	<tr>
+<td>+NGPD/ngp01/datafile/sreicabinet.256.878993851</td>
+<td align="right">1082416258</td>
+<td align="right">3804483</td>
+<td align="right">1086220741</td>
+	</tr>
+	<tr>
+<td>+LOGARCHIVE/ngp01/datafile/sysaux.350.889660505</td>
+<td align="right">178038927</td>
+<td align="right">621101</td>
+<td align="right">178660028</td>
+	</tr>
+	<tr>
+<td>+NGPD/ngp01/datafile/sysaux.265.872471749</td>
+<td align="right">112928769</td>
+<td align="right">1420056</td>
+<td align="right">114348825</td>
+	</tr>
+	<tr>
+<td>+NGPD/ngp01/datafile/system.267.872471749</td>
+<td align="right">99366726</td>
+<td align="right">832650</td>
+<td align="right">100199376</td>
+	</tr>
+	<tr>
+<td>+NGPD/ngp01/datafile/undotbs1.263.872471749</td>
+<td align="right">2346340</td>
+<td align="right">21704004</td>
+<td align="right">24050344</td>
+	</tr>
+	<tr>
+<td>+LOGARCHIVE/ngp01/datafile/sreicabinet05.dbf</td>
+<td align="right">925997</td>
+<td align="right">183804</td>
+<td align="right">1109801</td>
+	</tr>
+	<tr>
+<td>+NGPD/ngp01/datafile/undotbs2.269.872472015</td>
+<td align="right">985745</td>
+<td align="right">1152</td>
+<td align="right">986897</td>
+	</tr>
+	<tr>
+<td>+NGPD/ngp01/datafile/users.262.872471749</td>
+<td align="right">7502</td>
+<td align="right">1150</td>
+<td align="right">8652</td>
+	</tr>
+</tbody></table><!-- SQL:
+SELECT Substr(d.name,1,50) "File Name",
+       f.phyblkrd "Blocks Read",
+       f.phyblkwrt "Blocks Writen",
+       f.phyblkrd + f.phyblkwrt "Total I/O"
+FROM   v$filestat f,
+       v$datafile d
+WHERE  d.file# = f.file#
+ORDER BY f.phyblkrd + f.phyblkwrt DESC--></body></html>

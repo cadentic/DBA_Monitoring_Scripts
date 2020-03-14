@@ -1,0 +1,1224 @@
+
+<HTML><HEAD>
+<STYLE>
+.RepTitle {
+	font-family: "Segoe UI Semibold", Trebuchet, Helvetica, Arial;
+	font-size:24pt;
+	color: #114477;
+	border-bottom:1px #BBBBBB solid;
+	margin-bottom:10px;
+	padding: 10px;
+}
+.Box {
+	font-family: "Segoe UI Semibold", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:14pt;
+	color: #336699;
+	border:1px #BBBBBB dotted;
+	margin-bottom:10px;
+	padding: 10px;
+}
+.BoxLight {
+	font-family: "Segoe UI Semibold", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:12pt;
+	color: #5588BB;
+	border:1px #BBBBBB dotted;
+	margin-bottom:10px;
+	padding: 10px;
+	background-color:#FFFFEC;
+}
+.BoxGDF {
+	font-family: "Segoe UI Semibold", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:16pt;
+	color:#AA3333;
+	border:1px #BBBBBB dotted;
+	margin-bottom:10px;
+	padding: 10px;
+}
+.BoxSmall {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color: #666666;
+	margin-bottom:10px;
+	padding: 10px;
+}
+.BoxContent {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color: #606060;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #CCCCEE;
+}
+.BoxWarn {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color: #606060;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #CCCCEE;
+	background-color:#F9FF80;
+}
+.BoxErr {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color:#F0F0F0;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #CCCCEE;
+	background-color:#E04040;
+}
+.BoxFix {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color:#606060;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #CCCCEE;
+	background-color:#FFC6A6;
+}
+.BoxUndo {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color:#F0F0F0;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #CCCCEE;
+	background-color:#E04040;
+}
+.BoxOk {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color:#606060;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #CCCCEE;
+	background-color:#ECFFF5;
+}
+.trxnlist {
+    overflow:auto;
+}
+.sigtitle {
+  font-size:12pt;
+}
+td {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+    background-color:#F8F8F8;
+    color: #606060;
+    padding: 3px;
+}
+td.err {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+background-color:#f2f2f5;
+color:#cc0000;
+    padding: 3px;
+}
+td.warn {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+    background-color:#F9FF80;
+    color:#777777;
+    padding: 3px;
+}
+td.fix {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+background-color:#fc9579;
+color:#363636;
+    padding: 3px;
+}
+th {
+	font-family: "Segoe UI Semibold", Trebuchet, Helvetica, Arial;
+	font-size:10pt;
+    font-weight:normal;
+    text-align:left;
+    background-color:#ECECFC;
+    color:#666666;
+    padding: 3px;
+}
+th.main {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-size:12pt;
+    font-weight:bold;
+    text-align:center;
+    background-color:#ECECFC;
+    color:#666666;
+    padding: 3px;
+    width: 450px;
+}
+th.separator {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-size:12pt;
+    font-weight:bold;
+    text-align:center;
+    background-color:#FFFFFF;
+    color:#666666;
+    padding: 3px;
+    width: 60px;
+}
+hr.hr1
+{
+    background-color:#336699;
+    height: 5px;
+    border-style:dotted;
+}
+.italsmall
+{
+    font-family:"Segoe UI", Trebuchet, Helvetica, Arial;
+    font-style:italic;
+    font-size:10pt;
+}
+.button   {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:4px 18px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+}.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}.button:active {
+	position:relative;
+	top:1px;
+}
+.getproimg {
+	vertical-align: middle;
+	margin-top: 0px;
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+
+</STYLE>
+<SCRIPT type="text/javascript">
+  function displaySQL(e, sig_id) {
+    var row = document.getElementById("sig"+sig_id);
+    if (row.style.display == ""){
+      e.value = "Show SQL";
+      row.style.display = "none";
+    }
+    else {
+      e.value = "Hide SQL";
+      row.style.display = "";
+    }
+  }
+
+  function HideShow(e, itm_id) {
+    var tbl = document.getElementById(itm_id);
+    if (tbl.style.display == ""){
+      e.innerHTML = String.fromCharCode(9660);
+      tbl.style.display = "none"; }
+    else {
+      e.innerHTML = String.fromCharCode(9650);
+      tbl.style.display = ""; } }
+
+  function highlight(id, checked) {
+    var impact = "X";
+    for (var i=1; impact != null; i++) {
+      impact = document.getElementById(id + "_" + i);
+      if (impact != null) {
+        if (checked == true) {
+          impact.style.backgroundColor = "yellow";
+          impact.style.color = "red";
+          impact.style.fontSize = "18pt"; }
+        else {
+          impact.style.backgroundColor = "transparent";
+          impact.style.color = "#666666";
+          impact.style.fontSize = "12pt"; }}}
+  }
+
+</SCRIPT>
+</HEAD>
+<BODY>
+<div class="RepTitle">AP Data Validation Report - Master GDF Diagnostic
+<a href="https://support.oracle.com/rs?type=doc\&id=432.1" target="_blank">
+<img style="border-radius: 5px; opacity:0.7; ilter:alpha(opacity=70); /* For IE8 and earlier */"
+ src="https://blogs.oracle.com/ebs/resource/Proactive/banner4.jpg" title="Click here to see other helpful Oracle Proactive Tools"
+ width="400" height="41" border="0" alt="Click Here for more tools like this" class="getproimg"></a>
+</div><br><br/><br/>
+<div class="BoxWarn"><strong>WARNING:</strong> This
+      version of the script is over 15 days old<br />
+      <strong>ACTION: </strong>Please verify you have the latest version
+      from note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1360390.1" target="_blank">1360390.1</a> and download and compile the
+      latest version as necessary.</div><br/><br/>
+<div class="Box">Report Arguments &amp; Instance Details
+	<a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'rargs')">&#9660</a><br/>
+<div id="rargs" class="BoxContent" style="display: none;">
+<table><tr><th class="main" colspan="2">Arguments</th><th class="separator">&nbsp;</th><th class="main" colspan="2">Instance Details</th></tr>
+<tr><th>Invoice ID</th><td>823817</td>
+<th class="separator">&nbsp;</th>
+<th>Host</th><td>sreikolebz1.srei.com</td></tr>
+<tr><th>Check ID</th><td></td>
+<th class="separator">&nbsp;</th>
+<th>Instance</th><td>EBS1</td></tr>
+<tr><th>Vendor ID</th><td></td>
+<th class="separator">&nbsp;</th><th>Applications Version</th>
+<td>12.1.3</td></tr>
+<tr><th>Start Date</th><td></td>
+<th class="separator">&nbsp;</th>
+<th>Run Date</th><td>27-Oct-2015 03:10:10</td></tr>
+<tr><th>End Date</th><td></td>
+<th class="separator">&nbsp;</th>
+<th>Script Version</th><td>120.270</td></tr>
+<tr><th>Operating Units</th><td>1129</td>
+<th class="separator">&nbsp;</th><th>Script Date</th>
+<td>21-Nov-2014</td></tr>
+<tr><th>Transaction Type</th><td></td>
+<th class="separator">&nbsp;</th><th></th><td></td></tr>
+<tr><th>Validations</th><td>ALL</td>
+<th class="separator">&nbsp;</th><th></th><td></td></tr>
+<tr><th>Maximum Rows</th><td>10</td>
+<th class="separator">&nbsp;</th><th></th><td></td></tr>
+<tr><th>Print to Stdout</th><td>N</td>
+<th class="separator">&nbsp;</th><th></th><td></td></tr>
+<tr><th>Debug Mode</th><td>Y</td>
+<th class="separator">&nbsp;</th><th></th><td></td></tr>
+</tbody></table></div></div>
+<span id="impact_summary"></span>
+<br><div class="Box">Recommended Patch Status
+<a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'recopatch')">&#9650;</a><br/>
+<div id="recopatch" class="BoxContent"><table width="960px"> 
+<thead></thead><tbody>
+<tr><th>Product</th><th>Patch</th><th>Description</th><th>Released</th><th>Applied</th></tr>
+<tr><td class="warn">AP</td>
+<td class="warn">19018767</td>
+<td class="warn">Payables Core RPC 5</td>
+<td class="warn">Aug-2014</td>
+<td class="warn">NOT APPLIED</td>
+</tr>
+<tr><td>AP/XLA</td>
+<td>14082924</td>
+<td>Consolidated GDF Pre-Req for Undo Acctg</td>
+<td>Jul-2012</td>
+<td>08-Jul-2013</td>
+</tr>
+<tr><td class="warn">ISP</td>
+<td class="warn">19018793</td>
+<td class="warn">Payables iSupplier Integration RPC 3</td>
+<td class="warn">Aug-2014</td>
+<td class="warn">NOT APPLIED</td>
+</tr>
+<tr><td class="warn">XLA</td>
+<td class="warn">16060007</td>
+<td class="warn">Subledger Accounting RPC 2</td>
+<td class="warn">Mar-2013</td>
+<td class="warn">NOT APPLIED</td>
+</tr>
+<tr><td>ZX</td>
+<td>14277162</td>
+<td>E-Business Tax RPC 1</td>
+<td>Aug-2012</td>
+<td>12-Mar-2014</td>
+</tr>
+<tr><td>ZX</td>
+<td>16009960</td>
+<td>E-Business Tax RPC 2</td>
+<td>Mar-2013</td>
+<td>12-Mar-2014</td>
+</tr>
+<tr><td class="warn">IBY</td>
+<td class="warn">16052604</td>
+<td class="warn">Payments RPC 2</td>
+<td class="warn">Mar-2013</td>
+<td class="warn">NOT APPLIED</td>
+</tr>
+</tbody></table><br/>
+<div class="BoxWarn">
+<strong>WARNING:</strong> One or more critical recommended patch collection patches (in yellow) has not been applied.<br>
+<strong>ACTION:</strong> Please see note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1397581.1" target="_blank">1397581.1</a>
+for details on these critical RPC patch releases.<br>
+</div>
+</div></div><br/>
+<div class="Box">Important Notes &amp; Communications <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'rnotes')">&#9650</a><br/>
+<div id="rnotes" class="BoxContent"><ul>
+  <li><strong>DISCLAIMER:</strong>
+    If you are using any data warehousing
+    tools or custom application which consumes data based on
+    the WHO columns of application tables (e.g. last_update_date),
+    please be aware that currently GDF patches do not maintain
+    these columns.  Please contact support before executing
+    a GDF on your production instance if you require this data
+    to be maintained.</li>
+  <li><strong>NOTE:</strong>
+      This diagnostic can also be run proactively to scan
+      all the transactions within a range of dates in your
+      current open period. It can easily be defined as a
+      concurrent process, and if run regularly throughout
+      the period it can help users to identify
+      data issues and exceptions along with solutions
+      before they even become an issue.</li>
+</ul></div></div><br/>
+<div class="Box">How to Use This Report
+    <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'rhlpcnt')">&#9660;</a><br/>
+<div id="rhlpcnt" class="BoxContent" style="display: none;">
+This report identifies data integrity issues affecting a transaction
+   (or range of transactions) which may prevent the indicated <strong>
+   Impact Areas</strong> from completing successfully.<br/><br/>
+   For example: if the report identifies a transaction whose impact
+   area is "Accounting Failure", it indicates that the transaction
+   will likely fail to account due to the reported data integrity issue.<br/><br/>
+   When this report indicates that given data integrity issue exists,
+   it will also indicate a solution when one is available. Most often this
+   will be a Generic Data Fix (GDF).<br/><br/>
+  <strong>How to proceed:</strong>
+  <ol>
+  <li>Prioritize first the GDF patches related to your
+      currently affected Impact Area.</li>
+  <li>You should also address issues reported in other impact areas,
+      even if they are not causing an immediate issue that you are aware of.
+      These issues may not manifest themselves until later (for example,
+      during the month end close). </li>
+  <li>Apply the corresponding GDF patch(es). <strong>Note that GDF's are
+      published solutions and are fully Supported. You need no
+      confirmation from support or development to apply them.</strong></li>
+  <li>Take special precaution when the reported GDF indicates that it will
+      undo-Accounting. You should take care in the transactions you select
+      to be processed by the GDF.  Refer to Note: <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=753695.1" target="_blank">753695.1</a> to fully understand potential implications.
+      Note that when a GDF requires undo-accounting there is not an alternate
+      action plan to correct the data. Accounting must be undone.</li>
+  <li>GDFs rarely (if ever) perform an incorrect data fix; however, you
+      should keep the temporary backup tables created by the GDF until
+      the fix has been fully tested and validated</li>
+  <li>As with any system change, you should test it thoroughly in a
+      test instance which is a clone of production prior to applying it in
+      your production instance.</li>
+  </ol><br/>
+<strong>Preventative Recommendations - Stay ahead of
+    disruptive issues:</strong>
+  <ol>
+  <li>Install the Master GDF Diagnostic (this report) as a concurrent process.
+      See Note: <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1361255.1" target="_blank">1361255.1</a> for instructions</li>
+  <li>End users can be given access to the report so that they can
+      reactively scan for issues with a transaction when something
+      is not functioning properly. </li>
+  <li>You can also use the date range concurrent process to scan ranges
+      of transactions through the month, and address issues PROACTIVELY
+      to avoid last minute disruptions in business processes.</li>
+  <li>Download the latest report definition at least twice a month to
+      make sure you have the latest detections. You only need to recompile
+      the package with the new version. Concurrent process re-registration
+      is not necessary.</li>
+  <li>This report will scan for key recommended patches and indicate whether have
+      applied them. You should schedule to apply any that have not been applied
+      if you have not already done so. The patches recommended by this
+      report eliminate the root cause of most data integrity issues.</li>
+  </ol></div></div><br/>
+<div class="BoxGDF">Validations for Existing Generic Data Fixes (GDF)
+<a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'gdfval')">&#9650;</a><br/>
+<div id="gdfval" class="BoxContent">
+<div class="Box">General (Non Transaction Specific) Data Validation <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'genvals')">&#9650;</a><br/>
+<div id="genvals" class="BoxContent">
+<div class="BoxOk">No related data issues found</div><br/>
+</div></div>
+<div class="Box">Invoice Data Validation <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'invvals')">&#9650;</a><br/>
+<div id="invvals" class="BoxContent">
+<div class="BoxSmall">
+<hr class="hr1"><span class="sigtitle">
+      <strong>Results for Signature ID 302: </strong>The values of match_type and dist_match_type are not in sync between invoice lines and distributions.  This results in issues with quantities and amounts billed which can cause issues when matching or cancelling the invoice.<br/><strong>Impact Area(s): </strong><span id="PO Matching_1">PO Matching</span></span><hr class="hr1"><strong>Solution GDF: </strong>19637650, <strong>Note: </strong><a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1906407.1" target="_blank">1906407.1</a><br/><strong>Script Name: </strong>ap_sync_match_type_sel.sql<br/> 
+<strong>Occurence: </strong>A total of 6 instances of this problem were found.
+.<span class="italsmall"> Elapsed: .005 Sec</span>
+<br/><br/>
+<div class="BoxFix">
+<strong>SOLUTION:</strong> Follow the instructions provided in note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1906407.1" target="_blank">1906407.1</a>
+</div><br/>
+<div class="trxnlist">
+<table>
+<tr>
+<th id=1>Invoice_Id</th>
+<th id=2>Invoice_Num</th>
+<th id=3>Invoice_Date</th>
+<th id=4>Match_Option</th>
+<th id=5>Matching_Basis</th>
+<th id=6>Line_Type_Lookup_Code</th>
+<th id=7>Po_Line_Location_Id</th>
+<th id=8>Rcv_Transaction_Id</th>
+<th id=9>Line_Match_Type</th>
+<th id=10>Dist_Match_Type</th>
+<th id=11>Line_Number</th>
+<th id=12>Distribution_Line_Number</th>
+<th id=13>Invoice_Distribution_Id</th>
+<th id=14>Type</th>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>06-OCT-15</td>
+<td></td>
+<td></td>
+<td>ITEM</td>
+<td></td>
+<td></td>
+<td>NOT_MATCHED</td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>1988645</td>
+<td>NULL VALUED</td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>06-OCT-15</td>
+<td></td>
+<td></td>
+<td>ITEM</td>
+<td></td>
+<td></td>
+<td>NOT_MATCHED</td>
+<td></td>
+<td>1</td>
+<td>2</td>
+<td>1988646</td>
+<td>NULL VALUED</td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>06-OCT-15</td>
+<td></td>
+<td></td>
+<td>ITEM</td>
+<td></td>
+<td></td>
+<td>NOT_MATCHED</td>
+<td></td>
+<td>1</td>
+<td>3</td>
+<td>1988647</td>
+<td>NULL VALUED</td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>06-OCT-15</td>
+<td></td>
+<td></td>
+<td>ITEM</td>
+<td></td>
+<td></td>
+<td>NOT_MATCHED</td>
+<td></td>
+<td>1</td>
+<td>4</td>
+<td>1988648</td>
+<td>NULL VALUED</td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>06-OCT-15</td>
+<td></td>
+<td></td>
+<td>ITEM</td>
+<td></td>
+<td></td>
+<td>NOT_MATCHED</td>
+<td></td>
+<td>1</td>
+<td>5</td>
+<td>1988649</td>
+<td>NULL VALUED</td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>06-OCT-15</td>
+<td></td>
+<td></td>
+<td>ITEM</td>
+<td></td>
+<td></td>
+<td>NOT_MATCHED</td>
+<td></td>
+<td>1</td>
+<td>6</td>
+<td>1988650</td>
+<td>NULL VALUED</td>
+</tr>
+<tr><td colspan="14"><input type="button" class="button" value="Show SQL" onclick="displaySQL(this, 302)"/></td></tr><tr><td style="display:none" colspan="14" id="sig302"><pre><p align="left">     WITH invs AS (
+            SELECT /*+ materialize */ 823817 invoice_id FROM dual
+     )
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            ai.invoice_date,
+            pll.match_option,
+            pll.matching_basis,
+            ail.line_type_lookup_code,
+            ail.po_line_location_id,
+            ail.rcv_transaction_id,
+            ail.match_type line_match_type,
+            aid.dist_match_type,
+            ail.line_number,
+            aid.distribution_line_number,
+            aid.invoice_distribution_id,
+            'NON SYNC' type
+     FROM invs,
+          ap_invoices_all ai,
+          ap_invoice_lines_all ail,
+          ap_invoice_distributions_all aid,
+          po_line_locations_all pll
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   ail.invoice_id = ai.invoice_id
+     AND   aid.invoice_id = ail.invoice_id
+     AND   aid.invoice_line_number = ail.line_number
+     AND   ail.corrected_inv_id is null
+     AND   ail.corrected_line_number is null
+     AND   ail.po_line_location_id is not null
+     AND   ail.po_line_location_id = pll.line_location_id
+     AND   nvl(ail.match_type,'NOT_MATCHED') <>
+             nvl(aid.dist_match_type,'NOT_MATCHED')
+     AND   ail.line_type_lookup_code IN ('ITEM',
+             'FREIGHT', 'MISCELLANEOUS')
+     AND   nvl(ail.match_type,'NOT_MATCHED') <> 'NOT_MATCHED' -- AGL
+     AND   (aid.line_type_lookup_code IN ('ITEM',
+              'ACCRUAL','FREIGHT','MISCELLANEOUS') OR
+            nvl(ail.match_type,'NOT_MATCHED') <> (
+              CASE
+                WHEN(ail.rcv_transaction_id is not null AND
+                     pll.matching_basis ='QUANTITY' AND
+                     ail.line_type_lookup_code='ITEM') THEN
+                  'ITEM_TO_RECEIPT'
+                WHEN(ail.rcv_transaction_id is not null AND
+                     pll.matching_basis ='AMOUNT' AND
+                     ail.line_type_lookup_code='ITEM')   THEN
+                  'ITEM_TO_SERVICE_RECEIPT'
+                WHEN(ail.rcv_transaction_id is not null AND
+                     ail.line_type_lookup_code in ('FREIGHT','MISCELLANEOUS')) THEN
+                  'OTHER_TO_RECEIPT'
+                WHEN(ail.rcv_transaction_id is null AND
+                     ail.po_line_location_id is not null AND
+                     pll.matching_basis ='QUANTITY' AND
+                     ail.line_type_lookup_code='ITEM') THEN
+                  'ITEM_TO_PO'
+                WHEN(ail.rcv_transaction_id is null AND
+                     ail.po_line_location_id is not null AND
+                     pll.matching_basis ='AMOUNT' AND
+                     ail.line_type_lookup_code='ITEM') THEN
+                  'ITEM_TO_SERVICE_PO'
+                WHEN(ail.rcv_transaction_id is null AND
+                     ail.po_line_location_id is null) THEN
+                  'NOT_MATCHED'
+              END))
+     UNION
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            ai.invoice_date,
+            pll.match_option,
+            pll.matching_basis,
+            ail.line_type_lookup_code,
+            ail.po_line_location_id,
+            ail.rcv_transaction_id,
+            ail.match_type,
+            aid.dist_match_type,
+            ail.line_number,
+            aid.distribution_line_number,
+            aid.invoice_distribution_id,
+            'MATCHED'
+     FROM invs,
+          ap_invoices_all ai,
+          ap_invoice_lines_all ail,
+          ap_invoice_distributions_all aid,
+          po_line_locations_all pll
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   ail.invoice_id = ai.invoice_id
+     AND   aid.invoice_id = ail.invoice_id
+     AND   aid.invoice_line_number = ail.line_number
+     AND   ail.corrected_inv_id is null
+     AND   ail.corrected_line_number is null
+     AND   ail.po_line_location_id is not null
+     AND   ail.po_line_location_id = pll.line_location_id
+     AND   nvl(ail.match_type,'NOT_MATCHED') = 'NOT_MATCHED'
+     AND   ail.line_type_lookup_code IN ('ITEM',
+             'FREIGHT', 'MISCELLANEOUS')
+     AND   (aid.line_type_lookup_code IN ('ITEM',
+              'ACCRUAL','FREIGHT','MISCELLANEOUS') OR
+            nvl(ail.match_type,'NOT_MATCHED') <> (
+              CASE
+                WHEN(ail.rcv_transaction_id is not null AND
+                     pll.matching_basis ='QUANTITY' AND
+                     ail.line_type_lookup_code='ITEM') THEN
+                  'ITEM_TO_RECEIPT'
+                WHEN(ail.rcv_transaction_id is not null AND
+                     pll.matching_basis ='AMOUNT' AND
+                     ail.line_type_lookup_code='ITEM')   THEN
+                  'ITEM_TO_SERVICE_RECEIPT'
+                WHEN(ail.rcv_transaction_id is not null AND
+                     ail.line_type_lookup_code in ('FREIGHT','MISCELLANEOUS')) THEN
+                  'OTHER_TO_RECEIPT'
+                WHEN(ail.rcv_transaction_id is null AND
+                     ail.po_line_location_id is not null AND
+                     pll.matching_basis ='QUANTITY' AND
+                     ail.line_type_lookup_code='ITEM') THEN
+                  'ITEM_TO_PO'
+                WHEN(ail.rcv_transaction_id is null AND
+                     ail.po_line_location_id is not null AND
+                     pll.matching_basis ='AMOUNT' AND
+                     ail.line_type_lookup_code='ITEM') THEN
+                  'ITEM_TO_SERVICE_PO'
+                WHEN(ail.rcv_transaction_id is null AND
+                     ail.po_line_location_id is null) THEN
+                  'NOT_MATCHED'
+              END))
+     UNION
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            ai.invoice_date,
+            null match_option,
+            null matching_basis,
+            ail.line_type_lookup_code,
+            ail.po_line_location_id,
+            ail.rcv_transaction_id,
+            ail.match_type,
+            aid.dist_match_type,
+            ail.line_number,
+            aid.distribution_line_number,
+            aid.invoice_distribution_id,
+            'NON MATCHED'
+     FROM invs,
+          ap_invoices_all ai,
+          ap_invoice_lines_all ail,
+          ap_invoice_distributions_all aid
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   ai.invoice_id = ail.invoice_id
+     AND   ail.invoice_id = aid.invoice_id
+     AND   aid.invoice_line_number = ail.line_number
+     AND   ail.match_type IN ('ITEM_TO_PO','ITEM_TO_RECEIPT')
+     AND   nvl(ail.discarded_flag,'N') <> 'Y'
+     AND   nvl(ail.cancelled_flag,'N') <> 'Y'
+     AND   ail.po_header_id is null
+     AND   ail.po_line_id is null
+     AND   ail.po_line_location_id is null
+     AND   ail.po_distribution_id is null
+     AND   ail.rcv_transaction_id is null
+     AND   ail.corrected_inv_id  is null
+     AND   ail.corrected_line_number is null
+     UNION
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            ai.invoice_date,
+            null,
+            null,
+            ail.line_type_lookup_code,
+            ail.po_line_location_id,
+            ail.rcv_transaction_id,
+            ail.match_type,
+            aid.dist_match_type,
+            ail.line_number,
+            aid.distribution_line_number,
+            aid.invoice_distribution_id,
+            'NULL VALUED'
+     FROM invs,
+          ap_invoices_all ai,
+          ap_invoice_lines_all ail,
+          ap_invoice_distributions_all aid
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   ai.invoice_id = ail.invoice_id
+     AND   ail.invoice_id = aid.invoice_id
+     AND   aid.invoice_line_number = ail.line_number
+     AND   aid.line_type_lookup_code IN ('ITEM', 'FREIGHT',
+             'MISCELLANEOUS')
+     AND   aid.po_distribution_id is null
+     AND   aid.rcv_transaction_id is null
+     AND   aid.dist_match_type is null
+     AND   ail.line_source IN ('MANUAL LINE ENTRY', 'IMPORTED')
+     AND   ail.po_header_id is null
+     AND   ail.po_line_id is null
+     AND   ail.po_line_location_id is null
+      </pre></td></tr>
+</table></div></div><br/>
+<div class="BoxSmall">
+<hr class="hr1"><span class="sigtitle">
+      <strong>Results for Signature ID 75: </strong>Approved Invoice distributions missing Accounting_Event_ID<br/><strong>Impact Area(s): </strong><span id="Period Close_1">Period Close</span></span><hr class="hr1"><strong>Solution GDF: </strong>18484204, <strong>Note: </strong><a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=972261.1" target="_blank">972261.1</a><br/><strong>Script Name: </strong>ap_trx_missing_event_sel.sql<br/> 
+<strong>Occurence: </strong>Multiple instances of this problem were found.
+  Displaying only the first 10
+.<span class="italsmall"> Elapsed: .019 Sec</span>
+<br/><br/>
+<div class="BoxFix">
+<strong>SOLUTION:</strong> Apply the GDF patch following the instructions provided in note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=972261.1" target="_blank">972261.1</a>
+</div><br/>
+<div class="trxnlist">
+<table>
+<tr>
+<th id=1>Invoice_Id</th>
+<th id=2>Invoice_Num</th>
+<th id=3>Org_Id</th>
+<th id=4>Invoice_Type_Lookup_Code</th>
+<th id=5>Invoice_Distribution_Id</th>
+<th id=6>Cancellation_Flag</th>
+<th id=7>Prepay_Distribution_Id</th>
+<th id=8>Parent_Reversal_Id</th>
+<th id=9>Invoice_Date</th>
+<th id=10>Vendor_Name</th>
+<th id=11>Vendor_Site_Code</th>
+<th id=12>Historical_Flag</th>
+<th id=13>Posted_Flag</th>
+<th id=14>Prepay_Tax_Parent_Id</th>
+<th id=15>Line_Type_Lookup_Code</th>
+<th id=16>Invoice_Status</th>
+<th id=17>Distribution_Type</th>
+<th id=18>Accounting_Event_Id</th>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>1129</td>
+<td>STANDARD</td>
+<td>1988657</td>
+<td></td>
+<td></td>
+<td></td>
+<td>06-OCT-15</td>
+<td>Baker Tilly Singhi Consultants Private Limited</td>
+<td>KOLKATA</td>
+<td></td>
+<td>N</td>
+<td></td>
+<td>MISCELLANEOUS</td>
+<td>APPROVED</td>
+<td>Invoice Distribution</td>
+<td></td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>1129</td>
+<td>STANDARD</td>
+<td>1988656</td>
+<td></td>
+<td></td>
+<td></td>
+<td>06-OCT-15</td>
+<td>Baker Tilly Singhi Consultants Private Limited</td>
+<td>KOLKATA</td>
+<td></td>
+<td>N</td>
+<td></td>
+<td>MISCELLANEOUS</td>
+<td>APPROVED</td>
+<td>Invoice Distribution</td>
+<td></td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>1129</td>
+<td>STANDARD</td>
+<td>1988655</td>
+<td></td>
+<td></td>
+<td></td>
+<td>06-OCT-15</td>
+<td>Baker Tilly Singhi Consultants Private Limited</td>
+<td>KOLKATA</td>
+<td></td>
+<td>N</td>
+<td></td>
+<td>MISCELLANEOUS</td>
+<td>APPROVED</td>
+<td>Invoice Distribution</td>
+<td></td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>1129</td>
+<td>STANDARD</td>
+<td>1988654</td>
+<td></td>
+<td></td>
+<td></td>
+<td>06-OCT-15</td>
+<td>Baker Tilly Singhi Consultants Private Limited</td>
+<td>KOLKATA</td>
+<td></td>
+<td>N</td>
+<td></td>
+<td>MISCELLANEOUS</td>
+<td>APPROVED</td>
+<td>Invoice Distribution</td>
+<td></td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>1129</td>
+<td>STANDARD</td>
+<td>1988653</td>
+<td></td>
+<td></td>
+<td></td>
+<td>06-OCT-15</td>
+<td>Baker Tilly Singhi Consultants Private Limited</td>
+<td>KOLKATA</td>
+<td></td>
+<td>N</td>
+<td></td>
+<td>MISCELLANEOUS</td>
+<td>APPROVED</td>
+<td>Invoice Distribution</td>
+<td></td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>1129</td>
+<td>STANDARD</td>
+<td>1988652</td>
+<td></td>
+<td></td>
+<td></td>
+<td>06-OCT-15</td>
+<td>Baker Tilly Singhi Consultants Private Limited</td>
+<td>KOLKATA</td>
+<td></td>
+<td>N</td>
+<td></td>
+<td>MISCELLANEOUS</td>
+<td>APPROVED</td>
+<td>Invoice Distribution</td>
+<td></td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>1129</td>
+<td>STANDARD</td>
+<td>1988651</td>
+<td></td>
+<td></td>
+<td></td>
+<td>06-OCT-15</td>
+<td>Baker Tilly Singhi Consultants Private Limited</td>
+<td>KOLKATA</td>
+<td></td>
+<td>N</td>
+<td></td>
+<td>MISCELLANEOUS</td>
+<td>APPROVED</td>
+<td>Invoice Distribution</td>
+<td></td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>1129</td>
+<td>STANDARD</td>
+<td>1988650</td>
+<td></td>
+<td></td>
+<td></td>
+<td>06-OCT-15</td>
+<td>Baker Tilly Singhi Consultants Private Limited</td>
+<td>KOLKATA</td>
+<td></td>
+<td>N</td>
+<td></td>
+<td>ITEM</td>
+<td>APPROVED</td>
+<td>Invoice Distribution</td>
+<td></td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>1129</td>
+<td>STANDARD</td>
+<td>1988649</td>
+<td></td>
+<td></td>
+<td></td>
+<td>06-OCT-15</td>
+<td>Baker Tilly Singhi Consultants Private Limited</td>
+<td>KOLKATA</td>
+<td></td>
+<td>N</td>
+<td></td>
+<td>ITEM</td>
+<td>APPROVED</td>
+<td>Invoice Distribution</td>
+<td></td>
+</tr>
+<tr>
+<td>823817</td>
+<td>BTS/KOL/15-16/091</td>
+<td>1129</td>
+<td>STANDARD</td>
+<td>1988648</td>
+<td></td>
+<td></td>
+<td></td>
+<td>06-OCT-15</td>
+<td>Baker Tilly Singhi Consultants Private Limited</td>
+<td>KOLKATA</td>
+<td></td>
+<td>N</td>
+<td></td>
+<td>ITEM</td>
+<td>APPROVED</td>
+<td>Invoice Distribution</td>
+<td></td>
+</tr>
+<tr><td colspan="18"><input type="button" class="button" value="Show SQL" onclick="displaySQL(this, 75)"/></td></tr><tr><td style="display:none" colspan="18" id="sig75"><pre><p align="left">     WITH invs AS (
+       SELECT /*+ materialize */ 823817 invoice_id FROM dual
+     )
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            ai.org_id,
+            ai.invoice_type_lookup_code,
+            aid.invoice_distribution_id,
+            aid.cancellation_flag,
+            aid.prepay_distribution_id,
+            aid.parent_reversal_id,
+            ai.invoice_date,
+            asu.vendor_name,
+            assi.vendor_site_code,
+            aid.historical_flag,
+            aid.posted_flag,
+            aid.prepay_tax_parent_id,
+            aid.line_type_lookup_code,
+            ap_invoices_utility_pkg.get_approval_status(
+              ai.invoice_id,
+              ai.invoice_amount,
+              ai.payment_status_flag,
+              ai.invoice_type_lookup_code) invoice_status,
+            'Invoice Distribution' distribution_type,
+            aid.accounting_event_id
+     FROM invs,
+          ap_invoices_all ai,
+          ap_suppliers asu,
+          ap_supplier_sites_all assi,
+          ap_invoice_distributions_all aid,
+          financials_system_params_all fsp
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   aid.invoice_id = ai.invoice_id
+     AND   ai.vendor_id = asu.vendor_id(+)
+     AND   ai.vendor_site_id = assi.vendor_site_id(+)
+     AND   fsp.org_id = aid.org_id
+     AND   ((fsp.purch_encumbrance_flag = 'Y' AND
+             aid.match_status_flag = 'A') OR
+            (fsp.purch_encumbrance_flag = 'N' AND
+             aid.match_status_flag IN ('A',   'T')))
+     AND   nvl(aid.posted_flag,   'N') <> 'Y'
+     AND   aid.accounting_event_id is null
+     AND NOT EXISTS (SELECT 1
+                     FROM ap_holds_all ah, ap_hold_codes ahc
+                     WHERE ah.invoice_id = ai.invoice_id
+                     AND   ah.hold_lookup_code = ahc.hold_lookup_code
+                     AND   ah.release_lookup_code IS NULL
+                     AND   nvl(ahc.postable_flag,'N') = 'N')
+     AND   aid.awt_invoice_payment_id is null
+     AND   NOT EXISTS (
+             SELECT 1
+             FROM ap_accounting_events_all aae,
+                  ap_invoices_all ai2
+             WHERE ai2.invoice_id = ai.invoice_id
+             AND   ai2.historical_flag = 'Y'
+             AND   aae.source_id = ai2.invoice_id
+             AND   aae.source_table IN ('AP_INVOICES', 'AP_INVOICES_ALL')
+  	   AND   NOT EXISTS (
+                     SELECT 1 FROM ap_invoice_distributions_all aid2
+  	           WHERE aid2.invoice_id = ai2.invoice_id
+  	           AND   aid2.accounting_event_id = aae.accounting_event_id))
+     AND   NOT (
+            aid.historical_flag = 'Y' AND
+            aid.posted_flag = 'Y' AND
+            aid.line_type_lookup_code <> 'PREPAY' AND
+            aid.prepay_distribution_id is null AND
+            aid.prepay_tax_parent_id is null AND
+            EXISTS (
+              SELECT 1 FROM ap_system_parameters_all asp
+              WHERE asp.org_id = ai.org_id
+              AND   asp.accounting_method_option = 'Cash'))
+     UNION ALL
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            ai.org_id,
+            ai.invoice_type_lookup_code,
+            asad.invoice_distribution_id,
+            asad.cancellation_flag cancellation_flag,
+            asad.prepay_distribution_id prepay_distribution_id,
+            asad.parent_reversal_id parent_reversal_id,
+            ai.invoice_date,
+            asu.vendor_name,
+            assi.vendor_site_code,
+            null,
+            asad.posted_flag,
+            null,
+            asad.line_type_lookup_code,
+            ap_invoices_utility_pkg.get_approval_status(
+              ai.invoice_id, ai.invoice_amount, ai.payment_status_flag,
+              ai.invoice_type_lookup_code) invoice_status,
+            'Self Assessed Tax Distribution' distribution_type,
+            asad.accounting_event_id
+     FROM invs,
+          ap_invoices_all ai,
+          ap_suppliers asu,
+          ap_supplier_sites_all assi,
+          ap_self_assessed_tax_dist_all asad,
+          financials_system_params_all fsp
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   asad.invoice_id = ai.invoice_id
+     AND   ai.vendor_id = asu.vendor_id(+)
+     AND   ai.vendor_site_id = assi.vendor_site_id(+)
+     AND   fsp.org_id = asad.org_id
+     AND   ((fsp.purch_encumbrance_flag = 'Y' AND
+             asad.match_status_flag = 'A') OR
+            (fsp.purch_encumbrance_flag = 'N' AND
+             asad.match_status_flag IN ('A',   'T')))
+     AND   nvl(asad.posted_flag,   'N') <> 'Y'
+     AND   asad.accounting_event_id is null
+     AND   NOT EXISTS (
+             SELECT 1
+             FROM ap_holds_all ah,
+                  ap_hold_codes ahc
+             WHERE ah.invoice_id = ai.invoice_id
+             AND   ah.hold_lookup_code = ahc.hold_lookup_code
+             AND   ah.release_lookup_code is null
+             AND   nvl(ahc.postable_flag,'N') = 'N')
+     AND asad.awt_invoice_payment_id is null
+     AND   NOT EXISTS (
+             SELECT 1
+             FROM ap_accounting_events_all aae,
+                  ap_invoices_all ai2
+             WHERE ai2.invoice_id = ai.invoice_id
+             AND   ai2.historical_flag = 'Y'
+             AND   aae.source_id = ai2.invoice_id
+             AND   aae.source_table IN ('AP_INVOICES', 'AP_INVOICES_ALL')
+  	   AND   NOT EXISTS (
+                     SELECT 1 FROM ap_invoice_distributions_all aid2
+  	           WHERE aid2.invoice_id = ai2.invoice_id
+  	           AND   aid2.accounting_event_id = aae.accounting_event_id))
+      </pre></td></tr>
+</table></div></div><br/>
+<div class="BoxLight">Child Data Validation for Prepayment Invoices For Invoice ID 823817<br/>
+<div class="BoxSmall">
+<div class="BoxOk">No related data issues found</div><br/>
+</div></div>
+</div></div>
+</div></div>
+<div class="BoxGDF">Validations with No Generic Data Fix Available (NON-GDF) <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'nongdfval')">&#9650;</a><br/>
+<div id="nongdfval" class="BoxContent">
+<div class="Box">General (Non Transaction Specific) Data Validation <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'ngdfgenvals')">&#9650;</a><br/>
+<div id="ngdfgenvals" class="BoxContent">
+<div class="BoxOk">No related data issues found</div><br/>
+</div></div>
+<div class="Box">Invoice Data Validation <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'ngdfinvvals')">&#9650;</a><br/>
+<div id="ngdfinvvals" class="BoxContent">
+<div class="BoxLight">Child Data Validation for Prepayment Invoices For Invoice ID 823817<br/>
+<div class="BoxSmall">
+<div class="BoxOk">No related data issues found</div><br/>
+</div></div>
+<div class="BoxOk">No related data issues found</div><br/>
+</div></div>
+</div></div>
+<br/><br/><br/>
+<table><thead>Performance Data</thead><tbody>
+<tr><th>Total Elapsed Time:</th><td>1 Min, 21.12 Sec</td></tr>
+<tr><th>Total Query Time:</th><td>1 Min, 1.137 Sec</td></tr>
+</tbody></table><br/><br/>
+<SCRIPT type="text/javascript">
+    document.getElementById("impact_summary").innerHTML = "<div class=\"Box\">Summary of Issues by Impact Area "+
+    "<a style=\"font-size: 13px;\" href=\"javascript:;\" "+
+    "onclick=\"HideShow(this,'impact_summary_content')\">&#9660</a><br/>"+
+    "<div id=\"impact_summary_content\"class=\"BoxContent\" "+
+    "style=\"display: none;\">"+
+    "Although we recommend fixing all data integrity issues "+
+    "found in this report, not all signatures identified may be related "+
+    "to a specific problem you are experiencing. The table below can help "+
+    "to identify which issues are related to a particular functional area "+
+    "within the product so that you can prioritize which to address first. "+
+    "For example, if a transaction fails to account, the issues identified "+
+    "with the impact area \"Accounting Failure\" would be a priority. "+
+    "<br><br><table width=\"50%\"><tbody><tr><th colspan=\"2\">"+
+    "Issues Detected by Impact Area</th><th>Check to Highlight "+
+    "</th></tr>"+"<tr><th>PO Matching</th><td>1</td><th class=\"separator\">"+
+      "<input name=\"chbx-PO Matching\" type=\"checkbox\" onclick=\"highlight('PO Matching',this.checked)\"/>"+
+      "</th></tr>"+"<tr><th>Period Close</th><td>1</td><th class=\"separator\">"+
+      "<input name=\"chbx-Period Close\" type=\"checkbox\" onclick=\"highlight('Period Close',this.checked)\"/>"+
+      "</th></tr>"+"</tbody></table></div></div>";
+    </SCRIPT>
+<!-- ######BEGIN DX SUMMARY######
+<issues>
+ <script_version>120.270</script_version>
+ <undo_ptch>19018767</undo_ptch>
+ <rpc>
+  <patch>
+   <app>AP</app>
+   <num>19018767</num>
+   <description>Payables Core RPC 5</description>
+  </patch>
+  <patch>
+   <app>ISP</app>
+   <num>19018793</num>
+   <description>Payables iSupplier Integration RPC 3</description>
+  </patch>
+  <patch>
+   <app>XLA</app>
+   <num>16060007</num>
+   <description>Subledger Accounting RPC 2</description>
+  </patch>
+  <patch>
+   <app>IBY</app>
+   <num>16052604</num>
+   <description>Payments RPC 2</description>
+  </patch>
+ </rpc>
+ <gdf>
+  <trx type="general">
+  </trx>
+  <trx type="invoice" id="823817">
+    <signature id="302">
+     <category>INVOICE</category>
+     <sub_category></sub_category>
+     <note>1906407.1</note>
+     <bug>19637650</bug>
+     <gdf_flag>Y</gdf_flag>
+     <undo>N</undo>
+     <problem>The values of match_type and dist_match_type are not in sync between invoice lines and distributions.  This results in issues with quantities and amounts billed which can cause issues when matching or cancelling the invoice.</problem>
+     <impact>PO Matching</impact>
+    </signature>
+    <signature id="75">
+     <category>INVOICE</category>
+     <sub_category>ACCOUNTING</sub_category>
+     <note>972261.1</note>
+     <bug>18484204</bug>
+     <gdf_flag>Y</gdf_flag>
+     <undo>N</undo>
+     <problem>Approved Invoice distributions missing Accounting_Event_ID</problem>
+     <impact>Period Close</impact>
+    </signature>
+  </trx>
+ </gdf>
+ <non_gdf>
+  <trx type="general">
+  </trx>
+  <trx type="invoice" id="823817">
+  </trx>
+ </non_gdf>
+</issues>
+######END DX SUMMARY######-->
+</BODY></HTML>

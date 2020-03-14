@@ -1,0 +1,9 @@
+DATAPUMP_DIR
+PUMP
+XMLDIR
+ORACLE_OCM_CONFIG_DIR
+DATA_PUMP_DIR
+ORACLE_OCM_CONFIG_DIR2
+
+ select username from dba_users where username = 'SIFLLIVE_PRODTEST'
+SIFLLIVE_Prodtest;

@@ -1,0 +1,33 @@
+#! /bin/bash
+usr=`id -un`
+ORAHOME=/home/`echo $usr`
+. $ORAHOME/.bash_profile
+
+LOGFILE=/home/orasp01/archive/Archivelog_Backup_`date +%d-%m-%y-%H_%M_%S`.log
+
+rman target / trace $LOGFILE << EOF
+run {
+allocate channel t1 device type disk ;
+allocate channel t2 device type disk ;
+delete noprompt obsolete device type disk;
+crosscheck archivelog all;
+backup archivelog all format '/newdump/filesystems/SP01/rmanbackup/ArchivelogBackup__%d_%p_%s' delete all input;
+crosscheck backup;
+release channel t1;
+release channel t2;
+}
+exit
+EOF
+
+
+chk=`echo $?`
+if [ ! $chk ]  then
+mutt -s "ARCHIVELOG backup Failure of SP01" -a $LOGFILE l1.dbsupport@srei.com < $LOGFILE
+#cat rmanmailfailure | /bin/mail -s "RMAN backup Failure of EP01" virtual.infra@srei.com
+#cat $ORAHOME/rmanmailsuccess | /bin/mail -s "RMAN backup Completed successfully - EP01" virtual.infra@srei.com
+else
+mutt -s "ARCHIVELOG backup of SP01 completed successfully" -a $LOGFILE l1.dbsupport@srei.com
+fi
+
+exit 0
+

@@ -1,0 +1,9 @@
+
+DROP TABLE SEFPLLIVE.TMP_REPO_DUR_REL_AC20 purge ;
+DROP TABLE SEFPLLIVE.TMP_REPO_DUR_REL_AC13 purge ;
+
+Table dropped.
+
+
+Table dropped.
+

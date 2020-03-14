@@ -1,0 +1,13 @@
+Dear Sirs:
+
+This is a system generated email and hence do not reply to this message.
+The attached file contain list user activity on NewGen database pertaining to
+the following:
+        -- FAILED LOGON - either inadvertently or intetionally a user is
+           trying to login into the database
+        -- Data Definition Operations - ALTER, CREATE, DROP, TRUNCATE
+The report is generated daily at 19:00 hours. The Audit data which is 3 days
+old is removed in order to control space increase in SYSTEM tablespace.
+
+Thank you.
+PwC DB Support Team

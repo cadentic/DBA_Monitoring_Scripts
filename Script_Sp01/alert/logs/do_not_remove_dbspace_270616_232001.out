@@ -1,0 +1,9 @@
+
+DROP TABLE SEFPLLIVE.TMP99_CI_FINAL_REPORT2 purge ;
+DROP TABLE SEFPLLIVE.TMP99_CI_FINAL_DATA2 purge ;
+
+Table dropped.
+
+
+Table dropped.
+

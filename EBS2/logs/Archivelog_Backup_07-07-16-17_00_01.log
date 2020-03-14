@@ -1,0 +1,1122 @@
+
+Recovery Manager: Release 11.2.0.2.0 - Production on Thu Jul 7 17:00:02 2016
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+ORACLE_HOME = /u01/rac/oracle_base/db/tech_st/11.2.0/
+System name:	Linux
+Node name:	sreikolebz2.srei.com
+Release:	2.6.39-400.247.1.el5uek
+Version:	#1 SMP Thu Feb 5 15:53:28 PST 2015
+Machine:	x86_64
+
+Starting with debugging turned off
+
+connected to target database: EBS (DBID=2012991160)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 10> 
+using target database control file instead of recovery catalog
+allocated channel: t1
+channel t1: SID=1713 instance=EBS2 device type=DISK
+
+allocated channel: t2
+channel t2: SID=1931 instance=EBS2 device type=DISK
+
+RMAN retention policy will be applied to the command
+RMAN retention policy is set to recovery window of 3 days
+no obsolete backups found
+
+validation succeeded for archived log
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_07/thread_1_seq_3356.348.916560009 RECID=8521 STAMP=916560011
+validation succeeded for archived log
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_07/thread_1_seq_3357.369.916580181 RECID=8523 STAMP=916580191
+validation succeeded for archived log
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_07/thread_2_seq_5161.312.916560011 RECID=8522 STAMP=916560012
+validation succeeded for archived log
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_07/thread_2_seq_5162.309.916581947 RECID=8524 STAMP=916581956
+Crosschecked 4 objects
+
+
+Starting backup at 07-JUL-16
+current log archived
+channel t1: starting archived log backup set
+channel t1: specifying archived log(s) in backup set
+input archived log thread=2 sequence=5161 RECID=8522 STAMP=916560012
+input archived log thread=1 sequence=3356 RECID=8521 STAMP=916560011
+input archived log thread=1 sequence=3357 RECID=8523 STAMP=916580191
+channel t1: starting piece 1 at 07-JUL-16
+channel t2: starting archived log backup set
+channel t2: specifying archived log(s) in backup set
+input archived log thread=2 sequence=5162 RECID=8524 STAMP=916581956
+input archived log thread=1 sequence=3358 RECID=8526 STAMP=916592447
+input archived log thread=2 sequence=5163 RECID=8525 STAMP=916592420
+channel t2: starting piece 1 at 07-JUL-16
+channel t1: finished piece 1 at 07-JUL-16
+piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6982.arc tag=TAG20160707T170047 comment=NONE
+channel t1: backup set complete, elapsed time: 00:00:55
+channel t1: deleting archived log(s)
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_07/thread_2_seq_5161.312.916560011 RECID=8522 STAMP=916560012
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_07/thread_1_seq_3356.348.916560009 RECID=8521 STAMP=916560011
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_07/thread_1_seq_3357.369.916580181 RECID=8523 STAMP=916580191
+channel t2: finished piece 1 at 07-JUL-16
+piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6983.arc tag=TAG20160707T170047 comment=NONE
+channel t2: backup set complete, elapsed time: 00:01:18
+channel t2: deleting archived log(s)
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_07/thread_2_seq_5162.309.916581947 RECID=8524 STAMP=916581956
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_07/thread_1_seq_3358.374.916592419 RECID=8526 STAMP=916592447
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_07/thread_2_seq_5163.362.916592413 RECID=8525 STAMP=916592420
+Finished backup at 07-JUL-16
+
+Starting Control File and SPFILE Autobackup at 07-JUL-16
+piece handle=+ARCHIVELOG/ebs/autobackup/2016_07_07/s_916592527.362.916592529 comment=NONE
+Finished Control File and SPFILE Autobackup at 07-JUL-16
+ORA-00245: control file backup operation failed
+
+RMAN-08132: WARNING: cannot update recovery area reclaimable file list
+
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=+ARCHIVELOG/ebs/autobackup/2016_07_03/s_916265859.314.916265861 RECID=6741 STAMP=916265861
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=+ARCHIVELOG/ebs/autobackup/2016_07_04/s_916353250.376.916353253 RECID=6756 STAMP=916353253
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=+ARCHIVELOG/ebs/autobackup/2016_07_05/s_916419734.367.916419737 RECID=6759 STAMP=916419736
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=+ARCHIVELOG/ebs/autobackup/2016_07_05/s_916438955.360.916438957 RECID=6772 STAMP=916438957
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=+ARCHIVELOG/ebs/autobackup/2016_07_06/s_916506045.354.916506047 RECID=6775 STAMP=916506046
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_pqra1rv6_6970_1_20160706.bkp RECID=6776 STAMP=916516838
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ppra1rv5_6969_1_20160706.bkp RECID=6777 STAMP=916516838
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_pnra1rv5_6967_1_20160706.bkp RECID=6778 STAMP=916516837
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_pora1rv5_6968_1_20160706.bkp RECID=6779 STAMP=916516837
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_psra1s01_6972_1_20160706.bkp RECID=6780 STAMP=916516866
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ptra1s02_6973_1_20160706.bkp RECID=6781 STAMP=916516867
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_pura1s02_6974_1_20160706.bkp RECID=6782 STAMP=916516867
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_prra1s01_6971_1_20160706.bkp RECID=6783 STAMP=916516866
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_pvra243n_6975_1_20160706.bkp RECID=6784 STAMP=916525175
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_q0ra243n_6976_1_20160706.bkp RECID=6785 STAMP=916525176
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/controlfile_q1ra243s_1_1_06.bkp RECID=6786 STAMP=916525183
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/spfile_q2ra2442_1_1_06.bkp RECID=6787 STAMP=916525186
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=+ARCHIVELOG/ebs/autobackup/2016_07_06/s_916525188.370.916525189 RECID=6788 STAMP=916525189
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6982.arc RECID=6789 STAMP=916592448
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6983.arc RECID=6790 STAMP=916592448
+crosschecked backup piece: found to be 'AVAILABLE'
+backup piece handle=+ARCHIVELOG/ebs/autobackup/2016_07_07/s_916592527.362.916592529 RECID=6791 STAMP=916592529
+Crosschecked 21 objects
+
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_v6r639v3_6118_1_20160520.bkp RECID=5975 STAMP=912369635
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_v7r639v3_6119_1_20160520.bkp RECID=5976 STAMP=912369635
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_v5r639v3_6117_1_20160520.bkp RECID=5977 STAMP=912369635
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_v4r639v3_6116_1_20160520.bkp RECID=5978 STAMP=912369635
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_vdr63j6r_6125_1_20160520.bkp RECID=5983 STAMP=912379099
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_vcr63j6r_6124_1_20160520.bkp RECID=5984 STAMP=912379099
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6130.arc RECID=5988 STAMP=912412819
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6129.arc RECID=5989 STAMP=912412818
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6133.arc RECID=5991 STAMP=912445225
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6132.arc RECID=5992 STAMP=912445224
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_vpr65ub2_6137_1_20160521.bkp RECID=5994 STAMP=912456034
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_vqr65ub2_6138_1_20160521.bkp RECID=5995 STAMP=912456034
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_vnr65ub2_6135_1_20160521.bkp RECID=5996 STAMP=912456034
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_vor65ub2_6136_1_20160521.bkp RECID=5997 STAMP=912456034
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_vvr666u0_6143_1_20160521.bkp RECID=6002 STAMP=912464832
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_00r666u0_6144_1_20160521.bkp RECID=6003 STAMP=912464832
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6149.arc RECID=6007 STAMP=912499219
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6148.arc RECID=6008 STAMP=912499219
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6151.arc RECID=6010 STAMP=912531613
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6152.arc RECID=6011 STAMP=912531613
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_0cr68in4_6156_1_20160522.bkp RECID=6013 STAMP=912542436
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_0dr68in4_6157_1_20160522.bkp RECID=6014 STAMP=912542436
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_0br68in3_6155_1_20160522.bkp RECID=6015 STAMP=912542436
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_0ar68in3_6154_1_20160522.bkp RECID=6016 STAMP=912542435
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_0jr68rdn_6163_1_20160522.bkp RECID=6021 STAMP=912551351
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_0ir68rdn_6162_1_20160522.bkp RECID=6022 STAMP=912551351
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6168.arc RECID=6026 STAMP=912585619
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6167.arc RECID=6027 STAMP=912585618
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6171.arc RECID=6029 STAMP=912618030
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6170.arc RECID=6030 STAMP=912618029
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_0vr6b7fc_6175_1_20160523.bkp RECID=6032 STAMP=912629229
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_10r6b7fd_6176_1_20160523.bkp RECID=6033 STAMP=912629229
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_0ur6b7fc_6174_1_20160523.bkp RECID=6034 STAMP=912629229
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_0tr6b7fc_6173_1_20160523.bkp RECID=6035 STAMP=912629229
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_16r6bgfu_6182_1_20160523.bkp RECID=6040 STAMP=912638462
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_15r6bgfu_6181_1_20160523.bkp RECID=6041 STAMP=912638462
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6187.arc RECID=6045 STAMP=912672014
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6186.arc RECID=6046 STAMP=912672014
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6190.arc RECID=6048 STAMP=912704422
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6189.arc RECID=6049 STAMP=912704422
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_1ir6drnm_6194_1_20160524.bkp RECID=6051 STAMP=912715510
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_1jr6drnm_6195_1_20160524.bkp RECID=6052 STAMP=912715510
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_1gr6drnl_6192_1_20160524.bkp RECID=6053 STAMP=912715510
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_1hr6drnm_6193_1_20160524.bkp RECID=6054 STAMP=912715510
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_1pr6e4p5_6201_1_20160524.bkp RECID=6059 STAMP=912724773
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_1or6e4p5_6200_1_20160524.bkp RECID=6060 STAMP=912724773
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6206.arc RECID=6064 STAMP=912758421
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6205.arc RECID=6065 STAMP=912758421
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6209.arc RECID=6067 STAMP=912790820
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6208.arc RECID=6068 STAMP=912790820
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_26r6gfr0_6214_1_20160525.bkp RECID=6070 STAMP=912801632
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_25r6gfr0_6213_1_20160525.bkp RECID=6071 STAMP=912801632
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_24r6gfr0_6212_1_20160525.bkp RECID=6072 STAMP=912801632
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_23r6gfr0_6211_1_20160525.bkp RECID=6073 STAMP=912801632
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_2cr6gn3t_6220_1_20160525.bkp RECID=6078 STAMP=912809085
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_2br6gn3t_6219_1_20160525.bkp RECID=6079 STAMP=912809085
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6225.arc RECID=6083 STAMP=912844822
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6224.arc RECID=6084 STAMP=912844821
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6228.arc RECID=6086 STAMP=912877222
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6227.arc RECID=6087 STAMP=912877222
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_2or6j47b_6232_1_20160526.bkp RECID=6089 STAMP=912888043
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_2pr6j47b_6233_1_20160526.bkp RECID=6090 STAMP=912888043
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_2nr6j47b_6231_1_20160526.bkp RECID=6091 STAMP=912888043
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_2mr6j47b_6230_1_20160526.bkp RECID=6092 STAMP=912888043
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_2vr6jbn4_6239_1_20160526.bkp RECID=6097 STAMP=912895716
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_2ur6jbn4_6238_1_20160526.bkp RECID=6098 STAMP=912895716
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6246.arc RECID=6102 STAMP=912963621
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6245.arc RECID=6103 STAMP=912963621
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_3ar6loj3_6250_1_20160527.bkp RECID=6105 STAMP=912974435
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_3br6loj3_6251_1_20160527.bkp RECID=6106 STAMP=912974435
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_38r6loj3_6248_1_20160527.bkp RECID=6107 STAMP=912974435
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_39r6loj3_6249_1_20160527.bkp RECID=6108 STAMP=912974435
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_3gr6m0dc_6256_1_20160527.bkp RECID=6113 STAMP=912982444
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_3hr6m0dc_6257_1_20160527.bkp RECID=6114 STAMP=912982444
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6262.arc RECID=6118 STAMP=913017618
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6261.arc RECID=6119 STAMP=913017618
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_3sr6ocv3_6268_1_20160528.bkp RECID=6121 STAMP=913060835
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_3rr6ocv3_6267_1_20160528.bkp RECID=6122 STAMP=913060835
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_3qr6ocv3_6266_1_20160528.bkp RECID=6123 STAMP=913060835
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_42r6okf2_6274_1_20160528.bkp RECID=6128 STAMP=913068514
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_41r6okf2_6273_1_20160528.bkp RECID=6129 STAMP=913068514
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6279.arc RECID=6133 STAMP=913104014
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6278.arc RECID=6134 STAMP=913104014
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6281.arc RECID=6136 STAMP=913136420
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6282.arc RECID=6137 STAMP=913136420
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_4er6r1b3_6286_1_20160529.bkp RECID=6139 STAMP=913147235
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_4fr6r1b4_6287_1_20160529.bkp RECID=6140 STAMP=913147236
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_4cr6r1b3_6284_1_20160529.bkp RECID=6141 STAMP=913147235
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_4dr6r1b3_6285_1_20160529.bkp RECID=6142 STAMP=913147235
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_4kr6r8p7_6292_1_20160529.bkp RECID=6147 STAMP=913154855
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_4lr6r8p7_6293_1_20160529.bkp RECID=6148 STAMP=913154855
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6299.arc RECID=6152 STAMP=913222817
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6300.arc RECID=6153 STAMP=913222817
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_50r6tlsk_6304_1_20160530.bkp RECID=6155 STAMP=913233812
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_51r6tlsk_6305_1_20160530.bkp RECID=6156 STAMP=913233812
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_4ur6tlsk_6302_1_20160530.bkp RECID=6157 STAMP=913233812
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_4vr6tlsk_6303_1_20160530.bkp RECID=6158 STAMP=913233812
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_57r6ttrd_6311_1_20160530.bkp RECID=6163 STAMP=913241965
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_56r6ttrd_6310_1_20160530.bkp RECID=6164 STAMP=913241965
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6316.arc RECID=6168 STAMP=913276820
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6315.arc RECID=6169 STAMP=913276820
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_5gr70a2s_6320_1_20160531.bkp RECID=6171 STAMP=913320028
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_5fr70a2s_6319_1_20160531.bkp RECID=6172 STAMP=913320028
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_5ir70a2v_6322_1_20160531.bkp RECID=6173 STAMP=913320031
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_5hr70a2s_6321_1_20160531.bkp RECID=6174 STAMP=913320028
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_5er70a2s_6318_1_20160531.bkp RECID=6175 STAMP=913320028
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6327.arc RECID=6176 STAMP=913363215
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6328.arc RECID=6177 STAMP=913363215
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6331.arc RECID=6179 STAMP=913395636
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6330.arc RECID=6180 STAMP=913395635
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_5vr72uf8_6335_1_20160601.bkp RECID=6182 STAMP=913406440
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_60r72uf8_6336_1_20160601.bkp RECID=6183 STAMP=913406440
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_5tr72uf8_6333_1_20160601.bkp RECID=6184 STAMP=913406440
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_5ur72uf8_6334_1_20160601.bkp RECID=6185 STAMP=913406440
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_66r736gh_6342_1_20160601.bkp RECID=6190 STAMP=913414673
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_65r736gh_6341_1_20160601.bkp RECID=6191 STAMP=913414673
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6347.arc RECID=6195 STAMP=913449613
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6346.arc RECID=6196 STAMP=913449613
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6350.arc RECID=6198 STAMP=913482028
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6349.arc RECID=6199 STAMP=913482028
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_6jr75ir8_6355_1_20160602.bkp RECID=6201 STAMP=913492840
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_6ir75ir8_6354_1_20160602.bkp RECID=6202 STAMP=913492840
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_6gr75ir8_6352_1_20160602.bkp RECID=6203 STAMP=913492840
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_6hr75ir8_6353_1_20160602.bkp RECID=6204 STAMP=913492840
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_6or75pvi_6360_1_20160602.bkp RECID=6209 STAMP=913500146
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_6pr75pvi_6361_1_20160602.bkp RECID=6210 STAMP=913500146
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6366.arc RECID=6214 STAMP=913536013
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6365.arc RECID=6215 STAMP=913536013
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6369.arc RECID=6217 STAMP=913568422
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6368.arc RECID=6218 STAMP=913568422
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_75r78772_6373_1_20160603.bkp RECID=6220 STAMP=913579234
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_73r78772_6371_1_20160603.bkp RECID=6221 STAMP=913579234
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_74r78772_6372_1_20160603.bkp RECID=6222 STAMP=913579234
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_7cr78ea1_6380_1_20160603.bkp RECID=6227 STAMP=913586497
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_7ar78ea1_6378_1_20160603.bkp RECID=6228 STAMP=913586497
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_7br78ea1_6379_1_20160603.bkp RECID=6229 STAMP=913586497
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6386.arc RECID=6233 STAMP=913654820
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6387.arc RECID=6234 STAMP=913654820
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_7nr7arnn_6391_1_20160604.bkp RECID=6236 STAMP=913665783
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_7or7arnn_6392_1_20160604.bkp RECID=6237 STAMP=913665783
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_7mr7arnn_6390_1_20160604.bkp RECID=6238 STAMP=913665783
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_7lr7arnn_6389_1_20160604.bkp RECID=6239 STAMP=913665783
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_7tr7b33v_6397_1_20160604.bkp RECID=6244 STAMP=913673343
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_7ur7b33v_6398_1_20160604.bkp RECID=6245 STAMP=913673343
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6403.arc RECID=6249 STAMP=913708818
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6402.arc RECID=6250 STAMP=913708818
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6405.arc RECID=6252 STAMP=913795219
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6407.arc RECID=6253 STAMP=913795223
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6406.arc RECID=6254 STAMP=913795219
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6410.arc RECID=6256 STAMP=913827622
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6409.arc RECID=6257 STAMP=913827622
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_8fr7g4ar_6415_1_20160606.bkp RECID=6259 STAMP=913838427
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_8er7g4ar_6414_1_20160606.bkp RECID=6260 STAMP=913838427
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_8dr7g4ar_6413_1_20160606.bkp RECID=6261 STAMP=913838427
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_8cr7g4ar_6412_1_20160606.bkp RECID=6262 STAMP=913838427
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_8lr7gbig_6421_1_20160606.bkp RECID=6267 STAMP=913845840
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_8kr7gbig_6420_1_20160606.bkp RECID=6268 STAMP=913845840
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6426.arc RECID=6272 STAMP=913881619
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6425.arc RECID=6273 STAMP=913881619
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6429.arc RECID=6275 STAMP=913914039
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6428.arc RECID=6276 STAMP=913914039
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_91r7ionc_6433_1_20160607.bkp RECID=6278 STAMP=913924844
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_8vr7ionc_6431_1_20160607.bkp RECID=6279 STAMP=913924844
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_90r7ionc_6432_1_20160607.bkp RECID=6280 STAMP=913924844
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_97r7ivsn_6439_1_20160607.bkp RECID=6285 STAMP=913932183
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_96r7ivsn_6438_1_20160607.bkp RECID=6286 STAMP=913932183
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6444.arc RECID=6290 STAMP=913968017
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6443.arc RECID=6291 STAMP=913968017
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6447.arc RECID=6293 STAMP=914000427
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6446.arc RECID=6294 STAMP=914000427
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_9jr7ld31_6451_1_20160608.bkp RECID=6296 STAMP=914011233
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_9kr7ld31_6452_1_20160608.bkp RECID=6297 STAMP=914011233
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_9hr7ld31_6449_1_20160608.bkp RECID=6298 STAMP=914011233
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_9ir7ld31_6450_1_20160608.bkp RECID=6299 STAMP=914011233
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_9pr7lkcp_6457_1_20160608.bkp RECID=6304 STAMP=914018713
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_9qr7lkcp_6458_1_20160608.bkp RECID=6305 STAMP=914018713
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6465.arc RECID=6309 STAMP=914086830
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6464.arc RECID=6310 STAMP=914086830
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_a5r7o1ni_6469_1_20160609.bkp RECID=6312 STAMP=914097909
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_a6r7o1ni_6470_1_20160609.bkp RECID=6313 STAMP=914097909
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_a3r7o1ni_6467_1_20160609.bkp RECID=6314 STAMP=914097909
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_a4r7o1ni_6468_1_20160609.bkp RECID=6315 STAMP=914097909
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_abr7o8n3_6475_1_20160609.bkp RECID=6320 STAMP=914105059
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_adr7o8n3_6477_1_20160609.bkp RECID=6321 STAMP=914105059
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_acr7o8n3_6476_1_20160609.bkp RECID=6322 STAMP=914105059
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6482.arc RECID=6326 STAMP=914140823
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6481.arc RECID=6327 STAMP=914140823
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6485.arc RECID=6329 STAMP=914173221
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6484.arc RECID=6330 STAMP=914173221
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_apr7qlqv_6489_1_20160610.bkp RECID=6332 STAMP=914184031
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_aqr7qlqv_6490_1_20160610.bkp RECID=6333 STAMP=914184031
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_aor7qlqv_6488_1_20160610.bkp RECID=6334 STAMP=914184031
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_anr7qlqv_6487_1_20160610.bkp RECID=6335 STAMP=914184031
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_avr7qsqp_6495_1_20160610.bkp RECID=6340 STAMP=914191193
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_b0r7qsqp_6496_1_20160610.bkp RECID=6341 STAMP=914191194
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6503.arc RECID=6345 STAMP=914259621
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6502.arc RECID=6346 STAMP=914259620
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_bbr7ta6u_6507_1_20160611.bkp RECID=6348 STAMP=914270430
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_bar7ta6u_6506_1_20160611.bkp RECID=6349 STAMP=914270430
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_b9r7ta6u_6505_1_20160611.bkp RECID=6350 STAMP=914270430
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_bgr7th7c_6512_1_20160611.bkp RECID=6355 STAMP=914277613
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_bhr7th7c_6513_1_20160611.bkp RECID=6356 STAMP=914277613
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6517.arc RECID=6360 STAMP=914313623
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6518.arc RECID=6361 STAMP=914313623
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6520.arc RECID=6363 STAMP=914346020
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6521.arc RECID=6364 STAMP=914346020
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_bur7vuis_6526_1_20160612.bkp RECID=6366 STAMP=914356828
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_btr7vuis_6525_1_20160612.bkp RECID=6367 STAMP=914356828
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_brr7vuis_6523_1_20160612.bkp RECID=6368 STAMP=914356828
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_bsr7vuis_6524_1_20160612.bkp RECID=6369 STAMP=914356828
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_c3r805jl_6531_1_20160612.bkp RECID=6374 STAMP=914364021
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_c4r805jl_6532_1_20160612.bkp RECID=6375 STAMP=914364021
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6537.arc RECID=6379 STAMP=914400015
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6536.arc RECID=6380 STAMP=914400015
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6540.arc RECID=6382 STAMP=914432426
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6539.arc RECID=6383 STAMP=914432426
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_chr82ivc_6545_1_20160613.bkp RECID=6385 STAMP=914443244
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_cgr82ivc_6544_1_20160613.bkp RECID=6386 STAMP=914443244
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_cfr82ivc_6543_1_20160613.bkp RECID=6387 STAMP=914443244
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_cer82ivc_6542_1_20160613.bkp RECID=6388 STAMP=914443244
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_cmr82q4p_6550_1_20160613.bkp RECID=6393 STAMP=914450585
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_cnr82q4p_6551_1_20160613.bkp RECID=6394 STAMP=914450585
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6558.arc RECID=6398 STAMP=914518829
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6557.arc RECID=6399 STAMP=914518829
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_d3r857b6_6563_1_20160614.bkp RECID=6401 STAMP=914529638
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_d2r857b6_6562_1_20160614.bkp RECID=6402 STAMP=914529638
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_d1r857b6_6561_1_20160614.bkp RECID=6403 STAMP=914529638
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_d0r857b6_6560_1_20160614.bkp RECID=6404 STAMP=914529638
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_d9r85ean_6569_1_20160614.bkp RECID=6409 STAMP=914536791
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_d8r85ean_6568_1_20160614.bkp RECID=6410 STAMP=914536791
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6574.arc RECID=6414 STAMP=914572824
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6575.arc RECID=6415 STAMP=914572849
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6578.arc RECID=6417 STAMP=914605224
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6577.arc RECID=6418 STAMP=914605224
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_dmr87rn2_6582_1_20160615.bkp RECID=6420 STAMP=914616034
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_dnr87rn2_6583_1_20160615.bkp RECID=6421 STAMP=914616034
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_dkr87rn2_6580_1_20160615.bkp RECID=6422 STAMP=914616034
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_dlr87rn2_6581_1_20160615.bkp RECID=6423 STAMP=914616034
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_dsr882ks_6588_1_20160615.bkp RECID=6428 STAMP=914623132
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_dtr882ks_6589_1_20160615.bkp RECID=6429 STAMP=914623132
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6596.arc RECID=6433 STAMP=914691622
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6595.arc RECID=6434 STAMP=914691622
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_e8r8ag36_6600_1_20160616.bkp RECID=6436 STAMP=914702438
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_e9r8ag36_6601_1_20160616.bkp RECID=6437 STAMP=914702438
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_e6r8ag36_6598_1_20160616.bkp RECID=6438 STAMP=914702438
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_e7r8ag36_6599_1_20160616.bkp RECID=6439 STAMP=914702438
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_eer8an2n_6606_1_20160616.bkp RECID=6444 STAMP=914709591
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_efr8an2n_6607_1_20160616.bkp RECID=6445 STAMP=914709591
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6612.arc RECID=6449 STAMP=914745620
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6611.arc RECID=6450 STAMP=914745620
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6615.arc RECID=6452 STAMP=914778022
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6614.arc RECID=6453 STAMP=914778022
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_err8d4f7_6619_1_20160617.bkp RECID=6455 STAMP=914788839
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_esr8d4f7_6620_1_20160617.bkp RECID=6456 STAMP=914788840
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_eqr8d4f7_6618_1_20160617.bkp RECID=6457 STAMP=914788839
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_epr8d4f7_6617_1_20160617.bkp RECID=6458 STAMP=914788839
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_eur8d4ge_6622_1_20160617.bkp RECID=6460 STAMP=914788878
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_f0r8d4ge_6624_1_20160617.bkp RECID=6461 STAMP=914788879
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_etr8d4gd_6621_1_20160617.bkp RECID=6462 STAMP=914788878
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_f2r8dbcs_6626_1_20160617.bkp RECID=6463 STAMP=914795932
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_f1r8dbcs_6625_1_20160617.bkp RECID=6464 STAMP=914795932
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6633.arc RECID=6468 STAMP=914864420
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6632.arc RECID=6469 STAMP=914864420
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_fdr8foqv_6637_1_20160618.bkp RECID=6471 STAMP=914875231
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_fer8foqv_6638_1_20160618.bkp RECID=6472 STAMP=914875231
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_fcr8foqv_6636_1_20160618.bkp RECID=6473 STAMP=914875231
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_fbr8foqv_6635_1_20160618.bkp RECID=6474 STAMP=914875231
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_fgr8forh_6640_1_20160618.bkp RECID=6475 STAMP=914875250
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_fhr8fori_6641_1_20160618.bkp RECID=6476 STAMP=914875251
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ffr8forh_6639_1_20160618.bkp RECID=6477 STAMP=914875250
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_fir8fori_6642_1_20160618.bkp RECID=6478 STAMP=914875251
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_fjr8fvt9_6643_1_20160618.bkp RECID=6479 STAMP=914882474
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_fkr8fvta_6644_1_20160618.bkp RECID=6480 STAMP=914882474
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6649.arc RECID=6484 STAMP=914918423
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6652.arc RECID=6485 STAMP=914950819
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6651.arc RECID=6486 STAMP=914950819
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_g0r8id75_6656_1_20160619.bkp RECID=6488 STAMP=914961637
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_g1r8id75_6657_1_20160619.bkp RECID=6489 STAMP=914961637
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_fur8id75_6654_1_20160619.bkp RECID=6490 STAMP=914961637
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_fvr8id75_6655_1_20160619.bkp RECID=6491 STAMP=914961637
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_g3r8id7b_6659_1_20160619.bkp RECID=6492 STAMP=914961644
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_g4r8id7b_6660_1_20160619.bkp RECID=6493 STAMP=914961644
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_g2r8id7b_6658_1_20160619.bkp RECID=6494 STAMP=914961643
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_g5r8id7c_6661_1_20160619.bkp RECID=6495 STAMP=914961644
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_g6r8ik3f_6662_1_20160619.bkp RECID=6496 STAMP=914968688
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_g7r8ik3f_6663_1_20160619.bkp RECID=6497 STAMP=914968688
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6668.arc RECID=6501 STAMP=915004826
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6667.arc RECID=6502 STAMP=915004826
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6671.arc RECID=6504 STAMP=915037219
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6670.arc RECID=6505 STAMP=915037219
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_gjr8l1it_6675_1_20160620.bkp RECID=6507 STAMP=915048029
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_gkr8l1it_6676_1_20160620.bkp RECID=6508 STAMP=915048029
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ghr8l1it_6673_1_20160620.bkp RECID=6509 STAMP=915048029
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_gir8l1it_6674_1_20160620.bkp RECID=6510 STAMP=915048029
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_gnr8l1kf_6679_1_20160620.bkp RECID=6511 STAMP=915048079
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_gmr8l1ke_6678_1_20160620.bkp RECID=6512 STAMP=915048079
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_glr8l1ke_6677_1_20160620.bkp RECID=6513 STAMP=915048078
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_gor8l1kf_6680_1_20160620.bkp RECID=6514 STAMP=915048080
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_gqr8l9rm_6682_1_20160620.bkp RECID=6515 STAMP=915056502
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_gpr8l9rm_6681_1_20160620.bkp RECID=6516 STAMP=915056502
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6689.arc RECID=6520 STAMP=915123624
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6688.arc RECID=6521 STAMP=915123624
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_h5r8nlv2_6693_1_20160621.bkp RECID=6523 STAMP=915134434
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_h6r8nlv2_6694_1_20160621.bkp RECID=6524 STAMP=915134434
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_h4r8nlv2_6692_1_20160621.bkp RECID=6525 STAMP=915134434
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_h3r8nlv2_6691_1_20160621.bkp RECID=6526 STAMP=915134434
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_h9r8nm0j_6697_1_20160621.bkp RECID=6527 STAMP=915134483
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_h8r8nm0i_6696_1_20160621.bkp RECID=6528 STAMP=915134483
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_h7r8nm0i_6695_1_20160621.bkp RECID=6529 STAMP=915134483
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_har8nm0j_6698_1_20160621.bkp RECID=6530 STAMP=915134484
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_hcr8nu3p_6700_1_20160621.bkp RECID=6531 STAMP=915142777
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_hbr8nu3p_6699_1_20160621.bkp RECID=6532 STAMP=915142777
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6706.arc RECID=6536 STAMP=915210020
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6707.arc RECID=6537 STAMP=915210020
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_hnr8qaav_6711_1_20160622.bkp RECID=6539 STAMP=915220831
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_hor8qaav_6712_1_20160622.bkp RECID=6540 STAMP=915220831
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_hmr8qaav_6710_1_20160622.bkp RECID=6541 STAMP=915220831
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_hlr8qaav_6709_1_20160622.bkp RECID=6542 STAMP=915220831
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_hrr8qac9_6715_1_20160622.bkp RECID=6543 STAMP=915220874
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_hqr8qac8_6714_1_20160622.bkp RECID=6544 STAMP=915220873
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_hpr8qac8_6713_1_20160622.bkp RECID=6545 STAMP=915220873
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_hsr8qaca_6716_1_20160622.bkp RECID=6546 STAMP=915220875
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_htr8qidp_6717_1_20160622.bkp RECID=6547 STAMP=915229113
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_hur8qidp_6718_1_20160622.bkp RECID=6548 STAMP=915229113
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6723.arc RECID=6552 STAMP=915264015
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6722.arc RECID=6553 STAMP=915264015
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6726.arc RECID=6555 STAMP=915296423
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6725.arc RECID=6556 STAMP=915296423
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ibr8sun2_6731_1_20160623.bkp RECID=6558 STAMP=915307234
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_iar8sun2_6730_1_20160623.bkp RECID=6559 STAMP=915307234
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_i9r8sun2_6729_1_20160623.bkp RECID=6560 STAMP=915307234
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_i8r8sun2_6728_1_20160623.bkp RECID=6561 STAMP=915307234
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ier8suo8_6734_1_20160623.bkp RECID=6562 STAMP=915307273
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_idr8suo8_6733_1_20160623.bkp RECID=6563 STAMP=915307273
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_icr8suo8_6732_1_20160623.bkp RECID=6564 STAMP=915307272
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ifr8suo9_6735_1_20160623.bkp RECID=6565 STAMP=915307274
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ihr8t6rl_6737_1_20160623.bkp RECID=6566 STAMP=915315573
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_igr8t6rl_6736_1_20160623.bkp RECID=6567 STAMP=915315573
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6743.arc RECID=6571 STAMP=915382841
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6744.arc RECID=6572 STAMP=915382841
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_itr8vj3b_6749_1_20160624.bkp RECID=6574 STAMP=915393643
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_isr8vj3b_6748_1_20160624.bkp RECID=6575 STAMP=915393643
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_irr8vj3b_6747_1_20160624.bkp RECID=6576 STAMP=915393643
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_iqr8vj3b_6746_1_20160624.bkp RECID=6577 STAMP=915393643
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_j0r8vj4s_6752_1_20160624.bkp RECID=6578 STAMP=915393694
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ivr8vj4s_6751_1_20160624.bkp RECID=6579 STAMP=915393693
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_iur8vj4s_6750_1_20160624.bkp RECID=6580 STAMP=915393692
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_j1r8vj4t_6753_1_20160624.bkp RECID=6581 STAMP=915393694
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_j3r8vras_6755_1_20160624.bkp RECID=6582 STAMP=915402077
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_j2r8vras_6754_1_20160624.bkp RECID=6583 STAMP=915402076
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6759.arc RECID=6587 STAMP=915436817
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6763.arc RECID=6588 STAMP=915469219
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6762.arc RECID=6589 STAMP=915469219
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_jfr927er_6767_1_20160625.bkp RECID=6591 STAMP=915480027
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_jer927er_6766_1_20160625.bkp RECID=6592 STAMP=915480027
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_jdr927er_6765_1_20160625.bkp RECID=6593 STAMP=915480027
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_jir927h9_6770_1_20160625.bkp RECID=6594 STAMP=915480105
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_jhr927h8_6769_1_20160625.bkp RECID=6595 STAMP=915480105
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_jgr927h8_6768_1_20160625.bkp RECID=6596 STAMP=915480105
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_jjr927h9_6771_1_20160625.bkp RECID=6597 STAMP=915480106
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_jlr92fji_6773_1_20160625.bkp RECID=6598 STAMP=915488370
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_jkr92fji_6772_1_20160625.bkp RECID=6599 STAMP=915488370
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6778.arc RECID=6603 STAMP=915523220
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6777.arc RECID=6604 STAMP=915523219
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6780.arc RECID=6606 STAMP=915555618
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6781.arc RECID=6607 STAMP=915555618
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_k1r94rr4_6785_1_20160626.bkp RECID=6609 STAMP=915566436
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_k2r94rr4_6786_1_20160626.bkp RECID=6610 STAMP=915566436
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_k0r94rr4_6784_1_20160626.bkp RECID=6611 STAMP=915566436
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_jvr94rr4_6783_1_20160626.bkp RECID=6612 STAMP=915566436
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_k5r94rra_6789_1_20160626.bkp RECID=6613 STAMP=915566443
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_k4r94rra_6788_1_20160626.bkp RECID=6614 STAMP=915566443
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_k3r94rr9_6787_1_20160626.bkp RECID=6615 STAMP=915566442
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_k6r94rrb_6790_1_20160626.bkp RECID=6616 STAMP=915566444
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_k8r953sl_6792_1_20160626.bkp RECID=6617 STAMP=915574677
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_k7r953sl_6791_1_20160626.bkp RECID=6618 STAMP=915574677
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6797.arc RECID=6622 STAMP=915609622
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6796.arc RECID=6623 STAMP=915609622
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6800.arc RECID=6625 STAMP=915642024
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6799.arc RECID=6626 STAMP=915642024
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_kkr97g77_6804_1_20160627.bkp RECID=6628 STAMP=915652839
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_klr97g77_6805_1_20160627.bkp RECID=6629 STAMP=915652839
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_kjr97g77_6803_1_20160627.bkp RECID=6630 STAMP=915652839
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_kir97g77_6802_1_20160627.bkp RECID=6631 STAMP=915652839
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_kor97g8o_6808_1_20160627.bkp RECID=6632 STAMP=915652890
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_kmr97g8n_6806_1_20160627.bkp RECID=6633 STAMP=915652888
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_knr97g8o_6807_1_20160627.bkp RECID=6634 STAMP=915652889
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_kpr97g8p_6809_1_20160627.bkp RECID=6635 STAMP=915652891
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_krr97ofc_6811_1_20160627.bkp RECID=6636 STAMP=915661292
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_kqr97ofc_6810_1_20160627.bkp RECID=6637 STAMP=915661292
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6817.arc RECID=6641 STAMP=915728424
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6818.arc RECID=6642 STAMP=915728424
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_l6r9a4jg_6822_1_20160628.bkp RECID=6644 STAMP=915739248
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_l7r9a4jg_6823_1_20160628.bkp RECID=6645 STAMP=915739248
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_l5r9a4jg_6821_1_20160628.bkp RECID=6646 STAMP=915739248
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_l4r9a4jg_6820_1_20160628.bkp RECID=6647 STAMP=915739248
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_lar9a4lb_6826_1_20160628.bkp RECID=6648 STAMP=915739308
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_l8r9a4la_6824_1_20160628.bkp RECID=6649 STAMP=915739307
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_l9r9a4la_6825_1_20160628.bkp RECID=6650 STAMP=915739307
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_lbr9a4lb_6827_1_20160628.bkp RECID=6651 STAMP=915739308
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_lcr9acqn_6828_1_20160628.bkp RECID=6652 STAMP=915747671
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ldr9acqn_6829_1_20160628.bkp RECID=6653 STAMP=915747671
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6835.arc RECID=6657 STAMP=915814840
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6836.arc RECID=6658 STAMP=915814840
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_lor9cov6_6840_1_20160629.bkp RECID=6660 STAMP=915825638
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_lpr9cov6_6841_1_20160629.bkp RECID=6661 STAMP=915825638
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_lmr9cov5_6838_1_20160629.bkp RECID=6662 STAMP=915825638
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_lnr9cov6_6839_1_20160629.bkp RECID=6663 STAMP=915825638
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_lqr9cp0c_6842_1_20160629.bkp RECID=6664 STAMP=915825677
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_lsr9cp0d_6844_1_20160629.bkp RECID=6665 STAMP=915825678
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ltr9cp0e_6845_1_20160629.bkp RECID=6666 STAMP=915825679
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_lrr9cp0d_6843_1_20160629.bkp RECID=6667 STAMP=915825678
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_lvr9d15n_6847_1_20160629.bkp RECID=6668 STAMP=915834039
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_lur9d15n_6846_1_20160629.bkp RECID=6669 STAMP=915834039
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6854.arc RECID=6673 STAMP=915901230
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6853.arc RECID=6674 STAMP=915901230
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mbr9fdhl_6859_1_20160630.bkp RECID=6676 STAMP=915912245
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mar9fdhl_6858_1_20160630.bkp RECID=6677 STAMP=915912245
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_m8r9fdhl_6856_1_20160630.bkp RECID=6678 STAMP=915912245
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_m9r9fdhl_6857_1_20160630.bkp RECID=6679 STAMP=915912245
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mcr9fdj9_6860_1_20160630.bkp RECID=6680 STAMP=915912299
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mer9fdjb_6862_1_20160630.bkp RECID=6681 STAMP=915912300
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mfr9fdjc_6863_1_20160630.bkp RECID=6682 STAMP=915912302
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mdr9fdjb_6861_1_20160630.bkp RECID=6683 STAMP=915912300
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mgr9fmq1_6864_1_20160630.bkp RECID=6684 STAMP=915921729
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mhr9fmq1_6865_1_20160630.bkp RECID=6685 STAMP=915921729
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6872.arc RECID=6689 STAMP=916074023
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6871.arc RECID=6690 STAMP=916074023
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mtr9km4j_6877_1_20160701.bkp RECID=6692 STAMP=916084883
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_msr9km4i_6876_1_20160701.bkp RECID=6693 STAMP=916084882
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mrr9km4i_6875_1_20160701.bkp RECID=6694 STAMP=916084882
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mqr9km4i_6874_1_20160701.bkp RECID=6695 STAMP=916084882
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mur9km6n_6878_1_20160701.bkp RECID=6696 STAMP=916084952
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_n0r9km6o_6880_1_20160701.bkp RECID=6697 STAMP=916084953
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_n1r9km6o_6881_1_20160701.bkp RECID=6698 STAMP=916084953
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_mvr9km6n_6879_1_20160701.bkp RECID=6699 STAMP=916084952
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_n2r9kufh_6882_1_20160701.bkp RECID=6700 STAMP=916093425
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_n4r9kufh_6884_1_20160701.bkp RECID=6701 STAMP=916093425
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_n3r9kufh_6883_1_20160701.bkp RECID=6702 STAMP=916093425
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6890.arc RECID=6706 STAMP=916160423
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6892.arc RECID=6707 STAMP=916160690
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6891.arc RECID=6708 STAMP=916160423
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_nhr9naf4_6897_1_20160702.bkp RECID=6710 STAMP=916171236
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ngr9naf4_6896_1_20160702.bkp RECID=6711 STAMP=916171236
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_nfr9naf4_6895_1_20160702.bkp RECID=6712 STAMP=916171236
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ner9naf4_6894_1_20160702.bkp RECID=6713 STAMP=916171236
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_nir9nagk_6898_1_20160702.bkp RECID=6714 STAMP=916171285
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_nkr9nagl_6900_1_20160702.bkp RECID=6715 STAMP=916171286
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_nlr9nagl_6901_1_20160702.bkp RECID=6716 STAMP=916171286
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_njr9nagk_6899_1_20160702.bkp RECID=6717 STAMP=916171286
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_nmr9niok_6902_1_20160702.bkp RECID=6718 STAMP=916179732
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_nnr9niok_6903_1_20160702.bkp RECID=6719 STAMP=916179732
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6908.arc RECID=6723 STAMP=916214422
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6907.arc RECID=6724 STAMP=916214422
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6911.arc RECID=6726 STAMP=916246815
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6910.arc RECID=6727 STAMP=916246815
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_o3r9pur0_6915_1_20160703.bkp RECID=6729 STAMP=916257633
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_o4r9pur1_6916_1_20160703.bkp RECID=6730 STAMP=916257633
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_o2r9pur0_6914_1_20160703.bkp RECID=6731 STAMP=916257633
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_o1r9pur0_6913_1_20160703.bkp RECID=6732 STAMP=916257632
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_o5r9pura_6917_1_20160703.bkp RECID=6733 STAMP=916257642
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_o7r9pura_6919_1_20160703.bkp RECID=6734 STAMP=916257643
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_o8r9pura_6920_1_20160703.bkp RECID=6735 STAMP=916257643
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_o6r9pura_6918_1_20160703.bkp RECID=6736 STAMP=916257642
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_o9r9q6rn_6921_1_20160703.bkp RECID=6737 STAMP=916265847
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_oar9q6rn_6922_1_20160703.bkp RECID=6738 STAMP=916265847
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6928.arc RECID=6742 STAMP=916333267
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6929.arc RECID=6743 STAMP=916333267
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_olr9sj8s_6933_1_20160704.bkp RECID=6744 STAMP=916344092
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_omr9sj8s_6934_1_20160704.bkp RECID=6745 STAMP=916344092
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ojr9sj8s_6931_1_20160704.bkp RECID=6746 STAMP=916344092
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_okr9sj8s_6932_1_20160704.bkp RECID=6747 STAMP=916344092
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_oor9sjao_6936_1_20160704.bkp RECID=6748 STAMP=916344153
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_opr9sjao_6937_1_20160704.bkp RECID=6749 STAMP=916344153
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_oqr9sjao_6938_1_20160704.bkp RECID=6750 STAMP=916344154
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_onr9sjan_6935_1_20160704.bkp RECID=6751 STAMP=916344152
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_orr9ss6a_6939_1_20160704.bkp RECID=6752 STAMP=916353226
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_osr9ss6a_6940_1_20160704.bkp RECID=6753 STAMP=916353226
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/controlfile_otr9ss6q_1_1_04.bkp RECID=6754 STAMP=916353245
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/spfile_our9ss71_1_1_04.bkp RECID=6755 STAMP=916353249
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6947.arc RECID=6757 STAMP=916419634
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6946.arc RECID=6758 STAMP=916419634
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_p7r9v7js_6951_1_20160705.bkp RECID=6760 STAMP=916430460
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_p8r9v7js_6952_1_20160705.bkp RECID=6761 STAMP=916430460
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_p5r9v7js_6949_1_20160705.bkp RECID=6762 STAMP=916430460
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_p6r9v7js_6950_1_20160705.bkp RECID=6763 STAMP=916430460
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_par9v7lp_6954_1_20160705.bkp RECID=6764 STAMP=916430523
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_pbr9v7lq_6955_1_20160705.bkp RECID=6765 STAMP=916430523
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_pcr9v7lq_6956_1_20160705.bkp RECID=6766 STAMP=916430523
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_p9r9v7lp_6953_1_20160705.bkp RECID=6767 STAMP=916430523
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_pdr9vfsr_6957_1_20160705.bkp RECID=6768 STAMP=916438939
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_per9vfsr_6958_1_20160705.bkp RECID=6769 STAMP=916438939
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/controlfile_pfr9vft3_1_1_05.bkp RECID=6770 STAMP=916438950
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/spfile_pgr9vfta_1_1_05.bkp RECID=6771 STAMP=916438954
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6964.arc RECID=6773 STAMP=916506019
+crosschecked backup piece: found to be 'EXPIRED'
+backup piece handle=/newdump/rmanbackup/EBS/ArchivelogBackup__EBS_1_6965.arc RECID=6774 STAMP=916506019
+Crosschecked 496 objects
+
+
+released channel: t1
+
+released channel: t2
+
+RMAN> 
+
+Recovery Manager complete.

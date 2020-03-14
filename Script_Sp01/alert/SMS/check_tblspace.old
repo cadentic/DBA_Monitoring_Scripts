@@ -1,0 +1,72 @@
+
+#check_tblspace.sh run every 30 minutes
+---------------------------------------
+
+
+
+#!/bin/bash
+
+touch $HOME/alert/logs/do_not_remove_dbspace.lst
+> $HOME/alert/logs/do_not_remove_dbspace.lst
+
+
+## alert for tablespace check
+sqlplus -s  "/ as sysdba" > $HOME/alert/logs/do_not_remove_dbspace.lst  << EOS
+set Heading off
+set feedback off
+set verify off
+set echo off
+set linesize 500
+set pagesize 75
+
+
+      select    t.tablespace,
+                t.totalspace Totalspace_MB,
+                round((t.totalspace-nvl(fs.freespace,0)),2) USED_SPACE_MB,
+                nvl(fs.freespace,0) Freespace_MB,
+                round(((t.totalspace-nvl(fs.freespace,0))/t.totalspace)*100,2) PERCT_USED,
+                round((nvl(fs.freespace,0)/t.totalspace)*100,2) PERCT_FREE,
+                (case when ((nvl(fs.freespace,0) <= 1500) and (round((t.totalspace-nvl(fs.freespace,0)),2) <> 0 ))  then 'CRITICAL'
+                      when (nvl(fs.freespace,0) <= 2500 and nvl(fs.freespace,0) > 1500 and (round((t.totalspace-nvl(fs.freespace,0)),2) <> 0)) then 'WARNING'
+                 end) alert
+from
+                (select round(sum(d.bytes)/(1024*1024)) as totalspace,
+                        d.tablespace_name tablespace
+                from dba_data_files d
+                group by d.tablespace_name) t  LEFT OUTER JOIN
+                (select round(sum(f.bytes)/(1024*1024)) as freespace,
+                        f.tablespace_name tablespace
+                from dba_free_space f
+                group by f.tablespace_name) fs
+ON t.tablespace=fs.tablespace
+--WHERE round(((t.totalspace-nvl(fs.freespace,0))/t.totalspace)*100,2) >=30
+order by t.tablespace;
+
+
+EOS
+exit
+
+foundTC=`grep "CRITICAL" $HOME/alert/logs/do_not_remove_dbspace.lst | wc -l`
+foundTW=`grep "WARNING" $HOME/alert/logs/do_not_remove_dbspace.lst | wc -l`
+
+
+##for WARNING just send email
+if [ $foundTW -ge 1 ]
+then
+    ##MUT Just say tablespace with WARNING found in database
+    ##mutt -s "Warning:Tablespace almost full $ORACLE_SID" db.support@srei.com 
+
+fi
+
+
+##for CRITICAL send email and SMS
+if [ $foundTC -ge 1 ]
+then
+    ##MUT Just say tablespace with CRITICAL found in database
+    ##SMS
+ wget --no-check-certificate "http://mobiprom.com/smsclient/pushsms.jsp?user=CL20640&password=XGFz5Hw&message=CRITICAL tablespace found in database $HOSTNAME. Thank You&from=SreiBP&to=8981427560 08983600103 09830415775"
+fi
+
+ 
+
+

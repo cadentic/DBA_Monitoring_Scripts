@@ -1,0 +1,6 @@
+select a.name DiskGroup, b.disk_number Disk#, b.name DiskName, b.total_mb, b.free_mb,round((b.total_mb - b.free_mb)/b.total_mb*100,2) "Percentage Full", b.header_status from v$asm_disk b, v$asm_diskgroup a where a.group_number (+) =b.group_number order by b.group_number, b.disk_number, b.name
+                                                                                                                   *
+ERROR at line 1:
+ORA-01476: divisor is equal to zero 
+
+

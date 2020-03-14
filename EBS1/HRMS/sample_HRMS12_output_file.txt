@@ -1,0 +1,456 @@
+SQL*Plus User/Version = APPS / 1001000500
+NOTE: This Script must be run from SQL*Plus as user apps.
+
+
+
+DATE HRMS12 was run: 19-Jul-2008
+
+
+HRMS12.sql - Last Update Date: 17-JUL-2008
+=========================================================
+Display HRMS R12 Details
+
+
+Review the following notes on http://metalink.oracle.com
+The following notes are for Oracle Applications release 11i and 12
+=========================================================
+Note: 135266.1 - Oracle HRMS Product Family - Release 11i and 12 Information
+Note: 145837.1 - Latest HRMS (HR Global) Legislative Data Patch available
+Note: 174605.1 - bde_chk_cbo.sql - current, required and rec. init.ora params
+Note: 226987.1 - Oracle HRMS and Benefits Tuning and System Health Check
+
+
+Most current downloadable version of file HRMS12.sql
+=========================================================
+Note: 453632.1 - Latest version of HRMS12.sql
+
+
+Instance details
+================
+Instance Name = VISHR
+Instance Creation Date = 01-Feb-2007
+Server/Platform = c9999999 - Linux Prod
+Language/Characterset = AMERICAN - UTF8
+Database = Oracle Database 10g Enterprise Edition Release 10.2.0.2.0 - Prod - compatible = 10.2.0
+Applications = 12.0.4
+WorkFlow 2.6.0
+PER Installed | PAY Installed
+
+
+R12 released HRMS family packs
+===========================
+R12.HR_PF.A.delta.5 6610000  released MAY-15-2008
+R12.HR_PF.A.delta.4 6506482  released JAN-11-2008
+R12.HR_PF.A.delta.3 6196269  released OCT-15-2007
+R12.HR_PF.A.delta.2 5997278  released JUL-17-2007
+R12.HR_PF.A.delta.1 5881943  released JUN-08-2007
+R12.HR_PF.A         4719824  released JAN-18-2007
+===========================
+currently installed HR_PF patch = Patch:6610000 - R12.HR_PF.A.delta.5 applied 19-May-2008
+
+
+
+released GEOCODE patches for Vertex Address Validation
+===========================
+GEOCODE_ANNUAL_2007    patch 6117000 released SEP-04-2007
+GEOCODE_ANNUAL_2006    patch 5253339 released JUL-24-2006
+GEOCODE_ANNUAL_2005    patch 4225044 released MAY-16-2005
+GEOCODE_ANNUAL_2004.1  patch 4140070 released MAY-03-2005
+GEOCODE_ANNUAL_2004    patch 3944263 released DEC-06-2004
+===========================
+currently installed GEOCODE patch = patch 6117000 GEOCODE_ANNUAL_2007 applied 17-Jan-2008
+
+
+
+Learning Management details
+===========================
+Learning Management:  6506492 - R12.OTA.A.delta.4 applied 17-Jan-2008
+
+
+iRecruitment details
+===========================
+iRecruitment patch:   6506488 - R12.IRC.A.delta.4 applied 17-Jan-2008
+
+
+Labor Distribution details
+===========================
+Labor Distribution:   6835794 - R12.PSP.A.delta.5 applied 19-May-2008
+
+
+Is this instance Multi Org
+===========================
+Multi Org flag =  Y  -  flag set 17-Jan-2008
+
+
+OTHER current patching levels
+==============================
+AD :  Applications DBA patch:              6510214 - R12.AD.A.delta.4 applied 16-Jan-2008
+AK :  AK Common Modules patch:             6354123 - R12.AK.A.delta.4 applied 17-Jan-2008
+ALR:  Alerts patch:                        6354126 - R12.ALR.A.delta.4 applied 17-Jan-2008
+AME:  Approval Management Engine:          6506440 - R12.AME.A.delta.4 applied 17-Jan-2008
+ATG:  Applications Technology patch:       6272680 - R12.ATG_PF.A.delta.4 applied 17-Jan-2008
+BNE:  Web Application Desktop Integrator:  6354131 - R12.BNE.A.delta.4 applied 17-Jan-2008
+CAC:  Common Application Calendar patch:   6496853 - R12.CAC.A.delta.4 applied 17-Jan-2008
+EC :  E-Commerce Gateway patch:            6354135 - R12.EC.A.delta.4 applied 17-Jan-2008
+FIN:  Financials patch:                    6836355 - R12.FIN_PF.A.delta.5 applied 19-May-2008
+FND:  Application Object Library patch:    6272353 - R12.FND.A.delta.4 applied 17-Jan-2008
+FRM:  Report Manager patch:                6354138 - R12.FRM.A.delta.4 applied 17-Jan-2008
+HZ :  Trading Community patch:             6496858 - R12.HZ.A.delta.4 applied 17-Jan-2008
+JTA:  CRM Applications Foundation patch:   6354137 - R12.JTA.A.delta.4 applied 17-Jan-2008
+TXK:  Techstack patch:                     6329757 - R12.TXK.A.delta.4 applied 17-Jan-2008
+UMX:  User Management patch:               6354143 - R12.UMX.A.delta.4 applied 17-Jan-2008
+XDO:  XML Publisher patch:                 6354146 - R12.XDO.A.delta.4 applied 17-Jan-2008
+
+
+
+                                                                       Patch Level
+Application Install Status                        Id   Status          (?=unknown)
+------------------------------------------------- ---- --------------- -----------
+Advanced Benefits                                 805  Installed       R12.BEN.A.5
+Application Object Library                        0    Installed       R12.FND.A.4
+Applications DBA                                  50   Shared          R12.AD.A.4
+DateTrack                                         803  Shared          R12.DT.A.5
+FastFormula                                       802  Shared          R12.FF.A.5
+Human Resources                                   800  Installed       R12.PER.A.5
+Human Resources Intelligence                      453  Installed       R12.HRI.A.5
+iRecruitment                                      821  Installed       R12.IRC.A.5
+Labor Distribution                                8403 Installed       R12.PSP.A.5
+Learning Management                               810  Installed       R12.OTA.A.5
+Oracle iProcurement                               178  Installed       R12.ICX.A.4
+Payroll                                           801  Installed       R12.PAY.A.5
+Projects                                          275  Installed       R12.PA.A.4
+Public Sector HR                                  8302 Installed       R12.PQH.A.5
+Public Sector Payroll                             8303 Installed       R12.PQP.A.5
+SSP                                               804  Installed       R12.SSP.A.5
+Time and Labor                                    808  Installed       R12.HXT.A.5
+Time and Labor Engine                             809  Installed       11i.HXC.C
+US Federal Human Resources                        8301 Installed       R12.GHR.A.5
+Web Applications Desktop Integrator               231  Installed       R12.BNE.A.4
+XML Publisher                                     603  Installed       R12.XDO.A.4
+
+
+
+Language Details
+================
+
+Installed Languages
+
+Language Code Installed Flag NLS Language
+------------- -------------- -----------------------------------
+US            B              AMERICAN
+
+
+
+Legislation Details
+===================
+
+Installed legislations
+(Code)                        Application
+----------------------------- -------------------------
+AE                            Payroll
+AE                            Human Resources
+AU                            Payroll
+AU                            Human Resources
+BE                            Human Resources
+CA                            Payroll
+CA                            Human Resources
+CN                            Human Resources
+CN                            Payroll
+DE                            Human Resources
+DK                            Payroll
+DK                            Human Resources
+ES                            Human Resources
+ES                            Payroll
+FI                            Payroll
+FI                            Human Resources
+FR                            Payroll
+FR                            Human Resources
+GB                            College Data
+GB                            Payroll
+GB                            Human Resources
+HK                            Payroll
+HK                            Human Resources
+HU                            Payroll
+HU                            Human Resources
+IE                            Payroll
+IE                            Human Resources
+IN                            Human Resources
+IN                            Payroll
+IT                            Human Resources
+JP                            Human Resources
+JP                            Payroll
+KR                            Payroll
+KR                            Human Resources
+KW                            Human Resources
+KW                            Payroll
+MX                            Human Resources
+MX                            Payroll
+NL                            Payroll
+NL                            Human Resources
+NO                            Human Resources
+NO                            Payroll
+NZ                            Payroll
+NZ                            Human Resources
+PL                            Human Resources
+RU                            Human Resources
+
+Installed legislations
+(Code)                        Application
+----------------------------- -------------------------
+RU                            Payroll
+SA                            Human Resources
+SA                            Payroll
+SE                            Payroll
+SE                            Human Resources
+SG                            Human Resources
+SG                            Payroll
+US                            Human Resources
+US                            Federal Human Resources
+US                            College Data
+US                            Payroll
+ZA                            Payroll
+ZA                            Human Resources
+Global                        Human Resources
+
+Date Imported   Package/Export Date            Legislation     Status
+--------------- ------------------------------ --------------- ----------
+19-May-2008     CA_PAYROLL_DATA_12042007       CA              Complete
+19-May-2008     EXT_US_YEP2_12072007           US              Complete
+21-Mar-2008     21Mar2008-07:08:49[LR]         LR              Complete
+21-Mar-2008     21Mar2008-07:08:00[LR]         LR              Complete
+17-Jan-2008     EXT_US_YEP1_09202007           US              Complete
+17-Jan-2008     11i_CORE_13062007              Core            Complete
+01-Aug-2007     01Aug2007-09:07:35[SK]         SK              Complete
+01-Aug-2007     01Aug2007-09:07:27[CS]         CS              Complete
+01-Aug-2007     01Aug2007-09:07:37[CS]         CS              Complete
+26-Jul-2007     26Jul2007-10:07:09[CS]         CS              Complete
+05-Jan-2007     UKREFJUL_11511_27_5250740      GB              Complete
+05-Jan-2007     CA_PAYROLL_DATA_10112006       CA              Complete
+05-Jan-2007     EXT05022006_PFKRUP1            MX              Complete
+05-Jan-2007     Post_RUP_US_EXT_08102006       US              Complete
+05-Jan-2007     04Sep2006-06:59:07[SE]         SE              Complete
+05-Jan-2007     19Sep2006-04:37:54[hk]         HK              Complete
+05-Jan-2007     24Jul2006-03:07:31[ES]         ES              Complete
+05-Jan-2007     25Sep2006-05:28:48[PL]         PL              Complete
+05-Jan-2007     19Sep2006-04:15:40[sg]         SG              Complete
+05-Jan-2007     10Aug2006-23:15:43[NL]         NL              Complete
+05-Jan-2007     02Jul2006-23:45:56[DK]         DK              Complete
+05-Jan-2007     22May2006-22:32:31[NO]         NO              Complete
+05-Jan-2007     10Apr2006-01:18:56[kr]         KR              Complete
+05-Jan-2007     16Oct2006-02:35:04[FI]         FI              Complete
+05-Jan-2007     02Nov2006-21:25:52[in]         IN              Complete
+05-Jan-2007     21Sep2006-02:22:48[au]         AU              Complete
+05-Jan-2007     13Apr2006-01:27:25[nz]         NZ              Complete
+05-Jan-2007     10May2006-22:10:54[cn]         CN              Complete
+05-Jan-2007     15Jun2006-01:15:47[KW]         KW              Complete
+05-Jan-2007     23Jun2006-04:18:53[IE]         IE              Complete
+05-Jan-2007     08Jun2006-06:03:00[SA]         SA              Complete
+05-Jan-2007     29Mar2006-04:26:47[RU]         RU              Complete
+05-Jan-2007     28Feb2006-00:10:38[AE]         AE              Complete
+05-Jan-2007     03Jul2006-05:43:03[ZA]         ZA              Complete
+05-Jan-2007     30Nov2005-23:45:23[DE]         DE              Complete
+05-Jan-2007     07Dec2005-22:59:22[ZZ]         Intl. Payroll   Complete
+05-Jan-2007     FR_12RUP.115.173               FR              Complete
+05-Jan-2007     23Aug2005-23:29:22[BE]         BE              Complete
+05-Jan-2007     11i_CORE_23022006              Core            Complete
+
+
+
+hrglobal.drv details - Review Metalink Note 145837.1 for latest hrglobal patch.
+====================
+
+Version of current hrglobal.drv
+--------------------------------------------------------------------------------
+120.99.12000000.51 installed by patch:6790520 on 12-Mar-2008
+
+Date of last
+Succesfull Run  adpatch
+of hrglobal.drv Options
+--------------- -------------
+19-May-2008
+
+
+
+JIT/GEOCODE details
+===================
+
+Last JIT Installed                       Date Applied
+---------------------------------------- ------------
+Patch:6650931 - JIT_Q4.1_2007            19-May-2008
+
+
+
+All released Geocode Patches and Installed Geocode Patches
+===================
+GEOCODE_ANNUAL_2007    patch 6117000  applied 17-Jan-2008
+GEOCODE_ANNUAL_2006    patch 5253339
+GEOCODE_ANNUAL_2005    patch 4225044
+GEOCODE_ANNUAL_2004.1  patch 4140070
+GEOCODE_ANNUAL_2004    patch 3944263  applied 21-Mar-2005
+
+
+
+Database Parameters - Review Metalink Note 226987.1
+===================
+If currently experiencing performance problems run bde_chk_cbo.sql from Metalink Note 174605.1
+to verify that all Mandatory Parameters (MP) are set correctly.
+
+Database Parameters  Value
+-------------------- -------------------------------------------------------------------------------
+compatible           10.2.0
+core_dump_dest       /global/oracle/c99999999/db/tech_st/10.2.0/admin/vishr_c99999999/cdump
+max_dump_file_size   20480
+optimizer_mode       ALL_ROWS
+sql_trace            FALSE
+timed_os_statistics  0
+timed_statistics     TRUE
+user_dump_dest       /global/oracle/vishr/db/tech_st/10.2.0/admin/vishr_c99999999/udump
+utl_file_dir         /usr/tmp, /usr/tmp, /global/oracle/vishr/db/tech_st/10.2.0/appsutil/outbound/
+                     vishr_c99999999, /usr/tmp
+
+
+
+
+Gather Schema Statistics
+========================
+
+
+
+Invalid Objects and Disabled Triggers - Use adadmin to compile apps schema to resolve these objects.
+=====================================
+
+Owner      Type                      Invalid Object
+---------- ------------------------- -----------------------------------
+APPS       MATERIALIZED VIEW         ASO_BI_QLIN_L2_MV
+                                     ASO_BI_QOT_APRB_MV
+                                     ASO_BI_QOT_DISCB_MV
+                                     ASO_BI_QOT_L1_MV
+                                     ASO_BI_QOT_RULB_MV
+                                     ASO_BI_TOP_QOTB_MV
+                                     BIL_BI_CAL_MV
+                                     BIL_BI_OPDTL_MV
+                                     BIL_BI_OPLDC_G_MV
+                                     BIL_BI_OPLPC_G_MV
+                                     BIL_BI_OPTY_G_MV
+                                     BIL_BI_OPTY_PG_MV
+                                     BIL_BI_SLS_PERF1_MV
+                                     BIL_BI_TOPOP_G_MV
+                                     BIL_OBI_OPTY_PG_MV
+                                     BIL_OBI_PIPE_G_MV
+                                     BIM_I_BGT_CAT_MV
+                                     BIM_I_BGT_LVL_MV
+                                     BIM_I_LD_GENSG_T_MV
+                                     BIM_I_LP_GENSG_T_MV
+                                     BIM_I_MKT_CPB_MV
+                                     BIM_I_OBJ_METR_MV
+                                     BIM_LD_CAMP_T_MV
+                                     BIM_MKT_KPI_INT_MV
+                                     BIM_SGMT_ACT_CH_MV
+                                     BIM_SGMT_ACT_MV
+                                     BIM_SGMT_ACT_SH_MV
+                                     BIM_SGMT_VAL_F_MV
+                                     BIV_ACT_SUM_MV
+                                     BIV_BAC_SUM_MV
+                                     BIV_CLO_SUM_MV
+                                     BIV_RES_SUM_MV
+                                     ENI_DBI_AR_BASE_MV
+                                     ENI_DBI_COGS_BASE_MV
+                                     ENI_DBI_CO_UNION_MV
+                                     ENI_DBI_INV_BASE_MV
+                                     FII_AP_HATY_XB_MV
+                                     FII_AP_HCAT_I_MV
+                                     FII_AP_HHIST_IB_MV
+                                     FII_AP_HLIA_IB_MV
+                                     FII_AP_HLIA_I_MV
+                                     FII_AP_INV_PAYMENTS_MV
+                                     FII_AP_IVATY_B_MV
+                                     FII_AP_LIA_I_MV
+                                     FII_AP_PAID_XB_MV
+                                     FII_AP_PAYOL_XB_MV
+                                     FII_AP_PMT_SCHEDULES_MV
+
+
+
+Owner      Table                          Disabled Triggers
+---------- ------------------------------ -----------------------------------
+APPS       PAY_ELEMENT_ENTRY_VALUES_F     ALR_PAY_ELEMENT_ENTRY_VALU_IAR
+                                          ALR_PAY_ELEMENT_ENTRY_VALU_UAR
+           PAY_PAYROLL_ACTIONS            ALR_PAY_PAYROLL_ACTIONS_UAR
+           PER_ABSENCE_ATTENDANCES        ALR_PER_ABSENCE_ATTENDANCE_IAR
+                                          ALR_PER_ABSENCE_ATTENDANCE_UAR
+           PER_ALL_ASSIGNMENTS_F          ALR_PER_ALL_ASSIGNMENTS_F_IAR
+                                          ALR_PER_ALL_ASSIGNMENTS_F_UAR
+           PER_ANALYSIS_CRITERIA          ALR_PER_ANALYSIS_CRITERIA_IAR
+                                          ALR_PER_ANALYSIS_CRITERIA_UAR
+           PER_EMPDIR_ASSIGNMENTS         PER_EMPDIR_ASSIGNMENTS_WHO
+           PER_EMPDIR_LOCATIONS           PER_EMPDIR_LOCATIONS_WHO
+           PER_EMPDIR_PEOPLE              PER_EMPDIR_PEOPLE_WHO
+           PER_EMPDIR_PHONES              PER_EMPDIR_PHONES_WHO
+           PER_EVENTS                     ALR_PER_EVENTS_IAR
+                                          ALR_PER_EVENTS_UAR
+           PER_PAY_PROPOSALS              ALR_PER_PAY_PROPOSALS_IAR
+                                          ALR_PER_PAY_PROPOSALS_UAR
+
+
+
+=========================================================================
+CHECK FOR STATUS OF 'WHO' TRIGGERS for the following HR owned tables:
+=========================================================================
+'HR_ALL_ORGANIZATION_UNITS'
+'HR_ALL_ORGANIZATION_UNITS_TL'
+'HR_ALL_POSITIONS_F'
+'HR_ALL_POSITIONS_F_TL'
+'HR_LOCATIONS_ALL'
+'HR_LOCATIONS_ALL_TL'
+'PER_ADDRESSES'
+'PER_ALL_ASSIGNMENTS_F'
+'PER_ALL_PEOPLE_F'
+'PER_ALL_POSITIONS'
+'PER_JOBS'
+'PER_JOBS_TL'
+'PER_PERIODS_OF_SERVICE'
+
+
+Owner    Table Name                     Trigger Name                    Status
+-------- ------------------------------ ------------------------------- --------
+APPS     HR_ALL_ORGANIZATION_UNITS      HR_ALL_ORGANIZATION_UNITS_WHO   ENABLED
+         HR_ALL_ORGANIZATION_UNITS_TL   HR_ALL_ORGANIZATION_052717_WHO  ENABLED
+         HR_ALL_POSITIONS_F             HR_ALL_POSITIONS_F_WHO          ENABLED
+         HR_ALL_POSITIONS_F_TL          HR_ALL_POSITIONS_F_T052652_WHO  ENABLED
+         HR_LOCATIONS_ALL               HR_LOCATIONS_ALL_WHO            ENABLED
+         HR_LOCATIONS_ALL_TL            HR_LOCATIONS_ALL_TL052658_WHO   ENABLED
+         PER_ADDRESSES                  PER_ADDRESSES_WHO               ENABLED
+         PER_ALL_ASSIGNMENTS_F          PER_ALL_ASSIGNMENTS_F_WHO       ENABLED
+         PER_ALL_PEOPLE_F               PER_ALL_PEOPLE_F_WHO            ENABLED
+         PER_ALL_POSITIONS              PER_ALL_POSITIONS_WHO           ENABLED
+         PER_JOBS                       PER_JOBS_WHO                    ENABLED
+         PER_JOBS_TL                    PER_JOBS_TL052712_WHO           ENABLED
+         PER_PERIODS_OF_SERVICE         PER_PERIODS_OF_SERVICE_WHO      ENABLED
+         PER_PERSON_TYPE_USAGES_F       PER_PERSON_TYPE_USAGES_F_WHO    ENABLED
+
+
+
+
+
+
+
+
+
+
+Summary of HRMS12
+======================================================================
+Date         = 19-Jul-2008 20:38:17
+Elapsed Time = 3 seconds
+
+
+For support issues, please log an iTar (Service Request).
+
+======================================================================
+======================================================================
+
+
+
+instance VISHR FORMS VERSION
+=================================
+
+10.1.2.0.2

@@ -1,0 +1,6 @@
+SettingName VARCHAR(100)|^|SettingValue VARCHAR(1000)
+Extract Script Version|^|3.0
+Database Version|^|Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - 64bit Production
+Extract Script Start Time|^|07-OCT-2015 07:15 PM
+Extract Script End Time|^|07-OCT-2015 07:17 PM
+Data Extraction Date|^|07-OCT-2015 07:17 PM

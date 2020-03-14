@@ -1,0 +1,39 @@
+grant all on SREI_CDS_AMBIT.CONTRACT to VARPAY_AGENT;
+grant all on SREI_CDS_AMBIT.CUSTOM_FLOW_HDR to VARPAY_AGENT;
+grant all on  SREI_CDS_AMBIT.BANK_FLOW_MATCH to VARPAY_AGENT;
+grant all on  SREI_CDS_AMBIT.BANK_FLOW to VARPAY_AGENT;
+grant all on  SREI_CDS_AMBIT.TMP_BCD13_FINAL_REPORT to VARPAY_AGENT1;
+grant all on  SREI_CDS_AMBIT.FLOW to VARPAY_AGENT;
+
+grant all on SREI_CDS_AMBIT.FN_SREI_CUSTOM_FIELD_OD to VARPAY_AGENT;
+grant all on SREI_CDS_AMBIT.FN_SREI_CUSTOM_FIELD_OD_NO_DPD to VARPAY_AGENT;
+grant all on SREI_CDS_AMBIT.FN_SREI_CONTRACT_PRODUCT_ID to VARPAY_AGENT;
+grant all on SREI_CDS_AMBIT.SP_SREI_BILLING_COLL_D to VARPAY_AGENT1;
+
+grant alter any index to VARPAY_AGENT;
+
+
+
+EXECUTE DBMS_STATS.GATHER_SCHEMA_STATS(ownname => 'SREI_CDS_AMBIT');
+
+BEGIN
+dbms_stats.gather_schema_stats(
+ownname=>'VARPAY_AGENT',
+METHOD_OPT=>'FOR ALL INDEXED COLUMNS SIZE SKEWONLY',
+CASCADE=>TRUE,
+ESTIMATE_PERCENT=>100);
+END;
+/
+
+
+
+select * from dba_role_privs where grantee='VARPAY_AGENT';
+seflkastlelivephased
+SEFLKASTLELIVEPHASED
+seflkastlenew
+alter user SEFLKASTLENEW account lock;
+
+drop user SEFLKASTLENEW cascade;
+
+select owner,count(object_type) "count", object_type from ALL_OBJECTS where owner = 'SEFLKASTLENEW'
+group by owner, object_type;

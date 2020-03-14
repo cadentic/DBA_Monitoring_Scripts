@@ -1,0 +1,177 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Sun Jun 12 20:00:01 2016
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+ORACLE_HOME = /u01/rac/product/11.2.0/dbhome_1
+System name:	Linux
+Node name:	sreikolsefl1.srei.com
+Release:	2.6.39-400.247.1.el5uek
+Version:	#1 SMP Thu Feb 5 15:53:28 PST 2015
+Machine:	x86_64
+
+Starting with debugging turned off
+
+connected to target database: SP01 (DBID=1526771045)
+
+RMAN> 
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 10> 11> 12> 13> 14> 15> 
+using target database control file instead of recovery catalog
+allocated channel: e1
+channel e1: SID=376 instance=sp011 device type=DISK
+
+allocated channel: e2
+channel e2: SID=476 instance=sp011 device type=DISK
+
+allocated channel: e3
+channel e3: SID=13 instance=sp011 device type=DISK
+
+allocated channel: e4
+channel e4: SID=164 instance=sp011 device type=DISK
+
+RMAN retention policy will be applied to the command
+RMAN retention policy is set to redundancy 1
+no obsolete backups found
+
+specification does not match any archived log in the repository
+
+
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_12/thread_1_seq_291.311.914356811 RECID=797 STAMP=914356811
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_12/thread_2_seq_506.409.914356811 RECID=796 STAMP=914356810
+Crosschecked 2 objects
+
+
+
+Starting backup at 12-JUN-16
+current log archived
+channel e1: starting compressed archived log backup set
+channel e1: specifying archived log(s) in backup set
+input archived log thread=2 sequence=507 RECID=799 STAMP=914356816
+channel e1: starting piece 1 at 12-JUN-16
+channel e2: starting compressed archived log backup set
+channel e2: specifying archived log(s) in backup set
+input archived log thread=1 sequence=292 RECID=798 STAMP=914356814
+channel e2: starting piece 1 at 12-JUN-16
+channel e1: finished piece 1 at 12-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_6pr7vuik_217_1_20160612.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e1: backup set complete, elapsed time: 00:00:01
+channel e1: deleting archived log(s)
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_12/thread_2_seq_507.311.914356817 RECID=799 STAMP=914356816
+channel e2: finished piece 1 at 12-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_6qr7vuik_218_1_20160612.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e2: backup set complete, elapsed time: 00:00:02
+channel e2: deleting archived log(s)
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_12/thread_1_seq_292.267.914356815 RECID=798 STAMP=914356814
+Finished backup at 12-JUN-16
+
+Starting backup at 12-JUN-16
+channel e1: starting compressed full datafile backup set
+channel e1: specifying datafile(s) in backup set
+input datafile file number=00003 name=+SEFLDATA/sp01/datafile/sefpllive_02.dbf
+input datafile file number=00016 name=+LOGARCH/sp01/datafile/sefpllive_09.dbf
+input datafile file number=00007 name=+SEFLDATA/sp01/datafile/undotbs03.dbf
+input datafile file number=00005 name=+SEFLDATA/sp01/datafile/users.279.913866861
+input datafile file number=00014 name=+SEFLDATA/sp01/datafile/sefpllive_07.dbf
+channel e1: starting piece 1 at 12-JUN-16
+channel e2: starting compressed full datafile backup set
+channel e2: specifying datafile(s) in backup set
+input datafile file number=00011 name=+LOGARCH/sp01/datafile/sefpllive_04.dbf
+input datafile file number=00004 name=+SEFLDATA/sp01/datafile/sefpllive_03.dbf
+input datafile file number=00009 name=+SEFLDATA/sp01/datafile/sefpllive_rpt_readonly_01.dbf
+input datafile file number=00017 name=+LOGARCH/sp01/datafile/sefpllive_10.dbf
+input datafile file number=00001 name=+SEFLDATA/sp01/datafile/system.262.913866833
+channel e2: starting piece 1 at 12-JUN-16
+channel e3: starting compressed full datafile backup set
+channel e3: specifying datafile(s) in backup set
+input datafile file number=00012 name=+LOGARCH/sp01/datafile/sefpllive_05.dbf
+input datafile file number=00006 name=+SEFLDATA/sp01/datafile/sefpllive_01.dbf
+input datafile file number=00008 name=+SEFLDATA/sp01/datafile/sefpllivereports_01.dbf
+input datafile file number=00002 name=+SEFLDATA/sp01/datafile/sysaux.266.913866841
+channel e3: starting piece 1 at 12-JUN-16
+channel e4: starting compressed full datafile backup set
+channel e4: specifying datafile(s) in backup set
+input datafile file number=00013 name=+LOGARCH/sp01/datafile/sefpllive_06.dbf
+input datafile file number=00015 name=+LOGARCH/sp01/datafile/sefpllive_08.dbf
+input datafile file number=00010 name=+SEFLDATA/sp01/datafile/undotbs04.dbf
+channel e4: starting piece 1 at 12-JUN-16
+channel e4: finished piece 1 at 12-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_6ur7vuio_222_1_20160612.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e4: backup set complete, elapsed time: 00:49:06
+channel e4: starting compressed full datafile backup set
+channel e4: specifying datafile(s) in backup set
+including current control file in backup set
+channel e4: starting piece 1 at 12-JUN-16
+channel e4: finished piece 1 at 12-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_6vr801er_223_1_20160612.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e4: backup set complete, elapsed time: 00:00:01
+channel e4: starting compressed full datafile backup set
+channel e4: specifying datafile(s) in backup set
+including current SPFILE in backup set
+channel e4: starting piece 1 at 12-JUN-16
+channel e4: finished piece 1 at 12-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_70r801et_224_1_20160612.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e4: backup set complete, elapsed time: 00:00:01
+channel e2: finished piece 1 at 12-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_6sr7vuio_220_1_20160612.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e2: backup set complete, elapsed time: 00:51:54
+channel e3: finished piece 1 at 12-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_6tr7vuio_221_1_20160612.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e3: backup set complete, elapsed time: 00:54:44
+channel e1: finished piece 1 at 12-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_6rr7vuio_219_1_20160612.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e1: backup set complete, elapsed time: 00:56:34
+Finished backup at 12-JUN-16
+
+Starting backup at 12-JUN-16
+current log archived
+channel e1: starting compressed archived log backup set
+channel e1: specifying archived log(s) in backup set
+input archived log thread=1 sequence=293 RECID=801 STAMP=914360220
+channel e1: starting piece 1 at 12-JUN-16
+channel e2: starting compressed archived log backup set
+channel e2: specifying archived log(s) in backup set
+input archived log thread=2 sequence=508 RECID=800 STAMP=914360220
+channel e2: starting piece 1 at 12-JUN-16
+channel e1: finished piece 1 at 12-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_71r801st_225_1_20160612.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e1: backup set complete, elapsed time: 00:00:01
+channel e1: deleting archived log(s)
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_12/thread_1_seq_293.311.914360221 RECID=801 STAMP=914360220
+channel e2: finished piece 1 at 12-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_72r801st_226_1_20160612.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e2: backup set complete, elapsed time: 00:00:01
+channel e2: deleting archived log(s)
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_12/thread_2_seq_508.267.914360219 RECID=800 STAMP=914360220
+Finished backup at 12-JUN-16
+
+Starting backup at 12-JUN-16
+channel e1: starting full datafile backup set
+channel e1: specifying datafile(s) in backup set
+including current control file in backup set
+channel e1: starting piece 1 at 12-JUN-16
+channel e1: finished piece 1 at 12-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/controlfile_73r801sv_1_1_12.bkp tag=TAG20160612T205703 comment=NONE
+channel e1: backup set complete, elapsed time: 00:00:01
+Finished backup at 12-JUN-16
+
+Starting backup at 12-JUN-16
+channel e1: starting full datafile backup set
+channel e1: specifying datafile(s) in backup set
+including current SPFILE in backup set
+channel e1: starting piece 1 at 12-JUN-16
+channel e1: finished piece 1 at 12-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/spfile_74r801t1_1_1_12.bkp tag=TAG20160612T205705 comment=NONE
+channel e1: backup set complete, elapsed time: 00:00:01
+Finished backup at 12-JUN-16
+
+specification does not match any archived log in the repository
+released channel: e1
+released channel: e2
+released channel: e3
+released channel: e4
+
+RMAN> 
+
+Recovery Manager complete.

@@ -1,0 +1,225 @@
+
+Recovery Manager: Release 11.2.0.2.0 - Production on Wed Jul 13 20:00:02 2016
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+ORACLE_HOME = /u01/rac/oracle_base/db/tech_st/11.2.0/
+System name:	Linux
+Node name:	sreikolebz2.srei.com
+Release:	2.6.39-400.247.1.el5uek
+Version:	#1 SMP Thu Feb 5 15:53:28 PST 2015
+Machine:	x86_64
+
+Starting with debugging turned off
+
+connected to target database: EBS (DBID=2012991160)
+
+RMAN> 
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 10> 11> 12> 13> 14> 15> 16> 
+using target database control file instead of recovery catalog
+allocated channel: e1
+channel e1: SID=433 instance=EBS2 device type=DISK
+
+allocated channel: e2
+channel e2: SID=656 instance=EBS2 device type=DISK
+
+allocated channel: e3
+channel e3: SID=861 instance=EBS2 device type=DISK
+
+allocated channel: e4
+channel e4: SID=1079 instance=EBS2 device type=DISK
+
+RMAN retention policy will be applied to the command
+RMAN retention policy is set to recovery window of 3 days
+Deleting the following obsolete backups and copies:
+Type                 Key    Completion Time    Filename/Handle
+-------------------- ------ ------------------ --------------------
+Backup Set           6843   10-JUL-16         
+  Backup Piece       6843   10-JUL-16          +ARCHIVELOG/ebs/autobackup/2016_07_10/s_916819237.354.916819241
+deleted backup piece
+backup piece handle=+ARCHIVELOG/ebs/autobackup/2016_07_10/s_916819237.354.916819241 RECID=6843 STAMP=916819239
+Deleted 1 objects
+
+
+specification does not match any archived log in the repository
+
+specification does not match any archived log in the repository
+
+specification does not match any archived log in the repository
+
+sql statement: alter system archive log current
+
+
+Starting backup at 13-JUL-16
+current log archived
+channel e1: starting compressed archived log backup set
+channel e1: specifying archived log(s) in backup set
+input archived log thread=1 sequence=3395 RECID=8602 STAMP=917121627
+channel e1: starting piece 1 at 13-JUL-16
+channel e2: starting compressed archived log backup set
+channel e2: specifying archived log(s) in backup set
+input archived log thread=2 sequence=5202 RECID=8601 STAMP=917121621
+channel e2: starting piece 1 at 13-JUL-16
+channel e3: starting compressed archived log backup set
+channel e3: specifying archived log(s) in backup set
+input archived log thread=2 sequence=5203 RECID=8604 STAMP=917121632
+channel e3: starting piece 1 at 13-JUL-16
+channel e4: starting compressed archived log backup set
+channel e4: specifying archived log(s) in backup set
+input archived log thread=1 sequence=3396 RECID=8603 STAMP=917121629
+channel e4: starting piece 1 at 13-JUL-16
+channel e3: finished piece 1 at 13-JUL-16
+piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_ttrakaj7_7101_1_20160713.bkp tag=FULL_EBS_BACKUP comment=NONE
+channel e3: backup set complete, elapsed time: 00:00:03
+channel e3: deleting archived log(s)
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_13/thread_2_seq_5203.376.917121633 RECID=8604 STAMP=917121632
+channel e4: finished piece 1 at 13-JUL-16
+piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_turakaj7_7102_1_20160713.bkp tag=FULL_EBS_BACKUP comment=NONE
+channel e4: backup set complete, elapsed time: 00:00:03
+channel e4: deleting archived log(s)
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_13/thread_1_seq_3396.348.917121629 RECID=8603 STAMP=917121629
+channel e2: finished piece 1 at 13-JUL-16
+piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_tsrakaj7_7100_1_20160713.bkp tag=FULL_EBS_BACKUP comment=NONE
+channel e2: backup set complete, elapsed time: 00:00:26
+channel e2: deleting archived log(s)
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_13/thread_2_seq_5202.354.917121617 RECID=8601 STAMP=917121621
+channel e1: finished piece 1 at 13-JUL-16
+piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_trrakaj7_7099_1_20160713.bkp tag=FULL_EBS_BACKUP comment=NONE
+channel e1: backup set complete, elapsed time: 00:00:46
+channel e1: deleting archived log(s)
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_13/thread_1_seq_3395.263.917121621 RECID=8602 STAMP=917121627
+Finished backup at 13-JUL-16
+
+Starting backup at 13-JUL-16
+channel e1: starting compressed full datafile backup set
+channel e1: specifying datafile(s) in backup set
+input datafile file number=00400 name=+DATABASE/ebs/datafile/apps_ts_media.310.879912579
+input datafile file number=00011 name=+DATABASE/ebs/datafile/sysaux.293.879912719
+input datafile file number=00393 name=+DATABASE/ebs/datafile/apps_ts_tx_idx.317.879912667
+input datafile file number=00405 name=+DATABASE/ebs/datafile/apps_ts_tx_idx.297.879912709
+input datafile file number=00024 name=+DATABASE/ebs/datafile/apps_ts_media.290.879912753
+input datafile file number=00001 name=+DATABASE/ebs/datafile/system.287.879912763
+input datafile file number=00005 name=+DATABASE/ebs/datafile/system.283.879912773
+input datafile file number=00295 name=+DATABASE/ebs/datafile/system.279.879912785
+input datafile file number=00394 name=+DATABASE/ebs/datafile/apps_ts_seed.274.879912801
+input datafile file number=00006 name=+DATABASE/ebs/datafile/ctxd.271.879912811
+input datafile file number=00397 name=+DATABASE/ebs/datafile/apps_ts_nologging.269.879912817
+input datafile file number=00012 name=+DATABASE/ebs/datafile/apps_ts_tools.264.879912829
+input datafile file number=00027 name=+DATABASE/ebs/datafile/apps_ts_tx_data.321.903091227
+channel e1: starting piece 1 at 13-JUL-16
+channel e2: starting compressed full datafile backup set
+channel e2: specifying datafile(s) in backup set
+input datafile file number=00401 name=+DATABASE/ebs/datafile/apps_ts_tx_data.304.879912579
+input datafile file number=00402 name=+DATABASE/ebs/datafile/apps_ts_tx_data.303.879912579
+input datafile file number=00403 name=+DATABASE/ebs/datafile/apps_ts_tx_idx.299.879912669
+input datafile file number=00025 name=+DATABASE/ebs/datafile/apps_ts_media.289.879912757
+input datafile file number=00398 name=+DATABASE/ebs/datafile/apps_ts_archive.295.879912717
+input datafile file number=00003 name=+DATABASE/ebs/datafile/system.286.879912767
+input datafile file number=00022 name=+DATABASE/savior_01.dbf
+input datafile file number=00352 name=+DATABASE/ebs/datafile/system.277.879912793
+input datafile file number=00396 name=+DATABASE/ebs/datafile/apps_ts_summary.273.879912803
+input datafile file number=00017 name=+DATABASE/ebs/datafile/apps_ts_interface.268.879912819
+input datafile file number=00026 name=+DATABASE/ebs/datafile/ambitnight.311.882635939
+input datafile file number=00009 name=+DATABASE/ebs/datafile/odm.260.879913289
+input datafile file number=00314 name=+DATABASE/ebs/datafile/portal.262.879912835
+channel e2: starting piece 1 at 13-JUL-16
+channel e3: starting compressed full datafile backup set
+channel e3: specifying datafile(s) in backup set
+input datafile file number=00392 name=+DATABASE/ebs/datafile/apps_ts_tx_data.301.879912579
+input datafile file number=00023 name=+DATABASE/ebs/datafile/apps_undots1.307.879912579
+input datafile file number=00015 name=+DATABASE/ebs/datafile/apps_ts_tx_idx.308.879912665
+input datafile file number=00404 name=+DATABASE/ebs/datafile/apps_ts_tx_idx.298.879912705
+input datafile file number=00379 name=+DATABASE/ebs/datafile/apps_undots1.300.879912667
+input datafile file number=00002 name=+DATABASE/ebs/datafile/system.288.879912763
+input datafile file number=00013 name=+DATABASE/ebs/datafile/system.282.879912779
+input datafile file number=00351 name=+DATABASE/ebs/datafile/system.278.879912787
+input datafile file number=00395 name=+DATABASE/ebs/datafile/apps_ts_interface.275.879912799
+input datafile file number=00016 name=+DATABASE/ebs/datafile/apps_ts_seed.270.879912815
+input datafile file number=00399 name=+DATABASE/ebs/datafile/apps_ts_queues.267.879912821
+input datafile file number=00019 name=+DATABASE/ebs/datafile/users.261.879913063
+channel e3: starting piece 1 at 13-JUL-16
+channel e4: starting compressed full datafile backup set
+channel e4: specifying datafile(s) in backup set
+input datafile file number=00014 name=+DATABASE/ebs/datafile/apps_ts_tx_data.302.879912579
+input datafile file number=00020 name=+DATABASE/ebs/datafile/xxsrei.309.879912657
+input datafile file number=00018 name=+DATABASE/ebs/datafile/sysaux.292.879912741
+input datafile file number=00406 name=+DATABASE/ebs/datafile/apps_ts_tx_idx.296.879912715
+input datafile file number=00021 name=+DATABASE/ebs/datafile/undotbs2.294.879912717
+input datafile file number=00353 name=+DATABASE/ebs/datafile/system.291.879912743
+input datafile file number=00004 name=+DATABASE/ebs/datafile/system.285.879912769
+input datafile file number=00288 name=+DATABASE/ebs/datafile/system.281.879912781
+input datafile file number=00354 name=+DATABASE/ebs/datafile/system.276.879912797
+input datafile file number=00407 name=+DATABASE/ebs/datafile/apps_ts_seed.272.879912805
+input datafile file number=00007 name=+DATABASE/ebs/datafile/owapub.265.879912825
+input datafile file number=00008 name=+DATABASE/ebs/datafile/apps_ts_queues.266.879912825
+input datafile file number=00010 name=+DATABASE/ebs/datafile/olap.263.879912831
+channel e4: starting piece 1 at 13-JUL-16
+channel e3: finished piece 1 at 13-JUL-16
+piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_u1rakako_7105_1_20160713.bkp tag=FULL_EBS_BACKUP comment=NONE
+channel e3: backup set complete, elapsed time: 00:55:47
+channel e4: finished piece 1 at 13-JUL-16
+piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_u2rakako_7106_1_20160713.bkp tag=FULL_EBS_BACKUP comment=NONE
+channel e4: backup set complete, elapsed time: 01:12:16
+channel e2: finished piece 1 at 13-JUL-16
+piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_u0rakako_7104_1_20160713.bkp tag=FULL_EBS_BACKUP comment=NONE
+channel e2: backup set complete, elapsed time: 01:27:17
+channel e1: finished piece 1 at 13-JUL-16
+piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_tvrakakn_7103_1_20160713.bkp tag=FULL_EBS_BACKUP comment=NONE
+channel e1: backup set complete, elapsed time: 02:20:38
+Finished backup at 13-JUL-16
+
+Starting backup at 13-JUL-16
+current log archived
+channel e1: starting compressed archived log backup set
+channel e1: specifying archived log(s) in backup set
+input archived log thread=1 sequence=3397 RECID=8606 STAMP=917130128
+channel e1: starting piece 1 at 13-JUL-16
+channel e2: starting compressed archived log backup set
+channel e2: specifying archived log(s) in backup set
+input archived log thread=2 sequence=5204 RECID=8605 STAMP=917130127
+channel e2: starting piece 1 at 13-JUL-16
+channel e1: finished piece 1 at 13-JUL-16
+piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_u3rakisk_7107_1_20160713.bkp tag=FULL_EBS_BACKUP comment=NONE
+channel e1: backup set complete, elapsed time: 00:00:03
+channel e1: deleting archived log(s)
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_13/thread_1_seq_3397.354.917130127 RECID=8606 STAMP=917130128
+channel e2: finished piece 1 at 13-JUL-16
+piece handle=/newdump/rmanbackup/EBS/BackupEBS_DB_u4rakisk_7108_1_20160713.bkp tag=FULL_EBS_BACKUP comment=NONE
+channel e2: backup set complete, elapsed time: 00:00:04
+channel e2: deleting archived log(s)
+archived log file name=+ARCHIVELOG/ebs/archivelog/2016_07_13/thread_2_seq_5204.263.917130127 RECID=8605 STAMP=917130127
+Finished backup at 13-JUL-16
+
+Starting backup at 13-JUL-16
+channel e1: starting full datafile backup set
+channel e1: specifying datafile(s) in backup set
+including current control file in backup set
+channel e1: starting piece 1 at 13-JUL-16
+channel e1: finished piece 1 at 13-JUL-16
+piece handle=/newdump/rmanbackup/EBS/controlfile_u5rakiso_1_1_13.bkp tag=TAG20160713T222216 comment=NONE
+channel e1: backup set complete, elapsed time: 00:00:03
+Finished backup at 13-JUL-16
+
+Starting backup at 13-JUL-16
+channel e1: starting full datafile backup set
+channel e1: specifying datafile(s) in backup set
+including current SPFILE in backup set
+channel e1: starting piece 1 at 13-JUL-16
+channel e1: finished piece 1 at 13-JUL-16
+piece handle=/newdump/rmanbackup/EBS/spfile_u6rakisv_1_1_13.bkp tag=TAG20160713T222223 comment=NONE
+channel e1: backup set complete, elapsed time: 00:00:01
+Finished backup at 13-JUL-16
+
+Starting Control File and SPFILE Autobackup at 13-JUL-16
+piece handle=+ARCHIVELOG/ebs/autobackup/2016_07_13/s_917130145.263.917130147 comment=NONE
+Finished Control File and SPFILE Autobackup at 13-JUL-16
+
+specification does not match any archived log in the repository
+released channel: e1
+released channel: e2
+released channel: e3
+released channel: e4
+
+RMAN> 
+
+Recovery Manager complete.

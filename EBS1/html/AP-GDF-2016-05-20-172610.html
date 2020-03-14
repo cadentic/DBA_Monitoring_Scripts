@@ -1,0 +1,1522 @@
+
+<HTML><HEAD>
+<STYLE>
+.RepTitle {
+	font-family: "Segoe UI Semibold", Trebuchet, Helvetica, Arial;
+	font-size:24pt;
+	color: #114477;
+	border-bottom:1px #BBBBBB solid;
+	margin-bottom:10px;
+	padding: 10px;
+}
+.Box {
+	font-family: "Segoe UI Semibold", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:14pt;
+	color: #336699;
+	border:1px #BBBBBB dotted;
+	margin-bottom:10px;
+	padding: 10px;
+}
+.BoxLight {
+	font-family: "Segoe UI Semibold", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:12pt;
+	color: #5588BB;
+	border:1px #BBBBBB dotted;
+	margin-bottom:10px;
+	padding: 10px;
+	background-color:#FFFFEC;
+}
+.BoxGDF {
+	font-family: "Segoe UI Semibold", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:16pt;
+	color:#AA3333;
+	border:1px #BBBBBB dotted;
+	margin-bottom:10px;
+	padding: 10px;
+}
+.BoxSmall {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color: #666666;
+	margin-bottom:10px;
+	padding: 10px;
+}
+.BoxContent {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color: #606060;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #CCCCEE;
+}
+.BoxWarn {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color: #606060;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #CCCCEE;
+	background-color:#F9FF80;
+}
+.BoxErr {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color:#F0F0F0;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #CCCCEE;
+	background-color:#E04040;
+}
+.BoxFix {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color:#606060;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #CCCCEE;
+	background-color:#FFC6A6;
+}
+.BoxUndo {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color:#F0F0F0;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #CCCCEE;
+	background-color:#E04040;
+}
+.BoxOk {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+	color:#606060;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #CCCCEE;
+	background-color:#ECFFF5;
+}
+.trxnlist {
+    overflow:auto;
+}
+.sigtitle {
+  font-size:12pt;
+}
+td {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+    background-color:#F8F8F8;
+    color: #606060;
+    padding: 3px;
+}
+td.err {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+background-color:#f2f2f5;
+color:#cc0000;
+    padding: 3px;
+}
+td.warn {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+    background-color:#F9FF80;
+    color:#777777;
+    padding: 3px;
+}
+td.fix {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-weight:normal;
+	font-size:10pt;
+background-color:#fc9579;
+color:#363636;
+    padding: 3px;
+}
+th {
+	font-family: "Segoe UI Semibold", Trebuchet, Helvetica, Arial;
+	font-size:10pt;
+    font-weight:normal;
+    text-align:left;
+    background-color:#ECECFC;
+    color:#666666;
+    padding: 3px;
+}
+th.main {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-size:12pt;
+    font-weight:bold;
+    text-align:center;
+    background-color:#ECECFC;
+    color:#666666;
+    padding: 3px;
+    width: 450px;
+}
+th.separator {
+	font-family: "Segoe UI", Trebuchet, Helvetica, Arial;
+	font-size:12pt;
+    font-weight:bold;
+    text-align:center;
+    background-color:#FFFFFF;
+    color:#666666;
+    padding: 3px;
+    width: 60px;
+}
+hr.hr1
+{
+    background-color:#336699;
+    height: 5px;
+    border-style:dotted;
+}
+.italsmall
+{
+    font-family:"Segoe UI", Trebuchet, Helvetica, Arial;
+    font-style:italic;
+    font-size:10pt;
+}
+.button   {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:4px 18px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+}.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}.button:active {
+	position:relative;
+	top:1px;
+}
+.getproimg {
+	vertical-align: middle;
+	margin-top: 0px;
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+
+</STYLE>
+<SCRIPT type="text/javascript">
+  function displaySQL(e, sig_id) {
+    var row = document.getElementById("sig"+sig_id);
+    if (row.style.display == ""){
+      e.value = "Show SQL";
+      row.style.display = "none";
+    }
+    else {
+      e.value = "Hide SQL";
+      row.style.display = "";
+    }
+  }
+
+  function HideShow(e, itm_id) {
+    var tbl = document.getElementById(itm_id);
+    if (tbl.style.display == ""){
+      e.innerHTML = String.fromCharCode(9660);
+      tbl.style.display = "none"; }
+    else {
+      e.innerHTML = String.fromCharCode(9650);
+      tbl.style.display = ""; } }
+
+  function highlight(id, checked) {
+    var impact = "X";
+    for (var i=1; impact != null; i++) {
+      impact = document.getElementById(id + "_" + i);
+      if (impact != null) {
+        if (checked == true) {
+          impact.style.backgroundColor = "yellow";
+          impact.style.color = "red";
+          impact.style.fontSize = "18pt"; }
+        else {
+          impact.style.backgroundColor = "transparent";
+          impact.style.color = "#666666";
+          impact.style.fontSize = "12pt"; }}}
+  }
+
+</SCRIPT>
+</HEAD>
+<BODY>
+<div class="RepTitle">AP Data Validation Report - Master GDF Diagnostic
+<a href="https://support.oracle.com/rs?type=doc\&id=432.1" target="_blank">
+<img style="border-radius: 5px; opacity:0.7; ilter:alpha(opacity=70); /* For IE8 and earlier */"
+ src="https://blogs.oracle.com/ebs/resource/Proactive/banner4.jpg" title="Click here to see other helpful Oracle Proactive Tools"
+ width="400" height="41" border="0" alt="Click Here for more tools like this" class="getproimg"></a>
+</div><br><br/><br/>
+<div class="BoxWarn"><strong>WARNING:</strong> This
+      version of the script is over 15 days old<br />
+      <strong>ACTION: </strong>Please verify you have the latest version
+      from note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1360390.1" target="_blank">1360390.1</a> and download and compile the
+      latest version as necessary.</div><br/><br/>
+<div class="Box">Report Arguments &amp; Instance Details
+	<a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'rargs')">&#9660</a><br/>
+<div id="rargs" class="BoxContent" style="display: none;">
+<table><tr><th class="main" colspan="2">Arguments</th><th class="separator">&nbsp;</th><th class="main" colspan="2">Instance Details</th></tr>
+<tr><th>Invoice ID</th><td>986851</td>
+<th class="separator">&nbsp;</th>
+<th>Host</th><td>sreikolebz1.srei.com</td></tr>
+<tr><th>Check ID</th><td></td>
+<th class="separator">&nbsp;</th>
+<th>Instance</th><td>EBS1</td></tr>
+<tr><th>Vendor ID</th><td></td>
+<th class="separator">&nbsp;</th><th>Applications Version</th>
+<td>12.1.3</td></tr>
+<tr><th>Start Date</th><td></td>
+<th class="separator">&nbsp;</th>
+<th>Run Date</th><td>20-May-2016 05:05:10</td></tr>
+<tr><th>End Date</th><td></td>
+<th class="separator">&nbsp;</th>
+<th>Script Version</th><td>120.270</td></tr>
+<tr><th>Operating Units</th><td>1129</td>
+<th class="separator">&nbsp;</th><th>Script Date</th>
+<td>21-Nov-2014</td></tr>
+<tr><th>Transaction Type</th><td></td>
+<th class="separator">&nbsp;</th><th></th><td></td></tr>
+<tr><th>Validations</th><td>ALL</td>
+<th class="separator">&nbsp;</th><th></th><td></td></tr>
+<tr><th>Maximum Rows</th><td>10</td>
+<th class="separator">&nbsp;</th><th></th><td></td></tr>
+<tr><th>Print to Stdout</th><td>N</td>
+<th class="separator">&nbsp;</th><th></th><td></td></tr>
+<tr><th>Debug Mode</th><td>Y</td>
+<th class="separator">&nbsp;</th><th></th><td></td></tr>
+</tbody></table></div></div>
+<span id="impact_summary"></span>
+<br><div class="Box">Recommended Patch Status
+<a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'recopatch')">&#9650;</a><br/>
+<div id="recopatch" class="BoxContent"><table width="960px"> 
+<thead></thead><tbody>
+<tr><th>Product</th><th>Patch</th><th>Description</th><th>Released</th><th>Applied</th></tr>
+<tr><td class="warn">AP</td>
+<td class="warn">19018767</td>
+<td class="warn">Payables Core RPC 5</td>
+<td class="warn">Aug-2014</td>
+<td class="warn">NOT APPLIED</td>
+</tr>
+<tr><td>AP/XLA</td>
+<td>14082924</td>
+<td>Consolidated GDF Pre-Req for Undo Acctg</td>
+<td>Jul-2012</td>
+<td>08-Jul-2013</td>
+</tr>
+<tr><td class="warn">ISP</td>
+<td class="warn">19018793</td>
+<td class="warn">Payables iSupplier Integration RPC 3</td>
+<td class="warn">Aug-2014</td>
+<td class="warn">NOT APPLIED</td>
+</tr>
+<tr><td class="warn">XLA</td>
+<td class="warn">16060007</td>
+<td class="warn">Subledger Accounting RPC 2</td>
+<td class="warn">Mar-2013</td>
+<td class="warn">NOT APPLIED</td>
+</tr>
+<tr><td>ZX</td>
+<td>14277162</td>
+<td>E-Business Tax RPC 1</td>
+<td>Aug-2012</td>
+<td>12-Mar-2014</td>
+</tr>
+<tr><td>ZX</td>
+<td>16009960</td>
+<td>E-Business Tax RPC 2</td>
+<td>Mar-2013</td>
+<td>12-Mar-2014</td>
+</tr>
+<tr><td class="warn">IBY</td>
+<td class="warn">16052604</td>
+<td class="warn">Payments RPC 2</td>
+<td class="warn">Mar-2013</td>
+<td class="warn">NOT APPLIED</td>
+</tr>
+</tbody></table><br/>
+<div class="BoxWarn">
+<strong>WARNING:</strong> One or more critical recommended patch collection patches (in yellow) has not been applied.<br>
+<strong>ACTION:</strong> Please see note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1397581.1" target="_blank">1397581.1</a>
+for details on these critical RPC patch releases.<br>
+</div>
+</div></div><br/>
+<div class="Box">Important Notes &amp; Communications <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'rnotes')">&#9650</a><br/>
+<div id="rnotes" class="BoxContent"><ul>
+  <li><strong>DISCLAIMER:</strong>
+    If you are using any data warehousing
+    tools or custom application which consumes data based on
+    the WHO columns of application tables (e.g. last_update_date),
+    please be aware that currently GDF patches do not maintain
+    these columns.  Please contact support before executing
+    a GDF on your production instance if you require this data
+    to be maintained.</li>
+  <li><strong>NOTE:</strong>
+      This diagnostic can also be run proactively to scan
+      all the transactions within a range of dates in your
+      current open period. It can easily be defined as a
+      concurrent process, and if run regularly throughout
+      the period it can help users to identify
+      data issues and exceptions along with solutions
+      before they even become an issue.</li>
+</ul></div></div><br/>
+<div class="Box">How to Use This Report
+    <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'rhlpcnt')">&#9660;</a><br/>
+<div id="rhlpcnt" class="BoxContent" style="display: none;">
+This report identifies data integrity issues affecting a transaction
+   (or range of transactions) which may prevent the indicated <strong>
+   Impact Areas</strong> from completing successfully.<br/><br/>
+   For example: if the report identifies a transaction whose impact
+   area is "Accounting Failure", it indicates that the transaction
+   will likely fail to account due to the reported data integrity issue.<br/><br/>
+   When this report indicates that given data integrity issue exists,
+   it will also indicate a solution when one is available. Most often this
+   will be a Generic Data Fix (GDF).<br/><br/>
+  <strong>How to proceed:</strong>
+  <ol>
+  <li>Prioritize first the GDF patches related to your
+      currently affected Impact Area.</li>
+  <li>You should also address issues reported in other impact areas,
+      even if they are not causing an immediate issue that you are aware of.
+      These issues may not manifest themselves until later (for example,
+      during the month end close). </li>
+  <li>Apply the corresponding GDF patch(es). <strong>Note that GDF's are
+      published solutions and are fully Supported. You need no
+      confirmation from support or development to apply them.</strong></li>
+  <li>Take special precaution when the reported GDF indicates that it will
+      undo-Accounting. You should take care in the transactions you select
+      to be processed by the GDF.  Refer to Note: <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=753695.1" target="_blank">753695.1</a> to fully understand potential implications.
+      Note that when a GDF requires undo-accounting there is not an alternate
+      action plan to correct the data. Accounting must be undone.</li>
+  <li>GDFs rarely (if ever) perform an incorrect data fix; however, you
+      should keep the temporary backup tables created by the GDF until
+      the fix has been fully tested and validated</li>
+  <li>As with any system change, you should test it thoroughly in a
+      test instance which is a clone of production prior to applying it in
+      your production instance.</li>
+  </ol><br/>
+<strong>Preventative Recommendations - Stay ahead of
+    disruptive issues:</strong>
+  <ol>
+  <li>Install the Master GDF Diagnostic (this report) as a concurrent process.
+      See Note: <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1361255.1" target="_blank">1361255.1</a> for instructions</li>
+  <li>End users can be given access to the report so that they can
+      reactively scan for issues with a transaction when something
+      is not functioning properly. </li>
+  <li>You can also use the date range concurrent process to scan ranges
+      of transactions through the month, and address issues PROACTIVELY
+      to avoid last minute disruptions in business processes.</li>
+  <li>Download the latest report definition at least twice a month to
+      make sure you have the latest detections. You only need to recompile
+      the package with the new version. Concurrent process re-registration
+      is not necessary.</li>
+  <li>This report will scan for key recommended patches and indicate whether have
+      applied them. You should schedule to apply any that have not been applied
+      if you have not already done so. The patches recommended by this
+      report eliminate the root cause of most data integrity issues.</li>
+  </ol></div></div><br/>
+<div class="BoxGDF">Validations for Existing Generic Data Fixes (GDF)
+<a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'gdfval')">&#9650;</a><br/>
+<div id="gdfval" class="BoxContent">
+<div class="Box">General (Non Transaction Specific) Data Validation <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'genvals')">&#9650;</a><br/>
+<div id="genvals" class="BoxContent">
+<div class="BoxOk">No related data issues found</div><br/>
+</div></div>
+<div class="Box">Invoice Data Validation <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'invvals')">&#9650;</a><br/>
+<div id="invvals" class="BoxContent">
+<div class="BoxSmall">
+<hr class="hr1"><span class="sigtitle">
+      <strong>Results for Signature ID 302: </strong>The values of match_type and dist_match_type are not in sync between invoice lines and distributions.  This results in issues with quantities and amounts billed which can cause issues when matching or cancelling the invoice.<br/><strong>Impact Area(s): </strong><span id="PO Matching_1">PO Matching</span></span><hr class="hr1"><strong>Solution GDF: </strong>19637650, <strong>Note: </strong><a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1906407.1" target="_blank">1906407.1</a><br/><strong>Script Name: </strong>ap_sync_match_type_sel.sql<br/> 
+<strong>Occurence: </strong>A total of 1 instances of this problem were found.
+.<span class="italsmall"> Elapsed: .004 Sec</span>
+<br/><br/>
+<div class="BoxFix">
+<strong>SOLUTION:</strong> Follow the instructions provided in note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1906407.1" target="_blank">1906407.1</a>
+</div><br/>
+<div class="trxnlist">
+<table>
+<tr>
+<th id=1>Invoice_Id</th>
+<th id=2>Invoice_Num</th>
+<th id=3>Invoice_Date</th>
+<th id=4>Match_Option</th>
+<th id=5>Matching_Basis</th>
+<th id=6>Line_Type_Lookup_Code</th>
+<th id=7>Po_Line_Location_Id</th>
+<th id=8>Rcv_Transaction_Id</th>
+<th id=9>Line_Match_Type</th>
+<th id=10>Dist_Match_Type</th>
+<th id=11>Line_Number</th>
+<th id=12>Distribution_Line_Number</th>
+<th id=13>Invoice_Distribution_Id</th>
+<th id=14>Type</th>
+</tr>
+<tr>
+<td>986851</td>
+<td>298929</td>
+<td>16-MAY-16</td>
+<td></td>
+<td></td>
+<td>ITEM</td>
+<td></td>
+<td></td>
+<td>NOT_MATCHED</td>
+<td></td>
+<td>1</td>
+<td>2</td>
+<td>2386943</td>
+<td>NULL VALUED</td>
+</tr>
+<tr><td colspan="14"><input type="button" class="button" value="Show SQL" onclick="displaySQL(this, 302)"/></td></tr><tr><td style="display:none" colspan="14" id="sig302"><pre><p align="left">     WITH invs AS (
+            SELECT /*+ materialize */ 986851 invoice_id FROM dual
+     )
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            ai.invoice_date,
+            pll.match_option,
+            pll.matching_basis,
+            ail.line_type_lookup_code,
+            ail.po_line_location_id,
+            ail.rcv_transaction_id,
+            ail.match_type line_match_type,
+            aid.dist_match_type,
+            ail.line_number,
+            aid.distribution_line_number,
+            aid.invoice_distribution_id,
+            'NON SYNC' type
+     FROM invs,
+          ap_invoices_all ai,
+          ap_invoice_lines_all ail,
+          ap_invoice_distributions_all aid,
+          po_line_locations_all pll
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   ail.invoice_id = ai.invoice_id
+     AND   aid.invoice_id = ail.invoice_id
+     AND   aid.invoice_line_number = ail.line_number
+     AND   ail.corrected_inv_id is null
+     AND   ail.corrected_line_number is null
+     AND   ail.po_line_location_id is not null
+     AND   ail.po_line_location_id = pll.line_location_id
+     AND   nvl(ail.match_type,'NOT_MATCHED') <>
+             nvl(aid.dist_match_type,'NOT_MATCHED')
+     AND   ail.line_type_lookup_code IN ('ITEM',
+             'FREIGHT', 'MISCELLANEOUS')
+     AND   nvl(ail.match_type,'NOT_MATCHED') <> 'NOT_MATCHED' -- AGL
+     AND   (aid.line_type_lookup_code IN ('ITEM',
+              'ACCRUAL','FREIGHT','MISCELLANEOUS') OR
+            nvl(ail.match_type,'NOT_MATCHED') <> (
+              CASE
+                WHEN(ail.rcv_transaction_id is not null AND
+                     pll.matching_basis ='QUANTITY' AND
+                     ail.line_type_lookup_code='ITEM') THEN
+                  'ITEM_TO_RECEIPT'
+                WHEN(ail.rcv_transaction_id is not null AND
+                     pll.matching_basis ='AMOUNT' AND
+                     ail.line_type_lookup_code='ITEM')   THEN
+                  'ITEM_TO_SERVICE_RECEIPT'
+                WHEN(ail.rcv_transaction_id is not null AND
+                     ail.line_type_lookup_code in ('FREIGHT','MISCELLANEOUS')) THEN
+                  'OTHER_TO_RECEIPT'
+                WHEN(ail.rcv_transaction_id is null AND
+                     ail.po_line_location_id is not null AND
+                     pll.matching_basis ='QUANTITY' AND
+                     ail.line_type_lookup_code='ITEM') THEN
+                  'ITEM_TO_PO'
+                WHEN(ail.rcv_transaction_id is null AND
+                     ail.po_line_location_id is not null AND
+                     pll.matching_basis ='AMOUNT' AND
+                     ail.line_type_lookup_code='ITEM') THEN
+                  'ITEM_TO_SERVICE_PO'
+                WHEN(ail.rcv_transaction_id is null AND
+                     ail.po_line_location_id is null) THEN
+                  'NOT_MATCHED'
+              END))
+     UNION
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            ai.invoice_date,
+            pll.match_option,
+            pll.matching_basis,
+            ail.line_type_lookup_code,
+            ail.po_line_location_id,
+            ail.rcv_transaction_id,
+            ail.match_type,
+            aid.dist_match_type,
+            ail.line_number,
+            aid.distribution_line_number,
+            aid.invoice_distribution_id,
+            'MATCHED'
+     FROM invs,
+          ap_invoices_all ai,
+          ap_invoice_lines_all ail,
+          ap_invoice_distributions_all aid,
+          po_line_locations_all pll
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   ail.invoice_id = ai.invoice_id
+     AND   aid.invoice_id = ail.invoice_id
+     AND   aid.invoice_line_number = ail.line_number
+     AND   ail.corrected_inv_id is null
+     AND   ail.corrected_line_number is null
+     AND   ail.po_line_location_id is not null
+     AND   ail.po_line_location_id = pll.line_location_id
+     AND   nvl(ail.match_type,'NOT_MATCHED') = 'NOT_MATCHED'
+     AND   ail.line_type_lookup_code IN ('ITEM',
+             'FREIGHT', 'MISCELLANEOUS')
+     AND   (aid.line_type_lookup_code IN ('ITEM',
+              'ACCRUAL','FREIGHT','MISCELLANEOUS') OR
+            nvl(ail.match_type,'NOT_MATCHED') <> (
+              CASE
+                WHEN(ail.rcv_transaction_id is not null AND
+                     pll.matching_basis ='QUANTITY' AND
+                     ail.line_type_lookup_code='ITEM') THEN
+                  'ITEM_TO_RECEIPT'
+                WHEN(ail.rcv_transaction_id is not null AND
+                     pll.matching_basis ='AMOUNT' AND
+                     ail.line_type_lookup_code='ITEM')   THEN
+                  'ITEM_TO_SERVICE_RECEIPT'
+                WHEN(ail.rcv_transaction_id is not null AND
+                     ail.line_type_lookup_code in ('FREIGHT','MISCELLANEOUS')) THEN
+                  'OTHER_TO_RECEIPT'
+                WHEN(ail.rcv_transaction_id is null AND
+                     ail.po_line_location_id is not null AND
+                     pll.matching_basis ='QUANTITY' AND
+                     ail.line_type_lookup_code='ITEM') THEN
+                  'ITEM_TO_PO'
+                WHEN(ail.rcv_transaction_id is null AND
+                     ail.po_line_location_id is not null AND
+                     pll.matching_basis ='AMOUNT' AND
+                     ail.line_type_lookup_code='ITEM') THEN
+                  'ITEM_TO_SERVICE_PO'
+                WHEN(ail.rcv_transaction_id is null AND
+                     ail.po_line_location_id is null) THEN
+                  'NOT_MATCHED'
+              END))
+     UNION
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            ai.invoice_date,
+            null match_option,
+            null matching_basis,
+            ail.line_type_lookup_code,
+            ail.po_line_location_id,
+            ail.rcv_transaction_id,
+            ail.match_type,
+            aid.dist_match_type,
+            ail.line_number,
+            aid.distribution_line_number,
+            aid.invoice_distribution_id,
+            'NON MATCHED'
+     FROM invs,
+          ap_invoices_all ai,
+          ap_invoice_lines_all ail,
+          ap_invoice_distributions_all aid
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   ai.invoice_id = ail.invoice_id
+     AND   ail.invoice_id = aid.invoice_id
+     AND   aid.invoice_line_number = ail.line_number
+     AND   ail.match_type IN ('ITEM_TO_PO','ITEM_TO_RECEIPT')
+     AND   nvl(ail.discarded_flag,'N') <> 'Y'
+     AND   nvl(ail.cancelled_flag,'N') <> 'Y'
+     AND   ail.po_header_id is null
+     AND   ail.po_line_id is null
+     AND   ail.po_line_location_id is null
+     AND   ail.po_distribution_id is null
+     AND   ail.rcv_transaction_id is null
+     AND   ail.corrected_inv_id  is null
+     AND   ail.corrected_line_number is null
+     UNION
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            ai.invoice_date,
+            null,
+            null,
+            ail.line_type_lookup_code,
+            ail.po_line_location_id,
+            ail.rcv_transaction_id,
+            ail.match_type,
+            aid.dist_match_type,
+            ail.line_number,
+            aid.distribution_line_number,
+            aid.invoice_distribution_id,
+            'NULL VALUED'
+     FROM invs,
+          ap_invoices_all ai,
+          ap_invoice_lines_all ail,
+          ap_invoice_distributions_all aid
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   ai.invoice_id = ail.invoice_id
+     AND   ail.invoice_id = aid.invoice_id
+     AND   aid.invoice_line_number = ail.line_number
+     AND   aid.line_type_lookup_code IN ('ITEM', 'FREIGHT',
+             'MISCELLANEOUS')
+     AND   aid.po_distribution_id is null
+     AND   aid.rcv_transaction_id is null
+     AND   aid.dist_match_type is null
+     AND   ail.line_source IN ('MANUAL LINE ENTRY', 'IMPORTED')
+     AND   ail.po_header_id is null
+     AND   ail.po_line_id is null
+     AND   ail.po_line_location_id is null
+      </pre></td></tr>
+</table></div></div><br/>
+<div class="BoxSmall">
+<hr class="hr1"><span class="sigtitle">
+      <strong>Results for Signature ID 80: </strong>Out of sync amounts between Invoice distributions and XLA_Distribution_Links<br/><strong>Impact Area(s): </strong><span id="Invoice Discard_1">Invoice Discard</span></span><hr class="hr1"><strong>Solution GDF: </strong>17487581, <strong>Note: </strong><a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1063263.1" target="_blank">1063263.1</a><br/><strong>Script Name: </strong>ap_incl_excl_tax_sel.sql Part 1: INCL_TAX_INCORR_AMT_IN_AID_XDL<br/> 
+<strong>Occurence: </strong>A total of 4 instances of this problem were found.
+.<span class="italsmall"> Elapsed: .016 Sec</span>
+<br/><br/>
+<div class="BoxFix">
+<strong>SOLUTION:</strong> Apply the GDF patch following the instructions provided in note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1063263.1" target="_blank">1063263.1</a>
+</div><br/>
+<div class="BoxUndo"><strong>IMPORTANT:</strong>
+        This fix will undo accounting.<br/><br/>
+<strong>You should apply the consolidated UNDO Accounting
+            Patch 14082924 before applying the GDF patch for this issue.</strong>
+            Without this patch undo accounting failures may not be reported
+            and the GDF may appear to fail to fix the data when an undo
+            error has occurred.<br><br/>
+<strong>NOTE:</strong>For transactions posted in <strong>
+          closed periods</strong> the reversing and corrected events
+          will be accounted <strong>in the current open period.</strong><br/>
+For a deeper understanding of the undo
+          accounting process please refer to note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=753695.1" target="_blank">753695.1</a></div><br/>
+<div class="trxnlist">
+<table>
+<tr>
+<th id=1>Corruption_Type</th>
+<th id=2>Invoice_Id</th>
+<th id=3>Invoice_Num</th>
+<th id=4>Org_Id</th>
+<th id=5>Invoice_Amount</th>
+<th id=6>Invoice_Line_Number</th>
+<th id=7>Distribution_Line_Number</th>
+<th id=8>Accounting_Event_Id</th>
+</tr>
+<tr>
+<td>MISSING_AID_IN_XDL</td>
+<td>986851</td>
+<td>298929</td>
+<td>1129</td>
+<td>867</td>
+<td>1</td>
+<td>2</td>
+<td>2258330</td>
+</tr>
+<tr>
+<td>MISSING_AID_IN_XDL</td>
+<td>986851</td>
+<td>298929</td>
+<td>1129</td>
+<td>867</td>
+<td>2</td>
+<td>1</td>
+<td>2258330</td>
+</tr>
+<tr>
+<td>MISSING_AID_IN_XDL</td>
+<td>986851</td>
+<td>298929</td>
+<td>1129</td>
+<td>867</td>
+<td>3</td>
+<td>1</td>
+<td>2258330</td>
+</tr>
+<tr>
+<td>MISSING_AID_IN_XDL</td>
+<td>986851</td>
+<td>298929</td>
+<td>1129</td>
+<td>867</td>
+<td>3</td>
+<td>2</td>
+<td>2258330</td>
+</tr>
+<tr><td colspan="8"><input type="button" class="button" value="Show SQL" onclick="displaySQL(this, 80)"/></td></tr><tr><td style="display:none" colspan="8" id="sig80"><pre><p align="left">     WITH invs AS (
+       SELECT /*+ materialize */ 986851 invoice_id FROM dual
+     )
+     SELECT /*+ ordered use_nl(ai, aid, xdl, xe, xah, xal) */
+            'INCL_TAX_INCORR_AMT_IN_AID_XDL' corruption_type,
+            ai.invoice_id,
+            ai.invoice_num,
+            ai.org_id,
+            ai.invoice_amount,
+            aid.invoice_line_number,
+            aid.distribution_line_number,
+            aid.accounting_event_id
+     FROM invs,
+          ap_invoices_all ai,
+          ap_invoice_distributions_all aid,
+          xla_distribution_links xdl,
+          xla_events xe,
+          xla_ae_headers xah,
+          gl_ledgers gl,
+          xla_ae_lines xal
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   xah.ledger_id = gl.ledger_id
+     AND   gl.sla_ledger_cash_basis_flag = 'N'
+     AND   ai.invoice_id = aid.invoice_id
+     AND   aid.line_type_lookup_code NOT IN ('PREPAY', 'AWT', 'NONREC_TAX',
+             'REC_TAX', 'TRV', 'TERV', 'TIPV')
+     AND   aid.prepay_distribution_id is null
+     AND   aid.accounting_event_id = xe.event_id
+     AND   xe.event_status_code = 'P'
+     AND   xe.process_status_code = 'P'
+     AND   nvl(xe.budgetary_control_flag, 'N') = 'N'
+     AND   xe.event_id = xah.event_id
+     AND   xah.balance_type_code = 'A'
+     AND   xah.application_id = 200
+     AND   xah.application_id = xe.application_id
+     AND   xah.application_id = xal.application_id
+     AND   xah.application_id = xdl.application_id
+     AND   xah.ae_header_id = xal.ae_header_id
+     AND   nvl(xah.upg_batch_id, -9999) = -9999
+     AND   xal.accounting_class_code = 'LIABILITY'
+     AND   xah.ae_header_id = xdl.ae_header_id
+     AND   xal.ae_line_num = xdl.ae_line_num
+     AND   xdl.source_distribution_type = 'AP_INV_DIST'
+     AND   xdl.source_distribution_id_num_1 = aid.invoice_distribution_id
+     AND   EXISTS (
+             SELECT /*+ no_unnest */ 1 FROM ap_invoice_distributions_all aid2
+             WHERE aid2.invoice_id = aid.invoice_id
+             AND   aid2.line_type_lookup_code IN ('NONREC_TAX', 'REC_TAX',
+                     'TIPV', 'TERV', 'TRV')
+             AND   aid2.invoice_line_number = aid.invoice_line_number
+             AND   aid2.charge_applicable_to_dist_id = aid.invoice_distribution_id
+             AND   aid2.posted_flag = 'Y')
+     AND   (nvl(xdl.unrounded_entered_cr, xdl.unrounded_entered_dr) <> abs(aid.amount) OR
+            NOT EXISTS (
+             SELECT /*+ no_unnest */ 1
+             FROM ap_invoice_distributions_all aid3,
+                  xla_ae_headers xah2,
+                  xla_distribution_links xdl2
+             WHERE aid3.invoice_id = aid.invoice_id
+             AND   aid3.line_type_lookup_code IN ('NONREC_TAX', 'REC_TAX',
+                     'TIPV', 'TERV', 'TRV')
+             AND   aid3.invoice_line_number = aid.invoice_line_number
+             AND   aid3.charge_applicable_to_dist_id = aid.invoice_distribution_id
+             AND   xah2.ledger_id = xah.ledger_id
+             AND   xah2.application_id = xah.application_id
+             AND   xdl2.application_id = xah.application_id
+             AND   xah2.event_id = aid3.accounting_event_id
+             AND   xah2.ae_header_id = xdl2.ae_header_id
+             AND   xdl2.source_distribution_type = 'AP_INV_DIST'
+             AND   xdl2.source_distribution_id_num_1 = aid3.invoice_distribution_id ))
+     UNION ALL
+     SELECT /*+ ordered use_nl(ai, aid, xdl, xe, xah, xal) */
+            'INCORR_AMT_AID_XDL' corruption_type,
+            ai.invoice_id,
+            ai.invoice_num,
+            aid.org_id,
+            ai.invoice_amount,
+            aid.invoice_line_number,
+            aid.distribution_line_number,
+            aid.accounting_event_id
+     FROM invs,
+          ap_invoices_all ai,
+          ap_invoice_distributions_all aid,
+          xla_distribution_links xdl,
+          xla_events xe,
+          xla_ae_headers xah,
+          gl_ledgers gl,
+          xla_ae_lines xal
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   aid.invoice_id = ai.invoice_id
+     AND   aid.line_type_lookup_code NOT IN ('PREPAY','AWT')
+     AND   aid.prepay_distribution_id is null
+     AND   xe.event_id = aid.accounting_event_id
+     AND   xe.event_status_code = 'P'
+     AND   xe.process_status_code = 'P'
+     AND   xe.application_id = 200
+     AND   nvl(xe.budgetary_control_flag, 'N') = 'N'
+     AND   xah.event_id = xe.event_id
+     AND   xah.application_id = xe.application_id
+     AND   xah.balance_type_code = 'A'
+     AND   nvl(xah.upg_batch_id, -9999) = -9999
+     AND   gl.ledger_id = xah.ledger_id
+     AND   gl.sla_ledger_cash_basis_flag = 'N'
+     AND   xal.ae_header_id = xah.ae_header_id
+     AND   xal.application_id = xah.application_id
+     AND   xal.accounting_class_code = 'LIABILITY'
+     AND   xdl.source_distribution_type = 'AP_INV_DIST'
+     AND   xdl.source_distribution_id_num_1 = aid.invoice_distribution_id
+     AND   xdl.application_id = xah.application_id
+     AND   xdl.ae_header_id = nvl(xal.ae_header_id,0)
+     AND   xdl.ae_line_num = nvl(xal.ae_line_num,0)
+     AND   ((abs(nvl(aid.base_amount, aid.amount)) <>
+               abs(nvl(xdl.unrounded_accounted_cr,0) -
+               nvl(xdl.unrounded_accounted_dr,0))  AND
+             xah.ledger_id = ai.set_of_books_id) OR
+            ((abs(aid.amount) <>  abs(nvl(xdl.unrounded_entered_cr,0) -
+                nvl(xdl.unrounded_entered_dr,0)))  AND
+              xah.ledger_id <> ai.set_of_books_id))
+     UNION ALL
+     SELECT /*+ ordered use_nl(ai, aid, xe, xah, xte) */
+            'MISSING_AID_IN_XDL' corruption_type,
+            ai.invoice_id,
+            ai.invoice_num,
+            aid.org_id,
+            ai.invoice_amount,
+            aid.invoice_line_number,
+            aid.distribution_line_number,
+            aid.accounting_event_id
+     FROM invs,
+          ap_invoices_all ai,
+          ap_invoice_distributions_all aid,
+          xla_events xe,
+          xla_transaction_entities_upg xte,
+          xla_ae_headers xah,
+          gl_ledgers gl
+     WHERE xah.ledger_id = gl.ledger_id
+     AND   gl.sla_ledger_cash_basis_flag = 'N'
+     AND   ai.invoice_id = aid.invoice_id
+     AND   aid.line_type_lookup_code NOT IN ('PREPAY','AWT')
+     AND   aid.prepay_distribution_id is null
+     AND   xe.event_id = aid.accounting_event_id
+     AND   nvl(xe.budgetary_control_flag, 'N') = 'N'
+     AND   xah.event_id = xe.event_id
+     AND   xah.application_id = 200
+     AND   xah.balance_type_code = 'A'
+     AND   NOT (aid.line_type_lookup_code IN ('ERV','TERV') AND
+             xah.ledger_id <> ai.set_of_books_id)
+     AND   xe.application_id = 200
+     AND   xe.event_status_code = 'P'
+     AND   xe.process_status_code = 'P'
+     AND   xe.entity_id = xte.entity_id
+     AND   xte.application_id = 200
+     AND   xte.entity_code = 'AP_INVOICES'
+     AND   xte.source_id_int_1 = ai.invoice_id
+     AND   nvl(xah.upg_batch_id, -9999) = -9999
+     AND   NOT EXISTS (
+             SELECT /*+ no_unnest */ 1 FROM xla_distribution_links xdl
+             WHERE xah.application_id = xdl.application_id
+             AND   xah.ae_header_id = xdl.ae_header_id
+             AND   xdl.source_distribution_type = 'AP_INV_DIST'
+             AND   xdl.source_distribution_id_num_1 = aid.invoice_distribution_id )
+     AND   ai.invoice_id = invs.invoice_id
+      </pre></td></tr>
+</table></div></div><br/>
+<div class="BoxSmall">
+<hr class="hr1"><span class="sigtitle">
+      <strong>Results for Signature ID 101: </strong>Records in XLA_Distribution_Links which do not tie back to a valid record in ap_invoice_distributions_all or ap_self_assessed_tax_dists_all tables <br/><strong>Impact Area(s): </strong><span id="Accounting Failure_1">Accounting Failure</span>, <span id="Accounting Incorrect_1">Accounting Incorrect</span></span><hr class="hr1"><strong>Solution GDF: </strong>17487602, <strong>Note: </strong><a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1291521.1" target="_blank">1291521.1</a><br/><strong>Script Name: </strong>ap_orphan_xdl_s.sql<br/> 
+<strong>Occurence: </strong>A total of 3 instances of this problem were found.
+.<span class="italsmall"> Elapsed: .035 Sec</span>
+<br/><br/>
+<div class="BoxFix">
+<strong>SOLUTION:</strong> Apply the GDF patch following the instructions provided in note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1291521.1" target="_blank">1291521.1</a>
+</div><br/>
+<div class="BoxUndo"><strong>IMPORTANT:</strong>
+        This fix will undo accounting.<br/><br/>
+<strong>You should apply the consolidated UNDO Accounting
+            Patch 14082924 before applying the GDF patch for this issue.</strong>
+            Without this patch undo accounting failures may not be reported
+            and the GDF may appear to fail to fix the data when an undo
+            error has occurred.<br><br/>
+<strong>NOTE:</strong>For transactions posted in <strong>
+          closed periods</strong> the reversing and corrected events
+          will be accounted <strong>in the current open period.</strong><br/>
+For a deeper understanding of the undo
+          accounting process please refer to note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=753695.1" target="_blank">753695.1</a></div><br/>
+<div class="trxnlist">
+<table>
+<tr>
+<th id=1>Invoice_Id</th>
+<th id=2>Invoice_Num</th>
+<th id=3>Org_Id</th>
+<th id=4>Invoice_Type_Lookup_Code</th>
+<th id=5>Invoice_Amount</th>
+<th id=6>Invoice_Currency_Code</th>
+<th id=7>Invoice_Date</th>
+<th id=8>Event_Id</th>
+<th id=9>Event_Type_Code</th>
+<th id=10>Event_Status_Code</th>
+<th id=11>Process_Status_Code</th>
+<th id=12>Ae_Header_Id</th>
+<th id=13>Gl_Transfer_Status_Code</th>
+<th id=14>Balance_Type</th>
+<th id=15>Event_Date</th>
+<th id=16>Set_Of_Books_Id</th>
+</tr>
+<tr>
+<td>986851</td>
+<td>298929</td>
+<td>1129</td>
+<td>EXPENSE REPORT</td>
+<td>867</td>
+<td>INR</td>
+<td>16-MAY-16</td>
+<td>2258330</td>
+<td>INVOICE VALIDATED</td>
+<td>P</td>
+<td>P</td>
+<td>3076684</td>
+<td>Y</td>
+<td>Actual</td>
+<td>17-MAY-16</td>
+<td>2026</td>
+</tr>
+<tr>
+<td>986851</td>
+<td>298929</td>
+<td>1129</td>
+<td>EXPENSE REPORT</td>
+<td>867</td>
+<td>INR</td>
+<td>16-MAY-16</td>
+<td>2258330</td>
+<td>INVOICE VALIDATED</td>
+<td>P</td>
+<td>P</td>
+<td>3076684</td>
+<td>Y</td>
+<td>Actual</td>
+<td>17-MAY-16</td>
+<td>2026</td>
+</tr>
+<tr>
+<td>986851</td>
+<td>298929</td>
+<td>1129</td>
+<td>EXPENSE REPORT</td>
+<td>867</td>
+<td>INR</td>
+<td>16-MAY-16</td>
+<td>2258330</td>
+<td>INVOICE VALIDATED</td>
+<td>P</td>
+<td>P</td>
+<td>3076684</td>
+<td>Y</td>
+<td>Actual</td>
+<td>17-MAY-16</td>
+<td>2026</td>
+</tr>
+<tr><td colspan="16"><input type="button" class="button" value="Show SQL" onclick="displaySQL(this, 101)"/></td></tr><tr><td style="display:none" colspan="16" id="sig101"><pre><p align="left">     WITH invs AS (
+       SELECT /*+ materialize */ 986851 invoice_id FROM dual
+     )
+     SELECT /*+ leading(invs) use_nl(ai, xte, xe, xah, xll, xdl) */
+            ai.invoice_id,
+            ai.invoice_num,
+            ai.org_id,
+            ai.invoice_type_lookup_code,
+            ai.invoice_amount,
+            ai.invoice_currency_code,
+            ai.invoice_date,
+            xe.event_id,
+            xe.event_type_code,
+            xe.event_status_code,
+            xe.process_status_code,
+            xah.ae_header_id,
+            xah.gl_transfer_status_code,
+            decode(xah.balance_type_code,
+              'A', 'Actual',
+              'E', 'Encumbrance') balance_type,
+            xe.event_date,
+            ai.set_of_books_id
+     FROM invs,
+          ap_invoices_all ai,
+          xla_transaction_entities_upg xte,
+          xla_events xe,
+          xla_ae_headers xah,
+          xla_ae_lines xll,
+          xla_distribution_links xdl
+     WHERE xe.application_id = 200
+     AND   xdl.application_id = 200
+     AND   xll.application_id = 200
+     AND   xah.application_id = 200
+     AND   xte.application_id = 200
+     AND   xe.event_status_code = 'P'
+     AND   nvl(xe.budgetary_control_flag, 'N') = 'N'
+     AND   xe.event_type_code NOT IN ('PREPAYMENT APPLIED',
+                'PREPAYMENT UNAPPLIED',
+                'PREPAYMENT APPLICATION ADJ')
+     AND   xe.event_id = xah.event_id
+     AND   xe.entity_id = xte.entity_id
+     AND   xte.entity_code = 'AP_INVOICES'
+     AND   xte.ledger_id = ai.set_of_books_id
+     AND   nvl(xte.source_id_int_1, -99) = ai.invoice_id
+     AND   xah.ae_header_id = xll.ae_header_id
+     AND   xah.balance_type_code = 'A'
+     AND   (xah.upg_batch_id is null OR
+            xah.upg_batch_id = -9999)
+     AND   xll.accounting_class_code = 'LIABILITY'
+     AND   xdl.ae_header_id = xll.ae_header_id
+     AND   xdl.ae_line_num = xll.ae_line_num
+     AND   xdl.source_distribution_type LIKE 'AP_INV_DIST'
+     AND   xe.event_type_code <> 'MANUAL'
+     AND   EXISTS (
+             SELECT 1 FROM ap_invoice_distributions_all AID
+             WHERE aid.accounting_event_id = xe.event_id)
+     AND   NOT EXISTS (
+             SELECT 'inv dist' FROM ap_invoice_distributions_all aid
+             WHERE aid.invoice_distribution_id = xdl.source_distribution_id_num_1
+             AND   aid.accounting_event_id = xe.event_id)
+     AND   ai.invoice_id = invs.invoice_id
+     UNION ALL
+     SELECT /*+ leading(invs) use_nl(ai, xte, xe, xah, xll, xdl) */
+            ai.invoice_id,
+            ai.invoice_num,
+            ai.org_id,
+            ai.invoice_type_lookup_code,
+            ai.invoice_amount,
+            ai.invoice_currency_code,
+            ai.invoice_date,
+            xe.event_id,
+            xe.event_type_code,
+            xe.event_status_code,
+            xe.process_status_code,
+            xah.ae_header_id,
+            xah.gl_transfer_status_code,
+            decode(xah.balance_type_code,
+              'A', 'Actual',
+              'E', 'Encumbrance') balance_type,
+            xe.event_date,
+            ai.set_of_books_id
+     FROM invs,
+          ap_invoices_all ai,
+          xla_transaction_entities_upg xte,
+          xla_events xe,
+          xla_ae_headers xah,
+          xla_ae_lines xll,
+          xla_distribution_links xdl
+     WHERE xe.application_id = 200
+     AND   xdl.application_id = 200
+     AND   xll.application_id = 200
+     AND   xah.application_id = 200
+     AND   xte.application_id = 200
+     AND   xe.event_status_code = 'P'
+     AND   nvl(xe.budgetary_control_flag, 'N') = 'N'
+     AND   xe.event_type_code NOT IN ('PREPAYMENT APPLIED',
+             'PREPAYMENT UNAPPLIED', 'PREPAYMENT APPLICATION ADJ')
+     AND   xe.event_id = xah.event_id
+     AND   xe.entity_id = xte.entity_id
+     AND   xte.ledger_id = ai.set_of_books_id
+     AND   xte.entity_code = 'AP_INVOICES'
+     AND   nvl(xte.source_id_int_1, -99) = ai.invoice_id
+     AND   xah.ae_header_id = xll.ae_header_id
+     AND   xah.balance_type_code = 'A'
+     AND   (xah.upg_batch_id is null OR xah.upg_batch_id = -9999)
+     AND   xll.accounting_class_code = 'SELF_ASSESSED_TAX_LIAB'
+     AND   xdl.ae_header_id = xll.ae_header_id
+     AND   xdl.ae_line_num = xll.ae_line_num
+     AND   xdl.source_distribution_type LIKE 'AP_INV_DIST'
+     AND   xe.event_type_code <> 'MANUAL'
+     AND   EXISTS (
+             SELECT  1 FROM ap_self_assessed_tax_dist_all aid
+            WHERE aid.accounting_event_id = xe.event_id)
+     AND   NOT EXISTS (
+             SELECT 'inv dist' FROM ap_self_assessed_tax_dist_all aid
+             WHERE aid.invoice_distribution_id = xdl.source_distribution_id_num_1
+             AND   aid.accounting_event_id = xe.event_id)
+     AND   ai.invoice_id = invs.invoice_id
+      </pre></td></tr>
+</table></div></div><br/>
+<div class="BoxSmall">
+<hr class="hr1"><span class="sigtitle">
+      <strong>Results for Signature ID 104: </strong>Out of Sync Posting status between the Accounting events in the Events tables and the transaction tables <br/><strong>Impact Area(s): </strong><span id="Period Close_1">Period Close</span>, <span id="Sweep_1">Sweep</span></span><hr class="hr1"><strong>Solution GDF: </strong>18997220, <strong>Note: </strong><a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1071876.1" target="_blank">1071876.1</a><br/><strong>Script Name: </strong>ap_incorrect_posted_flag_sel.sql Invoices<br/> 
+<strong>Occurence: </strong>A total of 4 instances of this problem were found.
+.<span class="italsmall"> Elapsed: .044 Sec</span>
+<br/><br/>
+<div class="BoxFix">
+<strong>SOLUTION:</strong> Apply the GDF patch following the instructions provided in note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1071876.1" target="_blank">1071876.1</a>
+</div><br/>
+<div class="trxnlist">
+<table>
+<tr>
+<th id=1>Invoice_Id</th>
+<th id=2>Invoice_Num</th>
+<th id=3>Org_Id</th>
+<th id=4>Invoice_Line_Number</th>
+<th id=5>Distribution_Line_Number</th>
+<th id=6>Trx_Table</th>
+<th id=7>Trx_Id</th>
+<th id=8>Posted_Flag</th>
+<th id=9>Accrual_Posted_Flag</th>
+<th id=10>Cash_Posted_Flag</th>
+<th id=11>Event_Id</th>
+<th id=12>Ledger_Id</th>
+</tr>
+<tr>
+<td>986851</td>
+<td>298929</td>
+<td>1129</td>
+<td>1</td>
+<td>2</td>
+<td>ap_invoice_distributions_all</td>
+<td>2386943</td>
+<td>N</td>
+<td>Y</td>
+<td>N</td>
+<td>2258330</td>
+<td>2026</td>
+</tr>
+<tr>
+<td>986851</td>
+<td>298929</td>
+<td>1129</td>
+<td>2</td>
+<td>1</td>
+<td>ap_invoice_distributions_all</td>
+<td>2386944</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>2258330</td>
+<td>2026</td>
+</tr>
+<tr>
+<td>986851</td>
+<td>298929</td>
+<td>1129</td>
+<td>3</td>
+<td>1</td>
+<td>ap_invoice_distributions_all</td>
+<td>2386945</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>2258330</td>
+<td>2026</td>
+</tr>
+<tr>
+<td>986851</td>
+<td>298929</td>
+<td>1129</td>
+<td>3</td>
+<td>2</td>
+<td>ap_invoice_distributions_all</td>
+<td>2386946</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+<td>2258330</td>
+<td>2026</td>
+</tr>
+<tr><td colspan="12"><input type="button" class="button" value="Show SQL" onclick="displaySQL(this, 104)"/></td></tr><tr><td style="display:none" colspan="12" id="sig104"><pre><p align="left">     WITH invs AS (
+       SELECT /*+ materialize */ 986851 invoice_id FROM dual
+     )
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            aid.org_id,
+            aid.invoice_line_number,
+            aid.distribution_line_number,
+            'ap_invoice_distributions_all' trx_table,
+            aid.invoice_distribution_id trx_id,
+            aid.posted_flag,
+            aid.accrual_posted_flag,
+            aid.cash_posted_flag,
+            xe.event_id,
+            aid.set_of_books_id ledger_id
+     FROM invs,
+          ap_invoices_all ai,
+          ap_invoice_distributions_all aid,
+          xla_events xe,
+          gl_ledgers gl
+     WHERE (aid.posted_flag = 'N' OR
+            (aid.accrual_posted_flag = 'N' AND
+             nvl(gl.sla_ledger_cash_basis_flag, 'N') <> 'Y'))
+     AND   ai.set_of_books_id = gl.ledger_id
+     AND   xe.process_status_code = 'P'
+     AND   xe.event_status_code   IN ('N','P')
+     AND   ai.invoice_id = aid.invoice_id
+     AND   xe.event_id = aid.accounting_event_id
+     AND   xe.application_id = 200
+     AND   ai.invoice_id = invs.invoice_id
+     UNION ALL
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            ai.org_id,
+            astd.invoice_line_number,
+            astd.distribution_line_number,
+            'ap_self_assessed_tax_dist_all' trx_table,
+            astd.invoice_distribution_id trx_id,
+            astd.posted_flag,
+            astd.accrual_posted_flag,
+            astd.cash_posted_flag,
+            xe.event_id,
+            astd.set_of_books_id ledger_id
+     FROM invs,
+          ap_invoices_all ai,
+          ap_self_assessed_tax_dist_all astd,
+          xla_events xe,
+          gl_ledgers gl
+     WHERE (astd.posted_flag = 'N' OR
+            (astd.accrual_posted_flag = 'N' AND
+             nvl(gl.sla_ledger_cash_basis_flag, 'N') <> 'Y'))
+     AND   ai.set_of_books_id = gl.ledger_id
+     AND   xe.process_status_code = 'P'
+     AND   xe.event_status_code   IN ('N','P')
+     AND   ai.invoice_id = astd.invoice_id
+     AND   xe.event_id = astd.accounting_event_id
+     AND   xe.application_id = 200
+     AND   ai.invoice_id = invs.invoice_id
+     UNION ALL
+     SELECT ai.invoice_id,
+            ai.invoice_num,
+            ai.org_id,
+            aph.prepay_line_num,
+            NULL,
+            'ap_prepay_history_all' trx_table,
+            aph.prepay_history_id trx_id,
+            aph.posted_flag,
+            null,
+            null,
+            xe.event_id,
+            xte.ledger_id ledger_id
+     FROM invs,
+          ap_invoices_all ai,
+          ap_prepay_history_all aph,
+          xla_events xe,
+          xla_transaction_entities_upg xte
+     WHERE posted_flag = 'N'
+     AND   process_status_code = 'P'
+     AND   xe.event_status_code   IN ('N','P')
+     AND   ai.invoice_id = aph.prepay_invoice_id
+     AND   xte.security_id_int_1 = aph.org_id
+     AND   xe.event_id = aph.accounting_event_id
+     AND   xe.entity_id = xte.entity_id
+     AND   xe.application_id = xte.application_id
+     AND   xte.application_id = 200
+     AND   ai.invoice_id = invs.invoice_id
+      </pre></td></tr>
+</table></div></div><br/>
+<div class="BoxSmall">
+<hr class="hr1"><span class="sigtitle">
+      <strong>Results for Signature ID 330: </strong>Imported expense reports are created with a larger precision than is defined for the currency.<br/><strong>Impact Area(s): </strong><span id="Trial Balance_1">Trial Balance</span></span><hr class="hr1"><strong>Solution GDF: </strong>18809798, <strong>Note: </strong><a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1917846.1" target="_blank">1917846.1</a><br/><strong>Script Name: </strong>ap_exp_rep_precision_sel.sql<br/> 
+<strong>Occurence: </strong>A total of 2 instances of this problem were found.
+.<span class="italsmall"> Elapsed: .002 Sec</span>
+<br/><br/>
+<div class="BoxFix">
+<strong>SOLUTION:</strong> Follow the instructions provided in note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=1917846.1" target="_blank">1917846.1</a>
+</div><br/>
+<div class="BoxUndo"><strong>IMPORTANT:</strong>
+        This fix will undo accounting.<br/><br/>
+<strong>You should apply the consolidated UNDO Accounting
+            Patch 14082924 before applying the GDF patch for this issue.</strong>
+            Without this patch undo accounting failures may not be reported
+            and the GDF may appear to fail to fix the data when an undo
+            error has occurred.<br><br/>
+<strong>NOTE:</strong>For transactions posted in <strong>
+          closed periods</strong> the reversing and corrected events
+          will be accounted <strong>in the current open period.</strong><br/>
+For a deeper understanding of the undo
+          accounting process please refer to note <a href="https://support.oracle.com/epmos/faces/DocumentDisplay?id=753695.1" target="_blank">753695.1</a></div><br/>
+<div class="trxnlist">
+<table>
+<tr>
+<th id=1>Invoice_Num</th>
+<th id=2>Invoice_Id</th>
+<th id=3>Amount</th>
+<th id=4>Posted_Flag</th>
+<th id=5>Distribution_Line_Number</th>
+<th id=6>Invoice_Line_Number</th>
+<th id=7>Line_Type_Lookup_Code</th>
+<th id=8>Invoice_Currency_Code</th>
+<th id=9>Invoice_Distribution_Id</th>
+</tr>
+<tr>
+<td>298929</td>
+<td>986851</td>
+<td>83.4808454425363276089828269484808454425</td>
+<td>N</td>
+<td>1</td>
+<td>3</td>
+<td>MISCELLANEOUS</td>
+<td>INR</td>
+<td>2386945</td>
+</tr>
+<tr>
+<td>298929</td>
+<td>986851</td>
+<td>-28.480845442536327608982826948480845443</td>
+<td>N</td>
+<td>2</td>
+<td>3</td>
+<td>MISCELLANEOUS</td>
+<td>INR</td>
+<td>2386946</td>
+</tr>
+<tr><td colspan="9"><input type="button" class="button" value="Show SQL" onclick="displaySQL(this, 330)"/></td></tr><tr><td style="display:none" colspan="9" id="sig330"><pre><p align="left">     SELECT ai.invoice_num,
+            aid.invoice_id,
+            aid.amount,
+            aid.posted_flag,
+            aid.distribution_line_number,
+            aid.invoice_line_number,
+            aid.line_type_lookup_code,
+            ai.invoice_currency_code,
+            aid.invoice_distribution_id
+     FROM (
+            SELECT /*+ qb_name(iview) */ 986851 invoice_id FROM dual
+          ) invs,
+          ap_invoices_all ai,
+          ap_invoice_distributions_all aid
+     WHERE ai.invoice_id = invs.invoice_id
+     AND   ai.invoice_id = aid.invoice_id
+     AND   aid.amount <> ap_utilities_pkg.ap_round_currency(
+                           aid.amount,
+                           ai.invoice_currency_code)
+     AND   ai.invoice_type_lookup_code = 'EXPENSE REPORT'
+     AND   aid.line_type_lookup_code NOT IN ('REC_TAX','NONREC_TAX')
+      </pre></td></tr>
+</table></div></div><br/>
+<div class="BoxLight">Child Data Validation for Prepayment Invoices For Invoice ID 986851<br/>
+<div class="BoxSmall">
+<div class="BoxOk">No related data issues found</div><br/>
+</div></div>
+</div></div>
+</div></div>
+<div class="BoxGDF">Validations with No Generic Data Fix Available (NON-GDF) <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'nongdfval')">&#9650;</a><br/>
+<div id="nongdfval" class="BoxContent">
+<div class="Box">General (Non Transaction Specific) Data Validation <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'ngdfgenvals')">&#9650;</a><br/>
+<div id="ngdfgenvals" class="BoxContent">
+<div class="BoxOk">No related data issues found</div><br/>
+</div></div>
+<div class="Box">Invoice Data Validation <a style="font-size: 13px;" href="javascript:;" onclick="HideShow(this,'ngdfinvvals')">&#9650;</a><br/>
+<div id="ngdfinvvals" class="BoxContent">
+<div class="BoxLight">Child Data Validation for Prepayment Invoices For Invoice ID 986851<br/>
+<div class="BoxSmall">
+<div class="BoxOk">No related data issues found</div><br/>
+</div></div>
+<div class="BoxOk">No related data issues found</div><br/>
+</div></div>
+</div></div>
+<br/><br/><br/>
+<table><thead>Performance Data</thead><tbody>
+<tr><th>Total Elapsed Time:</th><td>2 Min, 7.432 Sec</td></tr>
+<tr><th>Total Query Time:</th><td>1 Min, 47.612 Sec</td></tr>
+</tbody></table><br/><br/>
+<SCRIPT type="text/javascript">
+    document.getElementById("impact_summary").innerHTML = "<div class=\"Box\">Summary of Issues by Impact Area "+
+    "<a style=\"font-size: 13px;\" href=\"javascript:;\" "+
+    "onclick=\"HideShow(this,'impact_summary_content')\">&#9660</a><br/>"+
+    "<div id=\"impact_summary_content\"class=\"BoxContent\" "+
+    "style=\"display: none;\">"+
+    "Although we recommend fixing all data integrity issues "+
+    "found in this report, not all signatures identified may be related "+
+    "to a specific problem you are experiencing. The table below can help "+
+    "to identify which issues are related to a particular functional area "+
+    "within the product so that you can prioritize which to address first. "+
+    "For example, if a transaction fails to account, the issues identified "+
+    "with the impact area \"Accounting Failure\" would be a priority. "+
+    "<br><br><table width=\"50%\"><tbody><tr><th colspan=\"2\">"+
+    "Issues Detected by Impact Area</th><th>Check to Highlight "+
+    "</th></tr>"+"<tr><th>Accounting Failure</th><td>1</td><th class=\"separator\">"+
+      "<input name=\"chbx-Accounting Failure\" type=\"checkbox\" onclick=\"highlight('Accounting Failure',this.checked)\"/>"+
+      "</th></tr>"+"<tr><th>Accounting Incorrect</th><td>1</td><th class=\"separator\">"+
+      "<input name=\"chbx-Accounting Incorrect\" type=\"checkbox\" onclick=\"highlight('Accounting Incorrect',this.checked)\"/>"+
+      "</th></tr>"+"<tr><th>Invoice Discard</th><td>1</td><th class=\"separator\">"+
+      "<input name=\"chbx-Invoice Discard\" type=\"checkbox\" onclick=\"highlight('Invoice Discard',this.checked)\"/>"+
+      "</th></tr>"+"<tr><th>PO Matching</th><td>1</td><th class=\"separator\">"+
+      "<input name=\"chbx-PO Matching\" type=\"checkbox\" onclick=\"highlight('PO Matching',this.checked)\"/>"+
+      "</th></tr>"+"<tr><th>Period Close</th><td>1</td><th class=\"separator\">"+
+      "<input name=\"chbx-Period Close\" type=\"checkbox\" onclick=\"highlight('Period Close',this.checked)\"/>"+
+      "</th></tr>"+"<tr><th>Sweep</th><td>1</td><th class=\"separator\">"+
+      "<input name=\"chbx-Sweep\" type=\"checkbox\" onclick=\"highlight('Sweep',this.checked)\"/>"+
+      "</th></tr>"+"<tr><th>Trial Balance</th><td>1</td><th class=\"separator\">"+
+      "<input name=\"chbx-Trial Balance\" type=\"checkbox\" onclick=\"highlight('Trial Balance',this.checked)\"/>"+
+      "</th></tr>"+"</tbody></table></div></div>";
+    </SCRIPT>
+<!-- ######BEGIN DX SUMMARY######
+<issues>
+ <script_version>120.270</script_version>
+ <undo_ptch>19018767</undo_ptch>
+ <rpc>
+  <patch>
+   <app>AP</app>
+   <num>19018767</num>
+   <description>Payables Core RPC 5</description>
+  </patch>
+  <patch>
+   <app>ISP</app>
+   <num>19018793</num>
+   <description>Payables iSupplier Integration RPC 3</description>
+  </patch>
+  <patch>
+   <app>XLA</app>
+   <num>16060007</num>
+   <description>Subledger Accounting RPC 2</description>
+  </patch>
+  <patch>
+   <app>IBY</app>
+   <num>16052604</num>
+   <description>Payments RPC 2</description>
+  </patch>
+ </rpc>
+ <gdf>
+  <trx type="general">
+  </trx>
+  <trx type="invoice" id="986851">
+    <signature id="302">
+     <category>INVOICE</category>
+     <sub_category></sub_category>
+     <note>1906407.1</note>
+     <bug>19637650</bug>
+     <gdf_flag>Y</gdf_flag>
+     <undo>N</undo>
+     <problem>The values of match_type and dist_match_type are not in sync between invoice lines and distributions.  This results in issues with quantities and amounts billed which can cause issues when matching or cancelling the invoice.</problem>
+     <impact>PO Matching</impact>
+    </signature>
+    <signature id="80">
+     <category>INVOICE</category>
+     <sub_category>ACCOUNTING</sub_category>
+     <note>1063263.1</note>
+     <bug>17487581</bug>
+     <gdf_flag>Y</gdf_flag>
+     <undo>Y</undo>
+     <problem>Out of sync amounts between Invoice distributions and XLA_Distribution_Links</problem>
+     <impact>Invoice Discard</impact>
+    </signature>
+    <signature id="101">
+     <category>INVOICE</category>
+     <sub_category>ACCOUNTING</sub_category>
+     <note>1291521.1</note>
+     <bug>17487602</bug>
+     <gdf_flag>Y</gdf_flag>
+     <undo>Y</undo>
+     <problem>Records in XLA_Distribution_Links which do not tie back to a valid record in ap_invoice_distributions_all or ap_self_assessed_tax_dists_all tables </problem>
+     <impact>Accounting Failure</impact>
+     <impact>Accounting Incorrect</impact>
+    </signature>
+    <signature id="104">
+     <category>INVOICE</category>
+     <sub_category>ACCOUNTING</sub_category>
+     <note>1071876.1</note>
+     <bug>18997220</bug>
+     <gdf_flag>Y</gdf_flag>
+     <undo>N</undo>
+     <problem>Out of Sync Posting status between the Accounting events in the Events tables and the transaction tables </problem>
+     <impact>Period Close</impact>
+     <impact>Sweep</impact>
+    </signature>
+    <signature id="330">
+     <category>INVOICE</category>
+     <sub_category>ACCOUNTING</sub_category>
+     <note>1917846.1</note>
+     <bug>18809798</bug>
+     <gdf_flag>Y</gdf_flag>
+     <undo>Y</undo>
+     <problem>Imported expense reports are created with a larger precision than is defined for the currency.</problem>
+     <impact>Trial Balance</impact>
+    </signature>
+  </trx>
+ </gdf>
+ <non_gdf>
+  <trx type="general">
+  </trx>
+  <trx type="invoice" id="986851">
+  </trx>
+ </non_gdf>
+</issues>
+######END DX SUMMARY######-->
+</BODY></HTML>

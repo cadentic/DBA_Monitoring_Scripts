@@ -1,0 +1,144 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252">
+<!-- base href="http://apexdev.us.oracle.com:7778/pls/apx11w/" -->
+<style type="text/css">
+table {
+background-color:#F2F2F5;
+border-width:1px 1px 0px 1px;
+border-color:#C9CBD3;
+border-style:solid;
+}
+td {
+color:#000000;
+font-family:Tahoma,Arial,Helvetica,Geneva,sans-serif;
+font-size:9pt;
+background-color:#EAEFF5;
+padding:8px;
+background-color:#F2F2F5;
+border-color:#ffffff #ffffff #cccccc #ffffff;
+border-style:solid solid solid solid;
+border-width:1px 0px 1px 0px;
+}
+th {
+font-family:Tahoma,Arial,Helvetica,Geneva,sans-serif;
+font-size:9pt;
+padding:8px;
+background-color:#CFE0F1;
+border-color:#ffffff #ffffff #cccccc #ffffff;
+border-style:solid solid solid none;
+border-width:1px 0px 1px 0px;
+white-space:nowrap;
+}
+</style>
+<script type="text/javascript">
+window.apex_search = {};
+apex_search.init = function (){
+	this.rows = document.getElementById('data').getElementsByTagName('TR');
+	this.rows_length = apex_search.rows.length;
+	this.rows_text =  [];
+	for (var i=0;i<apex_search.rows_length;i++){
+        this.rows_text[i] = (apex_search.rows[i].innerText)?apex_search.rows[i].innerText.toUpperCase():apex_search.rows[i].textContent.toUpperCase();
+	}
+	this.time = false;
+}
+
+apex_search.lsearch = function(){
+	this.term = document.getElementById('S').value.toUpperCase();
+	for(var i=0,row;row = this.rows[i],row_text = this.rows_text[i];i++){
+		row.style.display = ((row_text.indexOf(this.term) != -1) || this.term  === '')?'':'none';
+	}
+	this.time = false;
+}
+
+apex_search.search = function(e){
+    var keycode;
+    if(window.event){keycode = window.event.keyCode;}
+    else if (e){keycode = e.which;}
+    else {return false;}
+    if(keycode == 13){
+		apex_search.lsearch();
+	}
+    else{return false;}
+}</script>
+</head><body onload="apex_search.init();">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td><input type="text" size="30" maxlength="1000" value="" id="S" onkeyup="apex_search.search(event);" /><input type="button" value="Search" onclick="apex_search.lsearch();"/> 
+</td></tr>
+</tbody></table>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>	<th>TABLESPACE</th>
+	<th>TOTALSPACE_MB</th>
+	<th>USED_SPACE_MB</th>
+	<th>FREESPACE_MB</th>
+	<th>PERCT_USED</th>
+	<th>PERCT_FREE</th>
+</tr>
+<tbody id="data">
+
+	<tr>
+<td>SREICABINET</td>
+<td align="right">184320</td>
+<td align="right">175218</td>
+<td align="right">9102</td>
+<td align="right">95.06</td>
+<td align="right">4.94</td>
+	</tr>
+	<tr>
+<td>SYSAUX</td>
+<td align="right">24064</td>
+<td align="right">22933</td>
+<td align="right">1131</td>
+<td align="right">95.3</td>
+<td align="right">4.7</td>
+	</tr>
+	<tr>
+<td>SYSTEM</td>
+<td align="right">4170</td>
+<td align="right">4102</td>
+<td align="right">68</td>
+<td align="right">98.37</td>
+<td align="right">1.63</td>
+	</tr>
+	<tr>
+<td>UNDOTBS1</td>
+<td align="right">3365</td>
+<td align="right">263</td>
+<td align="right">3102</td>
+<td align="right">7.82</td>
+<td align="right">92.18</td>
+	</tr>
+	<tr>
+<td>UNDOTBS2</td>
+<td align="right">3200</td>
+<td align="right">288</td>
+<td align="right">2912</td>
+<td align="right">9</td>
+<td align="right">91</td>
+	</tr>
+	<tr>
+<td>USERS</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">50</td>
+<td align="right">50</td>
+	</tr>
+</tbody></table><!-- SQL:
+select 	t.tablespace,  
+		t.totalspace Totalspace_MB,
+		round((t.totalspace-nvl(fs.freespace,0)),2) USED_SPACE_MB,
+		nvl(fs.freespace,0) Freespace_MB,
+		round(((t.totalspace-nvl(fs.freespace,0))/t.totalspace)*100,2) PERCT_USED,
+		round((nvl(fs.freespace,0)/t.totalspace)*100,2) PERCT_FREE
+from
+		(select round(sum(d.bytes)/(1024*1024)) as totalspace,
+			d.tablespace_name tablespace
+		from dba_data_files d
+		group by d.tablespace_name) t  LEFT OUTER JOIN 
+		(select round(sum(f.bytes)/(1024*1024)) as freespace,
+			f.tablespace_name tablespace
+		from dba_free_space f
+		group by f.tablespace_name) fs
+ON t.tablespace=fs.tablespace 
+order by t.tablespace--></body></html>

@@ -1,0 +1,414 @@
+[gridsp01@sreikolsefl2 ~]$ ps -ealf
+F S UID        PID  PPID  C PRI  NI ADDR SZ WCHAN  STIME TTY          TIME CMD
+4 S root         1     0  0  80   0 -  2604 poll_s Jun09 ?        00:00:31 init [5]                                                                  
+1 S root         2     0  0  80   0 -     0 kthrea Jun09 ?        00:00:00 [kthreadd]
+1 S root         3     2  0  80   0 -     0 run_ks Jun09 ?        00:00:57 [ksoftirqd/0]
+1 S root         4     2  0  80   0 -     0 worker Jun09 ?        00:00:00 [kworker/0:0]
+1 S root         5     2  0  80   0 -     0 worker Jun09 ?        00:00:04 [kworker/u:0]
+1 S root         6     2  0 -40   - -     0 cpu_st Jun09 ?        00:00:06 [migration/0]
+5 S root         7     2  0 -40   - -     0 watchd Jun09 ?        00:00:10 [watchdog/0]
+1 S root         8     2  0 -40   - -     0 cpu_st Jun09 ?        00:00:16 [migration/1]
+1 S root         9     2  0  80   0 -     0 worker Jun09 ?        00:00:00 [kworker/1:0]
+1 S root        10     2  0  80   0 -     0 run_ks Jun09 ?        00:00:59 [ksoftirqd/1]
+5 S root        11     2  0 -40   - -     0 watchd Jun09 ?        00:00:09 [watchdog/1]
+1 S root        12     2  0 -40   - -     0 cpu_st Jun09 ?        00:00:16 [migration/2]
+1 S root        13     2  0  80   0 -     0 worker Jun09 ?        00:00:00 [kworker/2:0]
+1 S root        14     2  0  80   0 -     0 run_ks Jun09 ?        00:00:32 [ksoftirqd/2]
+5 S root        15     2  0 -40   - -     0 watchd Jun09 ?        00:00:12 [watchdog/2]
+1 S root        16     2  0 -40   - -     0 cpu_st Jun09 ?        00:00:10 [migration/3]
+1 S root        17     2  0  80   0 -     0 worker Jun09 ?        00:00:00 [kworker/3:0]
+1 S root        18     2  0  80   0 -     0 run_ks Jun09 ?        00:00:18 [ksoftirqd/3]
+5 S root        19     2  0 -40   - -     0 watchd Jun09 ?        00:00:08 [watchdog/3]
+1 S root        20     2  0 -40   - -     0 cpu_st Jun09 ?        00:00:06 [migration/4]
+1 S root        21     2  0  80   0 -     0 worker Jun09 ?        00:00:00 [kworker/4:0]
+1 S root        22     2  0  80   0 -     0 run_ks Jun09 ?        00:00:11 [ksoftirqd/4]
+5 S root        23     2  0 -40   - -     0 watchd Jun09 ?        00:00:08 [watchdog/4]
+1 S root        24     2  0 -40   - -     0 cpu_st Jun09 ?        00:00:05 [migration/5]
+1 S root        25     2  0  80   0 -     0 worker Jun09 ?        00:00:00 [kworker/5:0]
+1 S root        26     2  0  80   0 -     0 run_ks Jun09 ?        00:00:08 [ksoftirqd/5]
+5 S root        27     2  0 -40   - -     0 watchd Jun09 ?        00:00:08 [watchdog/5]
+1 S root        28     2  0 -40   - -     0 cpu_st Jun09 ?        00:00:04 [migration/6]
+1 S root        29     2  0  80   0 -     0 worker Jun09 ?        00:00:00 [kworker/6:0]
+1 S root        30     2  0  80   0 -     0 run_ks Jun09 ?        00:00:05 [ksoftirqd/6]
+5 S root        31     2  0 -40   - -     0 watchd Jun09 ?        00:00:07 [watchdog/6]
+1 S root        32     2  0 -40   - -     0 cpu_st Jun09 ?        00:00:03 [migration/7]
+1 S root        34     2  0  80   0 -     0 run_ks Jun09 ?        00:00:03 [ksoftirqd/7]
+5 S root        35     2  0 -40   - -     0 watchd Jun09 ?        00:00:07 [watchdog/7]
+1 S root        36     2  0 -40   - -     0 cpu_st Jun09 ?        00:00:02 [migration/8]
+1 S root        37     2  0  80   0 -     0 worker Jun09 ?        00:00:00 [kworker/8:0]
+1 S root        38     2  0  80   0 -     0 run_ks Jun09 ?        00:00:02 [ksoftirqd/8]
+5 S root        39     2  0 -40   - -     0 watchd Jun09 ?        00:00:07 [watchdog/8]
+1 S root        40     2  0 -40   - -     0 cpu_st Jun09 ?        00:00:01 [migration/9]
+1 S root        41     2  0  80   0 -     0 worker Jun09 ?        00:00:00 [kworker/9:0]
+1 S root        42     2  0  80   0 -     0 run_ks Jun09 ?        00:00:02 [ksoftirqd/9]
+5 S root        43     2  0 -40   - -     0 watchd Jun09 ?        00:00:08 [watchdog/9]
+1 S root        52     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [cpuset]
+1 S root        53     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [khelper]
+1 S root        54     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [netns]
+5 S root        55     2  0  80   0 -     0 xenwat Jun09 ?        00:00:00 [xenwatch]
+1 S root        56     2  0  80   0 -     0 xb_wai Jun09 ?        00:00:00 [xenbus]
+1 S root        57     2  0  80   0 -     0 bdi_sy Jun09 ?        00:00:05 [sync_supers]
+1 S root        58     2  0  80   0 -     0 bdi_fo Jun09 ?        00:00:00 [bdi-default]
+1 S root        59     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [kintegrityd]
+1 S root        60     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [kblockd]
+1 S root        61     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [xenbus_frontend]
+5 S root        62     2  0  80   0 -     0 worker Jun09 ?        00:05:50 [kworker/1:1]
+1 S root        63     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [ata_sff]
+1 S root        64     2  0  80   0 -     0 hub_th Jun09 ?        00:00:00 [khubd]
+1 S root        65     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [md]
+5 S root        66     2  0  80   0 -     0 worker Jun09 ?        00:02:51 [kworker/2:1]
+1 S root        67     2  0  80   0 -     0 watchd Jun09 ?        00:00:02 [khungtaskd]
+1 S root        68     2  0  80   0 -     0 kswapd Jun09 ?        01:42:22 [kswapd0]
+1 S root        69     2  0  85   5 -     0 ksm_sc Jun09 ?        00:00:00 [ksmd]
+1 S root        70     2  0  80   0 -     0 fsnoti Jun09 ?        00:00:00 [fsnotify_mark]
+1 S root        71     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [crypto]
+1 S root        76     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [kthrotld]
+1 S root        77     2  0  80   0 -     0 worker Jun09 ?        00:00:07 [kworker/u:1]
+1 S root        78     2  0  80   0 -     0 khvcd  Jun09 ?        00:00:00 [khvcd]
+5 S root        79     2  0  80   0 -     0 worker Jun09 ?        00:01:52 [kworker/5:1]
+1 S root        80     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [kpsmoused]
+5 S root        81     2  0  80   0 -     0 worker Jun09 ?        00:02:11 [kworker/0:1]
+5 S root       146     2  0  80   0 -     0 worker Jun09 ?        00:02:08 [kworker/3:1]
+5 S root       147     2  0  80   0 -     0 worker Jun09 ?        00:02:08 [kworker/4:1]
+5 S root       148     2  0  80   0 -     0 worker Jun09 ?        00:01:51 [kworker/6:1]
+5 S root       149     2  0  80   0 -     0 worker Jun09 ?        00:01:48 [kworker/7:1]
+5 S root       150     2  0  80   0 -     0 worker Jun09 ?        00:01:43 [kworker/8:1]
+5 S root       151     2  0  80   0 -     0 worker Jun09 ?        00:01:37 [kworker/9:1]
+1 S root       154     2  0  80   0 -     0 kjourn Jun09 ?        00:00:41 [kjournald]
+5 S root       208     1  0  76  -4 -  3202 poll_s Jun09 ?        00:00:00 /sbin/udevd -d
+1 S root      1370     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [kdmflush]
+1 S root      1400     2  0  80   0 -     0 kjourn Jun09 ?        00:02:27 [kjournald]
+1 S root      1485     2  0  80   0 -     0 bdi_wr Jun09 ?        00:00:28 [flush-202:0]
+1 S root      1486     2  0  80   0 -     0 bdi_wr Jun09 ?        00:03:42 [flush-252:0]
+1 S root      1519     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [iscsi_eh]
+1 S root      1559     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [cnic_wq]
+1 S root      1561     2  0  60 -20 -     0 bnx2i_ Jun09 ?        00:00:00 [bnx2i_thread/0]
+1 S root      1562     2  0  60 -20 -     0 bnx2i_ Jun09 ?        00:00:00 [bnx2i_thread/1]
+1 S root      1563     2  0  60 -20 -     0 bnx2i_ Jun09 ?        00:00:00 [bnx2i_thread/2]
+1 S root      1564     2  0  60 -20 -     0 bnx2i_ Jun09 ?        00:00:00 [bnx2i_thread/3]
+1 S root      1565     2  0  60 -20 -     0 bnx2i_ Jun09 ?        00:00:00 [bnx2i_thread/4]
+1 S root      1566     2  0  60 -20 -     0 bnx2i_ Jun09 ?        00:00:00 [bnx2i_thread/5]
+1 S root      1567     2  0  60 -20 -     0 bnx2i_ Jun09 ?        00:00:00 [bnx2i_thread/6]
+1 S root      1569     2  0  60 -20 -     0 bnx2i_ Jun09 ?        00:00:00 [bnx2i_thread/7]
+1 S root      1570     2  0  60 -20 -     0 bnx2i_ Jun09 ?        00:00:00 [bnx2i_thread/8]
+1 S root      1571     2  0  60 -20 -     0 bnx2i_ Jun09 ?        00:00:00 [bnx2i_thread/9]
+1 S root      1582     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [ib_addr]
+1 S root      1590     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [ib_mcast]
+1 S root      1591     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [ib_inform]
+1 S root      1592     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [local_sa]
+1 S root      1594     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [iw_cm_wq]
+1 S root      1596     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [ib_cm]
+1 S root      1601     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [rdma_cm]
+1 S root      1602     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [rdma_cm_fr]
+5 S root      1621     1  0  70 -10 -  6161 wait_f Jun09 ?        00:00:00 iscsiuio
+1 S root      1627     1  0  80   0 -  1160 hrtime Jun09 ?        00:01:04 iscsid
+5 S root      1628     1  0  70 -10 -  1285 poll_s Jun09 ?        00:03:41 iscsid
+5 S root      1870     1  0  76  -4 - 22726 ep_pol Jun09 ?        00:00:10 auditd
+4 S root      1872  1870  0  72  -8 - 36341 futex_ Jun09 ?        00:00:07 /sbin/audispd
+1 S root      1873     2  0  80   0 -     0 kaudit Jun09 ?        00:00:01 [kauditd]
+1 S root      1896     1  0  80   0 -  1494 poll_s Jun09 ?        00:00:08 syslogd -m 0
+5 S root      1899     1  0  80   0 -   968 syslog Jun09 ?        00:00:00 klogd -x
+5 S rpc       1947     1  0  80   0 -  2029 poll_s Jun09 ?        00:00:00 portmap
+1 S root      1976     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [rpciod]
+5 S rpcuser   1981     1  0  80   0 -  3606 poll_s Jun09 ?        00:00:00 rpc.statd
+1 S root      2009     1  0  80   0 -  6230 ep_pol Jun09 ?        00:00:00 rpc.idmapd
+5 S dbus      2031     1  0  80   0 -  5368 poll_s Jun09 ?        00:00:25 dbus-daemon --system
+5 S root      2050     1  0  80   0 -  2625 poll_s Jun09 ?        00:00:00 /usr/sbin/hcid
+5 S root      2056     1  0  80   0 -  1500 poll_s Jun09 ?        00:00:00 /usr/sbin/sdpd
+1 S root      2071     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [l2cap]
+5 S root      2078     2  0  70 -10 -     0 rfcomm Jun09 ?        00:00:00 [krfcommd]
+1 S root      2106     2  0  60 -20 -     0 rescue Jun09 ?        00:00:00 [nfsiod]
+1 S root      2109     2  0  80   0 -     0 svc_re Jun09 ?        00:00:00 [lockd]
+1 S root      2139     1  0  80   0 -  6815 poll_s Jun09 ?        00:02:25 pcscd
+5 S 68        2154     1  0  80   0 -  7864 poll_s Jun09 ?        00:00:06 hald
+0 S root      2155  2154  0  80   0 -  5442 poll_s Jun09 ?        00:00:00 hald-runner
+1 S root      2182     1  0  80   0 -  2145 poll_s Jun09 ?        00:00:00 /usr/bin/hidd --server
+1 S root      2230     1  0  80   0 - 29479 sigtim Jun09 ?        00:00:37 automount --pid-file /var/run/autofs.pid
+5 S root      2710     1  0  80   0 - 16214 poll_s Jun09 ?        00:00:06 /usr/sbin/sshd
+5 S root      2721     1  0  80   0 - 33900 ep_pol Jun09 ?        00:00:00 cupsd
+1 S root      2738     1  0  80   0 -  5427 poll_s Jun09 ?        00:00:00 xinetd -stayalive -pidfile /var/run/xinetd.pid
+5 S ntp       2756     1  0  80   0 -  4813 poll_s Jun09 ?        00:01:41 ntpd -u ntp:ntp -p /var/run/ntpd.pid
+5 S root      2780     1  0  80   0 - 17261 poll_s Jun09 ?        00:01:00 sendmail: accepting connections
+1 S smmsp     2790     1  0  80   0 - 14951 pause  Jun09 ?        00:00:00 sendmail: Queue runner@01:00:00 for /var/spool/clientmqueue
+5 S root      2800     1  0  80   0 -  1630 hrtime Jun09 ?        00:01:25 gpm -m /dev/input/mice -t exps2
+5 S root      2809     1  0  80   0 - 18715 hrtime Jun09 ?        00:00:22 crond
+5 S xfs       2838     1  0  80   0 -  5257 poll_s Jun09 ?        00:00:00 xfs -droppriv -daemon
+4 S root      2882     1  0  80   0 - 15392 poll_s Jun09 ?        00:02:13 Xvnc :2 -desktop sreikolsefl2.srei.com:2 (root) -httpd /usr/share/vnc/classes -auth /root/.Xauthority -geometry 1368
+4 S root      2889     1  0  80   0 - 60698 poll_s Jun09 ?        00:00:00 /usr/bin/gnome-session
+5 S root      2911     1  0  80   0 -  4699 hrtime Jun09 ?        00:00:01 /usr/sbin/atd
+1 S root      2957  2889  0  80   0 - 14024 poll_s Jun09 ?        00:00:11 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session /etc/X11/xinit/Xclients
+1 S root      2960     1  0  80   0 -  3810 poll_s Jun09 ?        00:00:00 /usr/bin/dbus-launch --exit-with-session /etc/X11/xinit/Xclients
+1 S root      2961     1  0  80   0 -  5357 poll_s Jun09 ?        00:00:00 /bin/dbus-daemon --fork --print-pid 4 --print-address 6 --session
+0 S root      2968     1  0  80   0 - 21976 poll_s Jun09 ?        00:00:18 /usr/libexec/gconfd-2 5
+1 S root      2973     1  0  80   0 -  3242 poll_s Jun09 ?        00:00:00 /usr/bin/gnome-keyring-daemon
+4 S root      2975     1  0  80   0 - 65529 poll_s Jun09 ?        00:01:02 /usr/libexec/gnome-settings-daemon
+4 S root      2977     1  0  80   0 - 98390 futex_ Jun09 ?        03:53:27 /u01/app/bin/ohasd.bin reboot
+5 S avahi     3014     1  0  80   0 -  5839 poll_s Jun09 ?        00:00:08 avahi-daemon: running [sreikolsefl2.local]
+1 S avahi     3015  3014  0  80   0 -  5806 unix_s Jun09 ?        00:00:00 avahi-daemon: chroot helper
+5 S orasp01   3028  2809  0  80   0 - 25517 pipe_w 09:45 ?        00:00:00 crond
+5 S orasp01   3030  2809  0  80   0 - 25517 pipe_w 09:45 ?        00:00:00 crond
+0 S orasp01   3037  3028  0  80   0 -  2192 wait   09:45 ?        00:00:00 /bin/sh -c sh /home/orasp01/alert/SMS/LSNR_SMS_chk.sh >> /dev/null 2>&1
+0 S orasp01   3041  3030  0  80   0 -  2192 wait   09:45 ?        00:00:00 /bin/sh -c sh /home/orasp01/alert/SMS/cluster_check.sh >> /dev/null 2>&1
+0 S orasp01   3043  3037  0  80   0 -  2194 wait   09:45 ?        00:00:00 sh /home/orasp01/alert/SMS/LSNR_SMS_chk.sh
+0 S root      3049     1  0  80   0 - 39154 poll_s Jun09 ?        00:00:06 metacity --sm-client-id=default1
+0 S orasp01   3051  3041  0  80   0 -  2193 wait   09:45 ?        00:00:00 sh /home/orasp01/alert/SMS/cluster_check.sh
+1 S root      3081     1  0  80   0 -  4689 hrtime Jun09 ?        00:00:00 /usr/sbin/smartd -q never
+4 S root      3098     1  0  80   0 - 68767 poll_s Jun09 ?        00:00:00 gnome-panel --sm-client-id default2
+4 S root      3100     1  0  80   0 -   965 n_tty_ Jun09 tty1     00:00:00 /sbin/mingetty tty1
+4 S root      3101     1  0  80   0 -   965 n_tty_ Jun09 tty2     00:00:00 /sbin/mingetty tty2
+4 S root      3103     1  0  80   0 -   965 n_tty_ Jun09 tty3     00:00:00 /sbin/mingetty tty3
+4 S root      3104     1  0  80   0 -   965 n_tty_ Jun09 tty4     00:00:00 /sbin/mingetty tty4
+4 S root      3105     1  0  80   0 -   965 n_tty_ Jun09 tty5     00:00:00 /sbin/mingetty tty5
+4 S root      3106     1  0  80   0 -   965 n_tty_ Jun09 tty6     00:00:00 /sbin/mingetty tty6
+4 S root      3107     1  0  80   0 - 106745 poll_s Jun09 ?       00:01:12 nautilus --no-default-window --sm-client-id default3
+4 S root      3108     1  0  80   0 - 41954 poll_s Jun09 ?        00:00:00 /usr/sbin/gdm-binary -nodaemon
+0 S root      3110     1  0  80   0 -  2747 wait   Jun09 ?        00:05:30 /bin/sh /etc/init.d/init.tfa run
+4 S root      3112     1  0  80   0 -  2715 pipe_w Jun09 ?        00:00:00 /bin/sh /etc/init.d/init.ohasd run
+0 S root      3148     1  0  80   0 - 66763 poll_s Jun09 ?        00:00:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16
+0 S root      3160     1  0  80   0 - 64721 poll_s Jun09 ?        00:00:11 eggcups --sm-client-id default4
+4 S root      3164     1  0  80   0 - 36807 poll_s Jun09 ?        00:00:00 /usr/libexec/gnome-vfs-daemon
+0 S root      3174     1  0  80   0 - 38520 poll_s Jun09 ?        00:00:00 bt-applet --sm-disable
+0 S root      3185     1  0  80   0 - 56439 poll_s Jun09 ?        00:00:01 nm-applet --sm-disable
+0 S root      3188     1  0  80   0 - 87130 poll_s Jun09 ?        00:00:01 /usr/bin/python -tt /usr/bin/puplet
+0 S root      3190     1  0  80   0 - 38671 poll_s Jun09 ?        00:01:17 pam-panel-icon --sm-client-id default0
+1 S root      3193     1  0  80   0 - 19333 poll_s Jun09 ?        00:08:32 ./escd --key_Inserted="/usr/bin/esc" --on_Signal="/usr/bin/esc"
+0 S root      3194  3190  0  80   0 -  3063 poll_s Jun09 ?        00:02:32 /sbin/pam_timestamp_check -d root
+4 S root      3211     1  0  80   0 - 15637 poll_s Jun09 ?        00:00:00 /usr/sbin/nm-system-settings --config /etc/NetworkManager/nm-system-settings.conf
+1 S root      3234     1  0  80   0 - 65371 poll_s Jun09 ?        00:06:11 gnome-power-manager
+5 S root      3248  3108  0  80   0 - 48732 pipe_w Jun09 ?        00:00:00 /usr/sbin/gdm-binary -nodaemon
+0 S root      3250     1  0  80   0 - 40856 poll_s Jun09 ?        00:00:00 /usr/libexec/gdm-rh-security-token-helper
+4 S root      3256  3248  0  80   0 - 24528 poll_s Jun09 tty7     00:00:00 /usr/bin/Xorg :0 -br -audit 0 -auth /var/gdm/:0.Xauth -nolisten tcp vt7
+0 S root      3273     1  0  80   0 -  3280 poll_s Jun09 ?        00:02:49 /usr/libexec/gam_server
+0 S root      3280     1  0  80   0 - 65882 poll_s Jun09 ?        00:00:00 /usr/libexec/wnck-applet --oaf-activate-iid=OAFIID:GNOME_Wncklet_Factory --oaf-ior-fd=19
+4 S root      3282     1  0  80   0 - 106362 poll_s Jun09 ?       00:00:00 /usr/libexec/trashapplet --oaf-activate-iid=OAFIID:GNOME_Panel_TrashApplet_Factory --oaf-ior-fd=25
+1 S root      3290     1  0  99  19 - 64348 poll_s Jun09 ?        00:00:08 /usr/bin/python -tt /usr/sbin/yum-updatesd
+0 S root      3312     1  0  80   0 -  3223 poll_s Jun09 ?        00:00:17 /usr/libexec/mapping-daemon
+0 S root      3353     1  0  80   0 - 60225 poll_s Jun09 ?        00:00:00 /usr/libexec/notification-area-applet --oaf-activate-iid=OAFIID:GNOME_NotificationAreaApplet_Factory --oaf-ior-fd=23
+0 S root      3356     1  0  80   0 - 69321 poll_s Jun09 ?        00:00:00 /usr/libexec/mixer_applet2 --oaf-activate-iid=OAFIID:GNOME_MixerApplet_Factory --oaf-ior-fd=29
+0 S root      3359     1  0  80   0 - 73240 poll_s Jun09 ?        00:00:35 /usr/libexec/clock-applet --oaf-activate-iid=OAFIID:GNOME_ClockApplet_Factory --oaf-ior-fd=35
+4 S gdm       3436  3248  0  80   0 - 55251 poll_s Jun09 ?        00:00:00 /usr/libexec/gdmgreeter
+4 S root      3466     1  1  80   0 - 156288 futex_ Jun09 ?       05:05:00 /u01/app/jdk/jre/bin/java -Xms64m -Xmx256m -classpath /u01/app/tfa/sreikolsefl2/tfa_home/jar/RATFA.jar:/u01/app/tfa/
+4 S gridsp01  3651     1  0  80   0 - 95955 futex_ Jun09 ?        02:16:56 /u01/app/bin/oraagent.bin
+0 S gridsp01  3664     1  0  80   0 - 41631 poll_s Jun09 ?        00:01:56 /u01/app/bin/mdnsd.bin
+0 S gridsp01  3756     1  0  80   0 - 62008 hrtime Jun09 ?        00:29:13 /u01/app/bin/gpnpd.bin
+0 S gridsp01  3849     1  0  80   0 - 79239 hrtime Jun09 ?        03:26:04 /u01/app/bin/gipcd.bin
+4 S root      3850     1  0  80   0 - 91412 futex_ Jun09 ?        03:58:50 /u01/app/bin/orarootagent.bin
+4 S root      3868     1  3 -40   - - 61922 hrtime Jun09 ?        18:27:40 /u01/app/bin/osysmond.bin
+4 S root      3981     1  0 -40   - - 80245 futex_ Jun09 ?        00:47:46 /u01/app/bin/cssdmonitor
+4 S root      4042     1  0 -40   - - 63474 futex_ Jun09 ?        00:48:11 /u01/app/bin/cssdagent
+4 S gridsp01  4109     1  0 -40   - - 83863 futex_ Jun09 ?        03:59:54 /u01/app/bin/ocssd.bin 
+1 S root      4205     1  0  80   0 - 45797 poll_s Jun09 ?        00:00:15 gnome-screensaver
+4 S root      4210     1  0  80   0 - 77604 futex_ Jun09 ?        02:26:13 /u01/app/bin/octssd.bin reboot
+0 S gridsp01  4232     1  0  80   0 - 68625 futex_ Jun09 ?        02:18:49 /u01/app/bin/evmd.bin
+1 S root      4325     2  0  80   0 -     0 KsSlee Jun09 ?        00:00:00 [oks_wkq]
+1 S root      4448     2  0  80   0 -     0 KsSlee Jun09 ?        00:00:00 [acfsioerrlog]
+1 S root      4449     2  0  70 -10 -     0 KsSlee Jun09 ?        00:00:00 [acfs_bast0]
+1 S root      4450     2  0  70 -10 -     0 KsSlee Jun09 ?        00:00:00 [acfs_bast1]
+1 S root      4451     2  0  70 -10 -     0 KsSlee Jun09 ?        00:00:00 [acfs_bast2]
+1 S root      4452     2  0  70 -10 -     0 KsSlee Jun09 ?        00:00:00 [acfs_bast3]
+1 S root      4453     2  0  70 -10 -     0 KsSlee Jun09 ?        00:00:00 [acfs_bast4]
+1 S root      4454     2  0  70 -10 -     0 KsSlee Jun09 ?        00:00:00 [acfs_bast5]
+1 S root      4455     2  0  70 -10 -     0 KsSlee Jun09 ?        00:00:00 [acfs_bast6]
+1 S root      4456     2  0  70 -10 -     0 KsSlee Jun09 ?        00:00:00 [acfs_bast7]
+1 S root      4476     2  0  80   0 -     0 KsWait Jun09 ?        00:00:09 [oks_plog]
+0 S gridsp01  4493     1  0  80   0 - 336096 poll_s Jun09 ?       00:10:22 asm_pmon_+ASM2
+0 S gridsp01  4497     1  0  80   0 - 334452 semtim Jun09 ?       00:08:05 asm_psp0_+ASM2
+0 S gridsp01  4501     1  2  58   - - 334452 hrtime Jun09 ?       12:19:00 asm_vktm_+ASM2
+0 S gridsp01  4507     1  0  80   0 - 334805 semtim Jun09 ?       00:01:15 asm_gen0_+ASM2
+0 S gridsp01  4511     1  0  80   0 - 335985 poll_s Jun09 ?       00:28:44 asm_diag_+ASM2
+0 S gridsp01  4515     1  0  80   0 - 334452 poll_s Jun09 ?       00:04:13 asm_ping_+ASM2
+0 S gridsp01  4519     1  0  80   0 - 336497 poll_s Jun09 ?       01:01:03 asm_dia0_+ASM2
+0 S gridsp01  4523     1  0  80   0 - 336566 poll_s Jun09 ?       01:21:33 asm_lmon_+ASM2
+0 S gridsp01  4527     1  0  80   0 - 338528 poll_s Jun09 ?       00:47:13 asm_lmd0_+ASM2
+0 S gridsp01  4531     1  0  58   - - 338228 poll_s Jun09 ?       01:37:57 asm_lms0_+ASM2
+0 S gridsp01  4537     1  0  80   0 - 334627 semtim Jun09 ?       00:02:41 asm_lmhb_+ASM2
+0 S gridsp01  4541     1  0  80   0 - 334452 semtim Jun09 ?       00:01:15 asm_mman_+ASM2
+0 S gridsp01  4545     1  0  80   0 - 336024 semtim Jun09 ?       00:01:23 asm_dbw0_+ASM2
+0 S gridsp01  4549     1  0  80   0 - 335367 semtim Jun09 ?       00:01:30 asm_lgwr_+ASM2
+0 S gridsp01  4553     1  0  80   0 - 334763 semtim Jun09 ?       00:02:15 asm_ckpt_+ASM2
+0 S gridsp01  4557     1  0  80   0 - 334452 semtim Jun09 ?       00:01:07 asm_smon_+ASM2
+0 S gridsp01  4561     1  0  80   0 - 340914 semtim Jun09 ?       00:15:30 asm_rbal_+ASM2
+0 S gridsp01  4565     1  0  80   0 - 335612 semtim Jun09 ?       00:03:54 asm_gmon_+ASM2
+0 S gridsp01  4569     1  0  80   0 - 334452 semtim Jun09 ?       00:04:16 asm_mmon_+ASM2
+0 S gridsp01  4573     1  0  80   0 - 334452 semtim Jun09 ?       00:06:56 asm_mmnl_+ASM2
+0 S gridsp01  4577     1  0  80   0 - 334750 poll_s Jun09 ?       00:05:50 asm_lck0_+ASM2
+0 S gridsp01  4594     1  0  80   0 - 334917 pipe_w Jun09 ?       00:00:00 oracle+ASM2 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+4 S root      4599     1  1  80   0 - 106582 futex_ Jun09 ?       05:44:46 /u01/app/bin/crsd.bin reboot
+4 S gridsp01  4612     1  0  80   0 - 336174 pipe_w Jun09 ?       00:00:00 oracle+ASM2_ocr (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+0 S gridsp01  4616     1  0  80   0 - 335872 pipe_w Jun09 ?       00:01:01 asm_asmb_+ASM2
+0 S gridsp01  4620     1  0  80   0 - 334927 semtim Jun09 ?       00:03:57 oracle+ASM2_asmb_+asm2 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+0 S gridsp01  4681  4232  0  80   0 - 23466 poll_s Jun09 ?        00:00:00 /u01/app/bin/evmlogger.bin -o /u01/app/evm/log/evmlogger.info -l /u01/app/evm/log/evmlogger.log
+4 S gridsp01  4722     1  0  80   0 - 92183 futex_ Jun09 ?        01:50:04 /u01/app/bin/oraagent.bin
+4 S root      4726     1  0  80   0 - 86081 futex_ Jun09 ?        03:01:33 /u01/app/bin/orarootagent.bin
+0 S gridsp01  4787     1  0  80   0 - 334912 pipe_w Jun09 ?       00:00:06 oracle+ASM2 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+0 S gridsp01  4796     1  0  80   0 - 334784 pipe_w Jun09 ?       00:00:05 oracle+ASM2 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+0 S gridsp01  4807     1  0  80   0 - 334784 pipe_w Jun09 ?       00:00:05 oracle+ASM2 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+1 S gridsp01  4888     1  0  80   0 - 15688 wait   Jun09 ?        00:00:00 /u01/app/opmn/bin/ons -d
+1 S gridsp01  4889  4888  0  80   0 - 35217 futex_ Jun09 ?        00:26:39 /u01/app/opmn/bin/ons -d
+0 S gridsp01  4922     1  0  80   0 - 22358 poll_s Jun09 ?        00:02:47 /u01/app/bin/tnslsnr LISTENER -inherit
+0 S orasp01   5886     1  0  80   0 - 3994576 poll_s Jun09 ?      00:16:37 ora_pmon_sp012
+0 S orasp01   5890     1  0  80   0 - 3993435 semtim Jun09 ?      00:09:37 ora_psp0_sp012
+0 S orasp01   5894     1  2  58   - - 3992919 hrtime Jun09 ?      12:18:33 ora_vktm_sp012
+0 S orasp01   5900     1  0  80   0 - 3993340 semtim Jun09 ?      00:01:46 ora_gen0_sp012
+0 S orasp01   5904     1  0  80   0 - 3994485 poll_s Jun09 ?      00:31:50 ora_diag_sp012
+0 S orasp01   5908     1  0  80   0 - 3994869 semtim Jun09 ?      00:02:53 ora_dbrm_sp012
+0 S orasp01   5912     1  0  80   0 - 3992919 poll_s Jun09 ?      00:04:17 ora_ping_sp012
+0 S orasp01   5916     1  0  80   0 - 3992919 semtim Jun09 ?      00:01:22 ora_acms_sp012
+0 S orasp01   5920     1  0  80   0 - 3995228 poll_s Jun09 ?      01:46:54 ora_dia0_sp012
+0 S orasp01   5924     1  0  80   0 - 3996570 asm_ma Jun09 ?      02:11:04 ora_lmon_sp012
+0 S orasp01   5928     1  0  80   0 - 3997699 poll_s Jun09 ?      02:18:11 ora_lmd0_sp012
+0 S orasp01   5932     1  0  58   - - 4043735 poll_s Jun09 ?      04:15:42 ora_lms0_sp012
+0 S orasp01   5938     1  0  58   - - 4043671 poll_s Jun09 ?      04:19:33 ora_lms1_sp012
+0 S orasp01   5944     1  0  80   0 - 3992919 semtim Jun09 ?      00:01:22 ora_rms0_sp012
+0 S orasp01   5948     1  0  80   0 - 3993068 semtim Jun09 ?      00:02:43 ora_lmhb_sp012
+0 S orasp01   5953     1  0  80   0 - 3992919 semtim Jun09 ?      00:37:20 ora_mman_sp012
+0 S orasp01   5957     1  0  80   0 - 3996815 semtim Jun09 ?      00:10:46 ora_dbw0_sp012
+0 S orasp01   5961     1  0  80   0 - 3996815 semtim Jun09 ?      00:10:23 ora_dbw1_sp012
+0 S orasp01   5965     1  0  80   0 - 3996815 semtim Jun09 ?      00:10:22 ora_dbw2_sp012
+0 S orasp01   5984     1  0  80   0 - 3996815 semtim Jun09 ?      00:10:19 ora_dbw3_sp012
+0 S orasp01   5988     1  0  80   0 - 3999627 semtim Jun09 ?      00:30:34 ora_lgwr_sp012
+0 S orasp01   5992     1  0  80   0 - 3995036 semtim Jun09 ?      00:14:26 ora_ckpt_sp012
+0 S orasp01   5996     1  0  80   0 - 3996139 semtim Jun09 ?      00:12:21 ora_smon_sp012
+0 S orasp01   6000     1  0  80   0 - 3994091 semtim Jun09 ?      00:00:47 ora_reco_sp012
+0 S orasp01   6004     1  0  80   0 - 3993584 semtim Jun09 ?      00:01:41 ora_rbal_sp012
+0 S orasp01   6008     1  0  80   0 - 3994437 pipe_w Jun09 ?      00:01:21 ora_asmb_sp012
+0 S orasp01   6012     1  0  80   0 - 3996109 semtim Jun09 ?      00:25:30 ora_mmon_sp012
+0 S orasp01   6016     1  0  80   0 - 3994130 semtim Jun09 ?      00:23:46 ora_mmnl_sp012
+0 S gridsp01  6018     1  0  80   0 - 334927 semtim Jun09 ?       00:04:09 oracle+ASM2_asmb_sp012 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+0 S orasp01   6024     1  0  80   0 - 3994477 poll_s Jun09 ?      00:00:34 ora_d000_sp012
+0 S orasp01   6028     1  0  80   0 - 3993218 poll_s Jun09 ?      00:00:32 ora_s000_sp012
+0 S orasp01   6032     1  0  80   0 - 3994846 semtim Jun09 ?      00:02:27 ora_mark_sp012
+0 S orasp01   6053     1  0  80   0 - 3999079 poll_s Jun09 ?      02:43:38 ora_lck0_sp012
+0 S orasp01   6057     1  0  80   0 - 3994423 poll_s Jun09 ?      00:03:14 ora_rsmn_sp012
+4 S orasp01   6061     1  0  80   0 - 87309 futex_ Jun09 ?        02:50:33 /u01/app/bin/oraagent.bin
+0 S orasp01   6126     1  0  80   0 - 4009760 semtim Jun09 ?      00:01:37 ora_arc0_sp012
+0 S orasp01   6134     1  0  80   0 - 4005664 semtim Jun09 ?      00:02:14 ora_arc1_sp012
+0 S orasp01   6138     1  0  80   0 - 3999371 semtim Jun09 ?      00:01:31 ora_arc2_sp012
+0 S orasp01   6142     1  0  80   0 - 4005664 semtim Jun09 ?      00:01:36 ora_arc3_sp012
+0 S orasp01   6146     1  0  80   0 - 3992919 semtim Jun09 ?      00:01:38 ora_gtx0_sp012
+0 S orasp01   6154     1  0  80   0 - 3992919 poll_s Jun09 ?      00:01:55 ora_qmnc_sp012
+0 S orasp01   6163     1  0  80   0 - 3994420 pipe_w Jun09 ?      00:00:00 oraclesp012 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+0 S orasp01   6191     1  0  80   0 - 3995130 semtim Jun09 ?      00:15:10 ora_cjq0_sp012
+0 S orasp01   6195     1  0  80   0 - 3993558 semtim Jun09 ?      00:00:32 ora_q000_sp012
+0 S orasp01   6199     1  0  80   0 - 3992918 semtim Jun09 ?      00:00:32 ora_q001_sp012
+0 S orasp01   6203     1  0  80   0 - 3992918 semtim Jun09 ?      00:00:32 ora_q002_sp012
+0 S orasp01   6208     1  0  80   0 - 3992918 semtim Jun09 ?      00:00:32 ora_q003_sp012
+5 S orasp01   7098  2809  0  80   0 - 25517 pipe_w 06:45 ?        00:00:00 crond
+0 S orasp01   7108  7098  0  80   0 -  2192 wait   06:45 ?        00:00:00 /bin/sh -c sh /home/orasp01/alert/SMS/cluster_check.sh >> /dev/null 2>&1
+0 S orasp01   7119  7108  0  80   0 -  2193 wait   06:45 ?        00:00:00 sh /home/orasp01/alert/SMS/cluster_check.sh
+0 S orasp01   7766     1  0  80   0 - 3992919 semtim Jun09 ?      00:01:59 ora_smco_sp012
+0 S orasp01   7904     1  0  80   0 - 3993302 semtim 06:49 ?      00:00:00 ora_q007_sp012
+0 S orasp01   8762     1  3  80   0 - 3995572 sk_wai 10:17 ?      00:01:43 oraclesp012 (LOCAL=NO)
+0 S orasp01   9033     1  0  80   0 - 3996175 sk_wai 10:19 ?      00:00:05 oraclesp012 (LOCAL=NO)
+0 S orasp01   9636     1  0  80   0 - 3993858 sk_wai 10:23 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01   9645     1  0  80   0 - 3997125 sk_wai 10:23 ?      00:00:10 oraclesp012 (LOCAL=NO)
+0 S orasp01   9719     1  0  80   0 - 3993046 semtim 10:24 ?      00:00:00 ora_w002_sp012
+0 S orasp01   9804     1  0  80   0 - 4002575 sk_wai 10:24 ?      00:00:22 oraclesp012 (LOCAL=NO)
+0 S orasp01   9887     1  0  80   0 - 3993602 sk_wai 10:25 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01   9973     1  5  80   0 - 4006337 sk_wai 10:25 ?      00:02:37 oraclesp012 (LOCAL=NO)
+0 S orasp01   9980     1  0  80   0 - 3994339 semtim 10:25 ?      00:00:04 ora_o000_sp012
+0 S gridsp01  9984     1  0  80   0 - 335527 pipe_w 10:25 ?       00:00:00 oracle+ASM2_o000_sp012 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+0 S orasp01   9988     1  0  80   0 - 3996612 sk_wai 10:25 ?      00:00:01 oraclesp012 (LOCAL=NO)
+0 S orasp01  10016     1  0  80   0 - 3996612 sk_wai 10:26 ?      00:00:03 oraclesp012 (LOCAL=NO)
+0 S orasp01  10145     1  0  80   0 - 3996428 sk_wai 10:26 ?      00:00:05 oraclesp012 (LOCAL=NO)
+0 S orasp01  10149     1  0  80   0 - 3998677 sk_wai 10:26 ?      00:00:12 oraclesp012 (LOCAL=NO)
+0 S orasp01  10298     1  0  80   0 - 3994891 sk_wai 10:27 ?      00:00:02 oraclesp012 (LOCAL=NO)
+0 S orasp01  10498     1  0  80   0 - 3996611 sk_wai 10:29 ?      00:00:12 oraclesp012 (LOCAL=NO)
+0 S orasp01  10539     1  0  80   0 - 3996611 sk_wai 10:29 ?      00:00:04 oraclesp012 (LOCAL=NO)
+0 S orasp01  10764     1  0  80   0 - 3998485 sk_wai 10:30 ?      00:00:25 oraclesp012 (LOCAL=NO)
+0 S orasp01  11746     1  1  80   0 - 3994897 sk_wai 10:36 ?      00:00:24 oraclesp012 (LOCAL=NO)
+0 S orasp01  11754     1  0  80   0 - 3996613 sk_wai 10:36 ?      00:00:02 oraclesp012 (LOCAL=NO)
+0 S orasp01  11900     1  0  80   0 - 3996971 sk_wai 10:37 ?      00:00:13 oraclesp012 (LOCAL=NO)
+0 S orasp01  12127     1  1  80   0 - 3994902 sk_wai 10:39 ?      00:00:21 oraclesp012 (LOCAL=NO)
+0 S orasp01  12135     1  1  80   0 - 3994902 sk_wai 10:39 ?      00:00:25 oraclesp012 (LOCAL=NO)
+0 S orasp01  12298     1  0  80   0 - 3995033 sk_wai 10:40 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  12983     1  0  80   0 - 3997132 sk_wai 10:45 ?      00:00:03 oraclesp012 (LOCAL=NO)
+5 S orasp01  13003  2809  0  80   0 - 25517 pipe_w 10:45 ?        00:00:00 crond
+5 S orasp01  13005  2809  0  80   0 - 25517 pipe_w 10:45 ?        00:00:00 crond
+0 S orasp01  13013 13003  0  80   0 -  2192 wait   10:45 ?        00:00:00 /bin/sh -c sh /home/orasp01/alert/SMS/LSNR_SMS_chk.sh >> /dev/null 2>&1
+0 S orasp01  13015 13005  0  80   0 -  2192 wait   10:45 ?        00:00:00 /bin/sh -c sh /home/orasp01/alert/SMS/cluster_check.sh >> /dev/null 2>&1
+0 S orasp01  13022 13013  0  80   0 -  2194 wait   10:45 ?        00:00:00 sh /home/orasp01/alert/SMS/LSNR_SMS_chk.sh
+0 S orasp01  13028 13015  0  80   0 -  2193 wait   10:45 ?        00:00:00 sh /home/orasp01/alert/SMS/cluster_check.sh
+0 S orasp01  13069 13028  0  80   0 - 10590 inet_w 10:45 ?        00:00:00 wget --no-check-certificate http://mobiprom.com/smsclient/pushsms.jsp?user=CL20640&password=XGFz5Hw&message=CRSD pro
+0 S orasp01  13134 13022  0  80   0 - 10590 inet_w 10:45 ?        00:00:00 wget --no-check-certificate http://mobiprom.com/smsclient/pushsms.jsp?user=CL20640&password=XGFz5Hw&message=LSNR pro
+0 S orasp01  13352     1  0  80   0 - 3996100 sk_wai 10:46 ?      00:00:03 oraclesp012 (LOCAL=NO)
+0 S orasp01  13523     1  0  80   0 - 3993602 sk_wai 10:47 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  13527     1  0  80   0 - 3998479 sk_wai 10:47 ?      00:00:05 oraclesp012 (LOCAL=NO)
+0 S orasp01  13697     1  1  80   0 - 3994895 sk_wai 10:48 ?      00:00:19 oraclesp012 (LOCAL=NO)
+0 S orasp01  13767     1  1  80   0 - 3996422 sk_wai 10:48 ?      00:00:16 oraclesp012 (LOCAL=NO)
+0 S orasp01  13773     1  0  80   0 - 3997637 sk_wai 10:48 ?      00:00:01 oraclesp012 (LOCAL=NO)
+0 S orasp01  14167  3051  0  80   0 - 10590 inet_w 10:50 ?        00:00:00 wget --no-check-certificate http://mobiprom.com/smsclient/pushsms.jsp?user=CL20640&password=XGFz5Hw&message=CRSD pro
+0 S orasp01  14168  3043  0  80   0 - 10590 inet_w 10:50 ?        00:00:00 wget --no-check-certificate http://mobiprom.com/smsclient/pushsms.jsp?user=CL20640&password=XGFz5Hw&message=LSNR pro
+0 S orasp01  14332     1  1  80   0 - 3996585 sk_wai 10:51 ?      00:00:25 oraclesp012 (LOCAL=NO)
+0 S orasp01  14555     1  9  80   0 - 4173799 asm_ma 10:53 ?      00:01:58 oraclesp012 (LOCAL=NO)
+0 S orasp01  14564     1  1  80   0 - 3994374 sk_wai 10:53 ?      00:00:12 oraclesp012 (LOCAL=NO)
+0 S orasp01  14647     1  0  80   0 - 3994886 sk_wai 10:53 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  14651     1  1  80   0 - 3995055 sk_wai 10:53 ?      00:00:15 oraclesp012 (LOCAL=NO)
+0 S orasp01  14655     1  1  80   0 - 3994909 sk_wai 10:53 ?      00:00:17 oraclesp012 (LOCAL=NO)
+0 S orasp01  14801     1  0  80   0 - 3996166 sk_wai 10:54 ?      00:00:01 oraclesp012 (LOCAL=NO)
+0 S orasp01  14882     1  0  80   0 - 3996976 sk_wai 10:55 ?      00:00:03 oraclesp012 (LOCAL=NO)
+0 S orasp01  14886     1  0  80   0 - 3997958 sk_wai 10:55 ?      00:00:02 oraclesp012 (LOCAL=NO)
+0 S orasp01  15033 26015  0  80   0 - 10590 inet_w 10:56 ?        00:00:00 wget --no-check-certificate http://mobiprom.com/smsclient/pushsms.jsp?user=CL20640&password=XGFz5Hw&message=CRSD pro
+0 S orasp01  15034 26018  0  80   0 - 10590 inet_w 10:56 ?        00:00:00 wget --no-check-certificate http://mobiprom.com/smsclient/pushsms.jsp?user=CL20640&password=XGFz5Hw&message=LSNR pro
+0 S orasp01  15075     1  0  80   0 - 3995394 sk_wai 10:56 ?      00:00:02 oraclesp012 (LOCAL=NO)
+0 S orasp01  15199     1  0  80   0 - 3996099 sk_wai 10:57 ?      00:00:04 oraclesp012 (LOCAL=NO)
+0 S orasp01  15308     1  0  80   0 - 3992918 semtim 10:58 ?      00:00:00 ora_w000_sp012
+0 S orasp01  15320     1  8  80   0 - 3996443 sk_wai 10:58 ?      00:01:16 oraclesp012 (LOCAL=NO)
+0 S orasp01  15365     1  0  80   0 - 3993302 semtim 10:58 ?      00:00:00 ora_w003_sp012
+0 S orasp01  15400     1  0  80   0 - 3993046 semtim 10:58 ?      00:00:00 ora_w005_sp012
+0 S orasp01  15405     1  0  80   0 - 3992918 semtim 10:58 ?      00:00:00 ora_w001_sp012
+0 S orasp01  15476     1  0  80   0 - 3993046 semtim 10:59 ?      00:00:00 ora_w006_sp012
+0 S orasp01  15485     1  0  80   0 - 3992918 semtim 10:59 ?      00:00:00 ora_w004_sp012
+0 S orasp01  15573     1  2  80   0 - 3996630 sk_wai 10:59 ?      00:00:18 oraclesp012 (LOCAL=NO)
+0 S orasp01  15619     1  1  80   0 - 3996098 sk_wai 10:59 ?      00:00:08 oraclesp012 (LOCAL=NO)
+0 S orasp01  15632     1 11  80   0 - 3997123 sk_wai 11:00 ?      00:01:35 oraclesp012 (LOCAL=NO)
+0 S orasp01  15736     1  2  80   0 - 4007189 sk_wai 11:00 ?      00:00:17 oraclesp012 (LOCAL=NO)
+0 S orasp01  15740     1  9  80   0 - 4005349 sk_wai 11:00 ?      00:01:15 oraclesp012 (LOCAL=NO)
+0 S orasp01  15814     1  0  80   0 - 3993602 sk_wai 11:00 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  15818     1  0  80   0 - 3993346 sk_wai 11:00 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  15822     1  3  80   0 - 3995409 sk_wai 11:00 ?      00:00:28 oraclesp012 (LOCAL=NO)
+0 S orasp01  15826     1 27  80   0 - 3994378 sk_wai 11:00 ?      00:03:33 oraclesp012 (LOCAL=NO)
+0 S orasp01  15984 16729  0  80   0 - 10590 inet_w 11:01 ?        00:00:00 wget --no-check-certificate http://mobiprom.com/smsclient/pushsms.jsp?user=CL20640&password=XGFz5Hw&message=CRSD pro
+0 S orasp01  16145     1  0  80   0 - 3993218 sk_wai 11:02 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  16149     1  1  80   0 - 3994896 sk_wai 11:02 ?      00:00:08 oraclesp012 (LOCAL=NO)
+0 S orasp01  16223     1  0  80   0 - 3996611 sk_wai 11:03 ?      00:00:01 oraclesp012 (LOCAL=NO)
+0 S orasp01  16455     1  0  80   0 - 3992918 semtim 11:04 ?      00:00:00 ora_w007_sp012
+0 S orasp01  16459     1  0  80   0 - 3993218 sk_wai 11:04 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  16471     1  0  80   0 - 3993818 semtim 11:04 ?      00:00:00 ora_w008_sp012
+0 S orasp01  16482     1  0  80   0 - 3992918 semtim 11:04 ?      00:00:00 ora_w009_sp012
+0 S orasp01  16552     1  0  80   0 - 3994886 sk_wai 11:05 ?      00:00:01 oraclesp012 (LOCAL=NO)
+5 S orasp01  16705  2809  0  80   0 - 25517 pipe_w 07:45 ?        00:00:00 crond
+0 S orasp01  16719 16705  0  80   0 -  2192 wait   07:45 ?        00:00:00 /bin/sh -c sh /home/orasp01/alert/SMS/cluster_check.sh >> /dev/null 2>&1
+0 S orasp01  16729 16719  0  80   0 -  2193 wait   07:45 ?        00:00:00 sh /home/orasp01/alert/SMS/cluster_check.sh
+0 S orasp01  16787     1  0  80   0 - 3993346 sk_wai 11:06 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  16791     1  0  80   0 - 3993346 sk_wai 11:06 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  16804     1  4  80   0 - 3995406 sk_wai 11:06 ?      00:00:16 oraclesp012 (LOCAL=NO)
+0 S orasp01  16808     1  4  80   0 - 3996438 sk_wai 11:06 ?      00:00:18 oraclesp012 (LOCAL=NO)
+0 S orasp01  16831  7119  0  80   0 - 10590 inet_w 11:07 ?        00:00:00 wget --no-check-certificate http://mobiprom.com/smsclient/pushsms.jsp?user=CL20640&password=XGFz5Hw&message=CRSD pro
+0 S orasp01  16903     1  0  80   0 - 3993346 sk_wai 11:07 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  16907     1  0  80   0 - 3993602 sk_wai 11:07 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  16991     1  0  80   0 - 3994886 sk_wai 11:08 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  17144     1  3  80   0 - 3994886 sk_wai 11:09 ?      00:00:08 oraclesp012 (LOCAL=NO)
+0 S orasp01  17173     1  0  80   0 - 3993046 poll_s 11:09 ?      00:00:00 ora_pz99_sp012
+0 S orasp01  17489     1  1  80   0 - 3994374 sk_wai 11:11 ?      00:00:01 oraclesp012 (LOCAL=NO)
+4 S root     17492  2710  0  80   0 - 23090 unix_s 11:11 ?        00:00:00 sshd: gridsp01 [priv]
+5 R gridsp01 17496 17492  0  80   0 - 23090 poll_s 11:11 ?        00:00:00 sshd: gridsp01@pts/1
+0 S gridsp01 17497 17496  0  80   0 - 16541 wait   11:11 pts/1    00:00:00 -bash
+0 S orasp01  17502     1  0  80   0 - 3994893 sk_wai Jun27 ?      00:04:36 oraclesp012 (LOCAL=NO)
+0 S orasp01  17765     1  0  80   0 - 3993346 sk_wai 11:12 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  17769     1  0  80   0 - 3993346 sk_wai 11:13 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 R orasp01  17793     1 93  80   0 - 4001026 ?    11:13 ?        00:00:03 oraclesp012 (LOCAL=NO)
+0 R root     17799  3110 99  80   0 -  9699 ?      11:13 ?        00:00:01 /usr/bin/perl /u01/app/tfa/sreikolsefl2/tfa_home/bin/tfactl.pl -check
+0 R gridsp01 17800 17497  0  80   0 - 16422 -      11:13 pts/1    00:00:00 ps -ealf
+1 S root     19435     2  0  80   0 -     0 worker Jun21 ?        00:00:00 [kworker/7:2]
+0 S orasp01  23958     1  0  80   0 - 3993617 sk_wai Jun28 ?      00:00:00 oraclesp012 (LOCAL=NO)
+0 S orasp01  24037     1  0  80   0 - 3993346 sk_wai Jun28 ?      00:00:00 oraclesp012 (LOCAL=NO)
+5 S orasp01  25995  2809  0  80   0 - 25517 pipe_w 08:45 ?        00:00:00 crond
+5 S orasp01  25997  2809  0  80   0 - 25517 pipe_w 08:45 ?        00:00:00 crond
+0 S orasp01  26003 25997  0  80   0 -  2192 wait   08:45 ?        00:00:00 /bin/sh -c sh /home/orasp01/alert/SMS/cluster_check.sh >> /dev/null 2>&1
+0 S orasp01  26008 25995  0  80   0 -  2192 wait   08:45 ?        00:00:00 /bin/sh -c sh /home/orasp01/alert/SMS/LSNR_SMS_chk.sh >> /dev/null 2>&1
+0 S orasp01  26015 26003  0  80   0 -  2193 wait   08:45 ?        00:00:00 sh /home/orasp01/alert/SMS/cluster_check.sh
+0 S orasp01  26018 26008  0  80   0 -  2194 wait   08:45 ?        00:00:00 sh /home/orasp01/alert/SMS/LSNR_SMS_chk.sh
+0 S orasp01  27613     1  0  80   0 - 3997446 sk_wai Jun28 ?      00:00:12 oraclesp012 (LOCAL=NO)
+0 S orasp01  28779     1  0  80   0 - 3996011 sk_wai 09:01 ?      00:00:02 oraclesp012 (LOCAL=NO)
+[gridsp01@sreikolsefl2 ~]$ 

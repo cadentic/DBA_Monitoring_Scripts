@@ -1,0 +1,507 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Tue Jun 7 20:00:01 2016
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+ORACLE_HOME = /u01/rac/product/11.2.0/dbhome_1
+System name:	Linux
+Node name:	sreikolsefl1.srei.com
+Release:	2.6.39-400.247.1.el5uek
+Version:	#1 SMP Thu Feb 5 15:53:28 PST 2015
+Machine:	x86_64
+
+Starting with debugging turned off
+
+connected to target database: SP01 (DBID=1526771045)
+
+RMAN> 
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 10> 11> 12> 13> 14> 15> 
+using target database control file instead of recovery catalog
+allocated channel: e1
+channel e1: SID=481 instance=sp011 device type=DISK
+
+allocated channel: e2
+channel e2: SID=122 instance=sp011 device type=DISK
+
+allocated channel: e3
+channel e3: SID=224 instance=sp011 device type=DISK
+
+allocated channel: e4
+channel e4: SID=326 instance=sp011 device type=DISK
+
+RMAN retention policy will be applied to the command
+RMAN retention policy is set to redundancy 1
+no obsolete backups found
+
+List of Archived Log Copies for database with db_unique_name SP01
+=====================================================================
+
+Key     Thrd Seq     S Low Time 
+------- ---- ------- - ---------
+32      1    15      X 07-JUN-16
+        Name: +LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_15.308.913882119
+
+33      1    16      X 07-JUN-16
+        Name: +LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_16.291.913882461
+
+34      1    17      X 07-JUN-16
+        Name: +LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_17.315.913882769
+
+35      1    18      X 07-JUN-16
+        Name: +LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_18.302.913882833
+
+37      1    19      X 07-JUN-16
+        Name: +LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_19.267.913884601
+
+38      1    20      X 07-JUN-16
+        Name: +LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_20.328.913884943
+
+30      2    16      X 07-JUN-16
+        Name: +LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_16.265.913881685
+
+31      2    17      X 07-JUN-16
+        Name: +LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_17.403.913882069
+
+36      2    18      X 07-JUN-16
+        Name: +LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_18.272.913882835
+
+deleted archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_15.308.913882119 RECID=32 STAMP=913882461
+deleted archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_16.291.913882461 RECID=33 STAMP=913882462
+deleted archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_17.315.913882769 RECID=34 STAMP=913882832
+deleted archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_18.302.913882833 RECID=35 STAMP=913882833
+deleted archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_19.267.913884601 RECID=37 STAMP=913884942
+deleted archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_20.328.913884943 RECID=38 STAMP=913884943
+deleted archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_16.265.913881685 RECID=30 STAMP=913881685
+deleted archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_17.403.913882069 RECID=31 STAMP=913882069
+deleted archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_18.272.913882835 RECID=36 STAMP=913882834
+Deleted 9 EXPIRED objects
+
+
+
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_38.271.913917953 RECID=77 STAMP=913917953
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_39.303.913918617 RECID=81 STAMP=913918617
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_40.301.913918895 RECID=83 STAMP=913918895
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_41.328.913919541 RECID=87 STAMP=913919541
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_42.302.913919885 RECID=88 STAMP=913919886
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_43.308.913920741 RECID=92 STAMP=913920742
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_44.294.913921155 RECID=93 STAMP=913921155
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_45.398.913923017 RECID=97 STAMP=913923017
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_46.295.913924395 RECID=101 STAMP=913924395
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_47.259.913924409 RECID=106 STAMP=913924409
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_48.412.913924425 RECID=110 STAMP=913924424
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_49.297.913924443 RECID=114 STAMP=913924442
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_50.292.913924463 RECID=118 STAMP=913924463
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_51.300.913924485 RECID=122 STAMP=913924484
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_52.309.913924503 RECID=126 STAMP=913924502
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_53.374.913924521 RECID=130 STAMP=913924520
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_54.346.913924539 RECID=134 STAMP=913924538
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_55.368.913924561 RECID=138 STAMP=913924560
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_38.279.913917811 RECID=75 STAMP=913917810
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_39.277.913917945 RECID=76 STAMP=913917946
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_40.281.913918157 RECID=78 STAMP=913918158
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_41.314.913918451 RECID=79 STAMP=913918450
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_42.264.913918615 RECID=80 STAMP=913918616
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_43.316.913918795 RECID=82 STAMP=913918796
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_44.334.913918983 RECID=84 STAMP=913918982
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_45.265.913919163 RECID=85 STAMP=913919163
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_46.403.913919537 RECID=86 STAMP=913919538
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_47.272.913919949 RECID=89 STAMP=913919949
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_48.315.913920223 RECID=90 STAMP=913920222
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_49.267.913920739 RECID=91 STAMP=913920739
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_50.269.913921205 RECID=94 STAMP=913921204
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_51.327.913921925 RECID=95 STAMP=913921924
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_52.278.913923013 RECID=96 STAMP=913923014
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_53.266.913924227 RECID=98 STAMP=913924226
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_54.285.913924391 RECID=99 STAMP=913924390
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_55.311.913924393 RECID=100 STAMP=913924394
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_56.331.913924397 RECID=102 STAMP=913924397
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_57.284.913924401 RECID=103 STAMP=913924400
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_58.298.913924403 RECID=104 STAMP=913924404
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_59.411.913924407 RECID=105 STAMP=913924407
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_60.409.913924411 RECID=107 STAMP=913924410
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_61.275.913924413 RECID=108 STAMP=913924413
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_62.304.913924419 RECID=109 STAMP=913924419
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_63.410.913924427 RECID=111 STAMP=913924426
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_64.296.913924431 RECID=112 STAMP=913924432
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_65.332.913924439 RECID=113 STAMP=913924439
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_66.355.913924445 RECID=115 STAMP=913924444
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_67.280.913924453 RECID=116 STAMP=913924452
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_68.322.913924459 RECID=117 STAMP=913924458
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_69.274.913924467 RECID=119 STAMP=913924466
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_70.323.913924473 RECID=120 STAMP=913924472
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_71.347.913924479 RECID=121 STAMP=913924478
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_72.336.913924485 RECID=123 STAMP=913924485
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_73.312.913924491 RECID=124 STAMP=913924491
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_74.262.913924497 RECID=125 STAMP=913924497
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_75.317.913924503 RECID=127 STAMP=913924503
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_76.388.913924509 RECID=128 STAMP=913924509
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_77.380.913924515 RECID=129 STAMP=913924516
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_78.377.913924521 RECID=131 STAMP=913924522
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_79.384.913924529 RECID=132 STAMP=913924528
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_80.376.913924535 RECID=133 STAMP=913924534
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_81.373.913924541 RECID=135 STAMP=913924541
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_82.379.913924549 RECID=136 STAMP=913924549
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_83.372.913924555 RECID=137 STAMP=913924556
+validation succeeded for archived log
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_84.369.913924565 RECID=139 STAMP=913924565
+Crosschecked 65 objects
+
+
+
+Starting backup at 07-JUN-16
+current log archived
+channel e1: starting compressed archived log backup set
+channel e1: specifying archived log(s) in backup set
+input archived log thread=2 sequence=38 RECID=75 STAMP=913917810
+input archived log thread=1 sequence=38 RECID=77 STAMP=913917953
+input archived log thread=2 sequence=39 RECID=76 STAMP=913917946
+input archived log thread=2 sequence=40 RECID=78 STAMP=913918158
+input archived log thread=1 sequence=39 RECID=81 STAMP=913918617
+input archived log thread=2 sequence=41 RECID=79 STAMP=913918450
+input archived log thread=2 sequence=42 RECID=80 STAMP=913918616
+input archived log thread=2 sequence=43 RECID=82 STAMP=913918796
+input archived log thread=1 sequence=40 RECID=83 STAMP=913918895
+input archived log thread=2 sequence=44 RECID=84 STAMP=913918982
+input archived log thread=1 sequence=41 RECID=87 STAMP=913919541
+input archived log thread=2 sequence=45 RECID=85 STAMP=913919163
+input archived log thread=2 sequence=46 RECID=86 STAMP=913919538
+input archived log thread=2 sequence=47 RECID=89 STAMP=913919949
+input archived log thread=1 sequence=42 RECID=88 STAMP=913919886
+input archived log thread=1 sequence=43 RECID=92 STAMP=913920742
+channel e1: starting piece 1 at 07-JUN-16
+channel e2: starting compressed archived log backup set
+channel e2: specifying archived log(s) in backup set
+input archived log thread=2 sequence=48 RECID=90 STAMP=913920222
+input archived log thread=2 sequence=49 RECID=91 STAMP=913920739
+input archived log thread=2 sequence=50 RECID=94 STAMP=913921204
+input archived log thread=1 sequence=44 RECID=93 STAMP=913921155
+input archived log thread=1 sequence=45 RECID=97 STAMP=913923017
+input archived log thread=2 sequence=51 RECID=95 STAMP=913921924
+input archived log thread=2 sequence=52 RECID=96 STAMP=913923014
+input archived log thread=2 sequence=53 RECID=98 STAMP=913924226
+input archived log thread=1 sequence=46 RECID=101 STAMP=913924395
+input archived log thread=2 sequence=54 RECID=99 STAMP=913924390
+input archived log thread=2 sequence=55 RECID=100 STAMP=913924394
+input archived log thread=2 sequence=56 RECID=102 STAMP=913924397
+input archived log thread=1 sequence=47 RECID=106 STAMP=913924409
+input archived log thread=2 sequence=57 RECID=103 STAMP=913924400
+input archived log thread=2 sequence=58 RECID=104 STAMP=913924404
+input archived log thread=2 sequence=59 RECID=105 STAMP=913924407
+input archived log thread=2 sequence=60 RECID=107 STAMP=913924410
+channel e2: starting piece 1 at 07-JUN-16
+channel e3: starting compressed archived log backup set
+channel e3: specifying archived log(s) in backup set
+input archived log thread=1 sequence=48 RECID=110 STAMP=913924424
+input archived log thread=2 sequence=61 RECID=108 STAMP=913924413
+input archived log thread=2 sequence=62 RECID=109 STAMP=913924419
+input archived log thread=2 sequence=63 RECID=111 STAMP=913924426
+input archived log thread=1 sequence=49 RECID=114 STAMP=913924442
+input archived log thread=2 sequence=64 RECID=112 STAMP=913924432
+input archived log thread=2 sequence=65 RECID=113 STAMP=913924439
+input archived log thread=2 sequence=66 RECID=115 STAMP=913924444
+input archived log thread=1 sequence=50 RECID=118 STAMP=913924463
+input archived log thread=2 sequence=67 RECID=116 STAMP=913924452
+input archived log thread=2 sequence=68 RECID=117 STAMP=913924458
+input archived log thread=2 sequence=69 RECID=119 STAMP=913924466
+input archived log thread=1 sequence=51 RECID=122 STAMP=913924484
+input archived log thread=2 sequence=70 RECID=120 STAMP=913924472
+input archived log thread=2 sequence=71 RECID=121 STAMP=913924478
+input archived log thread=2 sequence=72 RECID=123 STAMP=913924485
+input archived log thread=1 sequence=52 RECID=126 STAMP=913924502
+channel e3: starting piece 1 at 07-JUN-16
+channel e4: starting compressed archived log backup set
+channel e4: specifying archived log(s) in backup set
+input archived log thread=2 sequence=73 RECID=124 STAMP=913924491
+input archived log thread=2 sequence=74 RECID=125 STAMP=913924497
+input archived log thread=2 sequence=75 RECID=127 STAMP=913924503
+input archived log thread=1 sequence=53 RECID=130 STAMP=913924520
+input archived log thread=2 sequence=76 RECID=128 STAMP=913924509
+input archived log thread=2 sequence=77 RECID=129 STAMP=913924516
+input archived log thread=2 sequence=78 RECID=131 STAMP=913924522
+input archived log thread=1 sequence=54 RECID=134 STAMP=913924538
+input archived log thread=2 sequence=79 RECID=132 STAMP=913924528
+input archived log thread=2 sequence=80 RECID=133 STAMP=913924534
+input archived log thread=2 sequence=81 RECID=135 STAMP=913924541
+input archived log thread=1 sequence=55 RECID=138 STAMP=913924560
+input archived log thread=2 sequence=82 RECID=136 STAMP=913924549
+input archived log thread=2 sequence=83 RECID=137 STAMP=913924556
+input archived log thread=2 sequence=84 RECID=139 STAMP=913924565
+input archived log thread=1 sequence=56 RECID=141 STAMP=913924818
+input archived log thread=2 sequence=85 RECID=140 STAMP=913924815
+channel e4: starting piece 1 at 07-JUN-16
+channel e3: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0jr7iomr_19_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e3: backup set complete, elapsed time: 00:00:56
+channel e3: deleting archived log(s)
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_48.412.913924425 RECID=110 STAMP=913924424
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_61.275.913924413 RECID=108 STAMP=913924413
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_62.304.913924419 RECID=109 STAMP=913924419
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_63.410.913924427 RECID=111 STAMP=913924426
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_49.297.913924443 RECID=114 STAMP=913924442
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_64.296.913924431 RECID=112 STAMP=913924432
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_65.332.913924439 RECID=113 STAMP=913924439
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_66.355.913924445 RECID=115 STAMP=913924444
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_50.292.913924463 RECID=118 STAMP=913924463
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_67.280.913924453 RECID=116 STAMP=913924452
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_68.322.913924459 RECID=117 STAMP=913924458
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_69.274.913924467 RECID=119 STAMP=913924466
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_51.300.913924485 RECID=122 STAMP=913924484
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_70.323.913924473 RECID=120 STAMP=913924472
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_71.347.913924479 RECID=121 STAMP=913924478
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_72.336.913924485 RECID=123 STAMP=913924485
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_52.309.913924503 RECID=126 STAMP=913924502
+channel e3: starting compressed archived log backup set
+channel e3: specifying archived log(s) in backup set
+input archived log thread=2 sequence=86 RECID=142 STAMP=913924822
+channel e3: starting piece 1 at 07-JUN-16
+channel e4: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0kr7iomr_20_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e4: backup set complete, elapsed time: 00:05:11
+channel e4: deleting archived log(s)
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_73.312.913924491 RECID=124 STAMP=913924491
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_74.262.913924497 RECID=125 STAMP=913924497
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_75.317.913924503 RECID=127 STAMP=913924503
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_53.374.913924521 RECID=130 STAMP=913924520
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_76.388.913924509 RECID=128 STAMP=913924509
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_77.380.913924515 RECID=129 STAMP=913924516
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_78.377.913924521 RECID=131 STAMP=913924522
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_54.346.913924539 RECID=134 STAMP=913924538
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_79.384.913924529 RECID=132 STAMP=913924528
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_80.376.913924535 RECID=133 STAMP=913924534
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_81.373.913924541 RECID=135 STAMP=913924541
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_55.368.913924561 RECID=138 STAMP=913924560
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_82.379.913924549 RECID=136 STAMP=913924549
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_83.372.913924555 RECID=137 STAMP=913924556
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_84.369.913924565 RECID=139 STAMP=913924565
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_56.371.913924819 RECID=141 STAMP=913924818
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_85.375.913924815 RECID=140 STAMP=913924815
+channel e1: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0hr7iomq_17_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e1: backup set complete, elapsed time: 00:09:28
+channel e1: deleting archived log(s)
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_38.279.913917811 RECID=75 STAMP=913917810
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_38.271.913917953 RECID=77 STAMP=913917953
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_39.277.913917945 RECID=76 STAMP=913917946
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_40.281.913918157 RECID=78 STAMP=913918158
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_39.303.913918617 RECID=81 STAMP=913918617
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_41.314.913918451 RECID=79 STAMP=913918450
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_42.264.913918615 RECID=80 STAMP=913918616
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_43.316.913918795 RECID=82 STAMP=913918796
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_40.301.913918895 RECID=83 STAMP=913918895
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_44.334.913918983 RECID=84 STAMP=913918982
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_41.328.913919541 RECID=87 STAMP=913919541
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_45.265.913919163 RECID=85 STAMP=913919163
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_46.403.913919537 RECID=86 STAMP=913919538
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_47.272.913919949 RECID=89 STAMP=913919949
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_42.302.913919885 RECID=88 STAMP=913919886
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_43.308.913920741 RECID=92 STAMP=913920742
+channel e2: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0ir7iomr_18_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e2: backup set complete, elapsed time: 00:09:29
+channel e2: deleting archived log(s)
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_48.315.913920223 RECID=90 STAMP=913920222
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_49.267.913920739 RECID=91 STAMP=913920739
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_50.269.913921205 RECID=94 STAMP=913921204
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_44.294.913921155 RECID=93 STAMP=913921155
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_45.398.913923017 RECID=97 STAMP=913923017
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_51.327.913921925 RECID=95 STAMP=913921924
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_52.278.913923013 RECID=96 STAMP=913923014
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_53.266.913924227 RECID=98 STAMP=913924226
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_46.295.913924395 RECID=101 STAMP=913924395
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_54.285.913924391 RECID=99 STAMP=913924390
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_55.311.913924393 RECID=100 STAMP=913924394
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_56.331.913924397 RECID=102 STAMP=913924397
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_47.259.913924409 RECID=106 STAMP=913924409
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_57.284.913924401 RECID=103 STAMP=913924400
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_58.298.913924403 RECID=104 STAMP=913924404
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_59.411.913924407 RECID=105 STAMP=913924407
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_60.409.913924411 RECID=107 STAMP=913924410
+channel e3: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0lr7ip0j_21_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e3: backup set complete, elapsed time: 00:04:20
+channel e3: deleting archived log(s)
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_86.404.913924821 RECID=142 STAMP=913924822
+Finished backup at 07-JUN-16
+
+Starting backup at 07-JUN-16
+channel e1: starting compressed full datafile backup set
+channel e1: specifying datafile(s) in backup set
+input datafile file number=00003 name=+SEFLDATA/sp01/datafile/sefpllive_02.dbf
+input datafile file number=00016 name=+LOGARCH/sp01/datafile/sefpllive_09.dbf
+input datafile file number=00007 name=+SEFLDATA/sp01/datafile/undotbs03.dbf
+input datafile file number=00014 name=+SEFLDATA/sp01/datafile/sefpllive_07.dbf
+channel e1: starting piece 1 at 07-JUN-16
+channel e2: starting compressed full datafile backup set
+channel e2: specifying datafile(s) in backup set
+input datafile file number=00013 name=+LOGARCH/sp01/datafile/sefpllive_06.dbf
+input datafile file number=00015 name=+LOGARCH/sp01/datafile/sefpllive_08.dbf
+input datafile file number=00010 name=+SEFLDATA/sp01/datafile/undotbs04.dbf
+channel e2: starting piece 1 at 07-JUN-16
+channel e3: starting compressed full datafile backup set
+channel e3: specifying datafile(s) in backup set
+input datafile file number=00012 name=+LOGARCH/sp01/datafile/sefpllive_05.dbf
+input datafile file number=00006 name=+SEFLDATA/sp01/datafile/sefpllive_01.dbf
+input datafile file number=00008 name=+SEFLDATA/sp01/datafile/sefpllivereports_01.dbf
+input datafile file number=00017 name=+LOGARCH/sp01/datafile/sefpllive_10.dbf
+input datafile file number=00005 name=+SEFLDATA/sp01/datafile/users.279.913866861
+channel e3: starting piece 1 at 07-JUN-16
+channel e4: starting compressed full datafile backup set
+channel e4: specifying datafile(s) in backup set
+input datafile file number=00011 name=+LOGARCH/sp01/datafile/sefpllive_04.dbf
+input datafile file number=00004 name=+SEFLDATA/sp01/datafile/sefpllive_03.dbf
+input datafile file number=00009 name=+SEFLDATA/sp01/datafile/sefpllive_rpt_readonly_01.dbf
+input datafile file number=00001 name=+SEFLDATA/sp01/datafile/system.262.913866833
+input datafile file number=00002 name=+SEFLDATA/sp01/datafile/sysaux.266.913866841
+channel e4: starting piece 1 at 07-JUN-16
+channel e2: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0nr7ip8p_23_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e2: backup set complete, elapsed time: 00:48:16
+channel e2: starting compressed full datafile backup set
+channel e2: specifying datafile(s) in backup set
+including current control file in backup set
+channel e2: starting piece 1 at 07-JUN-16
+channel e2: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0qr7is3a_26_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e2: backup set complete, elapsed time: 00:00:01
+channel e2: starting compressed full datafile backup set
+channel e2: specifying datafile(s) in backup set
+including current SPFILE in backup set
+channel e2: starting piece 1 at 07-JUN-16
+channel e2: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0rr7is3d_27_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e2: backup set complete, elapsed time: 00:00:01
+channel e4: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0pr7ip8q_25_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e4: backup set complete, elapsed time: 00:50:14
+channel e3: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0or7ip8q_24_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e3: backup set complete, elapsed time: 00:51:04
+channel e1: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0mr7ip8p_22_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e1: backup set complete, elapsed time: 00:55:15
+Finished backup at 07-JUN-16
+
+Starting backup at 07-JUN-16
+current log archived
+channel e1: starting compressed archived log backup set
+channel e1: specifying archived log(s) in backup set
+input archived log thread=1 sequence=57 RECID=143 STAMP=913928717
+channel e1: starting piece 1 at 07-JUN-16
+channel e2: starting compressed archived log backup set
+channel e2: specifying archived log(s) in backup set
+input archived log thread=2 sequence=87 RECID=144 STAMP=913928718
+channel e2: starting piece 1 at 07-JUN-16
+channel e2: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0tr7isgh_29_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e2: backup set complete, elapsed time: 00:00:01
+channel e2: deleting archived log(s)
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_2_seq_87.371.913928717 RECID=144 STAMP=913928718
+channel e1: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/BackupSP01_DB_0sr7isgh_28_1_20160607.bkp tag=FULL_SP01_BACKUP comment=NONE
+channel e1: backup set complete, elapsed time: 00:00:03
+channel e1: deleting archived log(s)
+archived log file name=+LOGARCH/sp01/archivelog/2016_06_07/thread_1_seq_57.375.913928717 RECID=143 STAMP=913928717
+Finished backup at 07-JUN-16
+
+Starting backup at 07-JUN-16
+channel e1: starting full datafile backup set
+channel e1: specifying datafile(s) in backup set
+including current control file in backup set
+channel e1: starting piece 1 at 07-JUN-16
+channel e1: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/controlfile_0ur7isgl_1_1_07.bkp tag=TAG20160607T210525 comment=NONE
+channel e1: backup set complete, elapsed time: 00:00:01
+Finished backup at 07-JUN-16
+
+Starting backup at 07-JUN-16
+channel e1: starting full datafile backup set
+channel e1: specifying datafile(s) in backup set
+including current SPFILE in backup set
+channel e1: starting piece 1 at 07-JUN-16
+channel e1: finished piece 1 at 07-JUN-16
+piece handle=/newdump/filesystems/SP01/rmanbackup/spfile_0vr7isgn_1_1_07.bkp tag=TAG20160607T210527 comment=NONE
+channel e1: backup set complete, elapsed time: 00:00:01
+Finished backup at 07-JUN-16
+
+specification does not match any archived log in the repository
+released channel: e1
+released channel: e2
+released channel: e3
+released channel: e4
+
+RMAN> 
+
+Recovery Manager complete.

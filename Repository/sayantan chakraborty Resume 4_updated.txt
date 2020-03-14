@@ -1,0 +1,155 @@
+﻿
+SAYANTAN CHAKRABORTY
+
+Manashbhumi,manikpur
+kolkata, WB 700079
+Phone: +913325129929
+Cell: +918420654737
+E-Mail: sayantan.chakraborty.032016@gmail.com
+
+            https://www.linkedin.com/in/csayantan
+
+            http://www.beyond.com/csayantan
+
+            https://csayantan.wordpress.com
+
+        Objective
+
+        To work in a progressive organization which can expand all my knowledge 
+and provided me exciting opportunities to utilize my skills and 
+qualification to produce result fidelity
+
+Professional Summary
+
+An ambitious, self-motivated individual who has necessary information technology skills, 
+personal attributes & having more than 4 years of information technology experience. A proven 
+track record of bringing value to a Business, as well as possessing 
+valuable customer facing skills and an agile technical mind that is able
+ to come up with innovative technological solutions to 
+seemingly intractable problems.
+
+Astute oracle
+professional in Database
+management and E-Business Suite management  in
+reputed organization. 
+
+Skills
+
+oracle apps versions 11i , R12
+cloning 
+patching
+maintenance activities of oracle apps and performances
+Real Application Cluster 11gR2
+
+oracle 9i
+and   10g,11GR1 Database , recovery manger , performance Tuning
+backup And recovery
+data guard installations
+
+Work History
+
+June 2016 to till date
+Skilliantech India Ltd.
+Software Engeneer
+
+I was hired for srei project for maintaining four production Real Application CLuster instances for PwC
+
+June 2015 to November 2015
+Collabera Technologies Pvt ltd Bangalore
+Database Administrator    
+
+I was hired in contact to hire position for maintaining Real Application CLuster instance IBM India Pvt Ltd
+
+July 2013 to July 2014
+BIL Infratech Ltd - kolkata kolkata
+Assitant officer (IT)    
+
+Linear Tape-open  technology  , Patching , 
+database Backup, Cloning Oracle Apps database administration related activities and Oracle Core.
+different database administration activities; and Rollup patches.
+HRGlobal patches
+tablespace maintenance etc. 
+
+December 2012 to July 2013
+CSA Consulting Pvt Ltd - kolkata kolkata
+DBA-Oracle Apps    
+
+clients
+
+April 2012 to December 2012
+ NHINFOMEDIA Ltd Delhi NCR
+Developer (DBA)    
+
+ oracle Database backup using export import.
+Deployed for UTI Infrastructure Technology And Service Limited from our company payroll to work on different shift in Employees' Profident Fund Organizations in a remote place Murshidabad Jangipur.
+
+December 2011 to February 2012
+Tetra Information Service Ltd New Delhi
+Linux Admin Trainee    
+
+mail server Administration ,restoration of Oracle Database from a disk failure.
+clients
+
+April 2011 to December 2011
+Major and Minor Exims Pvt Ltd - Gurgaon Delhi NCR
+Database Administrator    
+
+September 2010 to February 2011
+Karshan Technologies pvt ltd. - kolkata kolkata
+Program Associate    
+
+ dataguard 10G and Dataguard EBS R12 where client was TCS and HCL for Kolkata Municipal Corporation  projects, 
+Lagan Engineering co Limited on Oracle 9i to Oracle 10g.
+
+May 2010 to September 2010
+Conacent Consulting Pvt Ltd kolkata
+Oracle Apps DBA Trainee    
+
+implementation R12 for Webb India and Delloitty and RUP patches.
+oracle 11gR1 installation in Nnoni Jwelery 
+
+June 2016 to Current
+Skilliantech Ltd Pune
+Software Engeneer - Oracle Apps DBA    
+
+deployed in PwC projects for Srei BNP Paribas   , kolkata in Real Application Database Administration 11gR2 and Oracle Application R12.1.3 on OVM and VM servers with Linux 5.4 
+
+Education
+
+2009 Pailan Collage of Management And Technology kolkata, 
+MCA computer application 
+
+77.9%
+
+Gurudas College under University of Calcutta  kolkata, 
+Bachelor of Science science 
+
+43% 
+
+        Training
+
+IBM Mainframe (Z/OS) Admin Training On CICS  TSO ISPF OMVS etc.
+
+  VMware vSphere 4.1: Install, Configure, Manage
+
+  Managing 
+HP StorageWorks Enterprise Virtual
+  Array configuration and management 5-day (U4879S)
+
+OCP on DBA track(10gR2)
+
+OCA on DBA track(9i) 
+Java projects for
+
+  Code for freedom
+
+ Java projects The Grate Mind Challenge (IBM)
+
+Additional Information
+
+worked on Oracle Apps 11.5.10.2. Oracle Apps R12.0.6 , R12.0.4,R12.1.3,R12.1.1 R12.1.2; 
+Familiarity with adop for R12.2. 
+got an overview  and knowledge on Oracle Database
+
+12c Release 1 , Oracle Real Application Cluster 11g Release 2  , Oracle Flex Cluster.
+<strong>major clients attained : Pwc,IBM,HCL,Deloitte .</strong>

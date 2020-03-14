@@ -1,0 +1,152 @@
+Dotnet_collection
+DOTNET_COLLECTION_UAT
+
+nohup expdp system/lenovo123 dumpfile=DOTNET_COLLECTION_200716.DMP LOGFILE=DOTNET_COLLECTION_200716.log schemas=DOTNET_COLLECTION directory=SANP05 &
+select count(1),object_type from dba_objects where owner='DOTNET_COLLECTION' group by object_type ;
+
+nohup expdp system/oratcora dumpfile=RECON_GL_210616.DMP LOGFILE=RECON_GL_210616.log schemas=RECON_GL directory=DATA_PUMP_DIR &
+nohup expdp system/oratcora dumpfile=RECON_GL1_210616.DMP LOGFILE=RECON_GL1_210616.log schemas=RECON_GL1 directory=DATA_PUMP_DIR &
+
+
+/newdump/filesystems/SANP05/
+/newdump/SANP02/
+
+
++SIFLDATA/sp02/datafile
+
+DROP USER NGCONNECT cascade;
+
+
+
+OWNER			       DIRECTORY_NAME
+------------------------------ ------------------------------
+DIRECTORY_PATH
+--------------------------------------------------------------------------------
+SYS			       ORACLE_OCM_CONFIG_DIR2
+/u01/rac/product/11.2.0/dbhome_1/ccr/state
+
+SYS			       DATA_PUMP_DIR
+/u01/rac/product/11.2.0/dbhome_1/rdbms/log/
+
+SYS			       ORACLE_OCM_CONFIG_DIR
+/u01/rac/product/11.2.0/dbhome_1/ccr/hosts/sreikolsefl1.srei.com/state
+
+
+OWNER			       DIRECTORY_NAME
+------------------------------ ------------------------------
+DIRECTORY_PATH
+--------------------------------------------------------------------------------
+SYS			       XMLDIR
+/u01/rac/product/11.2.0/dbhome_1/rdbms/xml
+
+SYS			       SANP05
+/newdump/filesystems/SANP05
+
+SYS			       DAILY_BACKUP
+/newdump/filesystems/SP01/SEFPLLIVE_DAILY_BACKUP
+
+
+6 rows selected.
+
+SQL> 
+
+
+create user SIFPLLIVE identified by sreig00d default tablespace SIFPLLIVE quota unlimited on SIFPLLIVE; 
+create user SEFPLLIVE_RPT_READONLY identified by sreig00d default tablespace SEFPLLIVE_RPT_READONLY quota unlimited on SEFPLLIVE_RPT_READONLY;
+create user NGCONNECT identified by sreig00d default tablespace SEFPLLIVE quota unlimited on SEFPLLIVE;
+
+create user NIGHT_SUPPORT identified by sreig00d default tablespace users quota unlimited on USERS;
+
+create user PAYPROCONNECT identified by sreig00d default tablespace SEFPLLIVE quota unlimited on SEFPLLIVE;
+create user SREI_CDS_READONLY identified by sreig00d default tablespace USERS quota unlimited on USERS;
+
+create user SEFL_PAYPRO identified by sreig00d default tablespace USERS quota unlimited on USERS;
+
+
+
+sqlplus '/ as sysdba' << EOS
+--- command to spool file with date
+column tm new_value file_time noprint
+select to_char(sysdate,'dd-mm-RR-HH24_MI_SS') tm from dual ;
+spool __creation_&file_time
+create tablespace RECON_GL datafile '+SIFLDATA/sp02/datafile/RECON_GL01.dbf' size 128m autoextend on next 64m maxsize 2G;
+
+
+create tablespace CDS_SIFL_AMBIT datafile '/u01/data/CDS/CDS_SIFL_AMBIT01.dbf' size 128m autoextend on next 64m maxsize 2G;
+create user CDS_SIFL_AMBIT identified by sreig00d  default tablespace CDS_SIFL_AMBIT quota unlimited on CDS_SIFL_AMBIT;
+grant connect,resource to CDS_SIFL_AMBIT;
+grant read,write on directory DATA_PUMP_DIR to CDS_SIFL_AMBIT;
+grant create job to CDS_SIFL_AMBIT;
+grant execute any procedure to CDS_SIFL_AMBIT;
+grant create session to CDS_SIFL_AMBIT;
+grant CREATE SEQUENCE,CREATE TABLE,CREATE TRIGGER,CREATE PROCEDURE,CREATE VIEW,CREATE TYPE to CDS_SIFL_AMBIT;
+grant create session to CDS_SIFL_AMBIT;
+
+
+grant create session,create database link to  Dotnet_Collection_Uat;
+
+
+
+grant connect,resource to SEFL_PAYPRO;
+grant read,write on directory ORACLE_OCM_CONFIG_DIR2 to SEFL_PAYPRO;
+grant read,write on directory DATA_PUMP_DIR to SEFL_PAYPRO;
+grant read,write on directory SANP05 to SEFL_PAYPRO;
+grant read,write on directory ORACLE_OCM_CONFIG_DIR to SEFL_PAYPRO;
+grant read,write on directory XMLDIR to SEFL_PAYPRO;
+grant read,write on directory DAILY_BACKUP to SEFL_PAYPRO;
+grant create job to SEFL_PAYPRO;
+grant execute any procedure to SEFL_PAYPRO;
+grant create database link to SEFL_PAYPRO;
+grant CREATE SEQUENCE,CREATE TABLE,CREATE TRIGGER,CREATE PROCEDURE,CREATE VIEW,CREATE TYPE to SEFL_PAYPRO;
+
+Dotnet_Collection_Uat.DLN_COLLECTION_AAF
+drop public database link DLN_COLLECTION_AAF
+
+--CREATE TABLESPACE SEFPLLIVEREPORTS DATAFILE '/var/oracle/AMBITRPT/datafile/data/SEFPLLIVEREPORTS_01.dbf' size 2g autoextend on next 128m maxsize 10G;
+create user RECON_GL identified by sreig00d  default tablespace RECON_GL quota unlimited on RECON_GL;
+create user RECON_GL1 identified by sreig00d default tablespace RECON_GL1 quota unlimited on RECON_GL1;
+grant connect,resource to RECON_GL;
+grant read,write on directory DATA_PUMP_DIR to RECON_GL;
+grant read,write on directory DUMP_BACKUP to RECON_GL;
+
+grant connect,resource to RECON_GL1;
+grant read,write on directory DATA_PUMP_DIR to RECON_GL1;
+grant read,write on directory DUMP_BACKUP to RECON_GL1;
+
+
+grant read,write on directory PUMP to RECON_GL;
+grant create job to RECON_GL;
+grant execute any procedure to RECON_GL;
+grant create database link to RECON_GL;
+grant CREATE SEQUENCE,CREATE TABLE,CREATE TRIGGER,CREATE PROCEDURE,CREATE VIEW,CREATE TYPE to RECON_GL;
+grant CREATE SEQUENCE,CREATE TABLE,CREATE TRIGGER,CREATE PROCEDURE,CREATE VIEW,CREATE TYPE to RECON_GL1;
+select trigger_name,status from dba_triggers where trigger_name like 'LOGON%';
+create trigger logon_RECON_GL after logon on database
+begin
+if user = 'RECON_GL' then
+execute immediate 'alter session set optimizer_mode=first_rows_128';
+execute immediate 'alter session set cursor_sharing=FORCE';
+execute immediate 'alter session set session_cached_cursors = 200';
+end if;
+end;
+
+EOS
+
+impdp system/srei1234 dumpfile=RECON_GL_210616.DMP logfile=RECON_GL_210616.log remap_schema=RECON_GL:RECON_GL remap_tablespace=RECON_GL:RECON_GL directory=DATAPUMP_DIR
+impdp system/srei1234 dumpfile=RECON_GL1_210616.DMP logfile=RECON_GL1_210616.log remap_schema=RECON_GL1:RECON_GL1 remap_tablespace=RECON_GL1:RECON_GL1 directory=DATAPUMP_DIR
+sqlplus '/ as sysdba' << EOF
+@$ORACLE_HOME/rdbms/admin/utlrp.sql
+--- command to spool file with date
+column tm new_value file_time noprint
+select to_char(sysdate,'dd-mm-RR-HH24_MI_SS') tm from dual ;
+spool SIFLLIVE_PRODTEST_invalids_&file_time
+select count(1),object_type from dba_objects where owner='RECON_GL' group by object_type ;
+select count(1),object_type from dba_objects where owner='SIFLLIVE_PRODTEST' and status<>'VALID' group by object_type;
+alter user DOTNET_COLLECTION_UAT identified by sreig00d;
+alter user DOTNET_COLLECTION_UAT account unlock;
+exit
+EOF
+
+exit 0
+
+

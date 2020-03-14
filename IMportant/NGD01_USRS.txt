@@ -1,0 +1,51 @@
+NAME
+---------
+NGD01
+
+SQL> select username,default_tablespace from dba_users;
+
+USERNAME                       DEFAULT_TABLESPACE
+------------------------------ ------------------------------
+SYS                            SYSTEM
+SYSTEM                         SYSTEM
+DL_COMMON                      USERS
+SREICAB                        SREICAB
+SREICAB4                       SREICAB4
+OUTLN                          SYSTEM
+MGMT_VIEW                      SYSTEM
+FLOWS_FILES                    SYSAUX
+MDSYS                          SYSAUX
+ORDSYS                         SYSAUX
+EXFSYS                         SYSAUX
+
+USERNAME                       DEFAULT_TABLESPACE
+------------------------------ ------------------------------
+DBSNMP                         SYSAUX
+WMSYS                          SYSAUX
+APPQOSSYS                      SYSAUX
+APEX_030200                    SYSAUX
+OWBSYS_AUDIT                   SYSAUX
+ORDDATA                        SYSAUX
+CTXSYS                         SYSAUX
+ANONYMOUS                      SYSAUX
+SYSMAN                         SYSAUX
+XDB                            SYSAUX
+ORDPLUGINS                     SYSAUX
+
+USERNAME                       DEFAULT_TABLESPACE
+------------------------------ ------------------------------
+OWBSYS                         SYSAUX
+SI_INFORMTN_SCHEMA             SYSAUX
+OLAPSYS                        SYSAUX
+SCOTT                          USERS
+ORACLE_OCM                     USERS
+XS$NULL                        USERS
+MDDATA                         USERS
+DIP                            USERS
+APEX_PUBLIC_USER               USERS
+SPATIAL_CSW_ADMIN_USR          USERS
+SPATIAL_WFS_ADMIN_USR          USERS
+
+33 rows selected.
+
+SQL>

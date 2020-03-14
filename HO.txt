@@ -1,0 +1,15 @@
+monthly reports info gathering
+itrack
+CR/SR
+Oracle Metalink
+CPU performance
+long running SQLS / concurrent Request
+emplyee termination
+RM/CM scripts
+s1 s2 s3 SLA
+SOW
+expdp impdp 
+memorize ip
+ebiz instances ports
+
+

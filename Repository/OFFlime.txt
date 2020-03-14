@@ -1,0 +1,16 @@
+#! /bin/bash
+
+. $HOME/.bash_profile
+
+export DT=`date +%d%m%y_%H%M%S`
+
+
+sqlplus -s " / as sysdba"  << EOS
+create table SREICABINET.wfcurrentroutelog_hist as select * from SREICABINET.wfcurrentroutelogtable;
+create index SREICABINET.idx_routelog_actiondate on SREICABINET.wfcurrentroutelog_hist(actiondatetime);
+create index SREICABINET.idx_routelog_queueid on SREICABINET.wfcurrentroutelog_hist(queueid);
+create index SREICABINET.idx_routelog_processinstanceid on SREICABINET.wfcurrentroutelog_hist(process);
+
+EOS
+
+exit 0

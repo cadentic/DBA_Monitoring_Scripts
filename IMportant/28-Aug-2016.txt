@@ -1,0 +1,10 @@
+Seflkastle
+SEFLKASTLE
+
+
+nohup expdp system/srei4321  dumpfile=SEFLKASTLE_250716.DMP LOGFILE=SEFLKASTLE_250716.log  SCHEMAS=SEFLKASTLE directory=DAILY_BACKUP
+
+SEFLKASTLENEW
+
+select count(1),object_type from dba_objects where owner='SEFLKASTLE' group by object_type ;
+select count(1),object_type from dba_objects where owner='SEFLKASTLE' and status<>'VALID' group by object_type;
